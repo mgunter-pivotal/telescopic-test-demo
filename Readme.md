@@ -1,4 +1,4 @@
-'''An example for how to optimize test automation for hardware-centric, telemetry-driven applications 
+[bold]An example for how to optimize test automation for hardware-centric, telemetry-driven applications 
 Uses code from the following Repos:
 https://github.com/TU-Berlin-DIMA/resense.git
 https://github.com/garden-io/garden.git
