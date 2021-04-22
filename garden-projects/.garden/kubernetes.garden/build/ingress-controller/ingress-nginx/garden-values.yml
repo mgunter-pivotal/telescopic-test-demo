@@ -1,0 +1,27 @@
+name: ingress-controller
+controller:
+  extraArgs:
+    default-backend-service: garden-system/default-backend
+  kind: DaemonSet
+  updateStrategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+  hostPort:
+    enabled: true
+    ports:
+      http: 80
+      https: 443
+  minReadySeconds: 1
+  tolerations:
+    - key: garden-system
+      operator: Equal
+      value: 'true'
+      effect: NoSchedule
+  nodeSelector: {}
+defaultBackend:
+  enabled: false
+.garden:
+  moduleName: ingress-controller
+  projectName: garden-system
+  version: v-8ea621d34d

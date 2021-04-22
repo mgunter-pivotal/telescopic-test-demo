@@ -1,0 +1,21 @@
+kind: Module
+description: UDP Telemetry testing app
+name: udp-test
+type: container
+build:
+  # dependencies:
+  #   - name: shared-config
+  #     copy:
+  #       - source: "config.env"
+  #         target: "config/"
+services:
+  - name: inbound-traffic
+    disabled: true
+    ports:
+      - name: udp
+        containerPort: 20777
+        # Maps service:80 -> container:8080
+        servicePort: 20777
+tasks:
+  - name: test
+    command: ["sh", "-c", "echo task output"]
