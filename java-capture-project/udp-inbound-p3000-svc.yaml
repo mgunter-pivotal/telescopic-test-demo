@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: udp-recorder-service
+spec:
+  type: NodePort
+  selector:
+    service: udp-app
+  ports:
+      # By default and for convenience, the `targetPort` is set to the same value as the `port` field.
+    - port: 20777
+      protocol: UDP
+      targetPort: 20777
+      nodePort: 30001

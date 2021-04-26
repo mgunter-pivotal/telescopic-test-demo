@@ -1,0 +1,3390 @@
+
+[2021-03-26T15:18:08.548Z] Unable to connect to Kubernetes cluster. Got error:
+
+Error: connect ECONNREFUSED 127.0.0.1:6443
+
+Error Details:
+
+providerConfig:
+  name: local-kubernetes
+  environments: []
+  dependencies: []
+  buildMode: local-docker
+  deploymentStrategy: rolling
+  forceSsl: false
+  gardenSystemNamespace: garden-system
+  imagePullSecrets: []
+  resources:
+    builder:
+      limits:
+        cpu: 4000
+        memory: 8192
+      requests:
+        cpu: 200
+        memory: 512
+    registry:
+      limits:
+        cpu: 2000
+        memory: 4096
+      requests:
+        cpu: 200
+        memory: 512
+    sync:
+      limits:
+        cpu: 500
+        memory: 512
+      requests:
+        cpu: 100
+        memory: 90
+  storage:
+    builder:
+      size: 20480
+      storageClass: null
+    nfs:
+      storageClass: null
+    registry:
+      size: 20480
+      storageClass: null
+    sync:
+      size: 10240
+      storageClass: null
+  tlsCertificates: []
+  systemNodeSelector: {}
+  registryProxyTolerations: []
+  setupIngressController: nginx
+  namespace: my-project-default
+  ingressClass: nginx
+  context: docker-desktop
+  defaultHostname: my-project.local.app.garden
+  ingressHttpPort: 80
+  ingressHttpsPort: 443
+
+
+[2021-03-26T15:18:08.556Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-26T15:18:07.833Z
+    batchId: e5c9cbdf-6020-4633-8332-055d5e7c3da9
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T15:18:07.813Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-26T15:18:07.828Z
+    batchId: d7e97d12-8fff-490a-a046-a9ebf98c2e14
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T15:18:07.817Z
+  resolve-provider.maven-container:
+    type: resolve-provider
+    key: resolve-provider.maven-container
+    name: maven-container
+    description: resolving provider maven-container
+    completedAt: 2021-03-26T15:18:08.114Z
+    batchId: d7e97d12-8fff-490a-a046-a9ebf98c2e14
+    output:
+      name: maven-container
+      dependencies:
+        container:
+          name: container
+          dependencies: {}
+          moduleConfigs: []
+          config:
+            name: container
+            dependencies: []
+            path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+          status:
+            ready: true
+            outputs: {}
+          dashboardPages: []
+      moduleConfigs: []
+      config:
+        name: maven-container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults:
+      resolve-provider.container:
+        type: resolve-provider
+        key: resolve-provider.container
+        name: container
+        description: resolving provider container
+        completedAt: 2021-03-26T15:18:07.828Z
+        batchId: d7e97d12-8fff-490a-a046-a9ebf98c2e14
+        output:
+          name: container
+          dependencies: {}
+          moduleConfigs: []
+          config:
+            name: container
+            dependencies: []
+            path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+          status:
+            ready: true
+            outputs: {}
+          dashboardPages: []
+        dependencyResults: {}
+        version: 0.12.16
+        startedAt: 2021-03-26T15:18:07.817Z
+    version: 0.12.16
+    startedAt: 2021-03-26T15:18:07.829Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-03-26T15:18:07.830Z
+    completedAt: 2021-03-26T15:18:08.543Z
+    batchId: d7e97d12-8fff-490a-a046-a9ebf98c2e14
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-26T15:18:07.833Z
+    batchId: 81dcfc4b-01d6-42ca-9cbc-bcbdd8a634f7
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T15:18:07.818Z
+messages: []
+
+
+[2021-03-26T16:17:38.056Z] Failed resolving one or more modules:
+
+zookeeper: Error validating Module 'zookeeper': key "hostname" is not allowed at path [hostname], key "container_name" is not allowed at path [container_name]
+weather-app: Module weather-app neither specifies image nor provides Dockerfile
+
+Error Details:
+
+errors: {}
+
+
+[2021-03-26T16:58:41.547Z] Failed resolving one or more modules:
+
+zookeeper: Error validating Module 'zookeeper': key "hostname" is not allowed at path [hostname], key "container_name" is not allowed at path [container_name]
+udp-app: Error validating Module 'udp-app': key .services[0][ingresses][0][port] must be a string
+
+Error Details:
+
+errors: {}
+
+
+[2021-03-26T16:59:38.009Z] Failed resolving one or more modules:
+
+zookeeper: Error validating Module 'zookeeper': key "container_name" is not allowed at path [container_name]
+udp-app: Service weather-app does not define port udp defined in ingress
+
+Error Details:
+
+errors: {}
+
+
+[2021-03-26T17:40:30.177Z] contexts[0].context.cluster is missing
+
+[2021-03-26T17:40:30.183Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-26T17:40:29.507Z
+    batchId: 5e1cf0f6-aee9-4b50-bbe6-f4d83f27a49c
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:40:29.497Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-26T17:40:29.508Z
+    batchId: 00aed099-6b16-401b-94de-9d6ae7f0205c
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:40:29.499Z
+  resolve-provider.maven-container:
+    type: resolve-provider
+    key: resolve-provider.maven-container
+    name: maven-container
+    description: resolving provider maven-container
+    completedAt: 2021-03-26T17:40:29.523Z
+    batchId: 00aed099-6b16-401b-94de-9d6ae7f0205c
+    output:
+      name: maven-container
+      dependencies:
+        container:
+          name: container
+          dependencies: {}
+          moduleConfigs: []
+          config:
+            name: container
+            dependencies: []
+            path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+          status:
+            ready: true
+            outputs: {}
+            cached: true
+          dashboardPages: []
+      moduleConfigs: []
+      config:
+        name: maven-container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults:
+      resolve-provider.container:
+        type: resolve-provider
+        key: resolve-provider.container
+        name: container
+        description: resolving provider container
+        completedAt: 2021-03-26T17:40:29.508Z
+        batchId: 00aed099-6b16-401b-94de-9d6ae7f0205c
+        output:
+          name: container
+          dependencies: {}
+          moduleConfigs: []
+          config:
+            name: container
+            dependencies: []
+            path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+          status:
+            ready: true
+            outputs: {}
+            cached: true
+          dashboardPages: []
+        dependencyResults: {}
+        version: 0.12.16
+        startedAt: 2021-03-26T17:40:29.499Z
+    version: 0.12.16
+    startedAt: 2021-03-26T17:40:29.509Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-03-26T17:40:29.510Z
+    completedAt: 2021-03-26T17:40:30.138Z
+    batchId: 00aed099-6b16-401b-94de-9d6ae7f0205c
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-26T17:40:29.513Z
+    batchId: 06effe5e-f3de-4623-b989-aa7ec2569b01
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:40:29.500Z
+messages: []
+
+
+[2021-03-26T17:42:56.047Z] Failed resolving one or more modules:
+
+zookeeper: Unrecognized module type 'kubernetes' (defined at garden.yaml). Are you missing a provider configuration?
+broker: Unrecognized module type 'kubernetes' (defined at garden.yaml). Are you missing a provider configuration?
+udp-app: Error validating Module 'udp-app': key .hotReload.sync[0][target] must be a an absolute path
+
+Error Details:
+
+errors: {}
+
+
+[2021-03-26T17:43:45.344Z] Failed resolving one or more modules:
+
+zookeeper: Unrecognized module type 'kubernetes' (defined at garden.yaml). Are you missing a provider configuration?
+broker: Unrecognized module type 'kubernetes' (defined at garden.yaml). Are you missing a provider configuration?
+udp-app: Error validating Module 'udp-app': key .hotReload.sync[0][target] must be a an absolute path
+
+Error Details:
+
+errors: {}
+
+
+[2021-03-26T17:48:28.486Z] contexts[0].context.cluster is missing
+
+[2021-03-26T17:48:28.492Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-26T17:48:27.847Z
+    batchId: 735b20d0-855d-433b-bfc7-e02c9fd6be2f
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:48:27.824Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-26T17:48:27.845Z
+    batchId: 606b636a-0f28-4647-9387-d8697d602f0c
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:48:27.826Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-03-26T17:48:27.845Z
+    completedAt: 2021-03-26T17:48:28.453Z
+    batchId: 606b636a-0f28-4647-9387-d8697d602f0c
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-26T17:48:27.848Z
+    batchId: be7b4e6d-4436-4597-a7a1-59d44d4ac2e9
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:48:27.828Z
+messages: []
+
+
+[2021-03-26T17:50:57.470Z] contexts[0].context.cluster is missing
+
+[2021-03-26T17:50:57.475Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-26T17:50:56.849Z
+    batchId: d048062d-ce04-4d32-9214-f60f364327d8
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:50:56.828Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-26T17:50:56.850Z
+    batchId: b5754cca-439f-4109-9aab-bb10a0f195ad
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:50:56.831Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-03-26T17:50:56.850Z
+    completedAt: 2021-03-26T17:50:57.431Z
+    batchId: b5754cca-439f-4109-9aab-bb10a0f195ad
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-26T17:50:56.853Z
+    batchId: 8036ba6e-28aa-4f0f-b7af-bfa314f1c046
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:50:56.832Z
+messages: []
+
+
+[2021-03-26T17:54:58.737Z] contexts[0].context.cluster is missing
+
+[2021-03-26T17:54:58.742Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-26T17:54:58.090Z
+    batchId: c9504a82-023c-4caf-babe-6991c1329c64
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:54:58.075Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-26T17:54:58.087Z
+    batchId: 8d6ef31b-a977-4543-baf3-53108a206bdb
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:54:58.077Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-03-26T17:54:58.088Z
+    completedAt: 2021-03-26T17:54:58.698Z
+    batchId: 8d6ef31b-a977-4543-baf3-53108a206bdb
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-26T17:54:58.091Z
+    batchId: 26e4e645-a8dc-424c-b9a4-18866cc29f5e
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:54:58.077Z
+messages: []
+
+
+[2021-03-26T17:56:47.606Z] contexts[0].context.cluster is missing
+
+[2021-03-26T17:56:47.611Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-26T17:56:46.925Z
+    batchId: 7174f971-0141-4403-a8a1-4ffe5a6cf9e7
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:56:46.909Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-26T17:56:46.926Z
+    batchId: 6ae617e0-37d4-43f2-ab1e-a5e0f02bc7d0
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:56:46.914Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-03-26T17:56:46.927Z
+    completedAt: 2021-03-26T17:56:47.565Z
+    batchId: 6ae617e0-37d4-43f2-ab1e-a5e0f02bc7d0
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-26T17:56:46.930Z
+    batchId: 29a2dc6d-4189-43c1-9503-d8b595fa84ca
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:56:46.915Z
+messages: []
+
+
+[2021-03-26T17:58:09.381Z] contexts[0].context.cluster is missing
+
+[2021-03-26T17:58:09.388Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-26T17:58:08.883Z
+    batchId: d527e5cb-06f0-4cdd-9357-851949bf35aa
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:58:08.862Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-26T17:58:08.885Z
+    batchId: 85fe5c67-b3ef-492c-99cb-27c7470a1c37
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:58:08.866Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-03-26T17:58:08.885Z
+    completedAt: 2021-03-26T17:58:09.340Z
+    batchId: 85fe5c67-b3ef-492c-99cb-27c7470a1c37
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-26T17:58:08.884Z
+    batchId: 155436ec-74cf-45af-9f82-a5e280468f16
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:58:08.867Z
+messages: []
+
+
+[2021-03-26T17:59:29.063Z] kubernetes: must specify deploymentRegistry in config if using local build mode
+
+Error Details:
+
+config:
+  name: kubernetes
+  context: docker-desktop
+  environments: []
+  dependencies: []
+  buildMode: local-docker
+  deploymentStrategy: rolling
+  forceSsl: false
+  gardenSystemNamespace: garden-system
+  imagePullSecrets: []
+  resources:
+    builder:
+      limits:
+        cpu: 4000
+        memory: 8192
+      requests:
+        cpu: 200
+        memory: 512
+    registry:
+      limits:
+        cpu: 2000
+        memory: 4096
+      requests:
+        cpu: 200
+        memory: 512
+    sync:
+      limits:
+        cpu: 500
+        memory: 512
+      requests:
+        cpu: 100
+        memory: 90
+  storage:
+    builder:
+      size: 20480
+      storageClass: null
+    nfs:
+      storageClass: null
+    registry:
+      size: 20480
+      storageClass: null
+    sync:
+      size: 10240
+      storageClass: null
+  tlsCertificates: []
+  systemNodeSelector: {}
+  registryProxyTolerations: []
+  ingressHttpPort: 80
+  ingressHttpsPort: 443
+  setupIngressController: false
+  path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+  namespace: my-project-default
+
+
+[2021-03-26T17:59:29.072Z] Failed resolving one or more providers:
+- kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-26T17:59:29.054Z
+    batchId: 0d77bda6-7cf2-4883-a374-49c625eccf73
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:59:29.038Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-26T17:59:29.054Z
+    batchId: a29375bc-1eb1-4877-b014-a83f9341385c
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:59:29.040Z
+  resolve-provider.kubernetes:
+    type: resolve-provider
+    description: resolving provider kubernetes
+    key: resolve-provider.kubernetes
+    name: kubernetes
+    startedAt: 2021-03-26T17:59:29.054Z
+    completedAt: 2021-03-26T17:59:29.057Z
+    batchId: a29375bc-1eb1-4877-b014-a83f9341385c
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-26T17:59:29.053Z
+    batchId: 71f4d82e-90b6-416d-a177-f315610fbadc
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T17:59:29.043Z
+messages: []
+
+
+[2021-03-26T18:01:20.849Z] Error validating provider configuration: key .deploymentRegistry.hostname is required, key "name" is not allowed at path .deploymentRegistry[name]
+
+Error Details:
+
+value:
+  name: kubernetes
+  context: docker-desktop
+  deploymentRegistry:
+    name: docker
+  environments: []
+context: provider configuration
+errorDescription: "key \e[4m.deploymentRegistry.hostname\e[24m is required, key \"name\" is not allowed at path \e[4m.deploymentRegistry[name]\e[24m"
+errorDetails: []
+
+
+[2021-03-26T18:01:20.857Z] Failed resolving one or more providers:
+- kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-26T18:01:20.796Z
+    batchId: 1e49c6e4-3da3-4d13-8586-cef546281f0e
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T18:01:20.785Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-26T18:01:20.797Z
+    batchId: 88aa5ba1-c557-4c62-bee5-85e1c3e5a184
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T18:01:20.787Z
+  resolve-provider.kubernetes:
+    type: resolve-provider
+    description: resolving provider kubernetes
+    key: resolve-provider.kubernetes
+    name: kubernetes
+    startedAt: 2021-03-26T18:01:20.798Z
+    completedAt: 2021-03-26T18:01:20.836Z
+    batchId: 88aa5ba1-c557-4c62-bee5-85e1c3e5a184
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-26T18:01:20.851Z
+    batchId: 69f1cf93-dee2-416a-b710-8e30f5d813e9
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T18:01:20.788Z
+messages: []
+
+
+[2021-03-26T18:41:18.208Z] Error validating provider configuration: key .deploymentRegistry.hostname is required, key "name" is not allowed at path .deploymentRegistry[name]
+
+Error Details:
+
+value:
+  name: kubernetes
+  context: docker-desktop
+  deploymentRegistry:
+    name: docker
+  environments: []
+context: provider configuration
+errorDescription: "key \e[4m.deploymentRegistry.hostname\e[24m is required, key \"name\" is not allowed at path \e[4m.deploymentRegistry[name]\e[24m"
+errorDetails: []
+
+
+[2021-03-26T18:41:18.215Z] Failed resolving one or more providers:
+- kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-26T18:41:18.179Z
+    batchId: 2e8c573a-7c11-4772-ade5-815572072c11
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T18:41:18.172Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-26T18:41:18.180Z
+    batchId: 89978ee7-f848-4e9d-9574-47f59188139b
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T18:41:18.173Z
+  resolve-provider.kubernetes:
+    type: resolve-provider
+    description: resolving provider kubernetes
+    key: resolve-provider.kubernetes
+    name: kubernetes
+    startedAt: 2021-03-26T18:41:18.180Z
+    completedAt: 2021-03-26T18:41:18.204Z
+    batchId: 89978ee7-f848-4e9d-9574-47f59188139b
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-26T18:41:18.210Z
+    batchId: cca698a7-ca63-4548-b008-91f9f78cac8a
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-26T18:41:18.174Z
+messages: []
+
+
+[2021-03-27T13:44:14.865Z] contexts[0].context.cluster is missing
+
+[2021-03-27T13:44:14.870Z] Failed resolving one or more providers:
+- kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-27T13:44:14.287Z
+    batchId: 20e5da22-10e4-48b4-8d83-fe19ee0d857f
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:44:14.261Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-27T13:44:14.287Z
+    batchId: 56d22ecc-f06f-44b0-9a27-ecd928e7422f
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:44:14.264Z
+  resolve-provider.kubernetes:
+    type: resolve-provider
+    description: resolving provider kubernetes
+    key: resolve-provider.kubernetes
+    name: kubernetes
+    startedAt: 2021-03-27T13:44:14.288Z
+    completedAt: 2021-03-27T13:44:14.829Z
+    batchId: 56d22ecc-f06f-44b0-9a27-ecd928e7422f
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-27T13:44:14.291Z
+    batchId: 8b1b363c-faaf-4c6d-bae1-cf86d3fd6b9f
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:44:14.265Z
+messages: []
+
+
+[2021-03-27T13:44:40.126Z] Error validating provider configuration: key "cluster" is not allowed at path .deploymentRegistry[cluster]
+
+Error Details:
+
+value:
+  name: kubernetes
+  context: docker-desktop
+  deploymentRegistry:
+    hostname: localhost
+    cluster: docker-desktop
+  environments: []
+context: provider configuration
+errorDescription: "key \"cluster\" is not allowed at path \e[4m.deploymentRegistry[cluster]\e[24m"
+errorDetails: []
+
+
+[2021-03-27T13:44:40.146Z] Failed resolving one or more providers:
+- kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-27T13:44:40.076Z
+    batchId: d6daa9ab-4fd6-40a0-91eb-d4ce19347b68
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:44:40.064Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-27T13:44:40.078Z
+    batchId: 1446bf33-2686-4639-9acf-b552f123e41e
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:44:40.067Z
+  resolve-provider.kubernetes:
+    type: resolve-provider
+    description: resolving provider kubernetes
+    key: resolve-provider.kubernetes
+    name: kubernetes
+    startedAt: 2021-03-27T13:44:40.078Z
+    completedAt: 2021-03-27T13:44:40.120Z
+    batchId: 1446bf33-2686-4639-9acf-b552f123e41e
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-27T13:44:40.128Z
+    batchId: ff288e98-b473-4aef-9c45-7ac596e0785d
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:44:40.068Z
+messages: []
+
+
+[2021-03-27T13:48:53.016Z] Error validating provider configuration: key .deploymentRegistry must be of type object
+
+Error Details:
+
+value:
+  name: kubernetes
+  context: docker-desktop
+  deploymentRegistry: []
+  dependencies: []
+context: provider configuration
+errorDescription: "key \e[4m.deploymentRegistry\e[24m must be of type object"
+errorDetails: []
+
+
+[2021-03-27T13:48:53.021Z] Failed resolving one or more providers:
+- kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-27T13:48:52.974Z
+    batchId: 02e92398-395e-4925-a35c-31ac4fc4c3b4
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:48:52.962Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-27T13:48:52.987Z
+    batchId: 85ed248b-59cd-4f15-8fc1-eacbc8512a59
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:48:52.965Z
+  resolve-provider.kubernetes:
+    type: resolve-provider
+    description: resolving provider kubernetes
+    key: resolve-provider.kubernetes
+    name: kubernetes
+    startedAt: 2021-03-27T13:48:52.988Z
+    completedAt: 2021-03-27T13:48:53.012Z
+    batchId: 85ed248b-59cd-4f15-8fc1-eacbc8512a59
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-27T13:48:52.979Z
+    batchId: fe5426dc-606f-4d17-add7-2b71e66cafdd
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:48:52.966Z
+messages: []
+
+
+[2021-03-27T13:49:45.128Z] kubernetes: must specify deploymentRegistry in config if using local build mode
+
+Error Details:
+
+config:
+  name: kubernetes
+  context: docker-desktop
+  environments: []
+  dependencies: []
+  buildMode: local-docker
+  deploymentStrategy: rolling
+  forceSsl: false
+  gardenSystemNamespace: garden-system
+  imagePullSecrets: []
+  resources:
+    builder:
+      limits:
+        cpu: 4000
+        memory: 8192
+      requests:
+        cpu: 200
+        memory: 512
+    registry:
+      limits:
+        cpu: 2000
+        memory: 4096
+      requests:
+        cpu: 200
+        memory: 512
+    sync:
+      limits:
+        cpu: 500
+        memory: 512
+      requests:
+        cpu: 100
+        memory: 90
+  storage:
+    builder:
+      size: 20480
+      storageClass: null
+    nfs:
+      storageClass: null
+    registry:
+      size: 20480
+      storageClass: null
+    sync:
+      size: 10240
+      storageClass: null
+  tlsCertificates: []
+  systemNodeSelector: {}
+  registryProxyTolerations: []
+  ingressHttpPort: 80
+  ingressHttpsPort: 443
+  setupIngressController: false
+  path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+  namespace: my-project-default
+
+
+[2021-03-27T13:49:45.137Z] Failed resolving one or more providers:
+- kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-27T13:49:45.118Z
+    batchId: 9902da55-9877-4ef1-a7a9-18ce5e7e9aba
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:49:45.093Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-27T13:49:45.118Z
+    batchId: 0dcfcfd2-8197-470d-adfc-c4196df869db
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:49:45.095Z
+  resolve-provider.kubernetes:
+    type: resolve-provider
+    description: resolving provider kubernetes
+    key: resolve-provider.kubernetes
+    name: kubernetes
+    startedAt: 2021-03-27T13:49:45.119Z
+    completedAt: 2021-03-27T13:49:45.121Z
+    batchId: 0dcfcfd2-8197-470d-adfc-c4196df869db
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-27T13:49:45.131Z
+    batchId: 0498f7c3-549a-471f-ad19-d073a6f80c39
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:49:45.096Z
+messages: []
+
+
+[2021-03-27T13:51:01.354Z] Error validating provider configuration: key .deploymentRegistry must be of type object
+
+Error Details:
+
+value:
+  name: kubernetes
+  context: docker-desktop
+  environments: []
+  deploymentRegistry: []
+  dependencies: []
+context: provider configuration
+errorDescription: "key \e[4m.deploymentRegistry\e[24m must be of type object"
+errorDetails: []
+
+
+[2021-03-27T13:51:01.360Z] Failed resolving one or more providers:
+- kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-27T13:51:01.310Z
+    batchId: 1e7056c2-d956-48a9-86df-4ba98229d4c0
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:51:01.293Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-27T13:51:01.312Z
+    batchId: bc10663c-f366-4ba3-a2f8-332db9d2522e
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:51:01.296Z
+  resolve-provider.kubernetes:
+    type: resolve-provider
+    description: resolving provider kubernetes
+    key: resolve-provider.kubernetes
+    name: kubernetes
+    startedAt: 2021-03-27T13:51:01.312Z
+    completedAt: 2021-03-27T13:51:01.349Z
+    batchId: bc10663c-f366-4ba3-a2f8-332db9d2522e
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-27T13:51:01.355Z
+    batchId: 6e312d9f-b0c9-49ab-912f-e6211fc0e2d9
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:51:01.296Z
+messages: []
+
+
+[2021-03-27T13:52:11.460Z] contexts[0].context.cluster is missing
+
+[2021-03-27T13:52:11.466Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-27T13:52:10.830Z
+    batchId: 404b2b10-36a9-4b53-bfb4-56220d4f14c2
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:52:10.812Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-27T13:52:10.830Z
+    batchId: a016e03f-95d1-483a-9084-89034ccc2ff2
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:52:10.814Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-03-27T13:52:10.831Z
+    completedAt: 2021-03-27T13:52:11.421Z
+    batchId: a016e03f-95d1-483a-9084-89034ccc2ff2
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-27T13:52:10.830Z
+    batchId: accb5aa4-5b53-4ccc-89d0-aab42a5ac44b
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:52:10.815Z
+messages: []
+
+
+[2021-03-27T13:55:51.769Z] contexts[0].context.cluster is missing
+
+[2021-03-27T13:55:51.775Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-27T13:55:51.103Z
+    batchId: a4deb964-194c-48f4-a852-72e8759b222b
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:55:51.089Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-27T13:55:51.100Z
+    batchId: ec86a200-a684-43e7-bac7-f6e7de0c864e
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:55:51.090Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-03-27T13:55:51.101Z
+    completedAt: 2021-03-27T13:55:51.733Z
+    batchId: ec86a200-a684-43e7-bac7-f6e7de0c864e
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-27T13:55:51.104Z
+    batchId: 0259eb34-1c80-4b57-bbca-fa5b60c7bffe
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:55:51.091Z
+messages: []
+
+
+[2021-03-27T13:59:17.876Z] contexts[0].context.cluster is missing
+
+[2021-03-27T13:59:17.881Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-27T13:59:17.262Z
+    batchId: 84f3080a-4e27-4532-ae2e-094383950e6d
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:59:17.250Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-27T13:59:17.263Z
+    batchId: 6f340427-5ddd-4c7c-882a-d2fcb91b75e7
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:59:17.251Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-03-27T13:59:17.263Z
+    completedAt: 2021-03-27T13:59:17.843Z
+    batchId: 6f340427-5ddd-4c7c-882a-d2fcb91b75e7
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-27T13:59:17.261Z
+    batchId: 5b1f9d85-aed7-4b52-88ed-6ad334b76b07
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T13:59:17.252Z
+messages: []
+
+
+[2021-03-27T14:14:40.986Z] contexts[0].context.cluster is missing
+
+[2021-03-27T14:14:40.991Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-03-27T14:14:40.324Z
+    batchId: 897cf1f3-d51b-40ae-89a5-f42d93e05225
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T14:14:40.309Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-03-27T14:14:40.325Z
+    batchId: 9e04a20a-1f4b-408f-808a-4d1ecd760903
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T14:14:40.311Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-03-27T14:14:40.325Z
+    completedAt: 2021-03-27T14:14:40.946Z
+    batchId: 9e04a20a-1f4b-408f-808a-4d1ecd760903
+    version: 0.12.16
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-03-27T14:14:40.323Z
+    batchId: 6c399295-4310-4910-9956-9c4ff8af785c
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/formula1-telemetry-kafka/garden_version
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.16
+    startedAt: 2021-03-27T14:14:40.312Z
+messages: []
+
+
+[2021-03-27T14:19:14.312Z] Failed resolving one or more modules:
+
+udp-app: Service udp-app does not define port udp defined in ingress
+
+Error Details:
+
+errors: {}
+
+
+[2021-03-27T14:25:11.566Z] Missing include and/or exclude directives on modules with overlapping paths.
+Setting includes/excludes is required when modules have the same path (i.e. are in the same garden.yml file),
+or when one module is nested within another.
+
+Module telemetry-lib overlaps with module(s) broker (same path), udp-app (same path) and zookeeper (same path).
+
+Error Details:
+
+overlappingModules: []
+
+
+[2021-03-27T14:27:41.351Z] Unknown dependencies detected.
+
+  Service 'udp-app' (in module 'udp-app'): Unknown service or task 'telemetry-lib' referenced in dependencies.
+
+
+Error Details:
+
+unknownDependencies: []
+availableModules: []
+availableServicesAndTasks: []
+
+
+[2021-03-27T14:29:15.244Z] ENOENT: no such file or directory, open '/Users/mattgunter/formula1-telemetry-kafka/garden_version/.garden/build/broker/docker-kafka.yaml'
+
+Error Details:
+
+errno: -2
+code: ENOENT
+syscall: open
+path: >-
+  /Users/mattgunter/formula1-telemetry-kafka/garden_version/.garden/build/broker/docker-kafka.yaml
+
+
+[2021-03-27T14:29:15.268Z] ENOENT: no such file or directory, open '/Users/mattgunter/formula1-telemetry-kafka/garden_version/docker-kafka.yaml'
+
+Error Details:
+
+errno: -2
+code: ENOENT
+syscall: open
+path: /Users/mattgunter/formula1-telemetry-kafka/garden_version/docker-kafka.yaml
+
+
+[2021-03-27T14:29:28.848Z] 2 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.broker:
+    type: build
+    description: building broker
+    key: build.broker
+    name: broker
+    startedAt: 2021-03-27T14:29:14.880Z
+    completedAt: 2021-03-27T14:29:15.240Z
+    batchId: 03366104-4448-4c44-8685-65f168f194f9
+    version: v-d74ec7b862
+  get-service-status.broker:
+    type: get-service-status
+    description: getting status for service 'broker' (from module 'broker')
+    key: get-service-status.broker
+    name: broker
+    startedAt: 2021-03-27T14:29:14.802Z
+    completedAt: 2021-03-27T14:29:15.262Z
+    batchId: 03366104-4448-4c44-8685-65f168f194f9
+    version: v-d74ec7b862
+
+
+[2021-03-27T14:38:14.312Z] Timed out waiting for broker to deploy
+
+Error Details:
+
+statuses: []
+
+
+[2021-03-27T14:38:14.331Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.broker:
+    type: deploy
+    description: deploying service 'broker' (from module 'broker')
+    key: deploy.broker
+    name: broker
+    startedAt: 2021-03-27T14:32:59.881Z
+    completedAt: 2021-03-27T14:38:14.305Z
+    batchId: 7fdbe3f8-84a7-4520-a326-f9c5b31238ee
+    version: v-0f9b4d211d
+
+
+[2021-03-27T16:02:25.182Z] ContainerCannotRun - OCI runtime create failed: container_linux.go:370: starting container process caused: exec: "/bin/sh": stat /bin/sh: no such file or directory: unknown
+
+[2021-03-27T16:02:25.188Z] 1 test task(s) failed!
+
+Error Details:
+
+results:
+  test.udp-app.unit:
+    type: test
+    description: running unit tests in module udp-app
+    key: test.udp-app.unit
+    name: udp-app.unit
+    startedAt: 2021-03-27T16:02:22.689Z
+    completedAt: 2021-03-27T16:02:25.177Z
+    batchId: 9f2cfc84-72a5-4821-bafe-f640bb551e2e
+    version: v-7c63d15465
+
+
+[2021-04-07T01:20:27.561Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop --namespace=f1-kafka-module-default apply --prune --selector service=udp-app --output=json -f -" failed with code 1:
+
+Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in v1.22+; use networking.k8s.io/v1 Ingress
+Error from server (BadRequest): error when creating "STDIN": admission webhook "validate.nginx.ingress.kubernetes.io" denied the request: host "http.local.app.garden" and path "/" is already defined in ingress kubernetes-module-default/udp-app-0
+
+Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in v1.22+; use networking.k8s.io/v1 Ingress
+Error from server (BadRequest): error when creating "STDIN": admission webhook "validate.nginx.ingress.kubernetes.io" denied the request: host "http.local.app.garden" and path "/" is already defined in ingress kubernetes-module-default/udp-app-0
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop --namespace=f1-kafka-module-default apply --prune
+  --selector service=udp-app --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop --namespace=f1-kafka-module-default apply --prune
+  --selector service=udp-app --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in
+  v1.22+; use networking.k8s.io/v1 Ingress
+
+  Error from server (BadRequest): error when creating "STDIN": admission webhook
+  "validate.nginx.ingress.kubernetes.io" denied the request: host
+  "http.local.app.garden" and path "/" is already defined in ingress
+  kubernetes-module-default/udp-app-0
+all: >-
+  Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in
+  v1.22+; use networking.k8s.io/v1 Ingress
+
+  Error from server (BadRequest): error when creating "STDIN": admission webhook
+  "validate.nginx.ingress.kubernetes.io" denied the request: host
+  "http.local.app.garden" and path "/" is already defined in ingress
+  kubernetes-module-default/udp-app-0
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-07T01:25:42.597Z] Timed out waiting for broker to deploy
+
+Error Details:
+
+statuses: []
+
+
+[2021-04-07T01:25:42.640Z] 2 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.broker:
+    type: deploy
+    description: deploying service 'broker' (from module 'broker')
+    key: deploy.broker
+    name: broker
+    startedAt: 2021-04-07T01:20:23.614Z
+    completedAt: 2021-04-07T01:25:42.574Z
+    batchId: 376a65de-45ba-4642-a39e-ee89a3fd359e
+    version: v-0f9b4d211d
+  deploy.udp-app:
+    type: deploy
+    description: deploying service 'udp-app' (from module 'udp-app')
+    key: deploy.udp-app
+    name: udp-app
+    startedAt: 2021-04-07T01:20:25.627Z
+    completedAt: 2021-04-07T01:20:27.534Z
+    batchId: 0b23d3f0-b5b5-480b-9325-dd6c3911e298
+    version: v-7c63d15465
+
+
+[2021-04-07T12:44:13.296Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop --namespace=f1-kafka-module-default apply --prune --selector service=udp-app --output=json -f -" failed with code 1:
+
+Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in v1.22+; use networking.k8s.io/v1 Ingress
+Error from server (BadRequest): error when creating "STDIN": admission webhook "validate.nginx.ingress.kubernetes.io" denied the request: host "http.local.app.garden" and path "/" is already defined in ingress kubernetes-module-default/udp-app-0
+
+Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in v1.22+; use networking.k8s.io/v1 Ingress
+Error from server (BadRequest): error when creating "STDIN": admission webhook "validate.nginx.ingress.kubernetes.io" denied the request: host "http.local.app.garden" and path "/" is already defined in ingress kubernetes-module-default/udp-app-0
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop --namespace=f1-kafka-module-default apply --prune
+  --selector service=udp-app --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop --namespace=f1-kafka-module-default apply --prune
+  --selector service=udp-app --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in
+  v1.22+; use networking.k8s.io/v1 Ingress
+
+  Error from server (BadRequest): error when creating "STDIN": admission webhook
+  "validate.nginx.ingress.kubernetes.io" denied the request: host
+  "http.local.app.garden" and path "/" is already defined in ingress
+  kubernetes-module-default/udp-app-0
+all: >-
+  Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in
+  v1.22+; use networking.k8s.io/v1 Ingress
+
+  Error from server (BadRequest): error when creating "STDIN": admission webhook
+  "validate.nginx.ingress.kubernetes.io" denied the request: host
+  "http.local.app.garden" and path "/" is already defined in ingress
+  kubernetes-module-default/udp-app-0
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-07T12:46:36.174Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop --namespace=f1-kafka-module-default apply --prune --selector service=udp-app --output=json -f -" failed with code 1:
+
+Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in v1.22+; use networking.k8s.io/v1 Ingress
+Error from server (BadRequest): error when creating "STDIN": admission webhook "validate.nginx.ingress.kubernetes.io" denied the request: host "http.local.app.garden" and path "/" is already defined in ingress kubernetes-module-default/udp-app-0
+
+Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in v1.22+; use networking.k8s.io/v1 Ingress
+Error from server (BadRequest): error when creating "STDIN": admission webhook "validate.nginx.ingress.kubernetes.io" denied the request: host "http.local.app.garden" and path "/" is already defined in ingress kubernetes-module-default/udp-app-0
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop --namespace=f1-kafka-module-default apply --prune
+  --selector service=udp-app --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop --namespace=f1-kafka-module-default apply --prune
+  --selector service=udp-app --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in
+  v1.22+; use networking.k8s.io/v1 Ingress
+
+  Error from server (BadRequest): error when creating "STDIN": admission webhook
+  "validate.nginx.ingress.kubernetes.io" denied the request: host
+  "http.local.app.garden" and path "/" is already defined in ingress
+  kubernetes-module-default/udp-app-0
+all: >-
+  Warning: extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in
+  v1.22+; use networking.k8s.io/v1 Ingress
+
+  Error from server (BadRequest): error when creating "STDIN": admission webhook
+  "validate.nginx.ingress.kubernetes.io" denied the request: host
+  "http.local.app.garden" and path "/" is already defined in ingress
+  kubernetes-module-default/udp-app-0
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-07T13:08:23.958Z] incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 32, column 46:
+     ... ue: admintome-test:1:1apiVersion: v1
+                                         ^
+
+Error Details:
+
+name: YAMLException
+reason: >-
+  incomplete explicit mapping pair; a key node is missed; or followed by a
+  non-tabulated empty line
+mark:
+  name: null
+  buffer: "kind: Deployment\napiVersion: apps/v1\nmetadata:\n  name: kafka-broker0\nspec:\n  replicas: 2\n  selector:\n    matchLabels:\n        app: kafka\n        id: \"0\"\n  template:\n    metadata:\n      labels:\n        app: kafka\n        id: \"0\"\n    spec:\n      containers:\n      - name: kafka\n        image: wurstmeister/kafka\n        ports:\n        - containerPort: 9092\n        env:\n        - name: KAFKA_ADVERTISED_PORT\n          value: \"30718\"\n        - name: KAFKA_ADVERTISED_HOST_NAME\n          value: kafka-service.svc.cluster.local\n        - name: KAFKA_ZOOKEEPER_CONNECT\n          value: zoo1.svc.cluster.local:2181\n        - name: KAFKA_BROKER_ID\n          value: \"0\"\n        - name: KAFKA_CREATE_TOPICS\n          value: admintome-test:1:1apiVersion: v1\n\0"
+  position: 742
+  line: 31
+  column: 45
+
+
+[2021-04-07T13:08:23.988Z] incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 32, column 46:
+     ... ue: admintome-test:1:1apiVersion: v1
+                                         ^
+
+Error Details:
+
+name: YAMLException
+reason: >-
+  incomplete explicit mapping pair; a key node is missed; or followed by a
+  non-tabulated empty line
+mark:
+  name: null
+  buffer: "kind: Deployment\napiVersion: apps/v1\nmetadata:\n  name: kafka-broker0\nspec:\n  replicas: 2\n  selector:\n    matchLabels:\n        app: kafka\n        id: \"0\"\n  template:\n    metadata:\n      labels:\n        app: kafka\n        id: \"0\"\n    spec:\n      containers:\n      - name: kafka\n        image: wurstmeister/kafka\n        ports:\n        - containerPort: 9092\n        env:\n        - name: KAFKA_ADVERTISED_PORT\n          value: \"30718\"\n        - name: KAFKA_ADVERTISED_HOST_NAME\n          value: kafka-service.svc.cluster.local\n        - name: KAFKA_ZOOKEEPER_CONNECT\n          value: zoo1.svc.cluster.local:2181\n        - name: KAFKA_BROKER_ID\n          value: \"0\"\n        - name: KAFKA_CREATE_TOPICS\n          value: admintome-test:1:1apiVersion: v1\n\0"
+  position: 742
+  line: 31
+  column: 45
+
+
+[2021-04-07T13:08:24.698Z] 2 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.broker:
+    type: build
+    description: building broker
+    key: build.broker
+    name: broker
+    error:
+      name: YAMLException
+      reason: >-
+        incomplete explicit mapping pair; a key node is missed; or followed by a
+        non-tabulated empty line
+      mark:
+        name: null
+        buffer: "kind: Deployment\napiVersion: apps/v1\nmetadata:\n  name: kafka-broker0\nspec:\n  replicas: 2\n  selector:\n    matchLabels:\n        app: kafka\n        id: \"0\"\n  template:\n    metadata:\n      labels:\n        app: kafka\n        id: \"0\"\n    spec:\n      containers:\n      - name: kafka\n        image: wurstmeister/kafka\n        ports:\n        - containerPort: 9092\n        env:\n        - name: KAFKA_ADVERTISED_PORT\n          value: \"30718\"\n        - name: KAFKA_ADVERTISED_HOST_NAME\n          value: kafka-service.svc.cluster.local\n        - name: KAFKA_ZOOKEEPER_CONNECT\n          value: zoo1.svc.cluster.local:2181\n        - name: KAFKA_BROKER_ID\n          value: \"0\"\n        - name: KAFKA_CREATE_TOPICS\n          value: admintome-test:1:1apiVersion: v1\n\0"
+        position: 742
+        line: 31
+        column: 45
+      message: >-
+        incomplete explicit mapping pair; a key node is missed; or followed by a
+        non-tabulated empty line at line 32, column 46:
+             ... ue: admintome-test:1:1apiVersion: v1
+                                                 ^
+    startedAt: 2021-04-07T13:08:23.935Z
+    completedAt: 2021-04-07T13:08:23.952Z
+    batchId: f9384e1b-4094-4a3f-ba2c-af64c130a288
+    version: v-c96e650e36
+  get-service-status.broker:
+    type: get-service-status
+    description: getting status for service 'broker' (from module 'broker')
+    key: get-service-status.broker
+    name: broker
+    error:
+      name: YAMLException
+      reason: >-
+        incomplete explicit mapping pair; a key node is missed; or followed by a
+        non-tabulated empty line
+      mark:
+        name: null
+        buffer: "kind: Deployment\napiVersion: apps/v1\nmetadata:\n  name: kafka-broker0\nspec:\n  replicas: 2\n  selector:\n    matchLabels:\n        app: kafka\n        id: \"0\"\n  template:\n    metadata:\n      labels:\n        app: kafka\n        id: \"0\"\n    spec:\n      containers:\n      - name: kafka\n        image: wurstmeister/kafka\n        ports:\n        - containerPort: 9092\n        env:\n        - name: KAFKA_ADVERTISED_PORT\n          value: \"30718\"\n        - name: KAFKA_ADVERTISED_HOST_NAME\n          value: kafka-service.svc.cluster.local\n        - name: KAFKA_ZOOKEEPER_CONNECT\n          value: zoo1.svc.cluster.local:2181\n        - name: KAFKA_BROKER_ID\n          value: \"0\"\n        - name: KAFKA_CREATE_TOPICS\n          value: admintome-test:1:1apiVersion: v1\n\0"
+        position: 742
+        line: 31
+        column: 45
+      message: >-
+        incomplete explicit mapping pair; a key node is missed; or followed by a
+        non-tabulated empty line at line 32, column 46:
+             ... ue: admintome-test:1:1apiVersion: v1
+                                                 ^
+    startedAt: 2021-04-07T13:08:23.851Z
+    completedAt: 2021-04-07T13:08:23.982Z
+    batchId: f9384e1b-4094-4a3f-ba2c-af64c130a288
+    version: v-c96e650e36
+
+
+[2021-04-07T13:35:37.389Z] Failed resolving one or more modules:
+
+udp-app: Error validating Module 'udp-app': key .services[1][name] is required
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-07T13:37:18.674Z] Failed resolving one or more modules:
+
+udp-app: Error validating Module 'udp-app': key .services[1][name] is required
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-07T13:38:05.049Z] Failed resolving one or more modules:
+
+udp-app: Error validating Module 'udp-app': key .services[1][name] is required
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-07T13:39:27.504Z] ENOENT: no such file or directory, open '/Users/mattgunter/formula1-telemetry-kafka/garden_version/udp-inbound-p3000-svc.yam'
+
+Error Details:
+
+errno: -2
+code: ENOENT
+syscall: open
+path: >-
+  /Users/mattgunter/formula1-telemetry-kafka/garden_version/udp-inbound-p3000-svc.yam
+
+
+[2021-04-07T13:39:40.082Z] 1 delete task(s) failed!
+
+Error Details:
+
+results:
+  stage-build.zookeeper:
+    type: stage-build
+    key: stage-build.zookeeper
+    name: zookeeper
+    description: staging build for zookeeper
+    completedAt: 2021-04-07T13:39:27.390Z
+    batchId: 50447a57-41dc-4e6f-8f69-56fdfa2eed9d
+    output: {}
+    dependencyResults: {}
+    version: v-e6bc55973a
+    startedAt: 2021-04-07T13:39:27.373Z
+  delete-service.zookeeper:
+    type: delete-service
+    key: delete-service.zookeeper
+    name: zookeeper
+    description: deleting service 'zookeeper' (from module 'zookeeper')
+    completedAt: 2021-04-07T13:39:27.706Z
+    batchId: 50447a57-41dc-4e6f-8f69-56fdfa2eed9d
+    output:
+      state: missing
+      detail:
+        remoteResources: []
+      forwardablePorts: []
+      outputs: {}
+    dependencyResults:
+      stage-build.zookeeper:
+        type: stage-build
+        key: stage-build.zookeeper
+        name: zookeeper
+        description: staging build for zookeeper
+        completedAt: 2021-04-07T13:39:27.390Z
+        batchId: 50447a57-41dc-4e6f-8f69-56fdfa2eed9d
+        output: {}
+        dependencyResults: {}
+        version: v-e6bc55973a
+        startedAt: 2021-04-07T13:39:27.373Z
+    version: v-e6bc55973a
+    startedAt: 2021-04-07T13:39:27.390Z
+  stage-build.broker:
+    type: stage-build
+    key: stage-build.broker
+    name: broker
+    description: staging build for broker
+    completedAt: 2021-04-07T13:39:27.402Z
+    batchId: f13b4a97-d472-4883-b6a5-57c15ab0a76a
+    output: {}
+    dependencyResults: {}
+    version: v-746d1ec311
+    startedAt: 2021-04-07T13:39:27.377Z
+  delete-service.broker:
+    type: delete-service
+    description: deleting service 'broker' (from module 'broker')
+    key: delete-service.broker
+    name: broker
+    startedAt: 2021-04-07T13:39:27.403Z
+    completedAt: 2021-04-07T13:39:27.500Z
+    batchId: f13b4a97-d472-4883-b6a5-57c15ab0a76a
+    version: v-746d1ec311
+  stage-build.udp-app:
+    type: stage-build
+    key: stage-build.udp-app
+    name: udp-app
+    description: staging build for udp-app
+    completedAt: 2021-04-07T13:39:27.412Z
+    batchId: 025fd519-0688-4e69-8f3c-b6a6b389ace6
+    output: {}
+    dependencyResults: {}
+    version: v-7ff24e0aea
+    startedAt: 2021-04-07T13:39:27.380Z
+  delete-service.udp-app:
+    type: delete-service
+    key: delete-service.udp-app
+    name: udp-app
+    description: deleting service 'udp-app' (from module 'udp-app')
+    completedAt: 2021-04-07T13:39:40.077Z
+    batchId: 025fd519-0688-4e69-8f3c-b6a6b389ace6
+    output:
+      state: missing
+      detail:
+        remoteResources: []
+        workload: null
+      forwardablePorts: []
+      outputs: {}
+    dependencyResults:
+      stage-build.udp-app:
+        type: stage-build
+        key: stage-build.udp-app
+        name: udp-app
+        description: staging build for udp-app
+        completedAt: 2021-04-07T13:39:27.412Z
+        batchId: 025fd519-0688-4e69-8f3c-b6a6b389ace6
+        output: {}
+        dependencyResults: {}
+        version: v-7ff24e0aea
+        startedAt: 2021-04-07T13:39:27.380Z
+    version: v-7ff24e0aea
+    startedAt: 2021-04-07T13:39:27.413Z
+
+
+[2021-04-07T13:41:12.954Z] Failed resolving one or more modules:
+
+udp-app: Error validating Module 'udp-app': key .services[1][name] is required, key .services[1][env] must be of type object
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-07T13:41:28.010Z] Failed resolving one or more modules:
+
+udp-app: Error validating Module 'udp-app': key .services[1][name] is required, key .services[1][env] must be of type object
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-07T13:42:06.460Z] Failed resolving one or more modules:
+
+udp-app: Error validating Module 'udp-app': key .services[1][name] is required
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-07T13:43:17.588Z] Failed resolving one or more modules:
+
+udp-app: Error validating Module 'udp-app': key .services[1][name] is required
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-07T13:45:20.489Z] Failed resolving one or more modules:
+
+udp-app: Error validating Module 'udp-app': key .services[1][name] is required
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-07T15:14:33.576Z] Error: Client network socket disconnected before secure TLS connection was established
+
+Error Details:
+
+name: RequestError
+options:
+  url: 'https://kubernetes.docker.internal:6443/api/v1'
+  method: GET
+  json: true
+  resolveWithFullResponse: true
+  ca: !<tag:yaml.org,2002:binary> >-
+    LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EY3hOakUxTWpZME0xb1hEVE13TURjeE5ERTFNalkwTTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUVxCnJIQjhmQkVXVktIUk5mS3kzVjRJNmtnbzFpK2FKYSthTVVsWnU1ZUhhV1ovb20rV1pzQlhlK2ZQeTRmNk9nMnQKdkZ1R0FkYkovcEJOZVZsVE90KzZMZFM2VE9mbmVGVmxkZzVFeFNZcmQyRGd2SkNBeGhvMm9jdTBSZ3VUZG5ISgpmRmcxQXAzMTI0U0NlRmxUblJSQm5jY1FGZVBrVFQvUFlvT2xCOG54dnY4bU5ubHZVZ1Z6bjZocFVMNmMwdHJvCkQyRjgxUjZicHFjcmRjbm8xNzZVWWU2VDVBc2p0dkM2MEh5aVJmMnlFOXFCVXVicHdsNFF0Tms3N2FuZ1ZyMGkKb1FLUzF0dUtydnM2Mk4vSXdvL0Y2LzhiN2VnNWFKMDBnY0RXQTJJR1RLZ3p3YVJUTGFmM2JqN24zUVAwZml6Uwo2TURleGpNQmR6azMvT2JzbjFFQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMY0JNZk5GR09ZSW9jeHNHOVJKSjN2M2NKRmoKL21CODJzSS9Ja1BQQnF5b1pNK2pMLzlnaTRwRVFadGtoSzFLbC9vT3l4NmRrbGJyL0IreGVMa2d5R2NwakpzSQpRL3h1b2doNjVUWGtya2F4dnlBR3hJWDl5MlhPVlJ2NG1QVkp5WUN3N29EeS94QXdPc0p4NlRPNGNZdll3a1o5CnVDVHh1aGZFTk5zczduNW93aEZydkt4cWF2ME9jY01hMzlxWWFzSUh3RDRkTXJVTURUcTZjbzZjcDEvaldUTDQKcWhPNS9DK2poZ3AwZnAwREw1R3pha1hqUUZ5N2FUWHU2MXFXMnI3YU5VZGo5TkFkMEZnT2RrNFJwS2VrdEtSLwpVczNtTzFIbkU3T2xGRURjU0dXYTNJZ2M4M2tGZWloUFU1YVJFRGlTM250TFh6Zzd1RWFBeDJsKzZ3Zz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+  cert: !<tag:yaml.org,2002:binary> >-
+    LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM5RENDQWR5Z0F3SUJBZ0lJSFNvTDFiUzVRUHd3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBM01UWXhOVEkyTkROYUZ3MHlNakEwTURjeE5URTBNakphTURZeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sc3dHUVlEVlFRREV4SmtiMk5yWlhJdFptOXlMV1JsCmMydDBiM0F3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ3Y2ei9LTGtaVC9oUDkKc0dQN0tsaGRELzhvSVFEVlBTVFdQUjdHN0duNHQycUs0c3B6cWZZU1RpWitRT2EvaVB0b2pSZkduQXQ2NENsUgpqd1p1OGFobnNvRGRobGhGdFIrUWM4ZjlXNldNMkNQejFkakxwT3dHR2N0aks2RTRraWRJRnBkTERKek56WDQ2CjFBaloyM1lUOHhJYVBBU2s1SVpFZ0ZqWkFUaUlZc2NDdVpucmVVRW5uOHBESzBocVZGbE5aM1dHbS9aRlphWVQKUGdMYStFYXNPMWYwa2tkL0VSQWZZdHErLzZMTCtXU01DWFQ2WmtxTEtpTHdMQW1xT1MwS0svUE0xeWdaZTl6cgp3eEMzeFE2b1hFVzJqNVBHK3VuWW9zNUllQlU5S3kvQTJnYTBtaDQzaFUvN2R0bHhIZm5JTytzamhXczJ6NU9DCjlxNnJFUVZOQWdNQkFBR2pKekFsTUE0R0ExVWREd0VCL3dRRUF3SUZvREFUQmdOVkhTVUVEREFLQmdnckJnRUYKQlFjREFqQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFWV0ZyQ3M2ZWZOVTZZd3g0RHBXNEJnRVRhc1NFMzM0RgpjRUZHV01UOHdNaDRrMUR4YXE1R1FhT3M4aGxNWCtpN29VckFwVEIwRzZTcFNhdVJvUmVZTk5BcXpycm1jdkl5CnBHQTIvTG94TEZqc09OSUV6NzFRNlRLL1FRRlBoSVM0WTZTTWtkQnpPTWN4YmFvZnpGaExrRFlTbVNpVzE3R04KY283cC9zRlZiRnBDdXFYNXovV3ZxVW1yS3Qzbis5Y3FQUFdHeEFBSnpZdC9PVEFpVjV2Qkk2RDFCR29OVFl5Ngp6dW50UzI4dXo5dHg2d21MUFRqRVJXRkx0M0MyQkJvQjF5R0hwbU5xUTdwb3ZIMHFlOWNPNVMyYllaSENjYXNpCnY0bm1sSnNlc0RBZktwODB2RnFJSFBkcnVYcVEwckxGK0xLL1FtKzJiNnZ0OXpIeEJQd0NYUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+  key: !<tag:yaml.org,2002:binary> >-
+    LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBcitzL3lpNUdVLzRUL2JCait5cFlYUS8vS0NFQTFUMGsxajBleHV4cCtMZHFpdUxLCmM2bjJFazRtZmtEbXY0ajdhSTBYeHB3TGV1QXBVWThHYnZHb1o3S0EzWVpZUmJVZmtIUEgvVnVsak5najg5WFkKeTZUc0JobkxZeXVoT0pJblNCYVhTd3ljemMxK090UUkyZHQyRS9NU0dqd0VwT1NHUklCWTJRRTRpR0xIQXJtWgo2M2xCSjUvS1F5dElhbFJaVFdkMWhwdjJSV1dtRXo0QzJ2aEdyRHRYOUpKSGZ4RVFIMkxhdnYraXkvbGtqQWwwCittWktpeW9pOEN3SnFqa3RDaXZ6ek5jb0dYdmM2OE1RdDhVT3FGeEZ0bytUeHZycDJLTE9TSGdWUFNzdndOb0cKdEpvZU40VlArM2JaY1IzNXlEdnJJNFZyTnMrVGd2YXVxeEVGVFFJREFRQUJBb0lCQUR0eUlYSXV4UEVwRUpSUApnTm1rNjRzM0ZwLzIxeE0zd0RUdEhuTlYvRkZobVkwcEtnUi8wSGxMRTFMaWw1YnRzUmNaWm9sa3ZiUmQvMWhpCkhtaHJITjg5d0xJYTdjVlFlVVFVKytXdmpIZlZxZ0NCcU9yWDVqSUJrV3NIbVVsR2lpT2dEcXY3clJrV2NhdHIKYnpvL0lOMkk2L3NWZ1BRL2pPZWsvMkVGT3BkTFNra2N4SDhuTjFpYlFyc2QxK1N4YjdYNlFUSUJBOE8zWXJXVwp6L1NRRVBWWFlxaFEwZHdUZDFBZnNjanR0UDNBTFRZY1dDQk8xd2hlSUpQaW5pUVowUk9zV0o1SUpSdm41OFFLCjQyeTZjbFAvVkFLLzdKL2EzOTB6ZllYaHZaVURZVzBtYmRwdStqcHZXVHdRb0h4dTg5Y3JnZEx5ZkZaQ1YxTnMKWDA4M3Rqa0NnWUVBMXZjMkROVk0wNm1yREFXbWgxV3NtWDJuRjdQcHZJMEZySExTd1YyWHpYK0pxWE0xVERyTApBYnBQV1VHeE04MVQ3aE84WUlrUWkzWGpNK1FYTzBzdm1vRUR2TzM0WEYxYzQyNHFSRzlvU3k4ejJKYmJDdGFJCkliMEJlWVhjQzJLWGh3aVgvK3BiL1k0Nms1a2xSWlA5Z05ZZmphTE5oSjJHY3JvVXI5N0pDeE1DZ1lFQTBYL3UKTkhpa1Yzd0h0V2VGQ3doNnFYWkJ6RUxNbTNYTkYrRG5leWdRL3FZdW1HSTBWZlFPdHpkNUtaVXIzd09Va3hhYQpwSEgraG1GeEY2cnJqNTM5NGpBSjhxTm1EUUFDdWdGd1RKTjZlNWNaOUJmcUxjNDI1K3RSZmVXTklmdE5kcnJOCmZtQk02cEdsVWpReWY3Ynd0RzRuUkJ6UStHcEd1bndKcU5oY1doOENnWUVBaWNDL2JUZmUxS0Nja01hcU1YMlEKYm9mYjVNK1JFQmZhcytpYzcvYlhDWVFhSm5GQ2pVZjd3VzZ2M0lYQlZXM1Z3L0gzdkhENUhqVjhWRXR0SzcwQgprMlByamsxODQwdWM4ODByM3RENXAzeG5IL3VFQUl6N2pZczkvNjd0Rklxb2lZclRSTmJjL2ozL2dZZ1pIMTQzCmpERXE1U3VYd2N6a1ZHNjBSUU5pRitzQ2dZRUFyeXJsZEJBUGNXcXVVMXBzSG82SGFWd01wZ3FRWThmNnBXV1MKaHlJNEc0Tzk0QUgwdW8ybkpFQ0kyV0QxM3JGeXNBMnRYYVJHNmZ0ZGdTbVRibkR1MEFuVXQ0RXlHZHFSYlE4NAo0MzVJWWtBMEhpbEV6K25sZE1NSVQxajVTWm1DNnF4RWw4OVRZS3BJN2RQaENYSmdEcTB2dmI3T1ozY05EbTRaCjhZaCtwNGNDZ1lCOTdCR3IyYU5hS1hvM2RCVStIM0k4VnBtNmo0blNvQ1IxNktFYU9YZ05RTlFEODliN2orQUgKcFhHRE94ZUIycEpvWTBDcS8vRExCd0lxN3h4QW84WitMcm1vWUxzZXJWMHpTRUI5cXpEYnk2OHJMSE93clRHQQpjSmFjMEU3TFE1UFB2SnNBQnRrclAzSm9qT0F0MW0rU0x3OXFGQ1hGb3R5YjhCa0NCZk10TGc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+  headers: {}
+  simple: true
+  transform2xxOnly: false
+
+
+[2021-04-07T15:14:33.590Z] Error: Client network socket disconnected before secure TLS connection was established
+
+Error Details:
+
+name: RequestError
+options:
+  url: 'https://kubernetes.docker.internal:6443/apis/apps/v1'
+  method: GET
+  json: true
+  resolveWithFullResponse: true
+  ca: !<tag:yaml.org,2002:binary> >-
+    LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EY3hOakUxTWpZME0xb1hEVE13TURjeE5ERTFNalkwTTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUVxCnJIQjhmQkVXVktIUk5mS3kzVjRJNmtnbzFpK2FKYSthTVVsWnU1ZUhhV1ovb20rV1pzQlhlK2ZQeTRmNk9nMnQKdkZ1R0FkYkovcEJOZVZsVE90KzZMZFM2VE9mbmVGVmxkZzVFeFNZcmQyRGd2SkNBeGhvMm9jdTBSZ3VUZG5ISgpmRmcxQXAzMTI0U0NlRmxUblJSQm5jY1FGZVBrVFQvUFlvT2xCOG54dnY4bU5ubHZVZ1Z6bjZocFVMNmMwdHJvCkQyRjgxUjZicHFjcmRjbm8xNzZVWWU2VDVBc2p0dkM2MEh5aVJmMnlFOXFCVXVicHdsNFF0Tms3N2FuZ1ZyMGkKb1FLUzF0dUtydnM2Mk4vSXdvL0Y2LzhiN2VnNWFKMDBnY0RXQTJJR1RLZ3p3YVJUTGFmM2JqN24zUVAwZml6Uwo2TURleGpNQmR6azMvT2JzbjFFQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMY0JNZk5GR09ZSW9jeHNHOVJKSjN2M2NKRmoKL21CODJzSS9Ja1BQQnF5b1pNK2pMLzlnaTRwRVFadGtoSzFLbC9vT3l4NmRrbGJyL0IreGVMa2d5R2NwakpzSQpRL3h1b2doNjVUWGtya2F4dnlBR3hJWDl5MlhPVlJ2NG1QVkp5WUN3N29EeS94QXdPc0p4NlRPNGNZdll3a1o5CnVDVHh1aGZFTk5zczduNW93aEZydkt4cWF2ME9jY01hMzlxWWFzSUh3RDRkTXJVTURUcTZjbzZjcDEvaldUTDQKcWhPNS9DK2poZ3AwZnAwREw1R3pha1hqUUZ5N2FUWHU2MXFXMnI3YU5VZGo5TkFkMEZnT2RrNFJwS2VrdEtSLwpVczNtTzFIbkU3T2xGRURjU0dXYTNJZ2M4M2tGZWloUFU1YVJFRGlTM250TFh6Zzd1RWFBeDJsKzZ3Zz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+  cert: !<tag:yaml.org,2002:binary> >-
+    LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM5RENDQWR5Z0F3SUJBZ0lJSFNvTDFiUzVRUHd3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBM01UWXhOVEkyTkROYUZ3MHlNakEwTURjeE5URTBNakphTURZeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sc3dHUVlEVlFRREV4SmtiMk5yWlhJdFptOXlMV1JsCmMydDBiM0F3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ3Y2ei9LTGtaVC9oUDkKc0dQN0tsaGRELzhvSVFEVlBTVFdQUjdHN0duNHQycUs0c3B6cWZZU1RpWitRT2EvaVB0b2pSZkduQXQ2NENsUgpqd1p1OGFobnNvRGRobGhGdFIrUWM4ZjlXNldNMkNQejFkakxwT3dHR2N0aks2RTRraWRJRnBkTERKek56WDQ2CjFBaloyM1lUOHhJYVBBU2s1SVpFZ0ZqWkFUaUlZc2NDdVpucmVVRW5uOHBESzBocVZGbE5aM1dHbS9aRlphWVQKUGdMYStFYXNPMWYwa2tkL0VSQWZZdHErLzZMTCtXU01DWFQ2WmtxTEtpTHdMQW1xT1MwS0svUE0xeWdaZTl6cgp3eEMzeFE2b1hFVzJqNVBHK3VuWW9zNUllQlU5S3kvQTJnYTBtaDQzaFUvN2R0bHhIZm5JTytzamhXczJ6NU9DCjlxNnJFUVZOQWdNQkFBR2pKekFsTUE0R0ExVWREd0VCL3dRRUF3SUZvREFUQmdOVkhTVUVEREFLQmdnckJnRUYKQlFjREFqQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFWV0ZyQ3M2ZWZOVTZZd3g0RHBXNEJnRVRhc1NFMzM0RgpjRUZHV01UOHdNaDRrMUR4YXE1R1FhT3M4aGxNWCtpN29VckFwVEIwRzZTcFNhdVJvUmVZTk5BcXpycm1jdkl5CnBHQTIvTG94TEZqc09OSUV6NzFRNlRLL1FRRlBoSVM0WTZTTWtkQnpPTWN4YmFvZnpGaExrRFlTbVNpVzE3R04KY283cC9zRlZiRnBDdXFYNXovV3ZxVW1yS3Qzbis5Y3FQUFdHeEFBSnpZdC9PVEFpVjV2Qkk2RDFCR29OVFl5Ngp6dW50UzI4dXo5dHg2d21MUFRqRVJXRkx0M0MyQkJvQjF5R0hwbU5xUTdwb3ZIMHFlOWNPNVMyYllaSENjYXNpCnY0bm1sSnNlc0RBZktwODB2RnFJSFBkcnVYcVEwckxGK0xLL1FtKzJiNnZ0OXpIeEJQd0NYUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+  key: !<tag:yaml.org,2002:binary> >-
+    LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBcitzL3lpNUdVLzRUL2JCait5cFlYUS8vS0NFQTFUMGsxajBleHV4cCtMZHFpdUxLCmM2bjJFazRtZmtEbXY0ajdhSTBYeHB3TGV1QXBVWThHYnZHb1o3S0EzWVpZUmJVZmtIUEgvVnVsak5najg5WFkKeTZUc0JobkxZeXVoT0pJblNCYVhTd3ljemMxK090UUkyZHQyRS9NU0dqd0VwT1NHUklCWTJRRTRpR0xIQXJtWgo2M2xCSjUvS1F5dElhbFJaVFdkMWhwdjJSV1dtRXo0QzJ2aEdyRHRYOUpKSGZ4RVFIMkxhdnYraXkvbGtqQWwwCittWktpeW9pOEN3SnFqa3RDaXZ6ek5jb0dYdmM2OE1RdDhVT3FGeEZ0bytUeHZycDJLTE9TSGdWUFNzdndOb0cKdEpvZU40VlArM2JaY1IzNXlEdnJJNFZyTnMrVGd2YXVxeEVGVFFJREFRQUJBb0lCQUR0eUlYSXV4UEVwRUpSUApnTm1rNjRzM0ZwLzIxeE0zd0RUdEhuTlYvRkZobVkwcEtnUi8wSGxMRTFMaWw1YnRzUmNaWm9sa3ZiUmQvMWhpCkhtaHJITjg5d0xJYTdjVlFlVVFVKytXdmpIZlZxZ0NCcU9yWDVqSUJrV3NIbVVsR2lpT2dEcXY3clJrV2NhdHIKYnpvL0lOMkk2L3NWZ1BRL2pPZWsvMkVGT3BkTFNra2N4SDhuTjFpYlFyc2QxK1N4YjdYNlFUSUJBOE8zWXJXVwp6L1NRRVBWWFlxaFEwZHdUZDFBZnNjanR0UDNBTFRZY1dDQk8xd2hlSUpQaW5pUVowUk9zV0o1SUpSdm41OFFLCjQyeTZjbFAvVkFLLzdKL2EzOTB6ZllYaHZaVURZVzBtYmRwdStqcHZXVHdRb0h4dTg5Y3JnZEx5ZkZaQ1YxTnMKWDA4M3Rqa0NnWUVBMXZjMkROVk0wNm1yREFXbWgxV3NtWDJuRjdQcHZJMEZySExTd1YyWHpYK0pxWE0xVERyTApBYnBQV1VHeE04MVQ3aE84WUlrUWkzWGpNK1FYTzBzdm1vRUR2TzM0WEYxYzQyNHFSRzlvU3k4ejJKYmJDdGFJCkliMEJlWVhjQzJLWGh3aVgvK3BiL1k0Nms1a2xSWlA5Z05ZZmphTE5oSjJHY3JvVXI5N0pDeE1DZ1lFQTBYL3UKTkhpa1Yzd0h0V2VGQ3doNnFYWkJ6RUxNbTNYTkYrRG5leWdRL3FZdW1HSTBWZlFPdHpkNUtaVXIzd09Va3hhYQpwSEgraG1GeEY2cnJqNTM5NGpBSjhxTm1EUUFDdWdGd1RKTjZlNWNaOUJmcUxjNDI1K3RSZmVXTklmdE5kcnJOCmZtQk02cEdsVWpReWY3Ynd0RzRuUkJ6UStHcEd1bndKcU5oY1doOENnWUVBaWNDL2JUZmUxS0Nja01hcU1YMlEKYm9mYjVNK1JFQmZhcytpYzcvYlhDWVFhSm5GQ2pVZjd3VzZ2M0lYQlZXM1Z3L0gzdkhENUhqVjhWRXR0SzcwQgprMlByamsxODQwdWM4ODByM3RENXAzeG5IL3VFQUl6N2pZczkvNjd0Rklxb2lZclRSTmJjL2ozL2dZZ1pIMTQzCmpERXE1U3VYd2N6a1ZHNjBSUU5pRitzQ2dZRUFyeXJsZEJBUGNXcXVVMXBzSG82SGFWd01wZ3FRWThmNnBXV1MKaHlJNEc0Tzk0QUgwdW8ybkpFQ0kyV0QxM3JGeXNBMnRYYVJHNmZ0ZGdTbVRibkR1MEFuVXQ0RXlHZHFSYlE4NAo0MzVJWWtBMEhpbEV6K25sZE1NSVQxajVTWm1DNnF4RWw4OVRZS3BJN2RQaENYSmdEcTB2dmI3T1ozY05EbTRaCjhZaCtwNGNDZ1lCOTdCR3IyYU5hS1hvM2RCVStIM0k4VnBtNmo0blNvQ1IxNktFYU9YZ05RTlFEODliN2orQUgKcFhHRE94ZUIycEpvWTBDcS8vRExCd0lxN3h4QW84WitMcm1vWUxzZXJWMHpTRUI5cXpEYnk2OHJMSE93clRHQQpjSmFjMEU3TFE1UFB2SnNBQnRrclAzSm9qT0F0MW0rU0x3OXFGQ1hGb3R5YjhCa0NCZk10TGc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+  headers: {}
+  simple: true
+  transform2xxOnly: false
+
+
+[2021-04-07T15:14:33.951Z] 2 deploy task(s) failed!
+
+Error Details:
+
+results:
+  get-service-status.zookeeper:
+    type: get-service-status
+    description: getting status for service 'zookeeper' (from module 'zookeeper')
+    key: get-service-status.zookeeper
+    name: zookeeper
+    error:
+      name: RequestError
+      message: >-
+        Error: Client network socket disconnected before secure TLS connection
+        was established
+      options:
+        url: 'https://kubernetes.docker.internal:6443/api/v1'
+        method: GET
+        json: true
+        resolveWithFullResponse: true
+        ca: !<tag:yaml.org,2002:binary> >-
+          LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EY3hOakUxTWpZME0xb1hEVE13TURjeE5ERTFNalkwTTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUVxCnJIQjhmQkVXVktIUk5mS3kzVjRJNmtnbzFpK2FKYSthTVVsWnU1ZUhhV1ovb20rV1pzQlhlK2ZQeTRmNk9nMnQKdkZ1R0FkYkovcEJOZVZsVE90KzZMZFM2VE9mbmVGVmxkZzVFeFNZcmQyRGd2SkNBeGhvMm9jdTBSZ3VUZG5ISgpmRmcxQXAzMTI0U0NlRmxUblJSQm5jY1FGZVBrVFQvUFlvT2xCOG54dnY4bU5ubHZVZ1Z6bjZocFVMNmMwdHJvCkQyRjgxUjZicHFjcmRjbm8xNzZVWWU2VDVBc2p0dkM2MEh5aVJmMnlFOXFCVXVicHdsNFF0Tms3N2FuZ1ZyMGkKb1FLUzF0dUtydnM2Mk4vSXdvL0Y2LzhiN2VnNWFKMDBnY0RXQTJJR1RLZ3p3YVJUTGFmM2JqN24zUVAwZml6Uwo2TURleGpNQmR6azMvT2JzbjFFQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMY0JNZk5GR09ZSW9jeHNHOVJKSjN2M2NKRmoKL21CODJzSS9Ja1BQQnF5b1pNK2pMLzlnaTRwRVFadGtoSzFLbC9vT3l4NmRrbGJyL0IreGVMa2d5R2NwakpzSQpRL3h1b2doNjVUWGtya2F4dnlBR3hJWDl5MlhPVlJ2NG1QVkp5WUN3N29EeS94QXdPc0p4NlRPNGNZdll3a1o5CnVDVHh1aGZFTk5zczduNW93aEZydkt4cWF2ME9jY01hMzlxWWFzSUh3RDRkTXJVTURUcTZjbzZjcDEvaldUTDQKcWhPNS9DK2poZ3AwZnAwREw1R3pha1hqUUZ5N2FUWHU2MXFXMnI3YU5VZGo5TkFkMEZnT2RrNFJwS2VrdEtSLwpVczNtTzFIbkU3T2xGRURjU0dXYTNJZ2M4M2tGZWloUFU1YVJFRGlTM250TFh6Zzd1RWFBeDJsKzZ3Zz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+        cert: !<tag:yaml.org,2002:binary> >-
+          LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM5RENDQWR5Z0F3SUJBZ0lJSFNvTDFiUzVRUHd3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBM01UWXhOVEkyTkROYUZ3MHlNakEwTURjeE5URTBNakphTURZeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sc3dHUVlEVlFRREV4SmtiMk5yWlhJdFptOXlMV1JsCmMydDBiM0F3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ3Y2ei9LTGtaVC9oUDkKc0dQN0tsaGRELzhvSVFEVlBTVFdQUjdHN0duNHQycUs0c3B6cWZZU1RpWitRT2EvaVB0b2pSZkduQXQ2NENsUgpqd1p1OGFobnNvRGRobGhGdFIrUWM4ZjlXNldNMkNQejFkakxwT3dHR2N0aks2RTRraWRJRnBkTERKek56WDQ2CjFBaloyM1lUOHhJYVBBU2s1SVpFZ0ZqWkFUaUlZc2NDdVpucmVVRW5uOHBESzBocVZGbE5aM1dHbS9aRlphWVQKUGdMYStFYXNPMWYwa2tkL0VSQWZZdHErLzZMTCtXU01DWFQ2WmtxTEtpTHdMQW1xT1MwS0svUE0xeWdaZTl6cgp3eEMzeFE2b1hFVzJqNVBHK3VuWW9zNUllQlU5S3kvQTJnYTBtaDQzaFUvN2R0bHhIZm5JTytzamhXczJ6NU9DCjlxNnJFUVZOQWdNQkFBR2pKekFsTUE0R0ExVWREd0VCL3dRRUF3SUZvREFUQmdOVkhTVUVEREFLQmdnckJnRUYKQlFjREFqQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFWV0ZyQ3M2ZWZOVTZZd3g0RHBXNEJnRVRhc1NFMzM0RgpjRUZHV01UOHdNaDRrMUR4YXE1R1FhT3M4aGxNWCtpN29VckFwVEIwRzZTcFNhdVJvUmVZTk5BcXpycm1jdkl5CnBHQTIvTG94TEZqc09OSUV6NzFRNlRLL1FRRlBoSVM0WTZTTWtkQnpPTWN4YmFvZnpGaExrRFlTbVNpVzE3R04KY283cC9zRlZiRnBDdXFYNXovV3ZxVW1yS3Qzbis5Y3FQUFdHeEFBSnpZdC9PVEFpVjV2Qkk2RDFCR29OVFl5Ngp6dW50UzI4dXo5dHg2d21MUFRqRVJXRkx0M0MyQkJvQjF5R0hwbU5xUTdwb3ZIMHFlOWNPNVMyYllaSENjYXNpCnY0bm1sSnNlc0RBZktwODB2RnFJSFBkcnVYcVEwckxGK0xLL1FtKzJiNnZ0OXpIeEJQd0NYUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+        key: !<tag:yaml.org,2002:binary> >-
+          LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBcitzL3lpNUdVLzRUL2JCait5cFlYUS8vS0NFQTFUMGsxajBleHV4cCtMZHFpdUxLCmM2bjJFazRtZmtEbXY0ajdhSTBYeHB3TGV1QXBVWThHYnZHb1o3S0EzWVpZUmJVZmtIUEgvVnVsak5najg5WFkKeTZUc0JobkxZeXVoT0pJblNCYVhTd3ljemMxK090UUkyZHQyRS9NU0dqd0VwT1NHUklCWTJRRTRpR0xIQXJtWgo2M2xCSjUvS1F5dElhbFJaVFdkMWhwdjJSV1dtRXo0QzJ2aEdyRHRYOUpKSGZ4RVFIMkxhdnYraXkvbGtqQWwwCittWktpeW9pOEN3SnFqa3RDaXZ6ek5jb0dYdmM2OE1RdDhVT3FGeEZ0bytUeHZycDJLTE9TSGdWUFNzdndOb0cKdEpvZU40VlArM2JaY1IzNXlEdnJJNFZyTnMrVGd2YXVxeEVGVFFJREFRQUJBb0lCQUR0eUlYSXV4UEVwRUpSUApnTm1rNjRzM0ZwLzIxeE0zd0RUdEhuTlYvRkZobVkwcEtnUi8wSGxMRTFMaWw1YnRzUmNaWm9sa3ZiUmQvMWhpCkhtaHJITjg5d0xJYTdjVlFlVVFVKytXdmpIZlZxZ0NCcU9yWDVqSUJrV3NIbVVsR2lpT2dEcXY3clJrV2NhdHIKYnpvL0lOMkk2L3NWZ1BRL2pPZWsvMkVGT3BkTFNra2N4SDhuTjFpYlFyc2QxK1N4YjdYNlFUSUJBOE8zWXJXVwp6L1NRRVBWWFlxaFEwZHdUZDFBZnNjanR0UDNBTFRZY1dDQk8xd2hlSUpQaW5pUVowUk9zV0o1SUpSdm41OFFLCjQyeTZjbFAvVkFLLzdKL2EzOTB6ZllYaHZaVURZVzBtYmRwdStqcHZXVHdRb0h4dTg5Y3JnZEx5ZkZaQ1YxTnMKWDA4M3Rqa0NnWUVBMXZjMkROVk0wNm1yREFXbWgxV3NtWDJuRjdQcHZJMEZySExTd1YyWHpYK0pxWE0xVERyTApBYnBQV1VHeE04MVQ3aE84WUlrUWkzWGpNK1FYTzBzdm1vRUR2TzM0WEYxYzQyNHFSRzlvU3k4ejJKYmJDdGFJCkliMEJlWVhjQzJLWGh3aVgvK3BiL1k0Nms1a2xSWlA5Z05ZZmphTE5oSjJHY3JvVXI5N0pDeE1DZ1lFQTBYL3UKTkhpa1Yzd0h0V2VGQ3doNnFYWkJ6RUxNbTNYTkYrRG5leWdRL3FZdW1HSTBWZlFPdHpkNUtaVXIzd09Va3hhYQpwSEgraG1GeEY2cnJqNTM5NGpBSjhxTm1EUUFDdWdGd1RKTjZlNWNaOUJmcUxjNDI1K3RSZmVXTklmdE5kcnJOCmZtQk02cEdsVWpReWY3Ynd0RzRuUkJ6UStHcEd1bndKcU5oY1doOENnWUVBaWNDL2JUZmUxS0Nja01hcU1YMlEKYm9mYjVNK1JFQmZhcytpYzcvYlhDWVFhSm5GQ2pVZjd3VzZ2M0lYQlZXM1Z3L0gzdkhENUhqVjhWRXR0SzcwQgprMlByamsxODQwdWM4ODByM3RENXAzeG5IL3VFQUl6N2pZczkvNjd0Rklxb2lZclRSTmJjL2ozL2dZZ1pIMTQzCmpERXE1U3VYd2N6a1ZHNjBSUU5pRitzQ2dZRUFyeXJsZEJBUGNXcXVVMXBzSG82SGFWd01wZ3FRWThmNnBXV1MKaHlJNEc0Tzk0QUgwdW8ybkpFQ0kyV0QxM3JGeXNBMnRYYVJHNmZ0ZGdTbVRibkR1MEFuVXQ0RXlHZHFSYlE4NAo0MzVJWWtBMEhpbEV6K25sZE1NSVQxajVTWm1DNnF4RWw4OVRZS3BJN2RQaENYSmdEcTB2dmI3T1ozY05EbTRaCjhZaCtwNGNDZ1lCOTdCR3IyYU5hS1hvM2RCVStIM0k4VnBtNmo0blNvQ1IxNktFYU9YZ05RTlFEODliN2orQUgKcFhHRE94ZUIycEpvWTBDcS8vRExCd0lxN3h4QW84WitMcm1vWUxzZXJWMHpTRUI5cXpEYnk2OHJMSE93clRHQQpjSmFjMEU3TFE1UFB2SnNBQnRrclAzSm9qT0F0MW0rU0x3OXFGQ1hGb3R5YjhCa0NCZk10TGc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+        headers: {}
+        simple: true
+        transform2xxOnly: false
+    startedAt: 2021-04-07T15:14:33.132Z
+    completedAt: 2021-04-07T15:14:33.571Z
+    batchId: 7fdc3761-180d-41f4-8c61-6ec757dc86b0
+    version: v-e6bc55973a
+  get-service-status.broker:
+    type: get-service-status
+    description: getting status for service 'broker' (from module 'broker')
+    key: get-service-status.broker
+    name: broker
+    error:
+      name: RequestError
+      message: >-
+        Error: Client network socket disconnected before secure TLS connection
+        was established
+      options:
+        url: 'https://kubernetes.docker.internal:6443/apis/apps/v1'
+        method: GET
+        json: true
+        resolveWithFullResponse: true
+        ca: !<tag:yaml.org,2002:binary> >-
+          LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EY3hOakUxTWpZME0xb1hEVE13TURjeE5ERTFNalkwTTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUVxCnJIQjhmQkVXVktIUk5mS3kzVjRJNmtnbzFpK2FKYSthTVVsWnU1ZUhhV1ovb20rV1pzQlhlK2ZQeTRmNk9nMnQKdkZ1R0FkYkovcEJOZVZsVE90KzZMZFM2VE9mbmVGVmxkZzVFeFNZcmQyRGd2SkNBeGhvMm9jdTBSZ3VUZG5ISgpmRmcxQXAzMTI0U0NlRmxUblJSQm5jY1FGZVBrVFQvUFlvT2xCOG54dnY4bU5ubHZVZ1Z6bjZocFVMNmMwdHJvCkQyRjgxUjZicHFjcmRjbm8xNzZVWWU2VDVBc2p0dkM2MEh5aVJmMnlFOXFCVXVicHdsNFF0Tms3N2FuZ1ZyMGkKb1FLUzF0dUtydnM2Mk4vSXdvL0Y2LzhiN2VnNWFKMDBnY0RXQTJJR1RLZ3p3YVJUTGFmM2JqN24zUVAwZml6Uwo2TURleGpNQmR6azMvT2JzbjFFQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMY0JNZk5GR09ZSW9jeHNHOVJKSjN2M2NKRmoKL21CODJzSS9Ja1BQQnF5b1pNK2pMLzlnaTRwRVFadGtoSzFLbC9vT3l4NmRrbGJyL0IreGVMa2d5R2NwakpzSQpRL3h1b2doNjVUWGtya2F4dnlBR3hJWDl5MlhPVlJ2NG1QVkp5WUN3N29EeS94QXdPc0p4NlRPNGNZdll3a1o5CnVDVHh1aGZFTk5zczduNW93aEZydkt4cWF2ME9jY01hMzlxWWFzSUh3RDRkTXJVTURUcTZjbzZjcDEvaldUTDQKcWhPNS9DK2poZ3AwZnAwREw1R3pha1hqUUZ5N2FUWHU2MXFXMnI3YU5VZGo5TkFkMEZnT2RrNFJwS2VrdEtSLwpVczNtTzFIbkU3T2xGRURjU0dXYTNJZ2M4M2tGZWloUFU1YVJFRGlTM250TFh6Zzd1RWFBeDJsKzZ3Zz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+        cert: !<tag:yaml.org,2002:binary> >-
+          LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM5RENDQWR5Z0F3SUJBZ0lJSFNvTDFiUzVRUHd3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBM01UWXhOVEkyTkROYUZ3MHlNakEwTURjeE5URTBNakphTURZeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sc3dHUVlEVlFRREV4SmtiMk5yWlhJdFptOXlMV1JsCmMydDBiM0F3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ3Y2ei9LTGtaVC9oUDkKc0dQN0tsaGRELzhvSVFEVlBTVFdQUjdHN0duNHQycUs0c3B6cWZZU1RpWitRT2EvaVB0b2pSZkduQXQ2NENsUgpqd1p1OGFobnNvRGRobGhGdFIrUWM4ZjlXNldNMkNQejFkakxwT3dHR2N0aks2RTRraWRJRnBkTERKek56WDQ2CjFBaloyM1lUOHhJYVBBU2s1SVpFZ0ZqWkFUaUlZc2NDdVpucmVVRW5uOHBESzBocVZGbE5aM1dHbS9aRlphWVQKUGdMYStFYXNPMWYwa2tkL0VSQWZZdHErLzZMTCtXU01DWFQ2WmtxTEtpTHdMQW1xT1MwS0svUE0xeWdaZTl6cgp3eEMzeFE2b1hFVzJqNVBHK3VuWW9zNUllQlU5S3kvQTJnYTBtaDQzaFUvN2R0bHhIZm5JTytzamhXczJ6NU9DCjlxNnJFUVZOQWdNQkFBR2pKekFsTUE0R0ExVWREd0VCL3dRRUF3SUZvREFUQmdOVkhTVUVEREFLQmdnckJnRUYKQlFjREFqQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFWV0ZyQ3M2ZWZOVTZZd3g0RHBXNEJnRVRhc1NFMzM0RgpjRUZHV01UOHdNaDRrMUR4YXE1R1FhT3M4aGxNWCtpN29VckFwVEIwRzZTcFNhdVJvUmVZTk5BcXpycm1jdkl5CnBHQTIvTG94TEZqc09OSUV6NzFRNlRLL1FRRlBoSVM0WTZTTWtkQnpPTWN4YmFvZnpGaExrRFlTbVNpVzE3R04KY283cC9zRlZiRnBDdXFYNXovV3ZxVW1yS3Qzbis5Y3FQUFdHeEFBSnpZdC9PVEFpVjV2Qkk2RDFCR29OVFl5Ngp6dW50UzI4dXo5dHg2d21MUFRqRVJXRkx0M0MyQkJvQjF5R0hwbU5xUTdwb3ZIMHFlOWNPNVMyYllaSENjYXNpCnY0bm1sSnNlc0RBZktwODB2RnFJSFBkcnVYcVEwckxGK0xLL1FtKzJiNnZ0OXpIeEJQd0NYUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+        key: !<tag:yaml.org,2002:binary> >-
+          LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBcitzL3lpNUdVLzRUL2JCait5cFlYUS8vS0NFQTFUMGsxajBleHV4cCtMZHFpdUxLCmM2bjJFazRtZmtEbXY0ajdhSTBYeHB3TGV1QXBVWThHYnZHb1o3S0EzWVpZUmJVZmtIUEgvVnVsak5najg5WFkKeTZUc0JobkxZeXVoT0pJblNCYVhTd3ljemMxK090UUkyZHQyRS9NU0dqd0VwT1NHUklCWTJRRTRpR0xIQXJtWgo2M2xCSjUvS1F5dElhbFJaVFdkMWhwdjJSV1dtRXo0QzJ2aEdyRHRYOUpKSGZ4RVFIMkxhdnYraXkvbGtqQWwwCittWktpeW9pOEN3SnFqa3RDaXZ6ek5jb0dYdmM2OE1RdDhVT3FGeEZ0bytUeHZycDJLTE9TSGdWUFNzdndOb0cKdEpvZU40VlArM2JaY1IzNXlEdnJJNFZyTnMrVGd2YXVxeEVGVFFJREFRQUJBb0lCQUR0eUlYSXV4UEVwRUpSUApnTm1rNjRzM0ZwLzIxeE0zd0RUdEhuTlYvRkZobVkwcEtnUi8wSGxMRTFMaWw1YnRzUmNaWm9sa3ZiUmQvMWhpCkhtaHJITjg5d0xJYTdjVlFlVVFVKytXdmpIZlZxZ0NCcU9yWDVqSUJrV3NIbVVsR2lpT2dEcXY3clJrV2NhdHIKYnpvL0lOMkk2L3NWZ1BRL2pPZWsvMkVGT3BkTFNra2N4SDhuTjFpYlFyc2QxK1N4YjdYNlFUSUJBOE8zWXJXVwp6L1NRRVBWWFlxaFEwZHdUZDFBZnNjanR0UDNBTFRZY1dDQk8xd2hlSUpQaW5pUVowUk9zV0o1SUpSdm41OFFLCjQyeTZjbFAvVkFLLzdKL2EzOTB6ZllYaHZaVURZVzBtYmRwdStqcHZXVHdRb0h4dTg5Y3JnZEx5ZkZaQ1YxTnMKWDA4M3Rqa0NnWUVBMXZjMkROVk0wNm1yREFXbWgxV3NtWDJuRjdQcHZJMEZySExTd1YyWHpYK0pxWE0xVERyTApBYnBQV1VHeE04MVQ3aE84WUlrUWkzWGpNK1FYTzBzdm1vRUR2TzM0WEYxYzQyNHFSRzlvU3k4ejJKYmJDdGFJCkliMEJlWVhjQzJLWGh3aVgvK3BiL1k0Nms1a2xSWlA5Z05ZZmphTE5oSjJHY3JvVXI5N0pDeE1DZ1lFQTBYL3UKTkhpa1Yzd0h0V2VGQ3doNnFYWkJ6RUxNbTNYTkYrRG5leWdRL3FZdW1HSTBWZlFPdHpkNUtaVXIzd09Va3hhYQpwSEgraG1GeEY2cnJqNTM5NGpBSjhxTm1EUUFDdWdGd1RKTjZlNWNaOUJmcUxjNDI1K3RSZmVXTklmdE5kcnJOCmZtQk02cEdsVWpReWY3Ynd0RzRuUkJ6UStHcEd1bndKcU5oY1doOENnWUVBaWNDL2JUZmUxS0Nja01hcU1YMlEKYm9mYjVNK1JFQmZhcytpYzcvYlhDWVFhSm5GQ2pVZjd3VzZ2M0lYQlZXM1Z3L0gzdkhENUhqVjhWRXR0SzcwQgprMlByamsxODQwdWM4ODByM3RENXAzeG5IL3VFQUl6N2pZczkvNjd0Rklxb2lZclRSTmJjL2ozL2dZZ1pIMTQzCmpERXE1U3VYd2N6a1ZHNjBSUU5pRitzQ2dZRUFyeXJsZEJBUGNXcXVVMXBzSG82SGFWd01wZ3FRWThmNnBXV1MKaHlJNEc0Tzk0QUgwdW8ybkpFQ0kyV0QxM3JGeXNBMnRYYVJHNmZ0ZGdTbVRibkR1MEFuVXQ0RXlHZHFSYlE4NAo0MzVJWWtBMEhpbEV6K25sZE1NSVQxajVTWm1DNnF4RWw4OVRZS3BJN2RQaENYSmdEcTB2dmI3T1ozY05EbTRaCjhZaCtwNGNDZ1lCOTdCR3IyYU5hS1hvM2RCVStIM0k4VnBtNmo0blNvQ1IxNktFYU9YZ05RTlFEODliN2orQUgKcFhHRE94ZUIycEpvWTBDcS8vRExCd0lxN3h4QW84WitMcm1vWUxzZXJWMHpTRUI5cXpEYnk2OHJMSE93clRHQQpjSmFjMEU3TFE1UFB2SnNBQnRrclAzSm9qT0F0MW0rU0x3OXFGQ1hGb3R5YjhCa0NCZk10TGc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+        headers: {}
+        simple: true
+        transform2xxOnly: false
+    startedAt: 2021-04-07T15:14:33.137Z
+    completedAt: 2021-04-07T15:14:33.585Z
+    batchId: 7c816fe8-c4b8-4f01-95a3-ce3703d10eda
+    version: v-8946835e47
+
+
+[2021-04-07T15:14:47.860Z] Error: Client network socket disconnected before secure TLS connection was established
+
+Error Details:
+
+name: RequestError
+options:
+  url: 'https://kubernetes.docker.internal:6443/apis/apps/v1'
+  method: GET
+  json: true
+  resolveWithFullResponse: true
+  ca: !<tag:yaml.org,2002:binary> >-
+    LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EY3hOakUxTWpZME0xb1hEVE13TURjeE5ERTFNalkwTTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUVxCnJIQjhmQkVXVktIUk5mS3kzVjRJNmtnbzFpK2FKYSthTVVsWnU1ZUhhV1ovb20rV1pzQlhlK2ZQeTRmNk9nMnQKdkZ1R0FkYkovcEJOZVZsVE90KzZMZFM2VE9mbmVGVmxkZzVFeFNZcmQyRGd2SkNBeGhvMm9jdTBSZ3VUZG5ISgpmRmcxQXAzMTI0U0NlRmxUblJSQm5jY1FGZVBrVFQvUFlvT2xCOG54dnY4bU5ubHZVZ1Z6bjZocFVMNmMwdHJvCkQyRjgxUjZicHFjcmRjbm8xNzZVWWU2VDVBc2p0dkM2MEh5aVJmMnlFOXFCVXVicHdsNFF0Tms3N2FuZ1ZyMGkKb1FLUzF0dUtydnM2Mk4vSXdvL0Y2LzhiN2VnNWFKMDBnY0RXQTJJR1RLZ3p3YVJUTGFmM2JqN24zUVAwZml6Uwo2TURleGpNQmR6azMvT2JzbjFFQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMY0JNZk5GR09ZSW9jeHNHOVJKSjN2M2NKRmoKL21CODJzSS9Ja1BQQnF5b1pNK2pMLzlnaTRwRVFadGtoSzFLbC9vT3l4NmRrbGJyL0IreGVMa2d5R2NwakpzSQpRL3h1b2doNjVUWGtya2F4dnlBR3hJWDl5MlhPVlJ2NG1QVkp5WUN3N29EeS94QXdPc0p4NlRPNGNZdll3a1o5CnVDVHh1aGZFTk5zczduNW93aEZydkt4cWF2ME9jY01hMzlxWWFzSUh3RDRkTXJVTURUcTZjbzZjcDEvaldUTDQKcWhPNS9DK2poZ3AwZnAwREw1R3pha1hqUUZ5N2FUWHU2MXFXMnI3YU5VZGo5TkFkMEZnT2RrNFJwS2VrdEtSLwpVczNtTzFIbkU3T2xGRURjU0dXYTNJZ2M4M2tGZWloUFU1YVJFRGlTM250TFh6Zzd1RWFBeDJsKzZ3Zz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+  cert: !<tag:yaml.org,2002:binary> >-
+    LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM5RENDQWR5Z0F3SUJBZ0lJSFNvTDFiUzVRUHd3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBM01UWXhOVEkyTkROYUZ3MHlNakEwTURjeE5URTBNakphTURZeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sc3dHUVlEVlFRREV4SmtiMk5yWlhJdFptOXlMV1JsCmMydDBiM0F3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ3Y2ei9LTGtaVC9oUDkKc0dQN0tsaGRELzhvSVFEVlBTVFdQUjdHN0duNHQycUs0c3B6cWZZU1RpWitRT2EvaVB0b2pSZkduQXQ2NENsUgpqd1p1OGFobnNvRGRobGhGdFIrUWM4ZjlXNldNMkNQejFkakxwT3dHR2N0aks2RTRraWRJRnBkTERKek56WDQ2CjFBaloyM1lUOHhJYVBBU2s1SVpFZ0ZqWkFUaUlZc2NDdVpucmVVRW5uOHBESzBocVZGbE5aM1dHbS9aRlphWVQKUGdMYStFYXNPMWYwa2tkL0VSQWZZdHErLzZMTCtXU01DWFQ2WmtxTEtpTHdMQW1xT1MwS0svUE0xeWdaZTl6cgp3eEMzeFE2b1hFVzJqNVBHK3VuWW9zNUllQlU5S3kvQTJnYTBtaDQzaFUvN2R0bHhIZm5JTytzamhXczJ6NU9DCjlxNnJFUVZOQWdNQkFBR2pKekFsTUE0R0ExVWREd0VCL3dRRUF3SUZvREFUQmdOVkhTVUVEREFLQmdnckJnRUYKQlFjREFqQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFWV0ZyQ3M2ZWZOVTZZd3g0RHBXNEJnRVRhc1NFMzM0RgpjRUZHV01UOHdNaDRrMUR4YXE1R1FhT3M4aGxNWCtpN29VckFwVEIwRzZTcFNhdVJvUmVZTk5BcXpycm1jdkl5CnBHQTIvTG94TEZqc09OSUV6NzFRNlRLL1FRRlBoSVM0WTZTTWtkQnpPTWN4YmFvZnpGaExrRFlTbVNpVzE3R04KY283cC9zRlZiRnBDdXFYNXovV3ZxVW1yS3Qzbis5Y3FQUFdHeEFBSnpZdC9PVEFpVjV2Qkk2RDFCR29OVFl5Ngp6dW50UzI4dXo5dHg2d21MUFRqRVJXRkx0M0MyQkJvQjF5R0hwbU5xUTdwb3ZIMHFlOWNPNVMyYllaSENjYXNpCnY0bm1sSnNlc0RBZktwODB2RnFJSFBkcnVYcVEwckxGK0xLL1FtKzJiNnZ0OXpIeEJQd0NYUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+  key: !<tag:yaml.org,2002:binary> >-
+    LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBcitzL3lpNUdVLzRUL2JCait5cFlYUS8vS0NFQTFUMGsxajBleHV4cCtMZHFpdUxLCmM2bjJFazRtZmtEbXY0ajdhSTBYeHB3TGV1QXBVWThHYnZHb1o3S0EzWVpZUmJVZmtIUEgvVnVsak5najg5WFkKeTZUc0JobkxZeXVoT0pJblNCYVhTd3ljemMxK090UUkyZHQyRS9NU0dqd0VwT1NHUklCWTJRRTRpR0xIQXJtWgo2M2xCSjUvS1F5dElhbFJaVFdkMWhwdjJSV1dtRXo0QzJ2aEdyRHRYOUpKSGZ4RVFIMkxhdnYraXkvbGtqQWwwCittWktpeW9pOEN3SnFqa3RDaXZ6ek5jb0dYdmM2OE1RdDhVT3FGeEZ0bytUeHZycDJLTE9TSGdWUFNzdndOb0cKdEpvZU40VlArM2JaY1IzNXlEdnJJNFZyTnMrVGd2YXVxeEVGVFFJREFRQUJBb0lCQUR0eUlYSXV4UEVwRUpSUApnTm1rNjRzM0ZwLzIxeE0zd0RUdEhuTlYvRkZobVkwcEtnUi8wSGxMRTFMaWw1YnRzUmNaWm9sa3ZiUmQvMWhpCkhtaHJITjg5d0xJYTdjVlFlVVFVKytXdmpIZlZxZ0NCcU9yWDVqSUJrV3NIbVVsR2lpT2dEcXY3clJrV2NhdHIKYnpvL0lOMkk2L3NWZ1BRL2pPZWsvMkVGT3BkTFNra2N4SDhuTjFpYlFyc2QxK1N4YjdYNlFUSUJBOE8zWXJXVwp6L1NRRVBWWFlxaFEwZHdUZDFBZnNjanR0UDNBTFRZY1dDQk8xd2hlSUpQaW5pUVowUk9zV0o1SUpSdm41OFFLCjQyeTZjbFAvVkFLLzdKL2EzOTB6ZllYaHZaVURZVzBtYmRwdStqcHZXVHdRb0h4dTg5Y3JnZEx5ZkZaQ1YxTnMKWDA4M3Rqa0NnWUVBMXZjMkROVk0wNm1yREFXbWgxV3NtWDJuRjdQcHZJMEZySExTd1YyWHpYK0pxWE0xVERyTApBYnBQV1VHeE04MVQ3aE84WUlrUWkzWGpNK1FYTzBzdm1vRUR2TzM0WEYxYzQyNHFSRzlvU3k4ejJKYmJDdGFJCkliMEJlWVhjQzJLWGh3aVgvK3BiL1k0Nms1a2xSWlA5Z05ZZmphTE5oSjJHY3JvVXI5N0pDeE1DZ1lFQTBYL3UKTkhpa1Yzd0h0V2VGQ3doNnFYWkJ6RUxNbTNYTkYrRG5leWdRL3FZdW1HSTBWZlFPdHpkNUtaVXIzd09Va3hhYQpwSEgraG1GeEY2cnJqNTM5NGpBSjhxTm1EUUFDdWdGd1RKTjZlNWNaOUJmcUxjNDI1K3RSZmVXTklmdE5kcnJOCmZtQk02cEdsVWpReWY3Ynd0RzRuUkJ6UStHcEd1bndKcU5oY1doOENnWUVBaWNDL2JUZmUxS0Nja01hcU1YMlEKYm9mYjVNK1JFQmZhcytpYzcvYlhDWVFhSm5GQ2pVZjd3VzZ2M0lYQlZXM1Z3L0gzdkhENUhqVjhWRXR0SzcwQgprMlByamsxODQwdWM4ODByM3RENXAzeG5IL3VFQUl6N2pZczkvNjd0Rklxb2lZclRSTmJjL2ozL2dZZ1pIMTQzCmpERXE1U3VYd2N6a1ZHNjBSUU5pRitzQ2dZRUFyeXJsZEJBUGNXcXVVMXBzSG82SGFWd01wZ3FRWThmNnBXV1MKaHlJNEc0Tzk0QUgwdW8ybkpFQ0kyV0QxM3JGeXNBMnRYYVJHNmZ0ZGdTbVRibkR1MEFuVXQ0RXlHZHFSYlE4NAo0MzVJWWtBMEhpbEV6K25sZE1NSVQxajVTWm1DNnF4RWw4OVRZS3BJN2RQaENYSmdEcTB2dmI3T1ozY05EbTRaCjhZaCtwNGNDZ1lCOTdCR3IyYU5hS1hvM2RCVStIM0k4VnBtNmo0blNvQ1IxNktFYU9YZ05RTlFEODliN2orQUgKcFhHRE94ZUIycEpvWTBDcS8vRExCd0lxN3h4QW84WitMcm1vWUxzZXJWMHpTRUI5cXpEYnk2OHJMSE93clRHQQpjSmFjMEU3TFE1UFB2SnNBQnRrclAzSm9qT0F0MW0rU0x3OXFGQ1hGb3R5YjhCa0NCZk10TGc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+  headers: {}
+  simple: true
+  transform2xxOnly: false
+
+
+[2021-04-07T15:14:47.875Z] Error: Client network socket disconnected before secure TLS connection was established
+
+Error Details:
+
+name: RequestError
+options:
+  url: 'https://kubernetes.docker.internal:6443/apis/apps/v1'
+  method: GET
+  json: true
+  resolveWithFullResponse: true
+  ca: !<tag:yaml.org,2002:binary> >-
+    LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EY3hOakUxTWpZME0xb1hEVE13TURjeE5ERTFNalkwTTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUVxCnJIQjhmQkVXVktIUk5mS3kzVjRJNmtnbzFpK2FKYSthTVVsWnU1ZUhhV1ovb20rV1pzQlhlK2ZQeTRmNk9nMnQKdkZ1R0FkYkovcEJOZVZsVE90KzZMZFM2VE9mbmVGVmxkZzVFeFNZcmQyRGd2SkNBeGhvMm9jdTBSZ3VUZG5ISgpmRmcxQXAzMTI0U0NlRmxUblJSQm5jY1FGZVBrVFQvUFlvT2xCOG54dnY4bU5ubHZVZ1Z6bjZocFVMNmMwdHJvCkQyRjgxUjZicHFjcmRjbm8xNzZVWWU2VDVBc2p0dkM2MEh5aVJmMnlFOXFCVXVicHdsNFF0Tms3N2FuZ1ZyMGkKb1FLUzF0dUtydnM2Mk4vSXdvL0Y2LzhiN2VnNWFKMDBnY0RXQTJJR1RLZ3p3YVJUTGFmM2JqN24zUVAwZml6Uwo2TURleGpNQmR6azMvT2JzbjFFQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMY0JNZk5GR09ZSW9jeHNHOVJKSjN2M2NKRmoKL21CODJzSS9Ja1BQQnF5b1pNK2pMLzlnaTRwRVFadGtoSzFLbC9vT3l4NmRrbGJyL0IreGVMa2d5R2NwakpzSQpRL3h1b2doNjVUWGtya2F4dnlBR3hJWDl5MlhPVlJ2NG1QVkp5WUN3N29EeS94QXdPc0p4NlRPNGNZdll3a1o5CnVDVHh1aGZFTk5zczduNW93aEZydkt4cWF2ME9jY01hMzlxWWFzSUh3RDRkTXJVTURUcTZjbzZjcDEvaldUTDQKcWhPNS9DK2poZ3AwZnAwREw1R3pha1hqUUZ5N2FUWHU2MXFXMnI3YU5VZGo5TkFkMEZnT2RrNFJwS2VrdEtSLwpVczNtTzFIbkU3T2xGRURjU0dXYTNJZ2M4M2tGZWloUFU1YVJFRGlTM250TFh6Zzd1RWFBeDJsKzZ3Zz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+  cert: !<tag:yaml.org,2002:binary> >-
+    LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM5RENDQWR5Z0F3SUJBZ0lJSFNvTDFiUzVRUHd3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBM01UWXhOVEkyTkROYUZ3MHlNakEwTURjeE5URTBNakphTURZeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sc3dHUVlEVlFRREV4SmtiMk5yWlhJdFptOXlMV1JsCmMydDBiM0F3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ3Y2ei9LTGtaVC9oUDkKc0dQN0tsaGRELzhvSVFEVlBTVFdQUjdHN0duNHQycUs0c3B6cWZZU1RpWitRT2EvaVB0b2pSZkduQXQ2NENsUgpqd1p1OGFobnNvRGRobGhGdFIrUWM4ZjlXNldNMkNQejFkakxwT3dHR2N0aks2RTRraWRJRnBkTERKek56WDQ2CjFBaloyM1lUOHhJYVBBU2s1SVpFZ0ZqWkFUaUlZc2NDdVpucmVVRW5uOHBESzBocVZGbE5aM1dHbS9aRlphWVQKUGdMYStFYXNPMWYwa2tkL0VSQWZZdHErLzZMTCtXU01DWFQ2WmtxTEtpTHdMQW1xT1MwS0svUE0xeWdaZTl6cgp3eEMzeFE2b1hFVzJqNVBHK3VuWW9zNUllQlU5S3kvQTJnYTBtaDQzaFUvN2R0bHhIZm5JTytzamhXczJ6NU9DCjlxNnJFUVZOQWdNQkFBR2pKekFsTUE0R0ExVWREd0VCL3dRRUF3SUZvREFUQmdOVkhTVUVEREFLQmdnckJnRUYKQlFjREFqQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFWV0ZyQ3M2ZWZOVTZZd3g0RHBXNEJnRVRhc1NFMzM0RgpjRUZHV01UOHdNaDRrMUR4YXE1R1FhT3M4aGxNWCtpN29VckFwVEIwRzZTcFNhdVJvUmVZTk5BcXpycm1jdkl5CnBHQTIvTG94TEZqc09OSUV6NzFRNlRLL1FRRlBoSVM0WTZTTWtkQnpPTWN4YmFvZnpGaExrRFlTbVNpVzE3R04KY283cC9zRlZiRnBDdXFYNXovV3ZxVW1yS3Qzbis5Y3FQUFdHeEFBSnpZdC9PVEFpVjV2Qkk2RDFCR29OVFl5Ngp6dW50UzI4dXo5dHg2d21MUFRqRVJXRkx0M0MyQkJvQjF5R0hwbU5xUTdwb3ZIMHFlOWNPNVMyYllaSENjYXNpCnY0bm1sSnNlc0RBZktwODB2RnFJSFBkcnVYcVEwckxGK0xLL1FtKzJiNnZ0OXpIeEJQd0NYUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+  key: !<tag:yaml.org,2002:binary> >-
+    LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBcitzL3lpNUdVLzRUL2JCait5cFlYUS8vS0NFQTFUMGsxajBleHV4cCtMZHFpdUxLCmM2bjJFazRtZmtEbXY0ajdhSTBYeHB3TGV1QXBVWThHYnZHb1o3S0EzWVpZUmJVZmtIUEgvVnVsak5najg5WFkKeTZUc0JobkxZeXVoT0pJblNCYVhTd3ljemMxK090UUkyZHQyRS9NU0dqd0VwT1NHUklCWTJRRTRpR0xIQXJtWgo2M2xCSjUvS1F5dElhbFJaVFdkMWhwdjJSV1dtRXo0QzJ2aEdyRHRYOUpKSGZ4RVFIMkxhdnYraXkvbGtqQWwwCittWktpeW9pOEN3SnFqa3RDaXZ6ek5jb0dYdmM2OE1RdDhVT3FGeEZ0bytUeHZycDJLTE9TSGdWUFNzdndOb0cKdEpvZU40VlArM2JaY1IzNXlEdnJJNFZyTnMrVGd2YXVxeEVGVFFJREFRQUJBb0lCQUR0eUlYSXV4UEVwRUpSUApnTm1rNjRzM0ZwLzIxeE0zd0RUdEhuTlYvRkZobVkwcEtnUi8wSGxMRTFMaWw1YnRzUmNaWm9sa3ZiUmQvMWhpCkhtaHJITjg5d0xJYTdjVlFlVVFVKytXdmpIZlZxZ0NCcU9yWDVqSUJrV3NIbVVsR2lpT2dEcXY3clJrV2NhdHIKYnpvL0lOMkk2L3NWZ1BRL2pPZWsvMkVGT3BkTFNra2N4SDhuTjFpYlFyc2QxK1N4YjdYNlFUSUJBOE8zWXJXVwp6L1NRRVBWWFlxaFEwZHdUZDFBZnNjanR0UDNBTFRZY1dDQk8xd2hlSUpQaW5pUVowUk9zV0o1SUpSdm41OFFLCjQyeTZjbFAvVkFLLzdKL2EzOTB6ZllYaHZaVURZVzBtYmRwdStqcHZXVHdRb0h4dTg5Y3JnZEx5ZkZaQ1YxTnMKWDA4M3Rqa0NnWUVBMXZjMkROVk0wNm1yREFXbWgxV3NtWDJuRjdQcHZJMEZySExTd1YyWHpYK0pxWE0xVERyTApBYnBQV1VHeE04MVQ3aE84WUlrUWkzWGpNK1FYTzBzdm1vRUR2TzM0WEYxYzQyNHFSRzlvU3k4ejJKYmJDdGFJCkliMEJlWVhjQzJLWGh3aVgvK3BiL1k0Nms1a2xSWlA5Z05ZZmphTE5oSjJHY3JvVXI5N0pDeE1DZ1lFQTBYL3UKTkhpa1Yzd0h0V2VGQ3doNnFYWkJ6RUxNbTNYTkYrRG5leWdRL3FZdW1HSTBWZlFPdHpkNUtaVXIzd09Va3hhYQpwSEgraG1GeEY2cnJqNTM5NGpBSjhxTm1EUUFDdWdGd1RKTjZlNWNaOUJmcUxjNDI1K3RSZmVXTklmdE5kcnJOCmZtQk02cEdsVWpReWY3Ynd0RzRuUkJ6UStHcEd1bndKcU5oY1doOENnWUVBaWNDL2JUZmUxS0Nja01hcU1YMlEKYm9mYjVNK1JFQmZhcytpYzcvYlhDWVFhSm5GQ2pVZjd3VzZ2M0lYQlZXM1Z3L0gzdkhENUhqVjhWRXR0SzcwQgprMlByamsxODQwdWM4ODByM3RENXAzeG5IL3VFQUl6N2pZczkvNjd0Rklxb2lZclRSTmJjL2ozL2dZZ1pIMTQzCmpERXE1U3VYd2N6a1ZHNjBSUU5pRitzQ2dZRUFyeXJsZEJBUGNXcXVVMXBzSG82SGFWd01wZ3FRWThmNnBXV1MKaHlJNEc0Tzk0QUgwdW8ybkpFQ0kyV0QxM3JGeXNBMnRYYVJHNmZ0ZGdTbVRibkR1MEFuVXQ0RXlHZHFSYlE4NAo0MzVJWWtBMEhpbEV6K25sZE1NSVQxajVTWm1DNnF4RWw4OVRZS3BJN2RQaENYSmdEcTB2dmI3T1ozY05EbTRaCjhZaCtwNGNDZ1lCOTdCR3IyYU5hS1hvM2RCVStIM0k4VnBtNmo0blNvQ1IxNktFYU9YZ05RTlFEODliN2orQUgKcFhHRE94ZUIycEpvWTBDcS8vRExCd0lxN3h4QW84WitMcm1vWUxzZXJWMHpTRUI5cXpEYnk2OHJMSE93clRHQQpjSmFjMEU3TFE1UFB2SnNBQnRrclAzSm9qT0F0MW0rU0x3OXFGQ1hGb3R5YjhCa0NCZk10TGc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+  headers: {}
+  simple: true
+  transform2xxOnly: false
+
+
+[2021-04-07T15:14:48.403Z] 2 deploy task(s) failed!
+
+Error Details:
+
+results:
+  get-service-status.zookeeper:
+    type: get-service-status
+    description: getting status for service 'zookeeper' (from module 'zookeeper')
+    key: get-service-status.zookeeper
+    name: zookeeper
+    error:
+      name: RequestError
+      message: >-
+        Error: Client network socket disconnected before secure TLS connection
+        was established
+      options:
+        url: 'https://kubernetes.docker.internal:6443/apis/apps/v1'
+        method: GET
+        json: true
+        resolveWithFullResponse: true
+        ca: !<tag:yaml.org,2002:binary> >-
+          LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EY3hOakUxTWpZME0xb1hEVE13TURjeE5ERTFNalkwTTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUVxCnJIQjhmQkVXVktIUk5mS3kzVjRJNmtnbzFpK2FKYSthTVVsWnU1ZUhhV1ovb20rV1pzQlhlK2ZQeTRmNk9nMnQKdkZ1R0FkYkovcEJOZVZsVE90KzZMZFM2VE9mbmVGVmxkZzVFeFNZcmQyRGd2SkNBeGhvMm9jdTBSZ3VUZG5ISgpmRmcxQXAzMTI0U0NlRmxUblJSQm5jY1FGZVBrVFQvUFlvT2xCOG54dnY4bU5ubHZVZ1Z6bjZocFVMNmMwdHJvCkQyRjgxUjZicHFjcmRjbm8xNzZVWWU2VDVBc2p0dkM2MEh5aVJmMnlFOXFCVXVicHdsNFF0Tms3N2FuZ1ZyMGkKb1FLUzF0dUtydnM2Mk4vSXdvL0Y2LzhiN2VnNWFKMDBnY0RXQTJJR1RLZ3p3YVJUTGFmM2JqN24zUVAwZml6Uwo2TURleGpNQmR6azMvT2JzbjFFQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMY0JNZk5GR09ZSW9jeHNHOVJKSjN2M2NKRmoKL21CODJzSS9Ja1BQQnF5b1pNK2pMLzlnaTRwRVFadGtoSzFLbC9vT3l4NmRrbGJyL0IreGVMa2d5R2NwakpzSQpRL3h1b2doNjVUWGtya2F4dnlBR3hJWDl5MlhPVlJ2NG1QVkp5WUN3N29EeS94QXdPc0p4NlRPNGNZdll3a1o5CnVDVHh1aGZFTk5zczduNW93aEZydkt4cWF2ME9jY01hMzlxWWFzSUh3RDRkTXJVTURUcTZjbzZjcDEvaldUTDQKcWhPNS9DK2poZ3AwZnAwREw1R3pha1hqUUZ5N2FUWHU2MXFXMnI3YU5VZGo5TkFkMEZnT2RrNFJwS2VrdEtSLwpVczNtTzFIbkU3T2xGRURjU0dXYTNJZ2M4M2tGZWloUFU1YVJFRGlTM250TFh6Zzd1RWFBeDJsKzZ3Zz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+        cert: !<tag:yaml.org,2002:binary> >-
+          LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM5RENDQWR5Z0F3SUJBZ0lJSFNvTDFiUzVRUHd3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBM01UWXhOVEkyTkROYUZ3MHlNakEwTURjeE5URTBNakphTURZeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sc3dHUVlEVlFRREV4SmtiMk5yWlhJdFptOXlMV1JsCmMydDBiM0F3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ3Y2ei9LTGtaVC9oUDkKc0dQN0tsaGRELzhvSVFEVlBTVFdQUjdHN0duNHQycUs0c3B6cWZZU1RpWitRT2EvaVB0b2pSZkduQXQ2NENsUgpqd1p1OGFobnNvRGRobGhGdFIrUWM4ZjlXNldNMkNQejFkakxwT3dHR2N0aks2RTRraWRJRnBkTERKek56WDQ2CjFBaloyM1lUOHhJYVBBU2s1SVpFZ0ZqWkFUaUlZc2NDdVpucmVVRW5uOHBESzBocVZGbE5aM1dHbS9aRlphWVQKUGdMYStFYXNPMWYwa2tkL0VSQWZZdHErLzZMTCtXU01DWFQ2WmtxTEtpTHdMQW1xT1MwS0svUE0xeWdaZTl6cgp3eEMzeFE2b1hFVzJqNVBHK3VuWW9zNUllQlU5S3kvQTJnYTBtaDQzaFUvN2R0bHhIZm5JTytzamhXczJ6NU9DCjlxNnJFUVZOQWdNQkFBR2pKekFsTUE0R0ExVWREd0VCL3dRRUF3SUZvREFUQmdOVkhTVUVEREFLQmdnckJnRUYKQlFjREFqQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFWV0ZyQ3M2ZWZOVTZZd3g0RHBXNEJnRVRhc1NFMzM0RgpjRUZHV01UOHdNaDRrMUR4YXE1R1FhT3M4aGxNWCtpN29VckFwVEIwRzZTcFNhdVJvUmVZTk5BcXpycm1jdkl5CnBHQTIvTG94TEZqc09OSUV6NzFRNlRLL1FRRlBoSVM0WTZTTWtkQnpPTWN4YmFvZnpGaExrRFlTbVNpVzE3R04KY283cC9zRlZiRnBDdXFYNXovV3ZxVW1yS3Qzbis5Y3FQUFdHeEFBSnpZdC9PVEFpVjV2Qkk2RDFCR29OVFl5Ngp6dW50UzI4dXo5dHg2d21MUFRqRVJXRkx0M0MyQkJvQjF5R0hwbU5xUTdwb3ZIMHFlOWNPNVMyYllaSENjYXNpCnY0bm1sSnNlc0RBZktwODB2RnFJSFBkcnVYcVEwckxGK0xLL1FtKzJiNnZ0OXpIeEJQd0NYUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+        key: !<tag:yaml.org,2002:binary> >-
+          LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBcitzL3lpNUdVLzRUL2JCait5cFlYUS8vS0NFQTFUMGsxajBleHV4cCtMZHFpdUxLCmM2bjJFazRtZmtEbXY0ajdhSTBYeHB3TGV1QXBVWThHYnZHb1o3S0EzWVpZUmJVZmtIUEgvVnVsak5najg5WFkKeTZUc0JobkxZeXVoT0pJblNCYVhTd3ljemMxK090UUkyZHQyRS9NU0dqd0VwT1NHUklCWTJRRTRpR0xIQXJtWgo2M2xCSjUvS1F5dElhbFJaVFdkMWhwdjJSV1dtRXo0QzJ2aEdyRHRYOUpKSGZ4RVFIMkxhdnYraXkvbGtqQWwwCittWktpeW9pOEN3SnFqa3RDaXZ6ek5jb0dYdmM2OE1RdDhVT3FGeEZ0bytUeHZycDJLTE9TSGdWUFNzdndOb0cKdEpvZU40VlArM2JaY1IzNXlEdnJJNFZyTnMrVGd2YXVxeEVGVFFJREFRQUJBb0lCQUR0eUlYSXV4UEVwRUpSUApnTm1rNjRzM0ZwLzIxeE0zd0RUdEhuTlYvRkZobVkwcEtnUi8wSGxMRTFMaWw1YnRzUmNaWm9sa3ZiUmQvMWhpCkhtaHJITjg5d0xJYTdjVlFlVVFVKytXdmpIZlZxZ0NCcU9yWDVqSUJrV3NIbVVsR2lpT2dEcXY3clJrV2NhdHIKYnpvL0lOMkk2L3NWZ1BRL2pPZWsvMkVGT3BkTFNra2N4SDhuTjFpYlFyc2QxK1N4YjdYNlFUSUJBOE8zWXJXVwp6L1NRRVBWWFlxaFEwZHdUZDFBZnNjanR0UDNBTFRZY1dDQk8xd2hlSUpQaW5pUVowUk9zV0o1SUpSdm41OFFLCjQyeTZjbFAvVkFLLzdKL2EzOTB6ZllYaHZaVURZVzBtYmRwdStqcHZXVHdRb0h4dTg5Y3JnZEx5ZkZaQ1YxTnMKWDA4M3Rqa0NnWUVBMXZjMkROVk0wNm1yREFXbWgxV3NtWDJuRjdQcHZJMEZySExTd1YyWHpYK0pxWE0xVERyTApBYnBQV1VHeE04MVQ3aE84WUlrUWkzWGpNK1FYTzBzdm1vRUR2TzM0WEYxYzQyNHFSRzlvU3k4ejJKYmJDdGFJCkliMEJlWVhjQzJLWGh3aVgvK3BiL1k0Nms1a2xSWlA5Z05ZZmphTE5oSjJHY3JvVXI5N0pDeE1DZ1lFQTBYL3UKTkhpa1Yzd0h0V2VGQ3doNnFYWkJ6RUxNbTNYTkYrRG5leWdRL3FZdW1HSTBWZlFPdHpkNUtaVXIzd09Va3hhYQpwSEgraG1GeEY2cnJqNTM5NGpBSjhxTm1EUUFDdWdGd1RKTjZlNWNaOUJmcUxjNDI1K3RSZmVXTklmdE5kcnJOCmZtQk02cEdsVWpReWY3Ynd0RzRuUkJ6UStHcEd1bndKcU5oY1doOENnWUVBaWNDL2JUZmUxS0Nja01hcU1YMlEKYm9mYjVNK1JFQmZhcytpYzcvYlhDWVFhSm5GQ2pVZjd3VzZ2M0lYQlZXM1Z3L0gzdkhENUhqVjhWRXR0SzcwQgprMlByamsxODQwdWM4ODByM3RENXAzeG5IL3VFQUl6N2pZczkvNjd0Rklxb2lZclRSTmJjL2ozL2dZZ1pIMTQzCmpERXE1U3VYd2N6a1ZHNjBSUU5pRitzQ2dZRUFyeXJsZEJBUGNXcXVVMXBzSG82SGFWd01wZ3FRWThmNnBXV1MKaHlJNEc0Tzk0QUgwdW8ybkpFQ0kyV0QxM3JGeXNBMnRYYVJHNmZ0ZGdTbVRibkR1MEFuVXQ0RXlHZHFSYlE4NAo0MzVJWWtBMEhpbEV6K25sZE1NSVQxajVTWm1DNnF4RWw4OVRZS3BJN2RQaENYSmdEcTB2dmI3T1ozY05EbTRaCjhZaCtwNGNDZ1lCOTdCR3IyYU5hS1hvM2RCVStIM0k4VnBtNmo0blNvQ1IxNktFYU9YZ05RTlFEODliN2orQUgKcFhHRE94ZUIycEpvWTBDcS8vRExCd0lxN3h4QW84WitMcm1vWUxzZXJWMHpTRUI5cXpEYnk2OHJMSE93clRHQQpjSmFjMEU3TFE1UFB2SnNBQnRrclAzSm9qT0F0MW0rU0x3OXFGQ1hGb3R5YjhCa0NCZk10TGc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+        headers: {}
+        simple: true
+        transform2xxOnly: false
+    startedAt: 2021-04-07T15:14:47.708Z
+    completedAt: 2021-04-07T15:14:47.852Z
+    batchId: dc27a145-3316-4a70-9e1e-1800043daac1
+    version: v-e6bc55973a
+  get-service-status.broker:
+    type: get-service-status
+    description: getting status for service 'broker' (from module 'broker')
+    key: get-service-status.broker
+    name: broker
+    error:
+      name: RequestError
+      message: >-
+        Error: Client network socket disconnected before secure TLS connection
+        was established
+      options:
+        url: 'https://kubernetes.docker.internal:6443/apis/apps/v1'
+        method: GET
+        json: true
+        resolveWithFullResponse: true
+        ca: !<tag:yaml.org,2002:binary> >-
+          LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01EY3hOakUxTWpZME0xb1hEVE13TURjeE5ERTFNalkwTTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUVxCnJIQjhmQkVXVktIUk5mS3kzVjRJNmtnbzFpK2FKYSthTVVsWnU1ZUhhV1ovb20rV1pzQlhlK2ZQeTRmNk9nMnQKdkZ1R0FkYkovcEJOZVZsVE90KzZMZFM2VE9mbmVGVmxkZzVFeFNZcmQyRGd2SkNBeGhvMm9jdTBSZ3VUZG5ISgpmRmcxQXAzMTI0U0NlRmxUblJSQm5jY1FGZVBrVFQvUFlvT2xCOG54dnY4bU5ubHZVZ1Z6bjZocFVMNmMwdHJvCkQyRjgxUjZicHFjcmRjbm8xNzZVWWU2VDVBc2p0dkM2MEh5aVJmMnlFOXFCVXVicHdsNFF0Tms3N2FuZ1ZyMGkKb1FLUzF0dUtydnM2Mk4vSXdvL0Y2LzhiN2VnNWFKMDBnY0RXQTJJR1RLZ3p3YVJUTGFmM2JqN24zUVAwZml6Uwo2TURleGpNQmR6azMvT2JzbjFFQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFMY0JNZk5GR09ZSW9jeHNHOVJKSjN2M2NKRmoKL21CODJzSS9Ja1BQQnF5b1pNK2pMLzlnaTRwRVFadGtoSzFLbC9vT3l4NmRrbGJyL0IreGVMa2d5R2NwakpzSQpRL3h1b2doNjVUWGtya2F4dnlBR3hJWDl5MlhPVlJ2NG1QVkp5WUN3N29EeS94QXdPc0p4NlRPNGNZdll3a1o5CnVDVHh1aGZFTk5zczduNW93aEZydkt4cWF2ME9jY01hMzlxWWFzSUh3RDRkTXJVTURUcTZjbzZjcDEvaldUTDQKcWhPNS9DK2poZ3AwZnAwREw1R3pha1hqUUZ5N2FUWHU2MXFXMnI3YU5VZGo5TkFkMEZnT2RrNFJwS2VrdEtSLwpVczNtTzFIbkU3T2xGRURjU0dXYTNJZ2M4M2tGZWloUFU1YVJFRGlTM250TFh6Zzd1RWFBeDJsKzZ3Zz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+        cert: !<tag:yaml.org,2002:binary> >-
+          LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM5RENDQWR5Z0F3SUJBZ0lJSFNvTDFiUzVRUHd3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TURBM01UWXhOVEkyTkROYUZ3MHlNakEwTURjeE5URTBNakphTURZeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sc3dHUVlEVlFRREV4SmtiMk5yWlhJdFptOXlMV1JsCmMydDBiM0F3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ3Y2ei9LTGtaVC9oUDkKc0dQN0tsaGRELzhvSVFEVlBTVFdQUjdHN0duNHQycUs0c3B6cWZZU1RpWitRT2EvaVB0b2pSZkduQXQ2NENsUgpqd1p1OGFobnNvRGRobGhGdFIrUWM4ZjlXNldNMkNQejFkakxwT3dHR2N0aks2RTRraWRJRnBkTERKek56WDQ2CjFBaloyM1lUOHhJYVBBU2s1SVpFZ0ZqWkFUaUlZc2NDdVpucmVVRW5uOHBESzBocVZGbE5aM1dHbS9aRlphWVQKUGdMYStFYXNPMWYwa2tkL0VSQWZZdHErLzZMTCtXU01DWFQ2WmtxTEtpTHdMQW1xT1MwS0svUE0xeWdaZTl6cgp3eEMzeFE2b1hFVzJqNVBHK3VuWW9zNUllQlU5S3kvQTJnYTBtaDQzaFUvN2R0bHhIZm5JTytzamhXczJ6NU9DCjlxNnJFUVZOQWdNQkFBR2pKekFsTUE0R0ExVWREd0VCL3dRRUF3SUZvREFUQmdOVkhTVUVEREFLQmdnckJnRUYKQlFjREFqQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFWV0ZyQ3M2ZWZOVTZZd3g0RHBXNEJnRVRhc1NFMzM0RgpjRUZHV01UOHdNaDRrMUR4YXE1R1FhT3M4aGxNWCtpN29VckFwVEIwRzZTcFNhdVJvUmVZTk5BcXpycm1jdkl5CnBHQTIvTG94TEZqc09OSUV6NzFRNlRLL1FRRlBoSVM0WTZTTWtkQnpPTWN4YmFvZnpGaExrRFlTbVNpVzE3R04KY283cC9zRlZiRnBDdXFYNXovV3ZxVW1yS3Qzbis5Y3FQUFdHeEFBSnpZdC9PVEFpVjV2Qkk2RDFCR29OVFl5Ngp6dW50UzI4dXo5dHg2d21MUFRqRVJXRkx0M0MyQkJvQjF5R0hwbU5xUTdwb3ZIMHFlOWNPNVMyYllaSENjYXNpCnY0bm1sSnNlc0RBZktwODB2RnFJSFBkcnVYcVEwckxGK0xLL1FtKzJiNnZ0OXpIeEJQd0NYUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+        key: !<tag:yaml.org,2002:binary> >-
+          LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBcitzL3lpNUdVLzRUL2JCait5cFlYUS8vS0NFQTFUMGsxajBleHV4cCtMZHFpdUxLCmM2bjJFazRtZmtEbXY0ajdhSTBYeHB3TGV1QXBVWThHYnZHb1o3S0EzWVpZUmJVZmtIUEgvVnVsak5najg5WFkKeTZUc0JobkxZeXVoT0pJblNCYVhTd3ljemMxK090UUkyZHQyRS9NU0dqd0VwT1NHUklCWTJRRTRpR0xIQXJtWgo2M2xCSjUvS1F5dElhbFJaVFdkMWhwdjJSV1dtRXo0QzJ2aEdyRHRYOUpKSGZ4RVFIMkxhdnYraXkvbGtqQWwwCittWktpeW9pOEN3SnFqa3RDaXZ6ek5jb0dYdmM2OE1RdDhVT3FGeEZ0bytUeHZycDJLTE9TSGdWUFNzdndOb0cKdEpvZU40VlArM2JaY1IzNXlEdnJJNFZyTnMrVGd2YXVxeEVGVFFJREFRQUJBb0lCQUR0eUlYSXV4UEVwRUpSUApnTm1rNjRzM0ZwLzIxeE0zd0RUdEhuTlYvRkZobVkwcEtnUi8wSGxMRTFMaWw1YnRzUmNaWm9sa3ZiUmQvMWhpCkhtaHJITjg5d0xJYTdjVlFlVVFVKytXdmpIZlZxZ0NCcU9yWDVqSUJrV3NIbVVsR2lpT2dEcXY3clJrV2NhdHIKYnpvL0lOMkk2L3NWZ1BRL2pPZWsvMkVGT3BkTFNra2N4SDhuTjFpYlFyc2QxK1N4YjdYNlFUSUJBOE8zWXJXVwp6L1NRRVBWWFlxaFEwZHdUZDFBZnNjanR0UDNBTFRZY1dDQk8xd2hlSUpQaW5pUVowUk9zV0o1SUpSdm41OFFLCjQyeTZjbFAvVkFLLzdKL2EzOTB6ZllYaHZaVURZVzBtYmRwdStqcHZXVHdRb0h4dTg5Y3JnZEx5ZkZaQ1YxTnMKWDA4M3Rqa0NnWUVBMXZjMkROVk0wNm1yREFXbWgxV3NtWDJuRjdQcHZJMEZySExTd1YyWHpYK0pxWE0xVERyTApBYnBQV1VHeE04MVQ3aE84WUlrUWkzWGpNK1FYTzBzdm1vRUR2TzM0WEYxYzQyNHFSRzlvU3k4ejJKYmJDdGFJCkliMEJlWVhjQzJLWGh3aVgvK3BiL1k0Nms1a2xSWlA5Z05ZZmphTE5oSjJHY3JvVXI5N0pDeE1DZ1lFQTBYL3UKTkhpa1Yzd0h0V2VGQ3doNnFYWkJ6RUxNbTNYTkYrRG5leWdRL3FZdW1HSTBWZlFPdHpkNUtaVXIzd09Va3hhYQpwSEgraG1GeEY2cnJqNTM5NGpBSjhxTm1EUUFDdWdGd1RKTjZlNWNaOUJmcUxjNDI1K3RSZmVXTklmdE5kcnJOCmZtQk02cEdsVWpReWY3Ynd0RzRuUkJ6UStHcEd1bndKcU5oY1doOENnWUVBaWNDL2JUZmUxS0Nja01hcU1YMlEKYm9mYjVNK1JFQmZhcytpYzcvYlhDWVFhSm5GQ2pVZjd3VzZ2M0lYQlZXM1Z3L0gzdkhENUhqVjhWRXR0SzcwQgprMlByamsxODQwdWM4ODByM3RENXAzeG5IL3VFQUl6N2pZczkvNjd0Rklxb2lZclRSTmJjL2ozL2dZZ1pIMTQzCmpERXE1U3VYd2N6a1ZHNjBSUU5pRitzQ2dZRUFyeXJsZEJBUGNXcXVVMXBzSG82SGFWd01wZ3FRWThmNnBXV1MKaHlJNEc0Tzk0QUgwdW8ybkpFQ0kyV0QxM3JGeXNBMnRYYVJHNmZ0ZGdTbVRibkR1MEFuVXQ0RXlHZHFSYlE4NAo0MzVJWWtBMEhpbEV6K25sZE1NSVQxajVTWm1DNnF4RWw4OVRZS3BJN2RQaENYSmdEcTB2dmI3T1ozY05EbTRaCjhZaCtwNGNDZ1lCOTdCR3IyYU5hS1hvM2RCVStIM0k4VnBtNmo0blNvQ1IxNktFYU9YZ05RTlFEODliN2orQUgKcFhHRE94ZUIycEpvWTBDcS8vRExCd0lxN3h4QW84WitMcm1vWUxzZXJWMHpTRUI5cXpEYnk2OHJMSE93clRHQQpjSmFjMEU3TFE1UFB2SnNBQnRrclAzSm9qT0F0MW0rU0x3OXFGQ1hGb3R5YjhCa0NCZk10TGc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQo=
+        headers: {}
+        simple: true
+        transform2xxOnly: false
+    startedAt: 2021-04-07T15:14:47.713Z
+    completedAt: 2021-04-07T15:14:47.868Z
+    batchId: 59410297-773b-46b1-8bf0-9d2a6e4635f7
+    version: v-8946835e47
+
+
+[2021-04-07T16:21:29.069Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker build -t udp-app:v-59a03f9022 --build-arg GARDEN_MODULE_VERSION=v-59a03f9022 /Users/mattgunter/formula1-telemetry-kafka/garden_version/.garden/build/udp-app" failed with code 1:
+
+   #1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 82B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/f1-telemetry-udp-kafka:1....
+#3 ERROR: pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
+------
+> [internal] load metadata for docker.io/library/f1-telemetry-udp-kafka:1.0-SNAPSHOT:
+------
+failed to solve with frontend dockerfile.v0: failed to create LLB definition: pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/formula1-telemetry-kafka/garden_version/.garden/build/udp-app
+
+
+[2021-04-07T16:21:59.322Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-07T16:21:26.665Z
+    completedAt: 2021-04-07T16:21:29.060Z
+    batchId: c40c6707-49fe-443a-b4d5-bf2fc017b9a8
+    version: v-59a03f9022
+
+
+[2021-04-07T16:26:11.254Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker build -t udp-app:v-59a03f9022 --build-arg GARDEN_MODULE_VERSION=v-59a03f9022 /Users/mattgunter/formula1-telemetry-kafka/garden_version/.garden/build/udp-app" failed with code 1:
+
+   #1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 36B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/f1-telemetry-udp-kafka:1....
+#3 ERROR: pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
+------
+> [internal] load metadata for docker.io/library/f1-telemetry-udp-kafka:1.0-SNAPSHOT:
+------
+failed to solve with frontend dockerfile.v0: failed to create LLB definition: pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/formula1-telemetry-kafka/garden_version/.garden/build/udp-app
+
+
+[2021-04-07T16:26:11.269Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-07T16:26:09.117Z
+    completedAt: 2021-04-07T16:26:11.249Z
+    batchId: d4e83fb9-26ec-4a24-8053-e923813fb40d
+    version: v-59a03f9022
+
+
+[2021-04-07T18:00:44.991Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker build -t udp-app:v-9e944d1b68 --build-arg GARDEN_MODULE_VERSION=v-9e944d1b68 /Users/mattgunter/formula1-telemetry-kafka/garden_version/.garden/build/udp-app" failed with code 1:
+
+   #1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 84B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/f1-telemetry-udp-kafka:1....
+#3 ERROR: pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
+------
+> [internal] load metadata for docker.io/library/f1-telemetry-udp-kafka:1.0-SNAPSHOT-1:
+------
+failed to solve with frontend dockerfile.v0: failed to create LLB definition: pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/formula1-telemetry-kafka/garden_version/.garden/build/udp-app
+
+
+[2021-04-07T18:00:45.020Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-07T18:00:42.754Z
+    completedAt: 2021-04-07T18:00:44.985Z
+    batchId: cc724034-6f59-4ed5-a2aa-5489225a4df4
+    version: v-9e944d1b68
+
+
+[2021-04-09T01:59:31.484Z] bad indentation of a sequence entry at line 33, column 32:
+            - name: KAFKA_LISTENERS: 
+                                   ^
+
+Error Details:
+
+name: YAMLException
+reason: bad indentation of a sequence entry
+mark:
+  name: null
+  buffer: "kind: Deployment\napiVersion: apps/v1\nmetadata:\n  name: kafka-broker0\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n        app: kafka\n        id: \"0\"\n  template:\n    metadata:\n      labels:\n        app: kafka\n        id: \"0\"\n    spec:\n      containers:\n      - name: kafka\n        image: wurstmeister/kafka\n        ports:\n        - containerPort: 31234\n        env:\n        - name: KAFKA_ADVERTISED_PORT\n          value: \"31234\"\n        - name: KAFKA_ADVERTISED_HOST_NAME\n          value: kafka-service\n        - name: KAFKA_ZOOKEEPER_CONNECT\n          value: zoo1:2181\n        - name: KAFKA_BROKER_ID\n          value: \"0\"\n        - name: KAFKA_CREATE_TOPICS\n          value: admintome-test:1:1apiVersion\n        - name: KAFKA_LISTENERS: \n          value: INSIDE://:31234,OUTSIDE://:31234\n\0"
+  position: 739
+  line: 32
+  column: 31
+
+
+[2021-04-09T01:59:31.499Z] bad indentation of a sequence entry at line 33, column 32:
+            - name: KAFKA_LISTENERS: 
+                                   ^
+
+Error Details:
+
+name: YAMLException
+reason: bad indentation of a sequence entry
+mark:
+  name: null
+  buffer: "kind: Deployment\napiVersion: apps/v1\nmetadata:\n  name: kafka-broker0\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n        app: kafka\n        id: \"0\"\n  template:\n    metadata:\n      labels:\n        app: kafka\n        id: \"0\"\n    spec:\n      containers:\n      - name: kafka\n        image: wurstmeister/kafka\n        ports:\n        - containerPort: 31234\n        env:\n        - name: KAFKA_ADVERTISED_PORT\n          value: \"31234\"\n        - name: KAFKA_ADVERTISED_HOST_NAME\n          value: kafka-service\n        - name: KAFKA_ZOOKEEPER_CONNECT\n          value: zoo1:2181\n        - name: KAFKA_BROKER_ID\n          value: \"0\"\n        - name: KAFKA_CREATE_TOPICS\n          value: admintome-test:1:1apiVersion\n        - name: KAFKA_LISTENERS: \n          value: INSIDE://:31234,OUTSIDE://:31234\n\0"
+  position: 739
+  line: 32
+  column: 31
+
+
+[2021-04-09T01:59:38.484Z] 2 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.broker:
+    type: build
+    description: building broker
+    key: build.broker
+    name: broker
+    error:
+      name: YAMLException
+      reason: bad indentation of a sequence entry
+      mark:
+        name: null
+        buffer: "kind: Deployment\napiVersion: apps/v1\nmetadata:\n  name: kafka-broker0\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n        app: kafka\n        id: \"0\"\n  template:\n    metadata:\n      labels:\n        app: kafka\n        id: \"0\"\n    spec:\n      containers:\n      - name: kafka\n        image: wurstmeister/kafka\n        ports:\n        - containerPort: 31234\n        env:\n        - name: KAFKA_ADVERTISED_PORT\n          value: \"31234\"\n        - name: KAFKA_ADVERTISED_HOST_NAME\n          value: kafka-service\n        - name: KAFKA_ZOOKEEPER_CONNECT\n          value: zoo1:2181\n        - name: KAFKA_BROKER_ID\n          value: \"0\"\n        - name: KAFKA_CREATE_TOPICS\n          value: admintome-test:1:1apiVersion\n        - name: KAFKA_LISTENERS: \n          value: INSIDE://:31234,OUTSIDE://:31234\n\0"
+        position: 739
+        line: 32
+        column: 31
+      message: |-
+        bad indentation of a sequence entry at line 33, column 32:
+                    - name: KAFKA_LISTENERS: 
+                                           ^
+    startedAt: 2021-04-09T01:59:31.460Z
+    completedAt: 2021-04-09T01:59:31.478Z
+    batchId: b74f3d89-9f5e-4d49-b199-c26e0c2d30cd
+    version: v-f8813879e1
+  get-service-status.broker:
+    type: get-service-status
+    description: getting status for service 'broker' (from module 'broker')
+    key: get-service-status.broker
+    name: broker
+    error:
+      name: YAMLException
+      reason: bad indentation of a sequence entry
+      mark:
+        name: null
+        buffer: "kind: Deployment\napiVersion: apps/v1\nmetadata:\n  name: kafka-broker0\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n        app: kafka\n        id: \"0\"\n  template:\n    metadata:\n      labels:\n        app: kafka\n        id: \"0\"\n    spec:\n      containers:\n      - name: kafka\n        image: wurstmeister/kafka\n        ports:\n        - containerPort: 31234\n        env:\n        - name: KAFKA_ADVERTISED_PORT\n          value: \"31234\"\n        - name: KAFKA_ADVERTISED_HOST_NAME\n          value: kafka-service\n        - name: KAFKA_ZOOKEEPER_CONNECT\n          value: zoo1:2181\n        - name: KAFKA_BROKER_ID\n          value: \"0\"\n        - name: KAFKA_CREATE_TOPICS\n          value: admintome-test:1:1apiVersion\n        - name: KAFKA_LISTENERS: \n          value: INSIDE://:31234,OUTSIDE://:31234\n\0"
+        position: 739
+        line: 32
+        column: 31
+      message: |-
+        bad indentation of a sequence entry at line 33, column 32:
+                    - name: KAFKA_LISTENERS: 
+                                           ^
+    startedAt: 2021-04-09T01:59:31.389Z
+    completedAt: 2021-04-09T01:59:31.494Z
+    batchId: b74f3d89-9f5e-4d49-b199-c26e0c2d30cd
+    version: v-f8813879e1
+
+
+[2021-04-09T14:09:30.531Z] Error deploying broker: CrashLoopBackOff - back-off 10s restarting failed container=kafka pod=kafka-broker0-864c4f9ccd-26qkr_f1-kafka-module-default(7bb48265-5ecd-4f3a-b148-fc55f8199c5d)
+
+━━━ Events ━━━
+Deployment kafka-broker0: ScalingReplicaSet - Scaled up replica set kafka-broker0-864c4f9ccd to 1
+Pod kafka-broker0-864c4f9ccd-26qkr: Scheduled - Successfully assigned f1-kafka-module-default/kafka-broker0-864c4f9ccd-26qkr to docker-desktop
+Pod kafka-broker0-864c4f9ccd-26qkr: Pulling - Pulling image "wurstmeister/kafka"
+Pod kafka-broker0-864c4f9ccd-26qkr: Pulled - Successfully pulled image "wurstmeister/kafka" in 954.862ms
+Pod kafka-broker0-864c4f9ccd-26qkr: Created - Created container kafka
+Pod kafka-broker0-864c4f9ccd-26qkr: Started - Started container kafka
+Pod kafka-broker0-864c4f9ccd-26qkr: Pulled - Successfully pulled image "wurstmeister/kafka" in 1.2537134s
+Pod kafka-broker0-864c4f9ccd-26qkr: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n f1-kafka-module-default --context=docker-desktop logs deployment/kafka-broker0
+
+****** kafka-broker0-864c4f9ccd-26qkr ******
+------ kafka ------ERROR: Missing environment variable KAFKA_LISTENERS. Must be specified when using KAFKA_ADVERTISED_LISTENERS
+
+
+Error Details:
+
+serviceName: broker
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 10s restarting failed container=kafka
+    pod=kafka-broker0-864c4f9ccd-26qkr_f1-kafka-module-default(7bb48265-5ecd-4f3a-b148-fc55f8199c5d)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment kafka-broker0:\e[39m \e[37mScalingReplicaSet - Scaled up replica set kafka-broker0-864c4f9ccd to 1\e[39m\n\e[94mPod kafka-broker0-864c4f9ccd-26qkr:\e[39m \e[37mScheduled - Successfully assigned f1-kafka-module-default/kafka-broker0-864c4f9ccd-26qkr to docker-desktop\e[39m\n\e[94mPod kafka-broker0-864c4f9ccd-26qkr:\e[39m \e[37mPulling - Pulling image \"wurstmeister/kafka\"\e[39m\n\e[94mPod kafka-broker0-864c4f9ccd-26qkr:\e[39m \e[37mPulled - Successfully pulled image \"wurstmeister/kafka\" in 954.862ms\e[39m\n\e[94mPod kafka-broker0-864c4f9ccd-26qkr:\e[39m \e[37mCreated - Created container kafka\e[39m\n\e[94mPod kafka-broker0-864c4f9ccd-26qkr:\e[39m \e[37mStarted - Started container kafka\e[39m\n\e[94mPod kafka-broker0-864c4f9ccd-26qkr:\e[39m \e[37mPulled - Successfully pulled image \"wurstmeister/kafka\" in 1.2537134s\e[39m\n\e[94mPod kafka-broker0-864c4f9ccd-26qkr:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n f1-kafka-module-default --context=docker-desktop logs deployment/kafka-broker0\e[39m\n\e[94m\e[39m\n\e[94m****** kafka-broker0-864c4f9ccd-26qkr ******\e[39m\n\e[94m\e[39m\e[90m------ kafka ------\e[39mERROR: Missing environment variable KAFKA_LISTENERS. Must be specified when using KAFKA_ADVERTISED_LISTENERS\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: kafka-broker0
+      namespace: f1-kafka-module-default
+      selfLink: >-
+        /apis/apps/v1/namespaces/f1-kafka-module-default/deployments/kafka-broker0
+      uid: adb30fa7-3675-46fd-9aad-f5e37f25c31e
+      resourceVersion: '167701'
+      generation: 15
+      creationTimestamp: '2021-04-09T02:00:08Z'
+      labels:
+        service: broker
+      annotations:
+        deployment.kubernetes.io/revision: '15'
+        garden.io/manifest-hash: eb8729b18b09b204a53ce30fe9378b2171d4799c1e5e9a7b22f950affc1157d5
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/manifest-hash":"eb8729b18b09b204a53ce30fe9378b2171d4799c1e5e9a7b22f950affc1157d5","service":"broker"},"labels":{"service":"broker"},"name":"kafka-broker0","namespace":"f1-kafka-module-default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"kafka","id":"0"}},"template":{"metadata":{"labels":{"app":"kafka","id":"0"}},"spec":{"containers":[{"env":[{"name":"KAFKA_ZOOKEEPER_CONNECT","value":"zoo1:2181"},{"name":"KAFKA_BROKER_ID","value":"0"},{"name":"KAFKA_ADVERTISED_LISTENERS","value":"PLAINTEXT://kafka-service:31234"},{"name":"KAFKA_METRIC_REPORTERS","value":"io.confluent.metrics.reporter.ConfluentMetricsReporter"},{"name":"CONFLUENT_METRICS_REPORTER_BOOTSTRAP_SERVERS","value":"kafka-service:31234"},{"name":"CONFLUENT_METRICS_REPORTER_ZOOKEEPER_CONNECT","value":"zoo1:2181"}],"image":"wurstmeister/kafka","name":"kafka","ports":[{"containerPort":31234}]}]}}}}
+        service: broker
+      managedFields: []
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: kafka
+          id: '0'
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: kafka
+            id: '0'
+        spec:
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 25%
+          maxSurge: 25%
+      revisionHistoryLimit: 10
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 15
+      replicas: 2
+      updatedReplicas: 1
+      readyReplicas: 1
+      availableReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-04-09T14:09:30.551Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.broker:
+    type: deploy
+    description: deploying service 'broker' (from module 'broker')
+    key: deploy.broker
+    name: broker
+    startedAt: 2021-04-09T14:09:24.012Z
+    completedAt: 2021-04-09T14:09:30.524Z
+    batchId: 332d9899-fb3c-4ab0-9282-b5f36729d8bc
+    version: v-2a343ec359
+
+
+[2021-04-10T13:41:47.633Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=broker --output=json -f -" failed with code 1:
+
+   Error from server: error when applying patch:
+{"metadata":{"annotations":{"garden.io/manifest-hash":"692c5164d1e4237f3a7f5b05bd25cbde2232590a5efd008b094073e3898dea16","kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{\"garden.io/manifest-hash\":\"692c5164d1e4237f3a7f5b05bd25cbde2232590a5efd008b094073e3898dea16\",\"service\":\"broker\"},\"labels\":{\"service\":\"broker\"},\"name\":\"kafka-broker0\",\"namespace\":\"f1-kafka-module-default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"KAFKA_ZOOKEEPER_CONNECT\",\"value\":\"zoo1:2181\"},{\"name\":\"KAFKA_BROKER_ID\",\"value\":\"0\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234\"},{\"name\":\"KAFKA_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"INSIDE://:31234,OUTSIDE://kafka-service:31234\"},{\"name\":\"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP\",\"value\":\"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT\"},{\"name\":\"KAFKA_INTER_BROKER_LISTENER_NAME\",\"value\":\"INSIDE\"}],\"image\":\"wurstmeister/kafka\",\"name\":\"kafka\",\"ports\":[{\"containerPort\":31234}]}]}}}}
+"}},"spec":{"template":{"spec":{"$setElementOrder/containers":[{"name":"kafka"}],"containers":[{"$setElementOrder/env":[{"name":"KAFKA_ZOOKEEPER_CONNECT"},{"name":"KAFKA_BROKER_ID"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENERS"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME"}],"env":[{"name":"KAFKA_ADVERTISED_LISTENERS","value":"INSIDE://:31234,OUTSIDE://kafka-service:31234"},{"name":"KAFKA_ADVERTISED_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234"},{"name":"KAFKA_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP","value":"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME","value":"INSIDE"}],"name":"kafka"}]}}}}
+to:
+Resource: "apps/v1, Resource=deployments", GroupVersionKind: "apps/v1, Kind=Deployment"
+Name: "kafka-broker0", Namespace: "f1-kafka-module-default"
+for: "STDIN": The order in patch list:
+[map[name:KAFKA_ADVERTISED_LISTENERS value:INSIDE://:31234,OUTSIDE://kafka-service:31234] map[name:KAFKA_ADVERTISED_LISTENERS value:OUTSIDE://kafka-service:31234,INSIDE://localhost:31234] map[name:KAFKA_LISTENERS value:OUTSIDE://kafka-service:31234,INSIDE://localhost:31234] map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP value:INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT] map[name:KAFKA_INTER_BROKER_LISTENER_NAME value:INSIDE]]
+doesn't match $setElementOrder list:
+[map[name:KAFKA_ZOOKEEPER_CONNECT] map[name:KAFKA_BROKER_ID] map[name:KAFKA_ADVERTISED_LISTENERS] map[name:KAFKA_LISTENERS] map[name:KAFKA_ADVERTISED_LISTENERS] map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP] map[name:KAFKA_INTER_BROKER_LISTENER_NAME]]
+
+Error from server: error when applying patch:
+{"metadata":{"annotations":{"garden.io/manifest-hash":"692c5164d1e4237f3a7f5b05bd25cbde2232590a5efd008b094073e3898dea16","kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{\"garden.io/manifest-hash\":\"692c5164d1e4237f3a7f5b05bd25cbde2232590a5efd008b094073e3898dea16\",\"service\":\"broker\"},\"labels\":{\"service\":\"broker\"},\"name\":\"kafka-broker0\",\"namespace\":\"f1-kafka-module-default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"KAFKA_ZOOKEEPER_CONNECT\",\"value\":\"zoo1:2181\"},{\"name\":\"KAFKA_BROKER_ID\",\"value\":\"0\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234\"},{\"name\":\"KAFKA_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"INSIDE://:31234,OUTSIDE://kafka-service:31234\"},{\"name\":\"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP\",\"value\":\"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT\"},{\"name\":\"KAFKA_INTER_BROKER_LISTENER_NAME\",\"value\":\"INSIDE\"}],\"image\":\"wurstmeister/kafka\",\"name\":\"kafka\",\"ports\":[{\"containerPort\":31234}]}]}}}}\n"}},"spec":{"template":{"spec":{"$setElementOrder/containers":[{"name":"kafka"}],"containers":[{"$setElementOrder/env":[{"name":"KAFKA_ZOOKEEPER_CONNECT"},{"name":"KAFKA_BROKER_ID"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENERS"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME"}],"env":[{"name":"KAFKA_ADVERTISED_LISTENERS","value":"INSIDE://:31234,OUTSIDE://kafka-service:31234"},{"name":"KAFKA_ADVERTISED_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234"},{"name":"KAFKA_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP","value":"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME","value":"INSIDE"}],"name":"kafka"}]}}}}
+to:
+Resource: "apps/v1, Resource=deployments", GroupVersionKind: "apps/v1, Kind=Deployment"
+Name: "kafka-broker0", Namespace: "f1-kafka-module-default"
+for: "STDIN": The order in patch list:
+[map[name:KAFKA_ADVERTISED_LISTENERS value:INSIDE://:31234,OUTSIDE://kafka-service:31234] map[name:KAFKA_ADVERTISED_LISTENERS value:OUTSIDE://kafka-service:31234,INSIDE://localhost:31234] map[name:KAFKA_LISTENERS value:OUTSIDE://kafka-service:31234,INSIDE://localhost:31234] map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP value:INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT] map[name:KAFKA_INTER_BROKER_LISTENER_NAME value:INSIDE]]
+ doesn't match $setElementOrder list:
+[map[name:KAFKA_ZOOKEEPER_CONNECT] map[name:KAFKA_BROKER_ID] map[name:KAFKA_ADVERTISED_LISTENERS] map[name:KAFKA_LISTENERS] map[name:KAFKA_ADVERTISED_LISTENERS] map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP] map[name:KAFKA_INTER_BROKER_LISTENER_NAME]]
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=broker --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=broker --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error from server: error when applying patch:
+
+  {"metadata":{"annotations":{"garden.io/manifest-hash":"692c5164d1e4237f3a7f5b05bd25cbde2232590a5efd008b094073e3898dea16","kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{\"garden.io/manifest-hash\":\"692c5164d1e4237f3a7f5b05bd25cbde2232590a5efd008b094073e3898dea16\",\"service\":\"broker\"},\"labels\":{\"service\":\"broker\"},\"name\":\"kafka-broker0\",\"namespace\":\"f1-kafka-module-default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"KAFKA_ZOOKEEPER_CONNECT\",\"value\":\"zoo1:2181\"},{\"name\":\"KAFKA_BROKER_ID\",\"value\":\"0\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234\"},{\"name\":\"KAFKA_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"INSIDE://:31234,OUTSIDE://kafka-service:31234\"},{\"name\":\"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP\",\"value\":\"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT\"},{\"name\":\"KAFKA_INTER_BROKER_LISTENER_NAME\",\"value\":\"INSIDE\"}],\"image\":\"wurstmeister/kafka\",\"name\":\"kafka\",\"ports\":[{\"containerPort\":31234}]}]}}}}\n"}},"spec":{"template":{"spec":{"$setElementOrder/containers":[{"name":"kafka"}],"containers":[{"$setElementOrder/env":[{"name":"KAFKA_ZOOKEEPER_CONNECT"},{"name":"KAFKA_BROKER_ID"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENERS"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME"}],"env":[{"name":"KAFKA_ADVERTISED_LISTENERS","value":"INSIDE://:31234,OUTSIDE://kafka-service:31234"},{"name":"KAFKA_ADVERTISED_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234"},{"name":"KAFKA_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP","value":"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME","value":"INSIDE"}],"name":"kafka"}]}}}}
+
+  to:
+
+  Resource: "apps/v1, Resource=deployments", GroupVersionKind: "apps/v1,
+  Kind=Deployment"
+
+  Name: "kafka-broker0", Namespace: "f1-kafka-module-default"
+
+  for: "STDIN": The order in patch list:
+
+  [map[name:KAFKA_ADVERTISED_LISTENERS
+  value:INSIDE://:31234,OUTSIDE://kafka-service:31234]
+  map[name:KAFKA_ADVERTISED_LISTENERS
+  value:OUTSIDE://kafka-service:31234,INSIDE://localhost:31234]
+  map[name:KAFKA_LISTENERS
+  value:OUTSIDE://kafka-service:31234,INSIDE://localhost:31234]
+  map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP
+  value:INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT]
+  map[name:KAFKA_INTER_BROKER_LISTENER_NAME value:INSIDE]]
+   doesn't match $setElementOrder list:
+  [map[name:KAFKA_ZOOKEEPER_CONNECT] map[name:KAFKA_BROKER_ID]
+  map[name:KAFKA_ADVERTISED_LISTENERS] map[name:KAFKA_LISTENERS]
+  map[name:KAFKA_ADVERTISED_LISTENERS]
+  map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP]
+  map[name:KAFKA_INTER_BROKER_LISTENER_NAME]]
+all: >-
+  Error from server: error when applying patch:
+
+  {"metadata":{"annotations":{"garden.io/manifest-hash":"692c5164d1e4237f3a7f5b05bd25cbde2232590a5efd008b094073e3898dea16","kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{\"garden.io/manifest-hash\":\"692c5164d1e4237f3a7f5b05bd25cbde2232590a5efd008b094073e3898dea16\",\"service\":\"broker\"},\"labels\":{\"service\":\"broker\"},\"name\":\"kafka-broker0\",\"namespace\":\"f1-kafka-module-default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"KAFKA_ZOOKEEPER_CONNECT\",\"value\":\"zoo1:2181\"},{\"name\":\"KAFKA_BROKER_ID\",\"value\":\"0\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234\"},{\"name\":\"KAFKA_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"INSIDE://:31234,OUTSIDE://kafka-service:31234\"},{\"name\":\"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP\",\"value\":\"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT\"},{\"name\":\"KAFKA_INTER_BROKER_LISTENER_NAME\",\"value\":\"INSIDE\"}],\"image\":\"wurstmeister/kafka\",\"name\":\"kafka\",\"ports\":[{\"containerPort\":31234}]}]}}}}\n"}},"spec":{"template":{"spec":{"$setElementOrder/containers":[{"name":"kafka"}],"containers":[{"$setElementOrder/env":[{"name":"KAFKA_ZOOKEEPER_CONNECT"},{"name":"KAFKA_BROKER_ID"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENERS"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME"}],"env":[{"name":"KAFKA_ADVERTISED_LISTENERS","value":"INSIDE://:31234,OUTSIDE://kafka-service:31234"},{"name":"KAFKA_ADVERTISED_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234"},{"name":"KAFKA_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://localhost:31234"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP","value":"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME","value":"INSIDE"}],"name":"kafka"}]}}}}
+
+  to:
+
+  Resource: "apps/v1, Resource=deployments", GroupVersionKind: "apps/v1,
+  Kind=Deployment"
+
+  Name: "kafka-broker0", Namespace: "f1-kafka-module-default"
+
+  for: "STDIN": The order in patch list:
+
+  [map[name:KAFKA_ADVERTISED_LISTENERS
+  value:INSIDE://:31234,OUTSIDE://kafka-service:31234]
+  map[name:KAFKA_ADVERTISED_LISTENERS
+  value:OUTSIDE://kafka-service:31234,INSIDE://localhost:31234]
+  map[name:KAFKA_LISTENERS
+  value:OUTSIDE://kafka-service:31234,INSIDE://localhost:31234]
+  map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP
+  value:INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT]
+  map[name:KAFKA_INTER_BROKER_LISTENER_NAME value:INSIDE]]
+   doesn't match $setElementOrder list:
+  [map[name:KAFKA_ZOOKEEPER_CONNECT] map[name:KAFKA_BROKER_ID]
+  map[name:KAFKA_ADVERTISED_LISTENERS] map[name:KAFKA_LISTENERS]
+  map[name:KAFKA_ADVERTISED_LISTENERS]
+  map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP]
+  map[name:KAFKA_INTER_BROKER_LISTENER_NAME]]
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-10T13:41:47.661Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.broker:
+    type: deploy
+    description: deploying service 'broker' (from module 'broker')
+    key: deploy.broker
+    name: broker
+    startedAt: 2021-04-10T13:41:45.096Z
+    completedAt: 2021-04-10T13:41:47.607Z
+    batchId: 671f75ee-c3bd-4cb2-a3d7-fd0584a180b4
+    version: v-332f5d7336
+
+
+[2021-04-10T13:44:08.753Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=broker --output=json -f -" failed with code 1:
+
+   Error from server: error when applying patch:
+{"metadata":{"annotations":{"garden.io/manifest-hash":"43c4aa77b20c5694eb3b7a7be2afb956e26be5eb15f62091e8f37853de9e0677","kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{\"garden.io/manifest-hash\":\"43c4aa77b20c5694eb3b7a7be2afb956e26be5eb15f62091e8f37853de9e0677\",\"service\":\"broker\"},\"labels\":{\"service\":\"broker\"},\"name\":\"kafka-broker0\",\"namespace\":\"f1-kafka-module-default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"KAFKA_ZOOKEEPER_CONNECT\",\"value\":\"zoo1:2181\"},{\"name\":\"KAFKA_BROKER_ID\",\"value\":\"0\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://:31234\"},{\"name\":\"KAFKA_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://:31234\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"INSIDE://:31234,OUTSIDE://kafka-service:31234\"},{\"name\":\"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP\",\"value\":\"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT\"},{\"name\":\"KAFKA_INTER_BROKER_LISTENER_NAME\",\"value\":\"INSIDE\"}],\"image\":\"wurstmeister/kafka\",\"name\":\"kafka\",\"ports\":[{\"containerPort\":31234}]}]}}}}
+"}},"spec":{"template":{"spec":{"$setElementOrder/containers":[{"name":"kafka"}],"containers":[{"$setElementOrder/env":[{"name":"KAFKA_ZOOKEEPER_CONNECT"},{"name":"KAFKA_BROKER_ID"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENERS"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME"}],"env":[{"name":"KAFKA_ADVERTISED_LISTENERS","value":"INSIDE://:31234,OUTSIDE://kafka-service:31234"},{"name":"KAFKA_ADVERTISED_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://:31234"},{"name":"KAFKA_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://:31234"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP","value":"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME","value":"INSIDE"}],"name":"kafka"}]}}}}
+to:
+Resource: "apps/v1, Resource=deployments", GroupVersionKind: "apps/v1, Kind=Deployment"
+Name: "kafka-broker0", Namespace: "f1-kafka-module-default"
+for: "STDIN": The order in patch list:
+[map[name:KAFKA_ADVERTISED_LISTENERS value:INSIDE://:31234,OUTSIDE://kafka-service:31234] map[name:KAFKA_ADVERTISED_LISTENERS value:OUTSIDE://kafka-service:31234,INSIDE://:31234] map[name:KAFKA_LISTENERS value:OUTSIDE://kafka-service:31234,INSIDE://:31234] map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP value:INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT] map[name:KAFKA_INTER_BROKER_LISTENER_NAME value:INSIDE]]
+doesn't match $setElementOrder list:
+[map[name:KAFKA_ZOOKEEPER_CONNECT] map[name:KAFKA_BROKER_ID] map[name:KAFKA_ADVERTISED_LISTENERS] map[name:KAFKA_LISTENERS] map[name:KAFKA_ADVERTISED_LISTENERS] map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP] map[name:KAFKA_INTER_BROKER_LISTENER_NAME]]
+
+Error from server: error when applying patch:
+{"metadata":{"annotations":{"garden.io/manifest-hash":"43c4aa77b20c5694eb3b7a7be2afb956e26be5eb15f62091e8f37853de9e0677","kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{\"garden.io/manifest-hash\":\"43c4aa77b20c5694eb3b7a7be2afb956e26be5eb15f62091e8f37853de9e0677\",\"service\":\"broker\"},\"labels\":{\"service\":\"broker\"},\"name\":\"kafka-broker0\",\"namespace\":\"f1-kafka-module-default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"KAFKA_ZOOKEEPER_CONNECT\",\"value\":\"zoo1:2181\"},{\"name\":\"KAFKA_BROKER_ID\",\"value\":\"0\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://:31234\"},{\"name\":\"KAFKA_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://:31234\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"INSIDE://:31234,OUTSIDE://kafka-service:31234\"},{\"name\":\"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP\",\"value\":\"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT\"},{\"name\":\"KAFKA_INTER_BROKER_LISTENER_NAME\",\"value\":\"INSIDE\"}],\"image\":\"wurstmeister/kafka\",\"name\":\"kafka\",\"ports\":[{\"containerPort\":31234}]}]}}}}\n"}},"spec":{"template":{"spec":{"$setElementOrder/containers":[{"name":"kafka"}],"containers":[{"$setElementOrder/env":[{"name":"KAFKA_ZOOKEEPER_CONNECT"},{"name":"KAFKA_BROKER_ID"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENERS"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME"}],"env":[{"name":"KAFKA_ADVERTISED_LISTENERS","value":"INSIDE://:31234,OUTSIDE://kafka-service:31234"},{"name":"KAFKA_ADVERTISED_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://:31234"},{"name":"KAFKA_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://:31234"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP","value":"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME","value":"INSIDE"}],"name":"kafka"}]}}}}
+to:
+Resource: "apps/v1, Resource=deployments", GroupVersionKind: "apps/v1, Kind=Deployment"
+Name: "kafka-broker0", Namespace: "f1-kafka-module-default"
+for: "STDIN": The order in patch list:
+[map[name:KAFKA_ADVERTISED_LISTENERS value:INSIDE://:31234,OUTSIDE://kafka-service:31234] map[name:KAFKA_ADVERTISED_LISTENERS value:OUTSIDE://kafka-service:31234,INSIDE://:31234] map[name:KAFKA_LISTENERS value:OUTSIDE://kafka-service:31234,INSIDE://:31234] map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP value:INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT] map[name:KAFKA_INTER_BROKER_LISTENER_NAME value:INSIDE]]
+ doesn't match $setElementOrder list:
+[map[name:KAFKA_ZOOKEEPER_CONNECT] map[name:KAFKA_BROKER_ID] map[name:KAFKA_ADVERTISED_LISTENERS] map[name:KAFKA_LISTENERS] map[name:KAFKA_ADVERTISED_LISTENERS] map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP] map[name:KAFKA_INTER_BROKER_LISTENER_NAME]]
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=broker --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=broker --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error from server: error when applying patch:
+
+  {"metadata":{"annotations":{"garden.io/manifest-hash":"43c4aa77b20c5694eb3b7a7be2afb956e26be5eb15f62091e8f37853de9e0677","kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{\"garden.io/manifest-hash\":\"43c4aa77b20c5694eb3b7a7be2afb956e26be5eb15f62091e8f37853de9e0677\",\"service\":\"broker\"},\"labels\":{\"service\":\"broker\"},\"name\":\"kafka-broker0\",\"namespace\":\"f1-kafka-module-default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"KAFKA_ZOOKEEPER_CONNECT\",\"value\":\"zoo1:2181\"},{\"name\":\"KAFKA_BROKER_ID\",\"value\":\"0\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://:31234\"},{\"name\":\"KAFKA_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://:31234\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"INSIDE://:31234,OUTSIDE://kafka-service:31234\"},{\"name\":\"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP\",\"value\":\"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT\"},{\"name\":\"KAFKA_INTER_BROKER_LISTENER_NAME\",\"value\":\"INSIDE\"}],\"image\":\"wurstmeister/kafka\",\"name\":\"kafka\",\"ports\":[{\"containerPort\":31234}]}]}}}}\n"}},"spec":{"template":{"spec":{"$setElementOrder/containers":[{"name":"kafka"}],"containers":[{"$setElementOrder/env":[{"name":"KAFKA_ZOOKEEPER_CONNECT"},{"name":"KAFKA_BROKER_ID"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENERS"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME"}],"env":[{"name":"KAFKA_ADVERTISED_LISTENERS","value":"INSIDE://:31234,OUTSIDE://kafka-service:31234"},{"name":"KAFKA_ADVERTISED_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://:31234"},{"name":"KAFKA_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://:31234"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP","value":"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME","value":"INSIDE"}],"name":"kafka"}]}}}}
+
+  to:
+
+  Resource: "apps/v1, Resource=deployments", GroupVersionKind: "apps/v1,
+  Kind=Deployment"
+
+  Name: "kafka-broker0", Namespace: "f1-kafka-module-default"
+
+  for: "STDIN": The order in patch list:
+
+  [map[name:KAFKA_ADVERTISED_LISTENERS
+  value:INSIDE://:31234,OUTSIDE://kafka-service:31234]
+  map[name:KAFKA_ADVERTISED_LISTENERS
+  value:OUTSIDE://kafka-service:31234,INSIDE://:31234] map[name:KAFKA_LISTENERS
+  value:OUTSIDE://kafka-service:31234,INSIDE://:31234]
+  map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP
+  value:INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT]
+  map[name:KAFKA_INTER_BROKER_LISTENER_NAME value:INSIDE]]
+   doesn't match $setElementOrder list:
+  [map[name:KAFKA_ZOOKEEPER_CONNECT] map[name:KAFKA_BROKER_ID]
+  map[name:KAFKA_ADVERTISED_LISTENERS] map[name:KAFKA_LISTENERS]
+  map[name:KAFKA_ADVERTISED_LISTENERS]
+  map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP]
+  map[name:KAFKA_INTER_BROKER_LISTENER_NAME]]
+all: >-
+  Error from server: error when applying patch:
+
+  {"metadata":{"annotations":{"garden.io/manifest-hash":"43c4aa77b20c5694eb3b7a7be2afb956e26be5eb15f62091e8f37853de9e0677","kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{\"garden.io/manifest-hash\":\"43c4aa77b20c5694eb3b7a7be2afb956e26be5eb15f62091e8f37853de9e0677\",\"service\":\"broker\"},\"labels\":{\"service\":\"broker\"},\"name\":\"kafka-broker0\",\"namespace\":\"f1-kafka-module-default\"},\"spec\":{\"replicas\":1,\"selector\":{\"matchLabels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"kafka\",\"id\":\"0\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"KAFKA_ZOOKEEPER_CONNECT\",\"value\":\"zoo1:2181\"},{\"name\":\"KAFKA_BROKER_ID\",\"value\":\"0\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://:31234\"},{\"name\":\"KAFKA_LISTENERS\",\"value\":\"OUTSIDE://kafka-service:31234,INSIDE://:31234\"},{\"name\":\"KAFKA_ADVERTISED_LISTENERS\",\"value\":\"INSIDE://:31234,OUTSIDE://kafka-service:31234\"},{\"name\":\"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP\",\"value\":\"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT\"},{\"name\":\"KAFKA_INTER_BROKER_LISTENER_NAME\",\"value\":\"INSIDE\"}],\"image\":\"wurstmeister/kafka\",\"name\":\"kafka\",\"ports\":[{\"containerPort\":31234}]}]}}}}\n"}},"spec":{"template":{"spec":{"$setElementOrder/containers":[{"name":"kafka"}],"containers":[{"$setElementOrder/env":[{"name":"KAFKA_ZOOKEEPER_CONNECT"},{"name":"KAFKA_BROKER_ID"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENERS"},{"name":"KAFKA_ADVERTISED_LISTENERS"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME"}],"env":[{"name":"KAFKA_ADVERTISED_LISTENERS","value":"INSIDE://:31234,OUTSIDE://kafka-service:31234"},{"name":"KAFKA_ADVERTISED_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://:31234"},{"name":"KAFKA_LISTENERS","value":"OUTSIDE://kafka-service:31234,INSIDE://:31234"},{"name":"KAFKA_LISTENER_SECURITY_PROTOCOL_MAP","value":"INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT"},{"name":"KAFKA_INTER_BROKER_LISTENER_NAME","value":"INSIDE"}],"name":"kafka"}]}}}}
+
+  to:
+
+  Resource: "apps/v1, Resource=deployments", GroupVersionKind: "apps/v1,
+  Kind=Deployment"
+
+  Name: "kafka-broker0", Namespace: "f1-kafka-module-default"
+
+  for: "STDIN": The order in patch list:
+
+  [map[name:KAFKA_ADVERTISED_LISTENERS
+  value:INSIDE://:31234,OUTSIDE://kafka-service:31234]
+  map[name:KAFKA_ADVERTISED_LISTENERS
+  value:OUTSIDE://kafka-service:31234,INSIDE://:31234] map[name:KAFKA_LISTENERS
+  value:OUTSIDE://kafka-service:31234,INSIDE://:31234]
+  map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP
+  value:INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT]
+  map[name:KAFKA_INTER_BROKER_LISTENER_NAME value:INSIDE]]
+   doesn't match $setElementOrder list:
+  [map[name:KAFKA_ZOOKEEPER_CONNECT] map[name:KAFKA_BROKER_ID]
+  map[name:KAFKA_ADVERTISED_LISTENERS] map[name:KAFKA_LISTENERS]
+  map[name:KAFKA_ADVERTISED_LISTENERS]
+  map[name:KAFKA_LISTENER_SECURITY_PROTOCOL_MAP]
+  map[name:KAFKA_INTER_BROKER_LISTENER_NAME]]
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-10T13:44:08.868Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.broker:
+    type: deploy
+    description: deploying service 'broker' (from module 'broker')
+    key: deploy.broker
+    name: broker
+    startedAt: 2021-04-10T13:44:08.491Z
+    completedAt: 2021-04-10T13:44:08.733Z
+    batchId: 3b4b563f-7203-40d4-a8a3-cff88952534e
+    version: v-60b60a5202
+

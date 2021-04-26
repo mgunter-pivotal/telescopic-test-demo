@@ -1,0 +1,19 @@
+---
+kind: Project
+name: suitcaselab
+environments:
+  - name: local
+providers:
+  - name: local-kubernetes
+---
+kind: Module
+type: kubernetes
+name: player
+description: Telemetry player, utilizes recording files stored in a volume mount shared w/recorder-pod
+files: [player-pod.yaml,player-svc.yaml,recorder-pv.yaml,recorder-pvc.yaml]
+---
+kind: Module
+type: kubernetes
+name: recorder
+description: Telemetry recorder, makes recordings of UDP packets coming from node port 30000 (or another pod?)
+files: [recorder-pod.yaml,recorder-svc.yaml,recorder-pv.yaml,recorder-pvc.yaml]

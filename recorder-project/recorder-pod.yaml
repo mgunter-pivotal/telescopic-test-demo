@@ -1,0 +1,21 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: recorder-pod
+  labels:
+    app: f1-recorder
+spec:
+  volumes:
+    - name: data-pv-storage
+      persistentVolumeClaim:
+        claimName: data-pv-claim
+  containers:
+    - name: f1-recorder
+      image: mgunter/python-f1-record
+      ports:
+        - containerPort: 20777
+          name: "http-server"
+      volumeMounts:
+        - mountPath: "/sensable"
+          name: data-pv-storage

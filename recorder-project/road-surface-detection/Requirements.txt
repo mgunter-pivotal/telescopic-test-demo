@@ -1,0 +1,10 @@
+argparse
+sys
+time
+socket
+sqlite3
+threading
+logging
+ctypes
+selectors
+f1_2020_telemetry

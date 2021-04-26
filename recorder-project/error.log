@@ -1,0 +1,47 @@
+
+[2021-04-14T02:41:09.960Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+The Service "udp-player-service" is invalid: spec.ports[0].nodePort: Invalid value: 30001: provided port is already allocated
+
+The Service "udp-player-service" is invalid: spec.ports[0].nodePort: Invalid value: 30001: provided port is already allocated
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  The Service "udp-player-service" is invalid: spec.ports[0].nodePort: Invalid
+  value: 30001: provided port is already allocated
+all: >-
+  The Service "udp-player-service" is invalid: spec.ports[0].nodePort: Invalid
+  value: 30001: provided port is already allocated
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-14T02:41:59.940Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.player:
+    type: deploy
+    description: deploying service 'player' (from module 'player')
+    key: deploy.player
+    name: player
+    startedAt: 2021-04-14T02:41:04.685Z
+    completedAt: 2021-04-14T02:41:09.956Z
+    batchId: 0a6705b0-4571-4484-9566-71a0f571aa4a
+    version: v-cd25dd0295
+
