@@ -7,7 +7,7 @@ environments:
 providers:
   - name: local-kubernetes
     environments: [local]
-    context: docker-desktop
+    context: minikube
   - name: kubernetes
     context: gke_th-structure-flow-demo_us-east1-b_stream-demo
     environments: [gke]
@@ -28,11 +28,21 @@ type: kubernetes
 name: player
 disabled: false
 description: Telemetry player, utilizes recording files stored in a volume mount shared w/recorder-pod
-files: [player-pod.yaml,player-svc.yaml,recorder-pv.yaml,recorder-pvc.yaml]
+files: [player-pod.yaml,player-svc.yaml]
+dependencies: [local-pv]
 ---
 kind: Module
 type: kubernetes
 name: recorder
 disabled: true
 description: Telemetry recorder, makes recordings of UDP packets coming from node port 30000 (or another pod?)
-files: [recorder-pod.yaml,recorder-svc.yaml,recorder-pv.yaml,recorder-pvc.yaml]
+files: [recorder-pod.yaml,recorder-svc.yaml]
+dependencies: [local-pv]
+---
+kind: Module
+type: kubernetes
+name: local-pv
+disabled: false
+description: Telemetry recorder, makes recordings of UDP packets coming from node port 30000 (or another pod?)
+files: [standard-storage-class.yaml,recorder-pv.yaml,recorder-pvc.yaml]
+

@@ -3688,3 +3688,130 @@ results:
     batchId: e8a8979f-21ef-48bd-84e9-21483926b557
     version: v-d496daffa6
 
+
+[2021-04-27T01:16:51.794Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=minikube apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+  The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+core.PodSpec{
+	Volumes:        []core.Volume{{Name: "data-pv-storage", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: "data-pv-claim"}}}, {Name: "default-token-45b2r", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: "default-token-45b2r", DefaultMode: &420}}}},
+	InitContainers: nil,
+	Containers: []core.Container{
+		{
+			Name:       "f1-player",
+			Image:      "mgunter/python-f1-play",
+			Command:    nil,
+- 			Args:       []string{"test2.sqlite3"},
++ 			Args:       []string{"test1.sqlite3"},
+			WorkingDir: "",
+			Ports:      []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}},
+			... // 16 identical fields
+		},
+	},
+	EphemeralContainers: nil,
+	RestartPolicy:       "OnFailure",
+	... // 24 identical fields
+}
+
+The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	Volumes:        []core.Volume{{Name: "data-pv-storage", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: "data-pv-claim"}}}, {Name: "default-token-45b2r", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: "default-token-45b2r", DefaultMode: &420}}}},
+  	InitContainers: nil,
+  	Containers: []core.Container{
+  		{
+  			Name:       "f1-player",
+  			Image:      "mgunter/python-f1-play",
+  			Command:    nil,
+- 			Args:       []string{"test2.sqlite3"},
++ 			Args:       []string{"test1.sqlite3"},
+  			WorkingDir: "",
+  			Ports:      []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}},
+  			... // 16 identical fields
+  		},
+  	},
+  	EphemeralContainers: nil,
+  	RestartPolicy:       "OnFailure",
+  	... // 24 identical fields
+  }
+
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=minikube apply --prune --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=minikube apply --prune --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \tVolumes:        []core.Volume{{Name: \"data-pv-storage\", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: \"data-pv-claim\"}}}, {Name: \"default-token-45b2r\", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: \"default-token-45b2r\", DefaultMode: &420}}}},\n  \tInitContainers: nil,\n  \tContainers: []core.Container{\n  \t\t{\n  \t\t\tName:       \"f1-player\",\n  \t\t\tImage:      \"mgunter/python-f1-play\",\n  \t\t\tCommand:    nil,\n- \t\t\tArgs:       []string{\"test2.sqlite3\"},\n+ \t\t\tArgs:       []string{\"test1.sqlite3\"},\n  \t\t\tWorkingDir: \"\",\n  \t\t\tPorts:      []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}},\n  \t\t\t... // 16 identical fields\n  \t\t},\n  \t},\n  \tEphemeralContainers: nil,\n  \tRestartPolicy:       \"OnFailure\",\n  \t... // 24 identical fields\n  }\n"
+all: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \tVolumes:        []core.Volume{{Name: \"data-pv-storage\", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: \"data-pv-claim\"}}}, {Name: \"default-token-45b2r\", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: \"default-token-45b2r\", DefaultMode: &420}}}},\n  \tInitContainers: nil,\n  \tContainers: []core.Container{\n  \t\t{\n  \t\t\tName:       \"f1-player\",\n  \t\t\tImage:      \"mgunter/python-f1-play\",\n  \t\t\tCommand:    nil,\n- \t\t\tArgs:       []string{\"test2.sqlite3\"},\n+ \t\t\tArgs:       []string{\"test1.sqlite3\"},\n  \t\t\tWorkingDir: \"\",\n  \t\t\tPorts:      []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}},\n  \t\t\t... // 16 identical fields\n  \t\t},\n  \t},\n  \tEphemeralContainers: nil,\n  \tRestartPolicy:       \"OnFailure\",\n  \t... // 24 identical fields\n  }\n"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T01:16:51.807Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.player:
+    type: deploy
+    description: deploying service 'player' (from module 'player')
+    key: deploy.player
+    name: player
+    startedAt: 2021-04-27T01:16:51.242Z
+    completedAt: 2021-04-27T01:16:51.781Z
+    batchId: 357a2f72-d0a5-4edc-a675-b1598a06100b
+    version: v-6728495926
+
+
+[2021-04-27T02:37:51.761Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=minikube apply --prune --selector service=local-pv --output=json -f -" failed with code 1:
+
+The PersistentVolumeClaim "data-pv-claim" is invalid: spec: Forbidden: is immutable after creation except resources.requests for bound claims
+
+The PersistentVolumeClaim "data-pv-claim" is invalid: spec: Forbidden: is immutable after creation except resources.requests for bound claims
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=minikube apply --prune --selector service=local-pv --output=json -f
+  -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=minikube apply --prune --selector service=local-pv --output=json -f
+  -
+exitCode: 1
+stdout: ''
+stderr: >-
+  The PersistentVolumeClaim "data-pv-claim" is invalid: spec: Forbidden: is
+  immutable after creation except resources.requests for bound claims
+all: >-
+  The PersistentVolumeClaim "data-pv-claim" is invalid: spec: Forbidden: is
+  immutable after creation except resources.requests for bound claims
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T02:37:51.770Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.local-pv:
+    type: deploy
+    description: deploying service 'local-pv' (from module 'local-pv')
+    key: deploy.local-pv
+    name: local-pv
+    startedAt: 2021-04-27T02:37:51.500Z
+    completedAt: 2021-04-27T02:37:51.756Z
+    batchId: a01a00c7-c318-4580-9a0d-dc8bfe524fda
+    version: v-07aceef360
+

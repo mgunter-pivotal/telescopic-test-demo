@@ -13,5 +13,5 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/mnt/disks/data"
-    #path: "/Volumes/Macintosh\ HD/Users/mattgunter/Projects/Stream-test-demo/data"
+    path: "/tmp/hostpath_pv/"
+    #path: "/mnt/disks/data"
