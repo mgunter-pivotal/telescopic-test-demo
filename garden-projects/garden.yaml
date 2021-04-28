@@ -29,7 +29,7 @@ name: player
 disabled: false
 description: Telemetry player, utilizes recording files stored in a volume mount shared w/recorder-pod
 files: [player-pod.yaml,player-svc.yaml]
-dependencies: [local-pv]
+dependencies: [local-pv, broker]
 ---
 kind: Module
 type: kubernetes
@@ -37,7 +37,7 @@ name: recorder
 disabled: true
 description: Telemetry recorder, makes recordings of UDP packets coming from node port 30000 (or another pod?)
 files: [recorder-pod.yaml,recorder-svc.yaml]
-dependencies: [local-pv]
+dependencies: [local-pv, broker]
 ---
 kind: Module
 type: kubernetes
@@ -45,4 +45,51 @@ name: local-pv
 disabled: false
 description: Telemetry recorder, makes recordings of UDP packets coming from node port 30000 (or another pod?)
 files: [recorder-pv.yaml,recorder-pvc.yaml]
-
+---
+kind: Module
+type: kubernetes
+name: zookeeper
+description: this is zookeeper for kafka
+files: [zookeeper.yaml,zooservice.yaml]
+---
+kind: Module
+type: kubernetes
+name: broker
+description: this is the kafka broker itself....
+files: [kafka-docker.yaml,kafka-service.yaml,udp-inbound-p3000-svc.yaml]
+dependencies: [zookeeper]
+---
+kind: Module
+description: UDP Telemetry capture app
+type: container
+name: udp-app
+disabled: false
+services:
+  - name: udp-app
+    ports:
+      - name: udp
+        protocol: UDP
+        containerPort: 20777
+        servicePort: 20777
+    env:
+      KAFKA_BOOTSTRAP_SERVERS_ENV: kafka-service:31234
+      UDP_PORT: 20777
+    dependencies: [broker]      
+---
+kind: Module
+type: helm
+name: flink-operator
+chart: flink-operator
+chartPath: helm-chart/flink-operator
+values: {operatorImage.name=gcr.io/flink-operator/flink-operator:latest}
+disabled: false
+description: Operator for Flink Session Cluster via CRD
+dependencies: [broker]
+---
+kind: Module
+type: kubernetes
+name: flink-session-cluster
+disabled: false
+description: a session cluster that can run flink jobs
+dependencies: [flink-operator]
+files: [flinkoperator_v1beta1_flinksessioncluster.yaml]

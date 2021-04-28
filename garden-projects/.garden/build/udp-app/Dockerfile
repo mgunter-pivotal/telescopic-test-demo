@@ -1,0 +1,1 @@
+FROM mgunter/f1-telemetry-udp-kafka:1.0-SNAPSHOT

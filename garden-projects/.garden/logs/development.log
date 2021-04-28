@@ -10882,3 +10882,2023 @@ See error.log for detailed error message
 [2021-04-27T20:30:24.070Z] Deploying version v-c6d708a165... → Done (took 3.9 sec)
 
 [2021-04-27T20:30:24.078Z] Done! ✔️ 
+
+[2021-04-28T02:31:43.127Z] Getting status...
+
+[2021-04-28T02:31:45.531Z] Getting status... → Done
+
+[2021-04-28T02:31:45.803Z] Failed resolving one or more modules:
+
+udp-app: Error validating Module 'udp-app': key "dependencies" is not allowed at path [dependencies]
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-28T02:31:45.805Z] 
+See error.log for detailed error message
+
+[2021-04-28T02:33:57.464Z] Getting status...
+
+[2021-04-28T02:33:58.351Z] Getting status... → Cached
+
+[2021-04-28T02:33:58.353Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T02:33:58.641Z] Failed resolving one or more modules:
+
+udp-app: Error validating Module 'udp-app': key "dependencies" is not allowed at path [dependencies]
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-28T02:33:58.642Z] 
+See error.log for detailed error message
+
+[2021-04-28T02:34:23.508Z] Getting status...
+
+[2021-04-28T02:34:24.379Z] Getting status... → Cached
+
+[2021-04-28T02:34:24.381Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T02:34:24.686Z] Failed resolving one or more modules:
+
+udp-app: Error validating Module 'udp-app': key "dependencies" is not allowed at path [dependencies]
+
+Error Details:
+
+errors: {}
+
+
+[2021-04-28T02:34:24.688Z] 
+See error.log for detailed error message
+
+[2021-04-28T02:35:44.759Z] Getting status...
+
+[2021-04-28T02:35:45.805Z] Getting status... → Cached
+
+[2021-04-28T02:35:45.807Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T02:35:46.140Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T02:35:46.161Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:35:46.166Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:35:46.168Z] Syncing module sources (3 files)...
+
+[2021-04-28T02:35:46.170Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:35:46.172Z] Syncing module sources (10 files)...
+
+[2021-04-28T02:35:46.180Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:35:46.184Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:35:46.214Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-28T02:35:46.218Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T02:35:46.222Z] Building version v-9322c4eebe...
+
+[2021-04-28T02:35:46.225Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:35:46.228Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T02:35:46.231Z] Building version v-2f8c7566f6...
+
+[2021-04-28T02:35:46.237Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:35:46.239Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T02:35:46.242Z] Building version v-50aa511d34...
+
+[2021-04-28T02:35:46.245Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:35:46.250Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T02:35:46.253Z] Building version v-1a328988a3...
+
+[2021-04-28T02:35:46.255Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:35:46.258Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T02:35:46.260Z] Building version v-ee21b741b7...
+
+[2021-04-28T02:35:46.263Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:35:46.266Z] Getting build status for v-47a406fd21...
+
+[2021-04-28T02:35:46.277Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:35:46.281Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T02:35:46.285Z] Building version v-9467fcc674...
+
+[2021-04-28T02:35:46.291Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T02:35:46.295Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T02:35:46.301Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T02:35:46.308Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T02:35:46.316Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T02:35:46.319Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T02:35:46.621Z] Deploying version v-1a328988a3...
+
+[2021-04-28T02:35:46.709Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T02:35:46.713Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T02:35:46.989Z] Getting build status for v-47a406fd21... → Done (took 0.7 sec)
+
+[2021-04-28T02:35:48.448Z] Waiting for resources to be ready...
+
+[2021-04-28T02:35:50.463Z] Resources ready
+
+[2021-04-28T02:35:50.496Z] Deploying version v-1a328988a3... → Done (took 3.9 sec)
+
+[2021-04-28T02:35:50.501Z] Deploying version v-50aa511d34...
+
+[2021-04-28T02:35:52.309Z] Waiting for resources to be ready...
+
+[2021-04-28T02:35:54.330Z] Resources ready
+
+[2021-04-28T02:35:54.358Z] Deploying version v-50aa511d34... → Done (took 3.9 sec)
+
+[2021-04-28T02:35:54.363Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T02:35:54.367Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:35:54.372Z] Deploying version v-47a406fd21...
+
+[2021-04-28T02:35:56.315Z] Waiting for resources to be ready...
+
+[2021-04-28T02:35:56.429Z] Waiting for resources to be ready...
+
+[2021-04-28T02:35:58.454Z] Resources ready
+
+[2021-04-28T02:35:58.495Z] Deploying version v-47a406fd21... → Done (took 4.1 sec)
+
+[2021-04-28T02:35:58.503Z] → Ingress: http://http.local.app.garden
+
+[2021-04-28T02:36:06.684Z] Waiting for resources to be ready...
+
+[2021-04-28T02:36:08.763Z] Resources ready
+
+[2021-04-28T02:36:08.769Z] Deploying version v-9467fcc674... → Done (took 14.4 sec)
+
+[2021-04-28T02:36:08.775Z] Deploying version v-ee21b741b7...
+
+[2021-04-28T02:36:12.811Z] Waiting for resources to be ready...
+
+[2021-04-28T02:36:14.828Z] Resources ready
+
+[2021-04-28T02:36:14.870Z] Deploying version v-ee21b741b7... → Done (took 6.1 sec)
+
+[2021-04-28T02:41:13.628Z] Getting status...
+
+[2021-04-28T02:41:14.769Z] Getting status... → Cached
+
+[2021-04-28T02:41:14.771Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T02:41:15.130Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T02:41:15.148Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:41:15.153Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:41:15.155Z] Syncing module sources (3 files)...
+
+[2021-04-28T02:41:15.158Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:41:15.160Z] Syncing module sources (10 files)...
+
+[2021-04-28T02:41:15.165Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:41:15.168Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:41:15.201Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:41:15.208Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T02:41:15.212Z] Building version v-9322c4eebe...
+
+[2021-04-28T02:41:15.215Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:41:15.219Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T02:41:15.223Z] Building version v-2f8c7566f6...
+
+[2021-04-28T02:41:15.227Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:41:15.231Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T02:41:15.233Z] Building version v-1a328988a3...
+
+[2021-04-28T02:41:15.237Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:41:15.240Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T02:41:15.243Z] Building version v-50aa511d34...
+
+[2021-04-28T02:41:15.247Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:41:15.250Z] Getting build status for v-47a406fd21...
+
+[2021-04-28T02:41:15.254Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:41:15.257Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T02:41:15.260Z] Building version v-ee21b741b7...
+
+[2021-04-28T02:41:15.276Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:41:15.280Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T02:41:15.283Z] Building version v-9467fcc674...
+
+[2021-04-28T02:41:15.292Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T02:41:15.296Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T02:41:15.300Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T02:41:15.303Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T02:41:15.309Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T02:41:15.315Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T02:41:15.657Z] Deploying version v-1a328988a3...
+
+[2021-04-28T02:41:15.660Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-28T02:41:15.685Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T02:41:15.689Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T02:41:15.718Z] Deploying version v-50aa511d34...
+
+[2021-04-28T02:41:15.722Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-04-28T02:41:15.760Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T02:41:15.957Z] Getting build status for v-47a406fd21... → Done (took 0.7 sec)
+
+[2021-04-28T02:41:15.962Z] Deploying version v-47a406fd21...
+
+[2021-04-28T02:41:15.966Z] Deploying version v-47a406fd21... → Already deployed
+
+[2021-04-28T02:41:15.970Z] → Ingress: http://http.local.app.garden
+
+[2021-04-28T02:41:16.433Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:41:16.441Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-04-28T02:41:16.471Z] Deploying version v-ee21b741b7...
+
+[2021-04-28T02:41:16.476Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-04-28T02:41:17.450Z] Waiting for resources to be ready...
+
+[2021-04-28T02:41:19.478Z] Resources ready
+
+[2021-04-28T02:41:19.508Z] Deploying version v-2f8c7566f6... → Done (took 3.7 sec)
+
+[2021-04-28T02:41:19.543Z] Done! ✔️ 
+
+[2021-04-28T02:46:52.717Z] Getting status...
+
+[2021-04-28T02:46:54.134Z] Getting status... → Done
+
+[2021-04-28T02:46:54.574Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T02:46:54.597Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:46:54.603Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:46:54.606Z] Syncing module sources (3 files)...
+
+[2021-04-28T02:46:54.608Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:46:54.616Z] Syncing module sources (10 files)...
+
+[2021-04-28T02:46:54.620Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:46:54.625Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:46:54.648Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-28T02:46:54.657Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T02:46:54.662Z] Building version v-9322c4eebe...
+
+[2021-04-28T02:46:54.669Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:46:54.673Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T02:46:54.677Z] Building version v-1a328988a3...
+
+[2021-04-28T02:46:54.681Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:46:54.686Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T02:46:54.690Z] Building version v-50aa511d34...
+
+[2021-04-28T02:46:54.693Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:46:54.701Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T02:46:54.704Z] Building version v-2f8c7566f6...
+
+[2021-04-28T02:46:54.709Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:46:54.712Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T02:46:54.716Z] Building version v-ee21b741b7...
+
+[2021-04-28T02:46:54.720Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:46:54.724Z] Getting build status for v-47a406fd21...
+
+[2021-04-28T02:46:54.749Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:46:54.754Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T02:46:54.759Z] Building version v-9467fcc674...
+
+[2021-04-28T02:46:54.773Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T02:46:54.780Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T02:46:54.785Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T02:46:54.789Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T02:46:54.799Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T02:46:54.804Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T02:46:54.954Z] Deploying version v-1a328988a3...
+
+[2021-04-28T02:46:55.062Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T02:46:55.065Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T02:46:56.233Z] Unable to query registry for image status: Get https://gcr.io/v2/th-structure-flow-demo/udp-app/manifests/v-47a406fd21: unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+
+[2021-04-28T02:46:56.247Z] Building version v-47a406fd21...
+
+[2021-04-28T02:46:56.493Z] Building udp-app:v-47a406fd21...
+
+[2021-04-28T02:46:57.310Z] Waiting for resources to be ready...
+
+[2021-04-28T02:46:57.599Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-28T02:46:59.321Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-28T02:46:59.330Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker push gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21" failed with code 1:
+
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Here's the full output:
+
+The push refers to repository [gcr.io/th-structure-flow-demo/udp-app]
+f7577e4c74b4: Preparing
+fe33d2017d1d: Preparing
+adbb30380c0c: Preparing
+2d5e4dca5d45: Preparing
+d8ea972acbb7: Preparing
+15b9aeee8493: Preparing
+2831d216c2dc: Preparing
+5d09c2db1d76: Preparing
+417cb9b79ade: Preparing
+15b9aeee8493: Waiting
+2831d216c2dc: Waiting
+5d09c2db1d76: Waiting
+417cb9b79ade: Waiting
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/udp-app
+
+
+[2021-04-28T02:46:59.753Z] Deployment/zookeeper-deploy: Pulling image "digitalwonderland/zookeeper"
+
+[2021-04-28T02:47:05.776Z] Resources ready
+
+[2021-04-28T02:47:05.960Z] Deploying version v-1a328988a3... → Done (took 11 sec)
+
+[2021-04-28T02:47:05.968Z] Deploying version v-50aa511d34...
+
+[2021-04-28T02:47:08.454Z] Waiting for resources to be ready...
+
+[2021-04-28T02:47:10.897Z] Deployment/kafka-broker0: Pulling image "wurstmeister/kafka"
+
+[2021-04-28T02:47:20.772Z] Resources ready
+
+[2021-04-28T02:47:20.942Z] Deploying version v-50aa511d34... → Done (took 15 sec)
+
+[2021-04-28T02:47:20.950Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T02:47:20.957Z] Deploying version v-2f8c7566f6... → Already deployed
+
+[2021-04-28T02:47:20.963Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:47:24.366Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:47:24.377Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace suitcaselab-default install flink-operator /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace suitcaselab-default --output json --timeout 300s --values /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: CustomResourceDefinition "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "suitcaselab-default": current value is "flink-cluster-default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: CustomResourceDefinition "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "suitcaselab-default": current value is "flink-cluster-default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  suitcaselab-default install flink-operator
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace suitcaselab-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  suitcaselab-default install flink-operator
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace suitcaselab-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: CustomResourceDefinition
+  "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be
+  imported into the current release: invalid ownership metadata; annotation
+  validation error: key "meta.helm.sh/release-namespace" must equal
+  "suitcaselab-default": current value is "flink-cluster-default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: CustomResourceDefinition
+  "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be
+  imported into the current release: invalid ownership metadata; annotation
+  validation error: key "meta.helm.sh/release-namespace" must equal
+  "suitcaselab-default": current value is "flink-cluster-default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-28T02:47:24.395Z] 2 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-28T02:46:54.721Z
+    completedAt: 2021-04-28T02:46:59.322Z
+    batchId: 03a77708-fc0e-4b57-9a6d-e256215a9102
+    version: v-47a406fd21
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-28T02:47:20.944Z
+    completedAt: 2021-04-28T02:47:24.366Z
+    batchId: 03a77708-fc0e-4b57-9a6d-e256215a9102
+    version: v-9467fcc674
+
+
+[2021-04-28T02:47:24.403Z] 
+See error.log for detailed error message
+
+[2021-04-28T02:51:08.982Z] Getting status...
+
+[2021-04-28T02:51:09.602Z] Getting status... → Cached
+
+[2021-04-28T02:51:09.604Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T02:51:10.027Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T02:51:10.053Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:51:10.060Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:51:10.064Z] Syncing module sources (3 files)...
+
+[2021-04-28T02:51:10.067Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:51:10.077Z] Syncing module sources (10 files)...
+
+[2021-04-28T02:51:10.083Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:51:10.089Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:51:10.127Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:51:10.130Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T02:51:10.133Z] Building version v-1a328988a3...
+
+[2021-04-28T02:51:10.136Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:51:10.140Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T02:51:10.143Z] Building version v-50aa511d34...
+
+[2021-04-28T02:51:10.146Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:51:10.149Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T02:51:10.153Z] Building version v-9322c4eebe...
+
+[2021-04-28T02:51:10.157Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:51:10.161Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T02:51:10.166Z] Building version v-2f8c7566f6...
+
+[2021-04-28T02:51:10.170Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:51:10.174Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T02:51:10.177Z] Building version v-ee21b741b7...
+
+[2021-04-28T02:51:10.181Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:51:10.185Z] Getting build status for v-47a406fd21...
+
+[2021-04-28T02:51:10.215Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T02:51:10.225Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:51:10.233Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T02:51:10.240Z] Building version v-9467fcc674...
+
+[2021-04-28T02:51:10.247Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T02:51:10.251Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T02:51:10.258Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T02:51:10.262Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T02:51:10.269Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T02:51:12.322Z] Deploying version v-1a328988a3...
+
+[2021-04-28T02:51:12.327Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-28T02:51:12.519Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T02:51:12.524Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T02:51:12.598Z] Deploying version v-50aa511d34...
+
+[2021-04-28T02:51:12.603Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-04-28T02:51:12.800Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T02:51:12.806Z] Deploying version v-2f8c7566f6... → Already deployed
+
+[2021-04-28T02:51:13.241Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:51:14.216Z] Building version v-47a406fd21...
+
+[2021-04-28T02:51:14.479Z] Building udp-app:v-47a406fd21...
+
+[2021-04-28T02:51:15.567Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-28T02:51:15.853Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:51:15.865Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace suitcaselab-default install flink-operator /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace suitcaselab-default --output json --timeout 300s --values /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: CustomResourceDefinition "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "suitcaselab-default": current value is "flink-cluster-default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: CustomResourceDefinition "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "suitcaselab-default": current value is "flink-cluster-default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  suitcaselab-default install flink-operator
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace suitcaselab-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  suitcaselab-default install flink-operator
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace suitcaselab-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: CustomResourceDefinition
+  "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be
+  imported into the current release: invalid ownership metadata; annotation
+  validation error: key "meta.helm.sh/release-namespace" must equal
+  "suitcaselab-default": current value is "flink-cluster-default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: CustomResourceDefinition
+  "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be
+  imported into the current release: invalid ownership metadata; annotation
+  validation error: key "meta.helm.sh/release-namespace" must equal
+  "suitcaselab-default": current value is "flink-cluster-default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-28T02:51:32.312Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster... → Done (took 22.1 sec)
+
+[2021-04-28T02:51:32.321Z] Deploying version v-47a406fd21...
+
+[2021-04-28T02:51:34.873Z] Waiting for resources to be ready...
+
+[2021-04-28T02:51:37.296Z] Deployment/udp-app: Pulling image "gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21"
+
+[2021-04-28T02:51:40.269Z] Deployment/udp-app: Successfully pulled image "gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21"
+
+[2021-04-28T02:51:43.364Z] Resources ready
+
+[2021-04-28T02:51:43.783Z] Deploying version v-47a406fd21... → Done (took 11.5 sec)
+
+[2021-04-28T02:51:43.791Z] → Ingress: http://http.local.app.garden
+
+[2021-04-28T02:51:43.824Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-28T02:51:13.236Z
+    completedAt: 2021-04-28T02:51:15.853Z
+    batchId: 130696c1-7583-4554-8d7b-6bfd7f145469
+    version: v-9467fcc674
+
+
+[2021-04-28T02:51:43.831Z] 
+See error.log for detailed error message
+
+[2021-04-28T02:53:42.860Z] Getting status...
+
+[2021-04-28T02:53:43.479Z] Getting status... → Cached
+
+[2021-04-28T02:53:43.481Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T02:53:43.841Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T02:53:43.862Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:53:43.867Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:53:43.871Z] Syncing module sources (3 files)...
+
+[2021-04-28T02:53:43.873Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:53:43.877Z] Syncing module sources (10 files)...
+
+[2021-04-28T02:53:43.887Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:53:43.891Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:53:43.917Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:53:43.925Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T02:53:43.928Z] Building version v-1a328988a3...
+
+[2021-04-28T02:53:43.931Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:53:43.936Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T02:53:43.940Z] Building version v-50aa511d34...
+
+[2021-04-28T02:53:43.943Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:53:43.947Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T02:53:43.949Z] Building version v-9322c4eebe...
+
+[2021-04-28T02:53:43.953Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:53:43.959Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T02:53:43.962Z] Building version v-ee21b741b7...
+
+[2021-04-28T02:53:43.965Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:53:43.968Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T02:53:43.971Z] Building version v-2f8c7566f6...
+
+[2021-04-28T02:53:43.975Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:53:43.979Z] Getting build status for v-47a406fd21...
+
+[2021-04-28T02:53:44.004Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:53:44.009Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T02:53:44.013Z] Building version v-9467fcc674...
+
+[2021-04-28T02:53:44.024Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T02:53:44.028Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T02:53:44.032Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T02:53:44.036Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T02:53:44.041Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T02:53:44.047Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T02:53:46.054Z] Deploying version v-1a328988a3...
+
+[2021-04-28T02:53:46.059Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-28T02:53:46.268Z] Deploying version v-50aa511d34...
+
+[2021-04-28T02:53:46.275Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-04-28T02:53:46.295Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T02:53:46.299Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T02:53:46.331Z] Getting build status for v-47a406fd21... → Done (took 2.4 sec)
+
+[2021-04-28T02:53:46.500Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T02:53:46.503Z] Deploying version v-2f8c7566f6... → Already deployed
+
+[2021-04-28T02:53:46.900Z] Deploying version v-47a406fd21...
+
+[2021-04-28T02:53:46.904Z] Deploying version v-47a406fd21... → Already deployed
+
+[2021-04-28T02:53:46.910Z] → Ingress: http://http.local.app.garden
+
+[2021-04-28T02:53:46.950Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:53:50.474Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:53:50.486Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace suitcaselab-default install flink-operator /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace suitcaselab-default --output json --timeout 300s --values /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: CustomResourceDefinition "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "suitcaselab-default": current value is "flink-cluster-default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: CustomResourceDefinition "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "suitcaselab-default": current value is "flink-cluster-default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  suitcaselab-default install flink-operator
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace suitcaselab-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  suitcaselab-default install flink-operator
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace suitcaselab-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: CustomResourceDefinition
+  "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be
+  imported into the current release: invalid ownership metadata; annotation
+  validation error: key "meta.helm.sh/release-namespace" must equal
+  "suitcaselab-default": current value is "flink-cluster-default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: CustomResourceDefinition
+  "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be
+  imported into the current release: invalid ownership metadata; annotation
+  validation error: key "meta.helm.sh/release-namespace" must equal
+  "suitcaselab-default": current value is "flink-cluster-default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-28T02:53:50.518Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-28T02:53:46.944Z
+    completedAt: 2021-04-28T02:53:50.474Z
+    batchId: 980bcdcf-7083-4476-8150-02e3be599b2f
+    version: v-9467fcc674
+
+
+[2021-04-28T02:53:50.527Z] 
+See error.log for detailed error message
+
+[2021-04-28T02:54:27.957Z] Getting status...
+
+[2021-04-28T02:54:28.423Z] Getting status... → Cached
+
+[2021-04-28T02:54:28.425Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T02:54:28.757Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T02:54:28.778Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:54:28.783Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:54:28.785Z] Syncing module sources (3 files)...
+
+[2021-04-28T02:54:28.787Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:54:28.792Z] Syncing module sources (10 files)...
+
+[2021-04-28T02:54:28.796Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:54:28.799Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:54:28.828Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-28T02:54:28.833Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T02:54:28.836Z] Building version v-1a328988a3...
+
+[2021-04-28T02:54:28.839Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:54:28.843Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T02:54:28.847Z] Building version v-9322c4eebe...
+
+[2021-04-28T02:54:28.850Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:54:28.853Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T02:54:28.855Z] Building version v-50aa511d34...
+
+[2021-04-28T02:54:28.861Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:54:28.864Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T02:54:28.866Z] Building version v-2f8c7566f6...
+
+[2021-04-28T02:54:28.869Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:54:28.872Z] Getting build status for v-47a406fd21...
+
+[2021-04-28T02:54:28.875Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:54:28.878Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T02:54:28.880Z] Building version v-ee21b741b7...
+
+[2021-04-28T02:54:28.904Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T02:54:28.906Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T02:54:28.909Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T02:54:28.914Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:54:28.918Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T02:54:28.921Z] Building version v-9467fcc674...
+
+[2021-04-28T02:54:28.926Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T02:54:28.932Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T02:54:28.936Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T02:54:29.447Z] Deploying version v-1a328988a3...
+
+[2021-04-28T02:54:29.451Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-28T02:54:29.606Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T02:54:29.610Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T02:54:29.638Z] Deploying version v-50aa511d34...
+
+[2021-04-28T02:54:29.642Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-04-28T02:54:29.827Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T02:54:29.831Z] Deploying version v-2f8c7566f6... → Already deployed
+
+[2021-04-28T02:54:30.197Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:54:30.777Z] Getting build status for v-47a406fd21... → Done (took 1.9 sec)
+
+[2021-04-28T02:54:30.783Z] Deploying version v-47a406fd21...
+
+[2021-04-28T02:54:30.790Z] Deploying version v-47a406fd21... → Already deployed
+
+[2021-04-28T02:54:30.797Z] → Ingress: http://http.local.app.garden
+
+[2021-04-28T02:54:33.806Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:54:33.817Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace suitcaselab-default install flink-operator /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace suitcaselab-default --output json --timeout 300s --values /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: MutatingWebhookConfiguration "flink-operator-mutating-webhook-configuration" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "suitcaselab-default": current value is "flink-cluster-default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: MutatingWebhookConfiguration "flink-operator-mutating-webhook-configuration" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "suitcaselab-default": current value is "flink-cluster-default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  suitcaselab-default install flink-operator
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace suitcaselab-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  suitcaselab-default install flink-operator
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace suitcaselab-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: MutatingWebhookConfiguration
+  "flink-operator-mutating-webhook-configuration" in namespace "" exists and
+  cannot be imported into the current release: invalid ownership metadata;
+  annotation validation error: key "meta.helm.sh/release-namespace" must equal
+  "suitcaselab-default": current value is "flink-cluster-default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: MutatingWebhookConfiguration
+  "flink-operator-mutating-webhook-configuration" in namespace "" exists and
+  cannot be imported into the current release: invalid ownership metadata;
+  annotation validation error: key "meta.helm.sh/release-namespace" must equal
+  "suitcaselab-default": current value is "flink-cluster-default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-28T02:54:33.848Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-28T02:54:30.192Z
+    completedAt: 2021-04-28T02:54:33.806Z
+    batchId: 327f2467-56e0-413c-b7b6-ba3831c9eb4d
+    version: v-9467fcc674
+
+
+[2021-04-28T02:54:33.856Z] 
+See error.log for detailed error message
+
+[2021-04-28T02:55:38.031Z] Getting status...
+
+[2021-04-28T02:55:38.550Z] Getting status... → Cached
+
+[2021-04-28T02:55:38.552Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T02:55:38.856Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T02:55:38.879Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:55:38.884Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:55:38.887Z] Syncing module sources (3 files)...
+
+[2021-04-28T02:55:38.889Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:55:38.892Z] Syncing module sources (10 files)...
+
+[2021-04-28T02:55:38.898Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:55:38.901Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:55:38.930Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-28T02:55:38.938Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T02:55:38.941Z] Building version v-2f8c7566f6...
+
+[2021-04-28T02:55:38.945Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:55:38.950Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T02:55:38.954Z] Building version v-50aa511d34...
+
+[2021-04-28T02:55:38.959Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:55:38.964Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T02:55:38.967Z] Building version v-1a328988a3...
+
+[2021-04-28T02:55:38.971Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:55:38.976Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T02:55:38.979Z] Building version v-9322c4eebe...
+
+[2021-04-28T02:55:38.984Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:55:38.988Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T02:55:38.992Z] Building version v-ee21b741b7...
+
+[2021-04-28T02:55:38.995Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:55:39.000Z] Getting build status for v-47a406fd21...
+
+[2021-04-28T02:55:39.024Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:55:39.029Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T02:55:39.033Z] Building version v-9467fcc674...
+
+[2021-04-28T02:55:39.038Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T02:55:39.042Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T02:55:39.046Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T02:55:39.055Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T02:55:39.060Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T02:55:39.068Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T02:55:40.577Z] Deploying version v-1a328988a3...
+
+[2021-04-28T02:55:40.581Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-28T02:55:40.767Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T02:55:40.772Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T02:55:40.795Z] Deploying version v-50aa511d34...
+
+[2021-04-28T02:55:40.800Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-04-28T02:55:41.003Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T02:55:41.007Z] Deploying version v-2f8c7566f6... → Already deployed
+
+[2021-04-28T02:55:41.441Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:55:41.643Z] Getting build status for v-47a406fd21... → Done (took 2.6 sec)
+
+[2021-04-28T02:55:41.649Z] Deploying version v-47a406fd21...
+
+[2021-04-28T02:55:41.654Z] Deploying version v-47a406fd21... → Already deployed
+
+[2021-04-28T02:55:41.664Z] → Ingress: http://http.local.app.garden
+
+[2021-04-28T02:55:44.788Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:55:44.799Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace suitcaselab-default install flink-operator /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace suitcaselab-default --output json --timeout 300s --values /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: ValidatingWebhookConfiguration "flink-operator-validating-webhook-configuration" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "suitcaselab-default": current value is "flink-cluster-default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: ValidatingWebhookConfiguration "flink-operator-validating-webhook-configuration" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "suitcaselab-default": current value is "flink-cluster-default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  suitcaselab-default install flink-operator
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace suitcaselab-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  suitcaselab-default install flink-operator
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace suitcaselab-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: ValidatingWebhookConfiguration
+  "flink-operator-validating-webhook-configuration" in namespace "" exists and
+  cannot be imported into the current release: invalid ownership metadata;
+  annotation validation error: key "meta.helm.sh/release-namespace" must equal
+  "suitcaselab-default": current value is "flink-cluster-default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: ValidatingWebhookConfiguration
+  "flink-operator-validating-webhook-configuration" in namespace "" exists and
+  cannot be imported into the current release: invalid ownership metadata;
+  annotation validation error: key "meta.helm.sh/release-namespace" must equal
+  "suitcaselab-default": current value is "flink-cluster-default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-28T02:55:44.833Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-28T02:55:41.436Z
+    completedAt: 2021-04-28T02:55:44.788Z
+    batchId: b7eb5cf8-cc39-492b-b5a6-4cf4b2215874
+    version: v-9467fcc674
+
+
+[2021-04-28T02:55:44.842Z] 
+See error.log for detailed error message
+
+[2021-04-28T02:56:16.199Z] Getting status...
+
+[2021-04-28T02:56:16.742Z] Getting status... → Cached
+
+[2021-04-28T02:56:16.744Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T02:56:17.062Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T02:56:17.080Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:56:17.087Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:56:17.089Z] Syncing module sources (3 files)...
+
+[2021-04-28T02:56:17.091Z] Syncing module sources (2 files)...
+
+[2021-04-28T02:56:17.094Z] Syncing module sources (10 files)...
+
+[2021-04-28T02:56:17.103Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:56:17.106Z] Syncing module sources (1 file)...
+
+[2021-04-28T02:56:17.133Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-28T02:56:17.137Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T02:56:17.140Z] Building version v-1a328988a3...
+
+[2021-04-28T02:56:17.144Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:56:17.148Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T02:56:17.151Z] Building version v-9322c4eebe...
+
+[2021-04-28T02:56:17.154Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:56:17.157Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T02:56:17.160Z] Building version v-50aa511d34...
+
+[2021-04-28T02:56:17.163Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:56:17.167Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T02:56:17.171Z] Building version v-2f8c7566f6...
+
+[2021-04-28T02:56:17.174Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:56:17.177Z] Getting build status for v-47a406fd21...
+
+[2021-04-28T02:56:17.180Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T02:56:17.183Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T02:56:17.186Z] Building version v-ee21b741b7...
+
+[2021-04-28T02:56:17.209Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T02:56:17.213Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T02:56:17.217Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T02:56:17.221Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T02:56:17.225Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T02:56:17.229Z] Building version v-9467fcc674...
+
+[2021-04-28T02:56:17.236Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T02:56:17.239Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T02:56:17.246Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T02:56:18.910Z] Deploying version v-1a328988a3...
+
+[2021-04-28T02:56:18.914Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-28T02:56:19.165Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T02:56:19.169Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T02:56:19.192Z] Deploying version v-50aa511d34...
+
+[2021-04-28T02:56:19.197Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-04-28T02:56:19.296Z] Getting build status for v-47a406fd21... → Done (took 2.1 sec)
+
+[2021-04-28T02:56:19.411Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T02:56:19.415Z] Deploying version v-2f8c7566f6... → Already deployed
+
+[2021-04-28T02:56:19.825Z] Deploying version v-47a406fd21...
+
+[2021-04-28T02:56:19.830Z] Deploying version v-47a406fd21... → Already deployed
+
+[2021-04-28T02:56:19.836Z] → Ingress: http://http.local.app.garden
+
+[2021-04-28T02:56:19.850Z] Deploying version v-9467fcc674...
+
+[2021-04-28T02:56:50.784Z] Waiting for resources to be ready...
+
+[2021-04-28T02:56:53.022Z] Resources ready
+
+[2021-04-28T02:56:53.028Z] Deploying version v-9467fcc674... → Done (took 33.2 sec)
+
+[2021-04-28T02:56:53.039Z] Deploying version v-ee21b741b7...
+
+[2021-04-28T02:56:58.432Z] Waiting for resources to be ready...
+
+[2021-04-28T02:57:00.531Z] Resources ready
+
+[2021-04-28T02:57:00.692Z] Deploying version v-ee21b741b7... → Done (took 7.7 sec)
+
+[2021-04-28T02:57:00.744Z] Done! ✔️ 
+
+[2021-04-28T13:03:32.221Z] Getting status...
+
+[2021-04-28T13:03:34.762Z] Getting status... → Done
+
+[2021-04-28T13:03:35.037Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T13:03:35.057Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:03:35.065Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:03:35.068Z] Syncing module sources (3 files)...
+
+[2021-04-28T13:03:35.070Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:03:35.073Z] Syncing module sources (10 files)...
+
+[2021-04-28T13:03:35.079Z] Syncing module sources (1 file)...
+
+[2021-04-28T13:03:35.095Z] Syncing module sources (1 file)...
+
+[2021-04-28T13:03:35.116Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:03:35.123Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T13:03:35.130Z] Building version v-1a328988a3...
+
+[2021-04-28T13:03:35.138Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:03:35.146Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T13:03:35.149Z] Building version v-50aa511d34...
+
+[2021-04-28T13:03:35.153Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:03:35.157Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T13:03:35.160Z] Building version v-2f8c7566f6...
+
+[2021-04-28T13:03:35.164Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T13:03:35.168Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T13:03:35.171Z] Building version v-ee21b741b7...
+
+[2021-04-28T13:03:35.177Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T13:03:35.181Z] Getting build status for v-47a406fd21...
+
+[2021-04-28T13:03:35.186Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:03:35.190Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T13:03:35.194Z] Building version v-9322c4eebe...
+
+[2021-04-28T13:03:35.224Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T13:03:35.227Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T13:03:35.230Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T13:03:35.234Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T13:03:35.239Z] Syncing module sources (10 files)... → Done (took 0.2 sec)
+
+[2021-04-28T13:03:35.244Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T13:03:35.248Z] Building version v-9467fcc674...
+
+[2021-04-28T13:03:35.256Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T13:03:35.264Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T13:03:35.293Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T13:03:35.298Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T13:03:35.310Z] Deploying version v-1a328988a3...
+
+[2021-04-28T13:03:35.316Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-28T13:03:35.375Z] Deploying version v-50aa511d34...
+
+[2021-04-28T13:03:35.379Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-04-28T13:03:35.454Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T13:03:35.987Z] Getting build status for v-47a406fd21... → Done (took 0.8 sec)
+
+[2021-04-28T13:03:35.993Z] Deploying version v-47a406fd21...
+
+[2021-04-28T13:03:35.998Z] Deploying version v-47a406fd21... → Already deployed
+
+[2021-04-28T13:03:36.005Z] → Ingress: http://http.local.app.garden
+
+[2021-04-28T13:03:36.049Z] Deploying version v-9467fcc674...
+
+[2021-04-28T13:03:36.058Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-04-28T13:03:36.100Z] Deploying version v-ee21b741b7...
+
+[2021-04-28T13:03:36.105Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-04-28T13:03:39.409Z] Waiting for resources to be ready...
+
+[2021-04-28T13:04:32.731Z] Getting status...
+
+[2021-04-28T13:04:33.789Z] Getting status... → Cached
+
+[2021-04-28T13:04:33.791Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T13:04:34.122Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T13:04:34.140Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:04:34.144Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:04:34.146Z] Syncing module sources (3 files)...
+
+[2021-04-28T13:04:34.148Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:04:34.151Z] Syncing module sources (10 files)...
+
+[2021-04-28T13:04:34.155Z] Syncing module sources (1 file)...
+
+[2021-04-28T13:04:34.162Z] Syncing module sources (1 file)...
+
+[2021-04-28T13:04:34.191Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-28T13:04:34.195Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T13:04:34.199Z] Building version v-9322c4eebe...
+
+[2021-04-28T13:04:34.202Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:04:34.206Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T13:04:34.210Z] Building version v-2f8c7566f6...
+
+[2021-04-28T13:04:34.213Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:04:34.217Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T13:04:34.220Z] Building version v-50aa511d34...
+
+[2021-04-28T13:04:34.223Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:04:34.227Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T13:04:34.232Z] Building version v-1a328988a3...
+
+[2021-04-28T13:04:34.236Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T13:04:34.240Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T13:04:34.243Z] Building version v-ee21b741b7...
+
+[2021-04-28T13:04:34.246Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T13:04:34.249Z] Getting build status for v-47a406fd21...
+
+[2021-04-28T13:04:34.266Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:04:34.271Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T13:04:34.274Z] Building version v-9467fcc674...
+
+[2021-04-28T13:04:34.285Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T13:04:34.291Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T13:04:34.296Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T13:04:34.300Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T13:04:34.310Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T13:04:34.316Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T13:04:34.658Z] Deploying version v-1a328988a3...
+
+[2021-04-28T13:04:34.661Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-28T13:04:34.684Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T13:04:34.687Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T13:04:34.726Z] Deploying version v-50aa511d34...
+
+[2021-04-28T13:04:34.730Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-04-28T13:04:34.812Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T13:04:35.049Z] Getting build status for v-47a406fd21... → Done (took 0.8 sec)
+
+[2021-04-28T13:04:35.054Z] Deploying version v-47a406fd21...
+
+[2021-04-28T13:04:35.058Z] Deploying version v-47a406fd21... → Already deployed
+
+[2021-04-28T13:04:35.063Z] → Ingress: http://http.local.app.garden
+
+[2021-04-28T13:04:35.623Z] Deploying version v-9467fcc674...
+
+[2021-04-28T13:04:35.628Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-04-28T13:04:35.669Z] Deploying version v-ee21b741b7...
+
+[2021-04-28T13:04:35.674Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-04-28T13:04:36.304Z] Waiting for resources to be ready...
+
+[2021-04-28T13:05:14.064Z] Getting status...
+
+[2021-04-28T13:05:15.426Z] Getting status... → Done
+
+[2021-04-28T13:05:15.747Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T13:05:15.766Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:05:15.771Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:05:15.773Z] Syncing module sources (3 files)...
+
+[2021-04-28T13:05:15.776Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:05:15.778Z] Syncing module sources (10 files)...
+
+[2021-04-28T13:05:15.782Z] Syncing module sources (1 file)...
+
+[2021-04-28T13:05:15.789Z] Syncing module sources (1 file)...
+
+[2021-04-28T13:05:15.802Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-28T13:05:15.808Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T13:05:15.811Z] Building version v-1a328988a3...
+
+[2021-04-28T13:05:15.815Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-04-28T13:05:15.818Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T13:05:15.822Z] Building version v-50aa511d34...
+
+[2021-04-28T13:05:15.824Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:15.828Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T13:05:15.831Z] Building version v-9322c4eebe...
+
+[2021-04-28T13:05:15.835Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:15.839Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T13:05:15.842Z] Building version v-ee21b741b7...
+
+[2021-04-28T13:05:15.847Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:15.850Z] Getting build status for v-47a406fd21...
+
+[2021-04-28T13:05:15.853Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:15.857Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T13:05:15.860Z] Building version v-2f8c7566f6...
+
+[2021-04-28T13:05:15.880Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:15.885Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T13:05:15.889Z] Building version v-9467fcc674...
+
+[2021-04-28T13:05:15.903Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:15.906Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:15.910Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:15.916Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:15.921Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T13:05:15.926Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:16.150Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T13:05:16.153Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T13:05:16.161Z] Deploying version v-1a328988a3...
+
+[2021-04-28T13:05:16.165Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-28T13:05:16.407Z] Deploying version v-50aa511d34...
+
+[2021-04-28T13:05:16.411Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-04-28T13:05:16.535Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T13:05:17.357Z] Unable to query registry for image status: Get https://gcr.io/v2/th-structure-flow-demo/udp-app/manifests/v-47a406fd21: unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+
+[2021-04-28T13:05:17.369Z] Building version v-47a406fd21...
+
+[2021-04-28T13:05:17.623Z] Building udp-app:v-47a406fd21...
+
+[2021-04-28T13:05:17.711Z] Deploying version v-9467fcc674...
+
+[2021-04-28T13:05:17.717Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-04-28T13:05:18.025Z] Deploying version v-ee21b741b7...
+
+[2021-04-28T13:05:18.030Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-04-28T13:05:18.702Z] Waiting for resources to be ready...
+
+[2021-04-28T13:05:18.845Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-28T13:05:20.790Z] Resources ready
+
+[2021-04-28T13:05:20.962Z] Deploying version v-2f8c7566f6... → Done (took 4.4 sec)
+
+[2021-04-28T13:05:24.720Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-28T13:05:24.730Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker push gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21" failed with code 1:
+
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Here's the full output:
+
+The push refers to repository [gcr.io/th-structure-flow-demo/udp-app]
+f7577e4c74b4: Preparing
+fe33d2017d1d: Preparing
+adbb30380c0c: Preparing
+2d5e4dca5d45: Preparing
+d8ea972acbb7: Preparing
+15b9aeee8493: Preparing
+2831d216c2dc: Preparing
+5d09c2db1d76: Preparing
+417cb9b79ade: Preparing
+2831d216c2dc: Waiting
+5d09c2db1d76: Waiting
+417cb9b79ade: Waiting
+15b9aeee8493: Waiting
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/udp-app
+
+
+[2021-04-28T13:05:24.757Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-28T13:05:15.847Z
+    completedAt: 2021-04-28T13:05:24.720Z
+    batchId: 0223114c-d843-49f2-83f2-43875ec284f5
+    version: v-47a406fd21
+
+
+[2021-04-28T13:05:24.763Z] 
+See error.log for detailed error message
+
+[2021-04-28T13:05:52.290Z] Getting status...
+
+[2021-04-28T13:05:52.748Z] Getting status... → Cached
+
+[2021-04-28T13:05:52.751Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T13:05:53.088Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T13:05:53.107Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:05:53.114Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:05:53.116Z] Syncing module sources (3 files)...
+
+[2021-04-28T13:05:53.118Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:05:53.121Z] Syncing module sources (10 files)...
+
+[2021-04-28T13:05:53.129Z] Syncing module sources (1 file)...
+
+[2021-04-28T13:05:53.132Z] Syncing module sources (1 file)...
+
+[2021-04-28T13:05:53.162Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-04-28T13:05:53.169Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T13:05:53.172Z] Building version v-50aa511d34...
+
+[2021-04-28T13:05:53.176Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:53.180Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T13:05:53.184Z] Building version v-9322c4eebe...
+
+[2021-04-28T13:05:53.188Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:53.191Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T13:05:53.194Z] Building version v-2f8c7566f6...
+
+[2021-04-28T13:05:53.197Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:53.204Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T13:05:53.207Z] Building version v-1a328988a3...
+
+[2021-04-28T13:05:53.210Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:53.213Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T13:05:53.216Z] Building version v-ee21b741b7...
+
+[2021-04-28T13:05:53.219Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:53.222Z] Getting build status for v-47a406fd21...
+
+[2021-04-28T13:05:53.245Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:53.249Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T13:05:53.253Z] Building version v-9467fcc674...
+
+[2021-04-28T13:05:53.259Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:53.262Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:53.265Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:53.270Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:53.278Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T13:05:53.282Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T13:05:53.811Z] Deploying version v-1a328988a3...
+
+[2021-04-28T13:05:53.815Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-28T13:05:53.970Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T13:05:53.974Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T13:05:54.002Z] Deploying version v-50aa511d34...
+
+[2021-04-28T13:05:54.005Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-04-28T13:05:54.194Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T13:05:54.200Z] Deploying version v-2f8c7566f6... → Already deployed
+
+[2021-04-28T13:05:55.068Z] Deploying version v-9467fcc674...
+
+[2021-04-28T13:05:55.073Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-04-28T13:05:55.324Z] Deploying version v-ee21b741b7...
+
+[2021-04-28T13:05:55.331Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-04-28T13:05:55.904Z] Getting build status for v-47a406fd21... → Done (took 2.7 sec)
+
+[2021-04-28T13:05:55.909Z] Deploying version v-47a406fd21...
+
+[2021-04-28T13:05:55.914Z] Deploying version v-47a406fd21... → Already deployed
+
+[2021-04-28T13:05:55.921Z] → Ingress: http://http.local.app.garden
+
+[2021-04-28T13:05:55.955Z] Done! ✔️ 
+
+[2021-04-28T13:19:45.527Z] Getting status...
+
+[2021-04-28T13:19:46.052Z] Getting status... → Cached
+
+[2021-04-28T13:19:46.054Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T13:19:46.378Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T13:19:46.399Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:19:46.404Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:19:46.406Z] Syncing module sources (3 files)...
+
+[2021-04-28T13:19:46.408Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:19:46.411Z] Syncing module sources (10 files)...
+
+[2021-04-28T13:19:46.419Z] Syncing module sources (1 file)...
+
+[2021-04-28T13:19:46.423Z] Syncing module sources (1 file)...
+
+[2021-04-28T13:19:46.452Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-04-28T13:19:46.456Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T13:19:46.460Z] Building version v-50aa511d34...
+
+[2021-04-28T13:19:46.463Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:19:46.468Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T13:19:46.471Z] Building version v-9322c4eebe...
+
+[2021-04-28T13:19:46.473Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:19:46.477Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T13:19:46.480Z] Building version v-1a328988a3...
+
+[2021-04-28T13:19:46.483Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:19:46.489Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T13:19:46.496Z] Building version v-2f8c7566f6...
+
+[2021-04-28T13:19:46.500Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T13:19:46.504Z] Getting build status for v-8fc4c9f41a...
+
+[2021-04-28T13:19:46.508Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T13:19:46.512Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T13:19:46.515Z] Building version v-ee21b741b7...
+
+[2021-04-28T13:19:46.537Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:19:46.542Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T13:19:46.545Z] Building version v-9467fcc674...
+
+[2021-04-28T13:19:46.556Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T13:19:46.559Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T13:19:46.562Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T13:19:46.569Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T13:19:46.572Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T13:19:46.579Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T13:19:47.939Z] Deploying version v-1a328988a3...
+
+[2021-04-28T13:19:47.943Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-28T13:19:48.156Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T13:19:48.161Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T13:19:48.186Z] Deploying version v-50aa511d34...
+
+[2021-04-28T13:19:48.191Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-04-28T13:19:48.393Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T13:19:49.379Z] Deploying version v-9467fcc674...
+
+[2021-04-28T13:19:49.383Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-04-28T13:19:49.638Z] Deploying version v-ee21b741b7...
+
+[2021-04-28T13:19:49.643Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-04-28T13:19:50.111Z] Building version v-8fc4c9f41a...
+
+[2021-04-28T13:19:50.378Z] Building udp-app:v-8fc4c9f41a...
+
+[2021-04-28T13:19:50.396Z] Waiting for resources to be ready...
+
+[2021-04-28T13:19:51.588Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-8fc4c9f41a to cluster...
+
+[2021-04-28T13:19:53.763Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-8fc4c9f41a to cluster... → Done (took 7.3 sec)
+
+[2021-04-28T13:19:53.769Z] Deploying version v-8fc4c9f41a...
+
+[2021-04-28T13:19:56.227Z] Waiting for resources to be ready...
+
+[2021-04-28T13:19:58.641Z] Deployment/udp-app: Pulling image "gcr.io/th-structure-flow-demo/udp-app:v-8fc4c9f41a"
+
+[2021-04-28T13:20:01.556Z] Deployment/udp-app: Successfully pulled image "gcr.io/th-structure-flow-demo/udp-app:v-8fc4c9f41a"
+
+[2021-04-28T13:20:05.176Z] Deployment/udp-app: Started container udp-app
+
+[2021-04-28T13:20:08.765Z] Resources ready
+
+[2021-04-28T13:20:09.197Z] Deploying version v-8fc4c9f41a... → Done (took 15.4 sec)
+
+[2021-04-28T13:20:48.666Z] Getting status...
+
+[2021-04-28T13:20:49.254Z] Getting status... → Cached
+
+[2021-04-28T13:20:49.257Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-28T13:20:49.658Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-28T13:20:49.679Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:20:49.684Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:20:49.687Z] Syncing module sources (3 files)...
+
+[2021-04-28T13:20:49.689Z] Syncing module sources (2 files)...
+
+[2021-04-28T13:20:49.692Z] Syncing module sources (10 files)...
+
+[2021-04-28T13:20:49.698Z] Syncing module sources (1 file)...
+
+[2021-04-28T13:20:49.701Z] Syncing module sources (1 file)...
+
+[2021-04-28T13:20:49.737Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-04-28T13:20:49.745Z] Getting build status for v-50aa511d34...
+
+[2021-04-28T13:20:49.748Z] Building version v-50aa511d34...
+
+[2021-04-28T13:20:49.752Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:20:49.757Z] Getting build status for v-9322c4eebe...
+
+[2021-04-28T13:20:49.763Z] Building version v-9322c4eebe...
+
+[2021-04-28T13:20:49.767Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:20:49.772Z] Getting build status for v-1a328988a3...
+
+[2021-04-28T13:20:49.775Z] Building version v-1a328988a3...
+
+[2021-04-28T13:20:49.778Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T13:20:49.782Z] Getting build status for v-ee21b741b7...
+
+[2021-04-28T13:20:49.786Z] Building version v-ee21b741b7...
+
+[2021-04-28T13:20:49.790Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:20:49.793Z] Getting build status for v-2f8c7566f6...
+
+[2021-04-28T13:20:49.798Z] Building version v-2f8c7566f6...
+
+[2021-04-28T13:20:49.801Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-04-28T13:20:49.806Z] Getting build status for v-8fc4c9f41a...
+
+[2021-04-28T13:20:49.826Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-04-28T13:20:49.831Z] Getting build status for v-9467fcc674...
+
+[2021-04-28T13:20:49.835Z] Building version v-9467fcc674...
+
+[2021-04-28T13:20:49.848Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-04-28T13:20:49.852Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-04-28T13:20:49.856Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-04-28T13:20:49.860Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-04-28T13:20:49.868Z] Building version v-2f8c7566f6... → Done (took 0.1 sec)
+
+[2021-04-28T13:20:49.873Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-04-28T13:20:51.851Z] Deploying version v-1a328988a3...
+
+[2021-04-28T13:20:51.855Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-28T13:20:51.990Z] Deploying version v-9322c4eebe...
+
+[2021-04-28T13:20:51.995Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-28T13:20:52.051Z] Deploying version v-50aa511d34...
+
+[2021-04-28T13:20:52.055Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-04-28T13:20:52.078Z] Getting build status for v-8fc4c9f41a... → Done (took 2.3 sec)
+
+[2021-04-28T13:20:52.172Z] Deploying version v-2f8c7566f6...
+
+[2021-04-28T13:20:52.504Z] Deploying version v-8fc4c9f41a...
+
+[2021-04-28T13:20:52.508Z] Deploying version v-8fc4c9f41a... → Already deployed
+
+[2021-04-28T13:20:53.193Z] Deploying version v-9467fcc674...
+
+[2021-04-28T13:20:53.198Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-04-28T13:20:53.438Z] Deploying version v-ee21b741b7...
+
+[2021-04-28T13:20:53.446Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-04-28T13:20:54.147Z] Waiting for resources to be ready...
+
+[2021-04-28T13:20:56.232Z] Resources ready
+
+[2021-04-28T13:20:56.401Z] Deploying version v-2f8c7566f6... → Done (took 4.2 sec)
+
+[2021-04-28T13:20:56.436Z] Done! ✔️ 
