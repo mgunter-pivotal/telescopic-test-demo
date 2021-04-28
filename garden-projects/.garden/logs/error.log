@@ -3815,3 +3815,244 @@ results:
     batchId: a01a00c7-c318-4580-9a0d-dc8bfe524fda
     version: v-07aceef360
 
+
+[2021-04-27T14:23:18.298Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=minikube apply --prune --selector service=local-pv --output=json -f -" failed with code 1:
+
+The StorageClass "standard" is invalid: reclaimPolicy: Forbidden: updates to reclaimPolicy are forbidden.
+
+The StorageClass "standard" is invalid: reclaimPolicy: Forbidden: updates to reclaimPolicy are forbidden.
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=minikube apply --prune --selector service=local-pv --output=json -f
+  -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=minikube apply --prune --selector service=local-pv --output=json -f
+  -
+exitCode: 1
+stdout: ''
+stderr: >-
+  The StorageClass "standard" is invalid: reclaimPolicy: Forbidden: updates to
+  reclaimPolicy are forbidden.
+all: >-
+  The StorageClass "standard" is invalid: reclaimPolicy: Forbidden: updates to
+  reclaimPolicy are forbidden.
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T14:23:18.303Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.local-pv:
+    type: deploy
+    description: deploying service 'local-pv' (from module 'local-pv')
+    key: deploy.local-pv
+    name: local-pv
+    startedAt: 2021-04-27T14:23:17.932Z
+    completedAt: 2021-04-27T14:23:18.294Z
+    batchId: 43e9d524-4803-4414-972b-b783c02bbe07
+    version: v-07aceef360
+
+
+[2021-04-27T14:42:19.368Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=minikube apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+  The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+core.PodSpec{
+	Volumes:        []core.Volume{{Name: "data-pv-storage", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: "data-pv-claim"}}}, {Name: "default-token-9qbr4", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: "default-token-9qbr4", DefaultMode: &420}}}},
+	InitContainers: nil,
+	Containers: []core.Container{
+		{
+- 			Name:    "f1-player-image",
++ 			Name:    "f1-player",
+			Image:   "mgunter/python-f1-play",
+			Command: nil,
+			... // 4 identical fields
+			Env:       nil,
+			Resources: core.ResourceRequirements{},
+			VolumeMounts: []core.VolumeMount{
+				{Name: "data-pv-storage", MountPath: "/sensable"},
++ 				{
++ 					Name:      "default-token-9qbr4",
++ 					ReadOnly:  true,
++ 					MountPath: "/var/run/secrets/kubernetes.io/serviceaccount",
++ 				},
+			},
+			VolumeDevices: nil,
+			LivenessProbe: nil,
+			... // 10 identical fields
+		},
+	},
+	EphemeralContainers: nil,
+	RestartPolicy:       "OnFailure",
+	... // 24 identical fields
+}
+
+The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	Volumes:        []core.Volume{{Name: "data-pv-storage", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: "data-pv-claim"}}}, {Name: "default-token-9qbr4", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: "default-token-9qbr4", DefaultMode: &420}}}},
+  	InitContainers: nil,
+  	Containers: []core.Container{
+  		{
+- 			Name:    "f1-player-image",
++ 			Name:    "f1-player",
+  			Image:   "mgunter/python-f1-play",
+  			Command: nil,
+  			... // 4 identical fields
+  			Env:       nil,
+  			Resources: core.ResourceRequirements{},
+  			VolumeMounts: []core.VolumeMount{
+  				{Name: "data-pv-storage", MountPath: "/sensable"},
++ 				{
++ 					Name:      "default-token-9qbr4",
++ 					ReadOnly:  true,
++ 					MountPath: "/var/run/secrets/kubernetes.io/serviceaccount",
++ 				},
+  			},
+  			VolumeDevices: nil,
+  			LivenessProbe: nil,
+  			... // 10 identical fields
+  		},
+  	},
+  	EphemeralContainers: nil,
+  	RestartPolicy:       "OnFailure",
+  	... // 24 identical fields
+  }
+
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=minikube apply --prune --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=minikube apply --prune --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \tVolumes:        []core.Volume{{Name: \"data-pv-storage\", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: \"data-pv-claim\"}}}, {Name: \"default-token-9qbr4\", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: \"default-token-9qbr4\", DefaultMode: &420}}}},\n  \tInitContainers: nil,\n  \tContainers: []core.Container{\n  \t\t{\n- \t\t\tName:    \"f1-player-image\",\n+ \t\t\tName:    \"f1-player\",\n  \t\t\tImage:   \"mgunter/python-f1-play\",\n  \t\t\tCommand: nil,\n  \t\t\t... // 4 identical fields\n  \t\t\tEnv:       nil,\n  \t\t\tResources: core.ResourceRequirements{},\n  \t\t\tVolumeMounts: []core.VolumeMount{\n  \t\t\t\t{Name: \"data-pv-storage\", MountPath: \"/sensable\"},\n+ \t\t\t\t{\n+ \t\t\t\t\tName:      \"default-token-9qbr4\",\n+ \t\t\t\t\tReadOnly:  true,\n+ \t\t\t\t\tMountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\",\n+ \t\t\t\t},\n  \t\t\t},\n  \t\t\tVolumeDevices: nil,\n  \t\t\tLivenessProbe: nil,\n  \t\t\t... // 10 identical fields\n  \t\t},\n  \t},\n  \tEphemeralContainers: nil,\n  \tRestartPolicy:       \"OnFailure\",\n  \t... // 24 identical fields\n  }\n"
+all: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \tVolumes:        []core.Volume{{Name: \"data-pv-storage\", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: \"data-pv-claim\"}}}, {Name: \"default-token-9qbr4\", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: \"default-token-9qbr4\", DefaultMode: &420}}}},\n  \tInitContainers: nil,\n  \tContainers: []core.Container{\n  \t\t{\n- \t\t\tName:    \"f1-player-image\",\n+ \t\t\tName:    \"f1-player\",\n  \t\t\tImage:   \"mgunter/python-f1-play\",\n  \t\t\tCommand: nil,\n  \t\t\t... // 4 identical fields\n  \t\t\tEnv:       nil,\n  \t\t\tResources: core.ResourceRequirements{},\n  \t\t\tVolumeMounts: []core.VolumeMount{\n  \t\t\t\t{Name: \"data-pv-storage\", MountPath: \"/sensable\"},\n+ \t\t\t\t{\n+ \t\t\t\t\tName:      \"default-token-9qbr4\",\n+ \t\t\t\t\tReadOnly:  true,\n+ \t\t\t\t\tMountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\",\n+ \t\t\t\t},\n  \t\t\t},\n  \t\t\tVolumeDevices: nil,\n  \t\t\tLivenessProbe: nil,\n  \t\t\t... // 10 identical fields\n  \t\t},\n  \t},\n  \tEphemeralContainers: nil,\n  \tRestartPolicy:       \"OnFailure\",\n  \t... // 24 identical fields\n  }\n"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T14:42:19.384Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.player:
+    type: deploy
+    description: deploying service 'player' (from module 'player')
+    key: deploy.player
+    name: player
+    startedAt: 2021-04-27T14:42:19.137Z
+    completedAt: 2021-04-27T14:42:19.354Z
+    batchId: 44156f80-0e1a-4ba0-b28c-268b8ef3bcec
+    version: v-2d8e7392de
+
+
+[2021-04-27T17:36:28.922Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=local-pv --output=json -f -" failed with code 1:
+
+The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource: Forbidden: is immutable after creation
+
+The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource: Forbidden: is immutable after creation
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=local-pv --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=local-pv --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource:
+  Forbidden: is immutable after creation
+all: >-
+  The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource:
+  Forbidden: is immutable after creation
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T17:36:28.933Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.local-pv:
+    type: deploy
+    description: deploying service 'local-pv' (from module 'local-pv')
+    key: deploy.local-pv
+    name: local-pv
+    startedAt: 2021-04-27T17:36:28.021Z
+    completedAt: 2021-04-27T17:36:28.916Z
+    batchId: 2beb7e59-cdab-44fb-8ec9-91fccf1f6512
+    version: v-9322c4eebe
+
+
+[2021-04-27T17:41:51.947Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=local-pv --output=json -f -" failed with code 1:
+
+The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource: Forbidden: is immutable after creation
+
+The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource: Forbidden: is immutable after creation
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=local-pv --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=local-pv --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource:
+  Forbidden: is immutable after creation
+all: >-
+  The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource:
+  Forbidden: is immutable after creation
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T17:41:51.957Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.local-pv:
+    type: deploy
+    description: deploying service 'local-pv' (from module 'local-pv')
+    key: deploy.local-pv
+    name: local-pv
+    startedAt: 2021-04-27T17:41:51.430Z
+    completedAt: 2021-04-27T17:41:51.942Z
+    batchId: f1cd552c-dc8a-430e-b1cf-42e0bfa00055
+    version: v-9322c4eebe
+

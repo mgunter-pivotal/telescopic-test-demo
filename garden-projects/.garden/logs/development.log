@@ -9671,3 +9671,1214 @@ https://github.com/kubernetes/minikube/issues/7332
 [2021-04-27T13:25:41.009Z] Deploying version v-c6d708a165... → Done (took 3.8 sec)
 
 [2021-04-27T13:25:41.017Z] Done! ✔️ 
+
+[2021-04-27T14:23:15.058Z] Getting status...
+
+[2021-04-27T14:23:17.662Z] Getting status... → Cached
+
+[2021-04-27T14:23:17.664Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T14:23:17.854Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-27T14:23:17.864Z] Syncing module sources (3 files)...
+
+[2021-04-27T14:23:17.870Z] Syncing module sources (2 files)...
+
+[2021-04-27T14:23:17.878Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T14:23:17.881Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T14:23:17.883Z] Building version v-c6d708a165...
+
+[2021-04-27T14:23:17.885Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-04-27T14:23:17.888Z] Getting build status for v-07aceef360...
+
+[2021-04-27T14:23:17.895Z] Building version v-07aceef360...
+
+[2021-04-27T14:23:17.909Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T14:23:17.914Z] Building version v-07aceef360... → Done (took 0 sec)
+
+[2021-04-27T14:23:17.934Z] Deploying version v-07aceef360...
+
+[2021-04-27T14:23:18.293Z] Deploying version v-07aceef360...
+
+[2021-04-27T14:23:18.298Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=minikube apply --prune --selector service=local-pv --output=json -f -" failed with code 1:
+
+The StorageClass "standard" is invalid: reclaimPolicy: Forbidden: updates to reclaimPolicy are forbidden.
+
+The StorageClass "standard" is invalid: reclaimPolicy: Forbidden: updates to reclaimPolicy are forbidden.
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=minikube apply --prune --selector service=local-pv --output=json -f
+  -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=minikube apply --prune --selector service=local-pv --output=json -f
+  -
+exitCode: 1
+stdout: ''
+stderr: >-
+  The StorageClass "standard" is invalid: reclaimPolicy: Forbidden: updates to
+  reclaimPolicy are forbidden.
+all: >-
+  The StorageClass "standard" is invalid: reclaimPolicy: Forbidden: updates to
+  reclaimPolicy are forbidden.
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T14:23:18.304Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.local-pv:
+    type: deploy
+    description: deploying service 'local-pv' (from module 'local-pv')
+    key: deploy.local-pv
+    name: local-pv
+    startedAt: 2021-04-27T14:23:17.932Z
+    completedAt: 2021-04-27T14:23:18.294Z
+    batchId: 43e9d524-4803-4414-972b-b783c02bbe07
+    version: v-07aceef360
+
+
+[2021-04-27T14:23:18.310Z] 
+See error.log for detailed error message
+
+[2021-04-27T14:23:52.068Z] Getting status...
+
+[2021-04-27T14:23:54.236Z] Getting status... → Cached
+
+[2021-04-27T14:23:54.239Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T14:23:54.410Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-27T14:23:54.418Z] Syncing module sources (2 files)...
+
+[2021-04-27T14:23:54.423Z] Syncing module sources (2 files)...
+
+[2021-04-27T14:23:54.438Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T14:23:54.440Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T14:23:54.443Z] Building version v-c6d708a165...
+
+[2021-04-27T14:23:54.446Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T14:23:54.451Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T14:23:54.454Z] Building version v-9322c4eebe...
+
+[2021-04-27T14:23:54.461Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T14:23:54.464Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T14:23:54.865Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T14:23:54.867Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-27T14:23:54.887Z] Deploying version v-c6d708a165...
+
+[2021-04-27T14:23:56.340Z] Waiting for resources to be ready...
+
+[2021-04-27T14:24:39.885Z] Resources ready
+
+[2021-04-27T14:24:39.912Z] Deploying version v-c6d708a165... → Done (took 45 sec)
+
+[2021-04-27T14:24:39.925Z] Done! ✔️ 
+
+[2021-04-27T14:42:15.880Z] Getting status...
+
+[2021-04-27T14:42:18.487Z] Getting status... → Cached
+
+[2021-04-27T14:42:18.489Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T14:42:18.647Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-27T14:42:18.656Z] Syncing module sources (2 files)...
+
+[2021-04-27T14:42:18.662Z] Syncing module sources (2 files)...
+
+[2021-04-27T14:42:18.678Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T14:42:18.680Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T14:42:18.683Z] Building version v-9322c4eebe...
+
+[2021-04-27T14:42:18.688Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T14:42:18.694Z] Getting build status for v-2d8e7392de...
+
+[2021-04-27T14:42:18.696Z] Building version v-2d8e7392de...
+
+[2021-04-27T14:42:18.704Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T14:42:18.708Z] Building version v-2d8e7392de... → Done (took 0 sec)
+
+[2021-04-27T14:42:19.110Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T14:42:19.112Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-27T14:42:19.139Z] Deploying version v-2d8e7392de...
+
+[2021-04-27T14:42:19.354Z] Deploying version v-2d8e7392de...
+
+[2021-04-27T14:42:19.370Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=minikube apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+  The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+core.PodSpec{
+	Volumes:        []core.Volume{{Name: "data-pv-storage", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: "data-pv-claim"}}}, {Name: "default-token-9qbr4", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: "default-token-9qbr4", DefaultMode: &420}}}},
+	InitContainers: nil,
+	Containers: []core.Container{
+		{
+- 			Name:    "f1-player-image",
++ 			Name:    "f1-player",
+			Image:   "mgunter/python-f1-play",
+			Command: nil,
+			... // 4 identical fields
+			Env:       nil,
+			Resources: core.ResourceRequirements{},
+			VolumeMounts: []core.VolumeMount{
+				{Name: "data-pv-storage", MountPath: "/sensable"},
++ 				{
++ 					Name:      "default-token-9qbr4",
++ 					ReadOnly:  true,
++ 					MountPath: "/var/run/secrets/kubernetes.io/serviceaccount",
++ 				},
+			},
+			VolumeDevices: nil,
+			LivenessProbe: nil,
+			... // 10 identical fields
+		},
+	},
+	EphemeralContainers: nil,
+	RestartPolicy:       "OnFailure",
+	... // 24 identical fields
+}
+
+The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	Volumes:        []core.Volume{{Name: "data-pv-storage", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: "data-pv-claim"}}}, {Name: "default-token-9qbr4", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: "default-token-9qbr4", DefaultMode: &420}}}},
+  	InitContainers: nil,
+  	Containers: []core.Container{
+  		{
+- 			Name:    "f1-player-image",
++ 			Name:    "f1-player",
+  			Image:   "mgunter/python-f1-play",
+  			Command: nil,
+  			... // 4 identical fields
+  			Env:       nil,
+  			Resources: core.ResourceRequirements{},
+  			VolumeMounts: []core.VolumeMount{
+  				{Name: "data-pv-storage", MountPath: "/sensable"},
++ 				{
++ 					Name:      "default-token-9qbr4",
++ 					ReadOnly:  true,
++ 					MountPath: "/var/run/secrets/kubernetes.io/serviceaccount",
++ 				},
+  			},
+  			VolumeDevices: nil,
+  			LivenessProbe: nil,
+  			... // 10 identical fields
+  		},
+  	},
+  	EphemeralContainers: nil,
+  	RestartPolicy:       "OnFailure",
+  	... // 24 identical fields
+  }
+
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=minikube apply --prune --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=minikube apply --prune --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \tVolumes:        []core.Volume{{Name: \"data-pv-storage\", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: \"data-pv-claim\"}}}, {Name: \"default-token-9qbr4\", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: \"default-token-9qbr4\", DefaultMode: &420}}}},\n  \tInitContainers: nil,\n  \tContainers: []core.Container{\n  \t\t{\n- \t\t\tName:    \"f1-player-image\",\n+ \t\t\tName:    \"f1-player\",\n  \t\t\tImage:   \"mgunter/python-f1-play\",\n  \t\t\tCommand: nil,\n  \t\t\t... // 4 identical fields\n  \t\t\tEnv:       nil,\n  \t\t\tResources: core.ResourceRequirements{},\n  \t\t\tVolumeMounts: []core.VolumeMount{\n  \t\t\t\t{Name: \"data-pv-storage\", MountPath: \"/sensable\"},\n+ \t\t\t\t{\n+ \t\t\t\t\tName:      \"default-token-9qbr4\",\n+ \t\t\t\t\tReadOnly:  true,\n+ \t\t\t\t\tMountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\",\n+ \t\t\t\t},\n  \t\t\t},\n  \t\t\tVolumeDevices: nil,\n  \t\t\tLivenessProbe: nil,\n  \t\t\t... // 10 identical fields\n  \t\t},\n  \t},\n  \tEphemeralContainers: nil,\n  \tRestartPolicy:       \"OnFailure\",\n  \t... // 24 identical fields\n  }\n"
+all: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \tVolumes:        []core.Volume{{Name: \"data-pv-storage\", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: \"data-pv-claim\"}}}, {Name: \"default-token-9qbr4\", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: \"default-token-9qbr4\", DefaultMode: &420}}}},\n  \tInitContainers: nil,\n  \tContainers: []core.Container{\n  \t\t{\n- \t\t\tName:    \"f1-player-image\",\n+ \t\t\tName:    \"f1-player\",\n  \t\t\tImage:   \"mgunter/python-f1-play\",\n  \t\t\tCommand: nil,\n  \t\t\t... // 4 identical fields\n  \t\t\tEnv:       nil,\n  \t\t\tResources: core.ResourceRequirements{},\n  \t\t\tVolumeMounts: []core.VolumeMount{\n  \t\t\t\t{Name: \"data-pv-storage\", MountPath: \"/sensable\"},\n+ \t\t\t\t{\n+ \t\t\t\t\tName:      \"default-token-9qbr4\",\n+ \t\t\t\t\tReadOnly:  true,\n+ \t\t\t\t\tMountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\",\n+ \t\t\t\t},\n  \t\t\t},\n  \t\t\tVolumeDevices: nil,\n  \t\t\tLivenessProbe: nil,\n  \t\t\t... // 10 identical fields\n  \t\t},\n  \t},\n  \tEphemeralContainers: nil,\n  \tRestartPolicy:       \"OnFailure\",\n  \t... // 24 identical fields\n  }\n"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T14:42:19.384Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.player:
+    type: deploy
+    description: deploying service 'player' (from module 'player')
+    key: deploy.player
+    name: player
+    startedAt: 2021-04-27T14:42:19.137Z
+    completedAt: 2021-04-27T14:42:19.354Z
+    batchId: 44156f80-0e1a-4ba0-b28c-268b8ef3bcec
+    version: v-2d8e7392de
+
+
+[2021-04-27T14:42:19.389Z] 
+See error.log for detailed error message
+
+[2021-04-27T14:43:35.800Z] Getting status...
+
+[2021-04-27T14:43:38.331Z] Getting status... → Cached
+
+[2021-04-27T14:43:38.333Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T14:43:38.509Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-27T14:43:38.519Z] Syncing module sources (2 files)...
+
+[2021-04-27T14:43:38.525Z] Syncing module sources (2 files)...
+
+[2021-04-27T14:43:38.549Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T14:43:38.552Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T14:43:38.555Z] Building version v-9322c4eebe...
+
+[2021-04-27T14:43:38.561Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T14:43:38.564Z] Getting build status for v-2d8e7392de...
+
+[2021-04-27T14:43:38.567Z] Building version v-2d8e7392de...
+
+[2021-04-27T14:43:38.579Z] Building version v-2d8e7392de... → Done (took 0 sec)
+
+[2021-04-27T14:43:38.582Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T14:43:39.031Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T14:43:39.033Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-27T14:43:39.050Z] Deploying version v-2d8e7392de...
+
+[2021-04-27T14:43:40.790Z] Waiting for resources to be ready...
+
+[2021-04-27T14:43:42.799Z] Resources ready
+
+[2021-04-27T14:43:42.816Z] Deploying version v-2d8e7392de... → Done (took 3.8 sec)
+
+[2021-04-27T14:43:42.826Z] Done! ✔️ 
+
+[2021-04-27T15:07:08.441Z] Getting status...
+
+[2021-04-27T15:07:11.223Z] Getting status... → Cached
+
+[2021-04-27T15:07:11.225Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T15:07:11.406Z] Service inbound-traffic is disabled
+
+[2021-04-27T15:07:11.417Z] Syncing module sources (2 files)...
+
+[2021-04-27T15:07:11.420Z] Syncing module sources (2 files)...
+
+[2021-04-27T15:07:11.426Z] Syncing module sources (2 files)...
+
+[2021-04-27T15:07:11.446Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T15:07:11.451Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T15:07:11.453Z] Building version v-9322c4eebe...
+
+[2021-04-27T15:07:11.459Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T15:07:11.467Z] Getting build status for v-b1ca5ee57d...
+
+[2021-04-27T15:07:11.470Z] Building version v-b1ca5ee57d...
+
+[2021-04-27T15:07:11.473Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T15:07:11.477Z] Getting build status for v-2d8e7392de...
+
+[2021-04-27T15:07:11.480Z] Building version v-2d8e7392de...
+
+[2021-04-27T15:07:11.487Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T15:07:11.491Z] Building version v-b1ca5ee57d... → Done (took 0 sec)
+
+[2021-04-27T15:07:11.493Z] Building version v-2d8e7392de... → Done (took 0 sec)
+
+[2021-04-27T15:07:11.947Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T15:07:11.949Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-27T15:07:11.985Z] Deploying version v-b1ca5ee57d...
+
+[2021-04-27T15:07:12.019Z] Deploying version v-2d8e7392de...
+
+[2021-04-27T15:07:13.451Z] Waiting for resources to be ready...
+
+[2021-04-27T15:07:13.892Z] Waiting for resources to be ready...
+
+[2021-04-27T15:07:17.985Z] Resources ready
+
+[2021-04-27T15:07:18.015Z] Deploying version v-b1ca5ee57d... → Done (took 6 sec)
+
+[2021-04-27T15:48:38.187Z] Getting status...
+
+[2021-04-27T15:48:41.509Z] Getting status... → Done
+
+[2021-04-27T15:48:41.694Z] Service inbound-traffic is disabled
+
+[2021-04-27T15:48:41.705Z] Syncing module sources (2 files)...
+
+[2021-04-27T15:48:41.708Z] Syncing module sources (2 files)...
+
+[2021-04-27T15:48:41.714Z] Syncing module sources (2 files)...
+
+[2021-04-27T15:48:41.724Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T15:48:41.731Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T15:48:41.735Z] Building version v-9322c4eebe...
+
+[2021-04-27T15:48:41.738Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T15:48:41.743Z] Getting build status for v-2d8e7392de...
+
+[2021-04-27T15:48:41.746Z] Building version v-2d8e7392de...
+
+[2021-04-27T15:48:41.749Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T15:48:41.752Z] Getting build status for v-b1ca5ee57d...
+
+[2021-04-27T15:48:41.756Z] Building version v-b1ca5ee57d...
+
+[2021-04-27T15:48:41.765Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T15:48:41.769Z] Building version v-2d8e7392de... → Done (took 0 sec)
+
+[2021-04-27T15:48:41.775Z] Building version v-b1ca5ee57d... → Done (took 0 sec)
+
+[2021-04-27T15:48:41.798Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T15:48:43.272Z] Waiting for resources to be ready...
+
+[2021-04-27T15:48:45.288Z] Resources ready
+
+[2021-04-27T15:48:45.313Z] Deploying version v-9322c4eebe... → Done (took 3.5 sec)
+
+[2021-04-27T15:48:45.317Z] Deploying version v-b1ca5ee57d...
+
+[2021-04-27T15:48:45.321Z] Deploying version v-2d8e7392de...
+
+[2021-04-27T15:48:47.122Z] Waiting for resources to be ready...
+
+[2021-04-27T15:48:47.157Z] Waiting for resources to be ready...
+
+[2021-04-27T15:49:06.699Z] Resources ready
+
+[2021-04-27T15:49:06.722Z] Deploying version v-b1ca5ee57d... → Done (took 21.4 sec)
+
+[2021-04-27T15:49:06.742Z] Resources ready
+
+[2021-04-27T15:49:06.766Z] Deploying version v-2d8e7392de... → Done (took 21.4 sec)
+
+[2021-04-27T15:49:06.777Z] Done! ✔️ 
+
+[2021-04-27T15:52:04.056Z] Getting status...
+
+[2021-04-27T15:52:06.658Z] Getting status... → Cached
+
+[2021-04-27T15:52:06.660Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T15:52:06.813Z] Service inbound-traffic is disabled
+
+[2021-04-27T15:52:06.822Z] Syncing module sources (2 files)...
+
+[2021-04-27T15:52:06.825Z] Syncing module sources (2 files)...
+
+[2021-04-27T15:52:06.830Z] Syncing module sources (2 files)...
+
+[2021-04-27T15:52:06.848Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T15:52:06.852Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T15:52:06.855Z] Building version v-9322c4eebe...
+
+[2021-04-27T15:52:06.864Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T15:52:06.866Z] Getting build status for v-b1ca5ee57d...
+
+[2021-04-27T15:52:06.869Z] Building version v-b1ca5ee57d...
+
+[2021-04-27T15:52:06.875Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T15:52:06.878Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T15:52:06.881Z] Building version v-c6d708a165...
+
+[2021-04-27T15:52:06.884Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T15:52:06.888Z] Building version v-b1ca5ee57d... → Done (took 0 sec)
+
+[2021-04-27T15:52:06.891Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T15:52:07.300Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T15:52:07.302Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-27T15:52:07.329Z] Deploying version v-c6d708a165...
+
+[2021-04-27T15:52:07.359Z] Deploying version v-b1ca5ee57d...
+
+[2021-04-27T15:52:07.362Z] Deploying version v-b1ca5ee57d... → Already deployed
+
+[2021-04-27T15:52:08.794Z] Waiting for resources to be ready...
+
+[2021-04-27T15:52:10.812Z] Resources ready
+
+[2021-04-27T15:52:10.832Z] Deploying version v-c6d708a165... → Done (took 3.5 sec)
+
+[2021-04-27T15:52:10.843Z] Done! ✔️ 
+
+[2021-04-27T15:54:37.335Z] Getting status...
+
+[2021-04-27T15:54:39.944Z] Getting status... → Cached
+
+[2021-04-27T15:54:39.946Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T15:54:40.107Z] Service inbound-traffic is disabled
+
+[2021-04-27T15:54:40.117Z] Syncing module sources (2 files)...
+
+[2021-04-27T15:54:40.120Z] Syncing module sources (2 files)...
+
+[2021-04-27T15:54:40.125Z] Syncing module sources (2 files)...
+
+[2021-04-27T15:54:40.150Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T15:54:40.153Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T15:54:40.159Z] Building version v-c6d708a165...
+
+[2021-04-27T15:54:40.162Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T15:54:40.165Z] Getting build status for v-b1ca5ee57d...
+
+[2021-04-27T15:54:40.171Z] Building version v-b1ca5ee57d...
+
+[2021-04-27T15:54:40.174Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-27T15:54:40.178Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T15:54:40.180Z] Building version v-9322c4eebe...
+
+[2021-04-27T15:54:40.189Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T15:54:40.192Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T15:54:40.195Z] Building version v-b1ca5ee57d... → Done (took 0 sec)
+
+[2021-04-27T15:54:40.600Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T15:54:40.602Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-27T15:54:40.629Z] Deploying version v-c6d708a165...
+
+[2021-04-27T15:54:40.660Z] Deploying version v-b1ca5ee57d...
+
+[2021-04-27T15:54:40.663Z] Deploying version v-b1ca5ee57d... → Already deployed
+
+[2021-04-27T15:54:42.127Z] Waiting for resources to be ready...
+
+[2021-04-27T15:54:44.144Z] Resources ready
+
+[2021-04-27T15:54:44.166Z] Deploying version v-c6d708a165... → Done (took 3.5 sec)
+
+[2021-04-27T15:54:44.177Z] Done! ✔️ 
+
+[2021-04-27T17:20:23.592Z] Getting status...
+
+[2021-04-27T17:20:25.813Z] Getting status... → Done
+
+[2021-04-27T17:20:25.951Z] Service inbound-traffic is disabled
+
+[2021-04-27T17:20:25.960Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:20:25.962Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:20:25.967Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:20:25.975Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:20:25.978Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T17:20:25.980Z] Building version v-9322c4eebe...
+
+[2021-04-27T17:20:25.985Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:20:25.989Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T17:20:25.994Z] Building version v-c6d708a165...
+
+[2021-04-27T17:20:25.997Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:20:26.000Z] Getting build status for v-b1ca5ee57d...
+
+[2021-04-27T17:20:26.002Z] Building version v-b1ca5ee57d...
+
+[2021-04-27T17:20:26.012Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T17:20:26.016Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T17:20:26.022Z] Building version v-b1ca5ee57d... → Done (took 0 sec)
+
+[2021-04-27T17:20:26.030Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T17:20:28.110Z] Waiting for resources to be ready...
+
+[2021-04-27T17:20:30.127Z] Resources ready
+
+[2021-04-27T17:20:30.156Z] Deploying version v-9322c4eebe... → Done (took 4.1 sec)
+
+[2021-04-27T17:20:30.160Z] Deploying version v-b1ca5ee57d...
+
+[2021-04-27T17:20:30.164Z] Deploying version v-c6d708a165...
+
+[2021-04-27T17:20:31.932Z] Waiting for resources to be ready...
+
+[2021-04-27T17:20:31.948Z] Waiting for resources to be ready...
+
+[2021-04-27T17:20:51.520Z] Resources ready
+
+[2021-04-27T17:20:51.527Z] Resources ready
+
+[2021-04-27T17:20:51.561Z] Deploying version v-b1ca5ee57d... → Done (took 21.4 sec)
+
+[2021-04-27T17:20:51.567Z] Deploying version v-c6d708a165... → Done (took 21.4 sec)
+
+[2021-04-27T17:20:51.575Z] Done! ✔️ 
+
+[2021-04-27T17:22:36.981Z] Getting status...
+
+[2021-04-27T17:22:38.002Z] Getting status... → Cached
+
+[2021-04-27T17:22:38.004Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T17:22:38.141Z] Service inbound-traffic is disabled
+
+[2021-04-27T17:22:38.150Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:22:38.153Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:22:38.157Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:22:38.174Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:22:38.178Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T17:22:38.187Z] Building version v-9322c4eebe...
+
+[2021-04-27T17:22:38.190Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:22:38.193Z] Getting build status for v-b1ca5ee57d...
+
+[2021-04-27T17:22:38.195Z] Building version v-b1ca5ee57d...
+
+[2021-04-27T17:22:38.198Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:22:38.201Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T17:22:38.204Z] Building version v-c6d708a165...
+
+[2021-04-27T17:22:38.215Z] Building version v-b1ca5ee57d... → Done (took 0 sec)
+
+[2021-04-27T17:22:38.217Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T17:22:38.221Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T17:22:38.604Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T17:22:38.606Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-27T17:22:38.648Z] Deploying version v-c6d708a165...
+
+[2021-04-27T17:22:38.651Z] Deploying version v-c6d708a165... → Already deployed
+
+[2021-04-27T17:22:38.656Z] Deploying version v-b1ca5ee57d...
+
+[2021-04-27T17:22:38.658Z] Deploying version v-b1ca5ee57d... → Already deployed
+
+[2021-04-27T17:22:38.668Z] Done! ✔️ 
+
+[2021-04-27T17:26:20.269Z] Getting status...
+
+[2021-04-27T17:26:21.103Z] Getting status... → Cached
+
+[2021-04-27T17:26:21.105Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T17:26:21.255Z] Deleting services...
+
+[2021-04-27T17:26:21.262Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:26:21.264Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:26:21.268Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:26:21.274Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:26:21.276Z] Deleting...
+
+[2021-04-27T17:26:21.280Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:26:21.283Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:26:21.285Z] Deleting...
+
+[2021-04-27T17:27:00.234Z] Deleting... → Done (took 38.9 sec)
+
+[2021-04-27T17:27:00.251Z] Deleting... → Done (took 39 sec)
+
+[2021-04-27T17:27:00.253Z] Deleting...
+
+[2021-04-27T17:27:00.709Z] Deleting... → Done (took 0.5 sec)
+
+[2021-04-27T17:27:00.713Z] Deleting services...
+
+[2021-04-27T17:27:00.717Z] Cleaning up environments...
+
+[2021-04-27T17:27:00.738Z] Deleting namespace suitcaselab-default (this may take a while)
+
+[2021-04-27T17:27:06.789Z] Deleting namespace suitcaselab-default (this may take a while)
+
+[2021-04-27T17:27:08.416Z] Cleaning up environments...
+
+[2021-04-27T17:34:23.747Z] Getting status...
+
+[2021-04-27T17:34:24.951Z] Getting status... → Cached
+
+[2021-04-27T17:34:24.953Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T17:34:25.116Z] Service inbound-traffic is disabled
+
+[2021-04-27T17:34:25.126Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:34:25.129Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:34:25.134Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:34:25.152Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:34:25.156Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T17:34:25.159Z] Building version v-9322c4eebe...
+
+[2021-04-27T17:34:25.169Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:34:25.172Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T17:34:25.175Z] Building version v-c6d708a165...
+
+[2021-04-27T17:34:25.177Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:34:25.181Z] Getting build status for v-b1ca5ee57d...
+
+[2021-04-27T17:34:25.183Z] Building version v-b1ca5ee57d...
+
+[2021-04-27T17:34:25.196Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T17:34:25.200Z] Building version v-b1ca5ee57d... → Done (took 0 sec)
+
+[2021-04-27T17:34:25.202Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T17:34:25.604Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T17:34:27.041Z] Waiting for resources to be ready...
+
+[2021-04-27T17:34:29.060Z] Resources ready
+
+[2021-04-27T17:34:29.087Z] Deploying version v-9322c4eebe... → Done (took 3.5 sec)
+
+[2021-04-27T17:34:29.090Z] Deploying version v-b1ca5ee57d...
+
+[2021-04-27T17:34:29.093Z] Deploying version v-c6d708a165...
+
+[2021-04-27T17:34:30.906Z] Waiting for resources to be ready...
+
+[2021-04-27T17:34:30.967Z] Waiting for resources to be ready...
+
+[2021-04-27T17:34:32.927Z] Resources ready
+
+[2021-04-27T17:34:32.952Z] Deploying version v-c6d708a165... → Done (took 3.9 sec)
+
+[2021-04-27T17:34:35.510Z] Resources ready
+
+[2021-04-27T17:34:35.552Z] Deploying version v-b1ca5ee57d... → Done (took 6.5 sec)
+
+[2021-04-27T17:34:35.563Z] Done! ✔️ 
+
+[2021-04-27T17:36:26.309Z] Getting status...
+
+[2021-04-27T17:36:27.613Z] Getting status... → Done
+
+[2021-04-27T17:36:27.760Z] Service inbound-traffic is disabled
+
+[2021-04-27T17:36:27.770Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:36:27.772Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:36:27.777Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:36:27.786Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:36:27.788Z] Getting build status for v-b1ca5ee57d...
+
+[2021-04-27T17:36:27.790Z] Building version v-b1ca5ee57d...
+
+[2021-04-27T17:36:27.793Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:36:27.796Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T17:36:27.803Z] Building version v-9322c4eebe...
+
+[2021-04-27T17:36:27.806Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:36:27.809Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T17:36:27.811Z] Building version v-c6d708a165...
+
+[2021-04-27T17:36:27.818Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T17:36:27.820Z] Building version v-b1ca5ee57d... → Done (took 0 sec)
+
+[2021-04-27T17:36:27.824Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T17:36:28.026Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T17:36:28.916Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T17:36:28.923Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=local-pv --output=json -f -" failed with code 1:
+
+The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource: Forbidden: is immutable after creation
+
+The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource: Forbidden: is immutable after creation
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=local-pv --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=local-pv --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource:
+  Forbidden: is immutable after creation
+all: >-
+  The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource:
+  Forbidden: is immutable after creation
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T17:36:28.933Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.local-pv:
+    type: deploy
+    description: deploying service 'local-pv' (from module 'local-pv')
+    key: deploy.local-pv
+    name: local-pv
+    startedAt: 2021-04-27T17:36:28.021Z
+    completedAt: 2021-04-27T17:36:28.916Z
+    batchId: 2beb7e59-cdab-44fb-8ec9-91fccf1f6512
+    version: v-9322c4eebe
+
+
+[2021-04-27T17:36:28.938Z] 
+See error.log for detailed error message
+
+[2021-04-27T17:37:02.445Z] Getting status...
+
+[2021-04-27T17:37:02.488Z] Getting status... → Cached
+
+[2021-04-27T17:37:02.490Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T17:37:02.689Z] Deleting services...
+
+[2021-04-27T17:37:02.697Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:37:02.699Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:37:02.704Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:37:02.709Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:37:02.711Z] Deleting...
+
+[2021-04-27T17:37:02.715Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:37:02.718Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:37:02.721Z] Deleting...
+
+[2021-04-27T17:37:03.293Z] Not found
+
+[2021-04-27T17:37:03.296Z] Not found
+
+[2021-04-27T17:37:03.302Z] Deleting...
+
+[2021-04-27T17:37:04.023Z] Deleting... → Done (took 0.7 sec)
+
+[2021-04-27T17:37:04.026Z] Deleting services...
+
+[2021-04-27T17:37:04.030Z] Cleaning up environments...
+
+[2021-04-27T17:37:04.112Z] Deleting namespace suitcaselab-default (this may take a while)
+
+[2021-04-27T17:37:10.460Z] Deleting namespace suitcaselab-default (this may take a while)
+
+[2021-04-27T17:37:10.540Z] Cleaning up environments...
+
+[2021-04-27T17:41:49.987Z] Getting status...
+
+[2021-04-27T17:41:50.505Z] Getting status... → Cached
+
+[2021-04-27T17:41:50.507Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T17:41:50.661Z] Service inbound-traffic is disabled
+
+[2021-04-27T17:41:50.671Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:41:50.674Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:41:50.679Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:41:50.698Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:41:50.701Z] Getting build status for v-b1ca5ee57d...
+
+[2021-04-27T17:41:50.704Z] Building version v-b1ca5ee57d...
+
+[2021-04-27T17:41:50.709Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:41:50.713Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T17:41:50.718Z] Building version v-9322c4eebe...
+
+[2021-04-27T17:41:50.721Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:41:50.724Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T17:41:50.727Z] Building version v-c6d708a165...
+
+[2021-04-27T17:41:50.735Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T17:41:50.738Z] Building version v-b1ca5ee57d... → Done (took 0 sec)
+
+[2021-04-27T17:41:50.742Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T17:41:51.435Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T17:41:51.941Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T17:41:51.947Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=local-pv --output=json -f -" failed with code 1:
+
+The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource: Forbidden: is immutable after creation
+
+The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource: Forbidden: is immutable after creation
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=local-pv --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=local-pv --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource:
+  Forbidden: is immutable after creation
+all: >-
+  The PersistentVolume "data-pv-volume" is invalid: spec.persistentvolumesource:
+  Forbidden: is immutable after creation
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T17:41:51.957Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.local-pv:
+    type: deploy
+    description: deploying service 'local-pv' (from module 'local-pv')
+    key: deploy.local-pv
+    name: local-pv
+    startedAt: 2021-04-27T17:41:51.430Z
+    completedAt: 2021-04-27T17:41:51.942Z
+    batchId: f1cd552c-dc8a-430e-b1cf-42e0bfa00055
+    version: v-9322c4eebe
+
+
+[2021-04-27T17:41:51.961Z] 
+See error.log for detailed error message
+
+[2021-04-27T17:51:30.733Z] Getting status...
+
+[2021-04-27T17:51:31.196Z] Getting status... → Cached
+
+[2021-04-27T17:51:31.199Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T17:51:31.357Z] Service inbound-traffic is disabled
+
+[2021-04-27T17:51:31.368Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:51:31.370Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:51:31.375Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:51:31.392Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:51:31.396Z] Getting build status for v-b1ca5ee57d...
+
+[2021-04-27T17:51:31.398Z] Building version v-b1ca5ee57d...
+
+[2021-04-27T17:51:31.404Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:51:31.407Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T17:51:31.413Z] Building version v-9322c4eebe...
+
+[2021-04-27T17:51:31.416Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:51:31.419Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T17:51:31.422Z] Building version v-c6d708a165...
+
+[2021-04-27T17:51:31.430Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T17:51:31.433Z] Building version v-b1ca5ee57d... → Done (took 0 sec)
+
+[2021-04-27T17:51:31.437Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T17:51:32.366Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T17:51:34.398Z] Waiting for resources to be ready...
+
+[2021-04-27T17:51:36.487Z] Resources ready
+
+[2021-04-27T17:51:36.650Z] Deploying version v-9322c4eebe... → Done (took 4.3 sec)
+
+[2021-04-27T17:51:36.654Z] Deploying version v-b1ca5ee57d...
+
+[2021-04-27T17:51:36.657Z] Deploying version v-c6d708a165...
+
+[2021-04-27T17:51:38.773Z] Waiting for resources to be ready...
+
+[2021-04-27T17:51:38.778Z] Waiting for resources to be ready...
+
+[2021-04-27T17:52:03.912Z] Resources ready
+
+[2021-04-27T17:52:03.917Z] Resources ready
+
+[2021-04-27T17:52:04.090Z] Deploying version v-c6d708a165... → Done (took 27.4 sec)
+
+[2021-04-27T17:52:04.096Z] Deploying version v-b1ca5ee57d... → Done (took 27.4 sec)
+
+[2021-04-27T17:52:04.107Z] Done! ✔️ 
+
+[2021-04-27T19:13:59.398Z] Getting status...
+
+[2021-04-27T19:14:02.225Z] Getting status... → Done
+
+[2021-04-27T19:14:02.394Z] Service inbound-traffic is disabled
+
+[2021-04-27T19:14:02.405Z] Syncing module sources (2 files)...
+
+[2021-04-27T19:14:02.408Z] Syncing module sources (2 files)...
+
+[2021-04-27T19:14:02.414Z] Syncing module sources (2 files)...
+
+[2021-04-27T19:14:02.423Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T19:14:02.426Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T19:14:02.429Z] Building version v-9322c4eebe...
+
+[2021-04-27T19:14:02.436Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T19:14:02.439Z] Getting build status for v-b1ca5ee57d...
+
+[2021-04-27T19:14:02.445Z] Building version v-b1ca5ee57d...
+
+[2021-04-27T19:14:02.448Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T19:14:02.452Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T19:14:02.455Z] Building version v-c6d708a165...
+
+[2021-04-27T19:14:02.466Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T19:14:02.472Z] Building version v-b1ca5ee57d... → Done (took 0 sec)
+
+[2021-04-27T19:14:02.476Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T19:14:02.503Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T19:14:02.505Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-27T19:14:02.568Z] Deploying version v-c6d708a165...
+
+[2021-04-27T19:14:02.570Z] Deploying version v-c6d708a165... → Already deployed
+
+[2021-04-27T19:14:02.576Z] Deploying version v-b1ca5ee57d...
+
+[2021-04-27T19:14:02.579Z] Deploying version v-b1ca5ee57d... → Already deployed
+
+[2021-04-27T19:14:02.591Z] Done! ✔️ 
+
+[2021-04-27T19:42:08.975Z] Getting status...
+
+[2021-04-27T19:42:10.225Z] Getting status... → Cached
+
+[2021-04-27T19:42:10.228Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T19:42:10.427Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-27T19:42:10.436Z] Syncing module sources (2 files)...
+
+[2021-04-27T19:42:10.442Z] Syncing module sources (2 files)...
+
+[2021-04-27T19:42:10.467Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T19:42:10.471Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T19:42:10.476Z] Building version v-9322c4eebe...
+
+[2021-04-27T19:42:10.480Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T19:42:10.483Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T19:42:10.494Z] Building version v-c6d708a165...
+
+[2021-04-27T19:42:10.504Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T19:42:10.508Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T19:42:10.627Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T19:42:10.629Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-27T19:42:10.680Z] Deploying version v-c6d708a165...
+
+[2021-04-27T19:42:10.683Z] Deploying version v-c6d708a165... → Already deployed
+
+[2021-04-27T19:42:10.693Z] Done! ✔️ 
+
+[2021-04-27T20:16:41.622Z] Getting status...
+
+[2021-04-27T20:16:44.843Z] Getting status... → Done
+
+[2021-04-27T20:16:45.017Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-27T20:16:45.027Z] Syncing module sources (2 files)...
+
+[2021-04-27T20:16:45.030Z] Syncing module sources (2 files)...
+
+[2021-04-27T20:16:45.041Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T20:16:45.044Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T20:16:45.046Z] Building version v-9322c4eebe...
+
+[2021-04-27T20:16:45.049Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T20:16:45.058Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T20:16:45.061Z] Building version v-c6d708a165...
+
+[2021-04-27T20:16:45.073Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T20:16:45.081Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T20:16:45.117Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T20:16:45.119Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-27T20:16:45.140Z] Deploying version v-c6d708a165...
+
+[2021-04-27T20:16:49.413Z] Waiting for resources to be ready...
+
+[2021-04-27T20:16:51.436Z] Resources ready
+
+[2021-04-27T20:16:51.476Z] Deploying version v-c6d708a165... → Done (took 6.3 sec)
+
+[2021-04-27T20:16:51.493Z] Done! ✔️ 
+
+[2021-04-27T20:30:18.580Z] Getting status...
+
+[2021-04-27T20:30:19.762Z] Getting status... → Cached
+
+[2021-04-27T20:30:19.764Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T20:30:19.940Z] Services recorder and inbound-traffic are disabled
+
+[2021-04-27T20:30:19.951Z] Syncing module sources (2 files)...
+
+[2021-04-27T20:30:19.957Z] Syncing module sources (2 files)...
+
+[2021-04-27T20:30:19.976Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T20:30:19.980Z] Getting build status for v-c6d708a165...
+
+[2021-04-27T20:30:19.983Z] Building version v-c6d708a165...
+
+[2021-04-27T20:30:19.987Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T20:30:19.993Z] Getting build status for v-9322c4eebe...
+
+[2021-04-27T20:30:19.999Z] Building version v-9322c4eebe...
+
+[2021-04-27T20:30:20.009Z] Building version v-9322c4eebe... → Done (took 0 sec)
+
+[2021-04-27T20:30:20.013Z] Building version v-c6d708a165... → Done (took 0 sec)
+
+[2021-04-27T20:30:20.110Z] Deploying version v-9322c4eebe...
+
+[2021-04-27T20:30:20.112Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-04-27T20:30:20.138Z] Deploying version v-c6d708a165...
+
+[2021-04-27T20:30:22.003Z] Waiting for resources to be ready...
+
+[2021-04-27T20:30:24.029Z] Resources ready
+
+[2021-04-27T20:30:24.070Z] Deploying version v-c6d708a165... → Done (took 3.9 sec)
+
+[2021-04-27T20:30:24.078Z] Done! ✔️ 
