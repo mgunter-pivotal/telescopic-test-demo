@@ -1,0 +1,184 @@
+
+[2021-04-27T16:48:41.379Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker push gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21" failed with code 1:
+
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Here's the full output:
+
+The push refers to repository [gcr.io/th-structure-flow-demo/udp-app]
+f7577e4c74b4: Preparing
+fe33d2017d1d: Preparing
+adbb30380c0c: Preparing
+2d5e4dca5d45: Preparing
+d8ea972acbb7: Preparing
+15b9aeee8493: Preparing
+2831d216c2dc: Preparing
+5d09c2db1d76: Preparing
+417cb9b79ade: Preparing
+15b9aeee8493: Waiting
+2831d216c2dc: Waiting
+5d09c2db1d76: Waiting
+417cb9b79ade: Waiting
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/Projects/formula1-telemetry-kafka/garden_version/.garden/build/udp-app
+
+
+[2021-04-27T16:49:03.218Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-27T16:48:29.327Z
+    completedAt: 2021-04-27T16:48:41.373Z
+    batchId: 10d2cfc0-7a6b-4c44-b31d-4f63745d3a47
+    version: v-47a406fd21
+
+
+[2021-04-27T16:59:18.257Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker push gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21" failed with code 1:
+
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Here's the full output:
+
+The push refers to repository [gcr.io/th-structure-flow-demo/udp-app]
+f7577e4c74b4: Preparing
+fe33d2017d1d: Preparing
+adbb30380c0c: Preparing
+2d5e4dca5d45: Preparing
+d8ea972acbb7: Preparing
+15b9aeee8493: Preparing
+2831d216c2dc: Preparing
+5d09c2db1d76: Preparing
+417cb9b79ade: Preparing
+15b9aeee8493: Waiting
+2831d216c2dc: Waiting
+5d09c2db1d76: Waiting
+417cb9b79ade: Waiting
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/Projects/formula1-telemetry-kafka/garden_version/.garden/build/udp-app
+
+
+[2021-04-27T16:59:18.268Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-27T16:59:14.986Z
+    completedAt: 2021-04-27T16:59:18.251Z
+    batchId: 9d08ea10-dcf2-4773-a82b-c1114843a68e
+    version: v-47a406fd21
+
+
+[2021-04-27T17:02:47.106Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker push gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21" failed with code 1:
+
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Here's the full output:
+
+The push refers to repository [gcr.io/th-structure-flow-demo/udp-app]
+f7577e4c74b4: Preparing
+fe33d2017d1d: Preparing
+adbb30380c0c: Preparing
+2d5e4dca5d45: Preparing
+d8ea972acbb7: Preparing
+15b9aeee8493: Preparing
+2831d216c2dc: Preparing
+5d09c2db1d76: Preparing
+417cb9b79ade: Preparing
+15b9aeee8493: Waiting
+2831d216c2dc: Waiting
+5d09c2db1d76: Waiting
+417cb9b79ade: Waiting
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/Projects/formula1-telemetry-kafka/garden_version/.garden/build/udp-app
+
+
+[2021-04-27T17:02:47.115Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-27T17:02:39.893Z
+    completedAt: 2021-04-27T17:02:47.101Z
+    batchId: 2f758768-67a9-47fd-b75c-2eeccaae6983
+    version: v-47a406fd21
+
+
+[2021-04-27T17:04:29.926Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker push gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21" failed with code 1:
+
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Here's the full output:
+
+The push refers to repository [gcr.io/th-structure-flow-demo/udp-app]
+f7577e4c74b4: Preparing
+fe33d2017d1d: Preparing
+adbb30380c0c: Preparing
+2d5e4dca5d45: Preparing
+d8ea972acbb7: Preparing
+15b9aeee8493: Preparing
+2831d216c2dc: Preparing
+5d09c2db1d76: Preparing
+417cb9b79ade: Preparing
+15b9aeee8493: Waiting
+2831d216c2dc: Waiting
+5d09c2db1d76: Waiting
+417cb9b79ade: Waiting
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/Projects/formula1-telemetry-kafka/garden_version/.garden/build/udp-app
+
+
+[2021-04-27T17:04:29.936Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-27T17:04:24.956Z
+    completedAt: 2021-04-27T17:04:29.920Z
+    batchId: bf19bdd2-df25-40ea-a658-a2295518778b
+    version: v-47a406fd21
+

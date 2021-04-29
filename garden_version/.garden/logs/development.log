@@ -1,0 +1,798 @@
+
+[2021-04-27T16:17:40.134Z] Getting status...
+
+[2021-04-27T16:17:42.528Z] Getting status... → Done
+
+[2021-04-27T16:17:42.670Z] Syncing module sources (2 files)...
+
+[2021-04-27T16:17:42.674Z] Syncing module sources (3 files)...
+
+[2021-04-27T16:17:42.680Z] Syncing module sources (1 file)...
+
+[2021-04-27T16:17:42.702Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-04-27T16:17:42.704Z] Getting build status for v-47a406fd21...
+
+[2021-04-27T16:17:42.710Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-04-27T16:17:42.713Z] Getting build status for v-be01bf8eb5...
+
+[2021-04-27T16:17:42.716Z] Building version v-be01bf8eb5...
+
+[2021-04-27T16:17:42.720Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-27T16:17:42.723Z] Getting build status for v-1a328988a3...
+
+[2021-04-27T16:17:42.725Z] Building version v-1a328988a3...
+
+[2021-04-27T16:17:42.761Z] Building version v-1a328988a3... → Done (took 0 sec)
+
+[2021-04-27T16:17:42.773Z] Building version v-be01bf8eb5... → Done (took 0.1 sec)
+
+[2021-04-27T16:17:42.797Z] Deploying version v-1a328988a3...
+
+[2021-04-27T16:17:42.809Z] Deploying version v-be01bf8eb5...
+
+[2021-04-27T16:17:43.438Z] Building version v-47a406fd21...
+
+[2021-04-27T16:17:43.721Z] Building udp-app:v-47a406fd21...
+
+[2021-04-27T16:17:44.001Z] Building udp-app:v-47a406fd21... → Done (took 1.3 sec)
+
+[2021-04-27T16:17:44.694Z] Waiting for resources to be ready...
+
+[2021-04-27T16:17:44.781Z] Waiting for resources to be ready...
+
+[2021-04-27T16:17:46.736Z] Deployment/zookeeper-deploy: Pulling image "digitalwonderland/zookeeper"
+
+[2021-04-27T16:17:46.825Z] Deployment/kafka-broker0: Pulling image "wurstmeister/kafka"
+
+[2021-04-27T16:18:04.433Z] Resources ready
+
+[2021-04-27T16:18:04.463Z] Deploying version v-1a328988a3... → Done (took 21.7 sec)
+
+[2021-04-27T16:18:34.833Z] Resources ready
+
+[2021-04-27T16:18:34.865Z] Deploying version v-be01bf8eb5... → Done (took 52.1 sec)
+
+[2021-04-27T16:18:34.870Z] Deploying version v-47a406fd21...
+
+[2021-04-27T16:18:36.990Z] Waiting for resources to be ready...
+
+[2021-04-27T16:18:39.036Z] Resources ready
+
+[2021-04-27T16:18:39.070Z] Deploying version v-47a406fd21... → Done (took 4.2 sec)
+
+[2021-04-27T16:18:39.075Z] → Ingress: http://http.local.app.garden
+
+[2021-04-27T16:18:39.093Z] Done! ✔️ 
+
+[2021-04-27T16:48:26.330Z] Getting status...
+
+[2021-04-27T16:48:29.169Z] Getting status... → Done
+
+[2021-04-27T16:48:29.282Z] Syncing module sources (2 files)...
+
+[2021-04-27T16:48:29.286Z] Syncing module sources (3 files)...
+
+[2021-04-27T16:48:29.292Z] Syncing module sources (1 file)...
+
+[2021-04-27T16:48:29.308Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-04-27T16:48:29.310Z] Getting build status for v-be01bf8eb5...
+
+[2021-04-27T16:48:29.314Z] Building version v-be01bf8eb5...
+
+[2021-04-27T16:48:29.316Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T16:48:29.319Z] Getting build status for v-1a328988a3...
+
+[2021-04-27T16:48:29.321Z] Building version v-1a328988a3...
+
+[2021-04-27T16:48:29.326Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-04-27T16:48:29.329Z] Getting build status for v-47a406fd21...
+
+[2021-04-27T16:48:29.665Z] Building version v-1a328988a3... → Done (took 0.3 sec)
+
+[2021-04-27T16:48:29.667Z] Building version v-be01bf8eb5... → Done (took 0.4 sec)
+
+[2021-04-27T16:48:29.823Z] Deploying version v-1a328988a3...
+
+[2021-04-27T16:48:29.835Z] Deploying version v-be01bf8eb5...
+
+[2021-04-27T16:48:31.184Z] Unable to query registry for image status: Get https://gcr.io/v2/th-structure-flow-demo/udp-app/manifests/v-47a406fd21: unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+
+[2021-04-27T16:48:31.188Z] Building version v-47a406fd21...
+
+[2021-04-27T16:48:31.469Z] Building udp-app:v-47a406fd21...
+
+[2021-04-27T16:48:39.612Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-27T16:48:40.109Z] Waiting for resources to be ready...
+
+[2021-04-27T16:48:40.619Z] Waiting for resources to be ready...
+
+[2021-04-27T16:48:41.373Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-27T16:48:41.379Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker push gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21" failed with code 1:
+
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Here's the full output:
+
+The push refers to repository [gcr.io/th-structure-flow-demo/udp-app]
+f7577e4c74b4: Preparing
+fe33d2017d1d: Preparing
+adbb30380c0c: Preparing
+2d5e4dca5d45: Preparing
+d8ea972acbb7: Preparing
+15b9aeee8493: Preparing
+2831d216c2dc: Preparing
+5d09c2db1d76: Preparing
+417cb9b79ade: Preparing
+15b9aeee8493: Waiting
+2831d216c2dc: Waiting
+5d09c2db1d76: Waiting
+417cb9b79ade: Waiting
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/Projects/formula1-telemetry-kafka/garden_version/.garden/build/udp-app
+
+
+[2021-04-27T16:48:42.570Z] Deployment/zookeeper-deploy: Pulling image "digitalwonderland/zookeeper"
+
+[2021-04-27T16:48:43.008Z] Deployment/kafka-broker0: Pulling image "wurstmeister/kafka"
+
+[2021-04-27T16:48:45.469Z] Deployment/zookeeper-deploy: Successfully pulled image "digitalwonderland/zookeeper"
+
+[2021-04-27T16:48:48.890Z] Deployment/zookeeper-deploy: Started container zoo1
+
+[2021-04-27T16:48:52.493Z] Resources ready
+
+[2021-04-27T16:48:52.662Z] Deploying version v-1a328988a3... → Done (took 22.8 sec)
+
+[2021-04-27T16:48:57.707Z] Deployment/kafka-broker0: Started container kafka
+
+[2021-04-27T16:49:02.547Z] Resources ready
+
+[2021-04-27T16:49:03.209Z] Deploying version v-be01bf8eb5... → Done (took 33.4 sec)
+
+[2021-04-27T16:49:03.218Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-27T16:48:29.327Z
+    completedAt: 2021-04-27T16:48:41.373Z
+    batchId: 10d2cfc0-7a6b-4c44-b31d-4f63745d3a47
+    version: v-47a406fd21
+
+
+[2021-04-27T16:49:03.223Z] 
+See error.log for detailed error message
+
+[2021-04-27T16:59:14.332Z] Getting status...
+
+[2021-04-27T16:59:14.827Z] Getting status... → Cached
+
+[2021-04-27T16:59:14.829Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T16:59:14.949Z] Syncing module sources (2 files)...
+
+[2021-04-27T16:59:14.953Z] Syncing module sources (3 files)...
+
+[2021-04-27T16:59:14.959Z] Syncing module sources (1 file)...
+
+[2021-04-27T16:59:14.985Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-04-27T16:59:14.988Z] Getting build status for v-47a406fd21...
+
+[2021-04-27T16:59:14.995Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T16:59:14.998Z] Getting build status for v-1a328988a3...
+
+[2021-04-27T16:59:15.001Z] Building version v-1a328988a3...
+
+[2021-04-27T16:59:15.004Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-27T16:59:15.007Z] Getting build status for v-be01bf8eb5...
+
+[2021-04-27T16:59:15.009Z] Building version v-be01bf8eb5...
+
+[2021-04-27T16:59:15.026Z] Building version v-be01bf8eb5... → Done (took 0 sec)
+
+[2021-04-27T16:59:15.029Z] Building version v-1a328988a3... → Done (took 0 sec)
+
+[2021-04-27T16:59:16.415Z] Unable to query registry for image status: Get https://gcr.io/v2/th-structure-flow-demo/udp-app/manifests/v-47a406fd21: unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+
+[2021-04-27T16:59:16.421Z] Building version v-47a406fd21...
+
+[2021-04-27T16:59:16.450Z] Deploying version v-1a328988a3...
+
+[2021-04-27T16:59:16.454Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-27T16:59:16.464Z] Deploying version v-be01bf8eb5...
+
+[2021-04-27T16:59:16.468Z] Deploying version v-be01bf8eb5... → Already deployed
+
+[2021-04-27T16:59:16.681Z] Building udp-app:v-47a406fd21...
+
+[2021-04-27T16:59:17.681Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-27T16:59:18.251Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-27T16:59:18.257Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker push gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21" failed with code 1:
+
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Here's the full output:
+
+The push refers to repository [gcr.io/th-structure-flow-demo/udp-app]
+f7577e4c74b4: Preparing
+fe33d2017d1d: Preparing
+adbb30380c0c: Preparing
+2d5e4dca5d45: Preparing
+d8ea972acbb7: Preparing
+15b9aeee8493: Preparing
+2831d216c2dc: Preparing
+5d09c2db1d76: Preparing
+417cb9b79ade: Preparing
+15b9aeee8493: Waiting
+2831d216c2dc: Waiting
+5d09c2db1d76: Waiting
+417cb9b79ade: Waiting
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/Projects/formula1-telemetry-kafka/garden_version/.garden/build/udp-app
+
+
+[2021-04-27T16:59:18.269Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-27T16:59:14.986Z
+    completedAt: 2021-04-27T16:59:18.251Z
+    batchId: 9d08ea10-dcf2-4773-a82b-c1114843a68e
+    version: v-47a406fd21
+
+
+[2021-04-27T16:59:18.273Z] 
+See error.log for detailed error message
+
+[2021-04-27T17:02:39.171Z] Getting status...
+
+[2021-04-27T17:02:39.713Z] Getting status... → Cached
+
+[2021-04-27T17:02:39.715Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T17:02:39.846Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:02:39.850Z] Syncing module sources (3 files)...
+
+[2021-04-27T17:02:39.856Z] Syncing module sources (1 file)...
+
+[2021-04-27T17:02:39.882Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-04-27T17:02:39.885Z] Getting build status for v-be01bf8eb5...
+
+[2021-04-27T17:02:39.890Z] Building version v-be01bf8eb5...
+
+[2021-04-27T17:02:39.893Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-04-27T17:02:39.896Z] Getting build status for v-47a406fd21...
+
+[2021-04-27T17:02:39.899Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-27T17:02:39.902Z] Getting build status for v-1a328988a3...
+
+[2021-04-27T17:02:39.905Z] Building version v-1a328988a3...
+
+[2021-04-27T17:02:39.918Z] Building version v-be01bf8eb5... → Done (took 0 sec)
+
+[2021-04-27T17:02:39.924Z] Building version v-1a328988a3... → Done (took 0 sec)
+
+[2021-04-27T17:02:41.883Z] Unable to query registry for image status: Get https://gcr.io/v2/th-structure-flow-demo/udp-app/manifests/v-47a406fd21: unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+
+[2021-04-27T17:02:41.887Z] Building version v-47a406fd21...
+
+[2021-04-27T17:02:42.531Z] Building udp-app:v-47a406fd21...
+
+[2021-04-27T17:02:42.743Z] Deploying version v-1a328988a3...
+
+[2021-04-27T17:02:42.746Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-27T17:02:42.756Z] Deploying version v-be01bf8eb5...
+
+[2021-04-27T17:02:42.759Z] Deploying version v-be01bf8eb5... → Already deployed
+
+[2021-04-27T17:02:45.614Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-27T17:02:47.101Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-27T17:02:47.106Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker push gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21" failed with code 1:
+
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Here's the full output:
+
+The push refers to repository [gcr.io/th-structure-flow-demo/udp-app]
+f7577e4c74b4: Preparing
+fe33d2017d1d: Preparing
+adbb30380c0c: Preparing
+2d5e4dca5d45: Preparing
+d8ea972acbb7: Preparing
+15b9aeee8493: Preparing
+2831d216c2dc: Preparing
+5d09c2db1d76: Preparing
+417cb9b79ade: Preparing
+15b9aeee8493: Waiting
+2831d216c2dc: Waiting
+5d09c2db1d76: Waiting
+417cb9b79ade: Waiting
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/Projects/formula1-telemetry-kafka/garden_version/.garden/build/udp-app
+
+
+[2021-04-27T17:02:47.115Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-27T17:02:39.893Z
+    completedAt: 2021-04-27T17:02:47.101Z
+    batchId: 2f758768-67a9-47fd-b75c-2eeccaae6983
+    version: v-47a406fd21
+
+
+[2021-04-27T17:02:47.119Z] 
+See error.log for detailed error message
+
+[2021-04-27T17:04:24.290Z] Getting status...
+
+[2021-04-27T17:04:24.783Z] Getting status... → Cached
+
+[2021-04-27T17:04:24.785Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T17:04:24.906Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:04:24.910Z] Syncing module sources (3 files)...
+
+[2021-04-27T17:04:24.916Z] Syncing module sources (1 file)...
+
+[2021-04-27T17:04:24.943Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:04:24.946Z] Getting build status for v-1a328988a3...
+
+[2021-04-27T17:04:24.952Z] Building version v-1a328988a3...
+
+[2021-04-27T17:04:24.955Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-04-27T17:04:24.959Z] Getting build status for v-47a406fd21...
+
+[2021-04-27T17:04:24.963Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-27T17:04:24.966Z] Getting build status for v-be01bf8eb5...
+
+[2021-04-27T17:04:24.969Z] Building version v-be01bf8eb5...
+
+[2021-04-27T17:04:24.987Z] Building version v-1a328988a3... → Done (took 0 sec)
+
+[2021-04-27T17:04:24.992Z] Building version v-be01bf8eb5... → Done (took 0 sec)
+
+[2021-04-27T17:04:26.822Z] Unable to query registry for image status: Get https://gcr.io/v2/th-structure-flow-demo/udp-app/manifests/v-47a406fd21: unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+
+[2021-04-27T17:04:26.826Z] Building version v-47a406fd21...
+
+[2021-04-27T17:04:27.563Z] Building udp-app:v-47a406fd21...
+
+[2021-04-27T17:04:27.620Z] Deploying version v-be01bf8eb5...
+
+[2021-04-27T17:04:27.623Z] Deploying version v-be01bf8eb5... → Already deployed
+
+[2021-04-27T17:04:27.640Z] Deploying version v-1a328988a3...
+
+[2021-04-27T17:04:27.643Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-27T17:04:28.435Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-27T17:04:29.920Z] Pushing image gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21 to cluster...
+
+[2021-04-27T17:04:29.926Z] Unable to run docker command: Command "/Users/mattgunter/.garden/tools/docker/fa0336ac33b46eb5/docker/docker push gcr.io/th-structure-flow-demo/udp-app:v-47a406fd21" failed with code 1:
+
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Here's the full output:
+
+The push refers to repository [gcr.io/th-structure-flow-demo/udp-app]
+f7577e4c74b4: Preparing
+fe33d2017d1d: Preparing
+adbb30380c0c: Preparing
+2d5e4dca5d45: Preparing
+d8ea972acbb7: Preparing
+15b9aeee8493: Preparing
+2831d216c2dc: Preparing
+5d09c2db1d76: Preparing
+417cb9b79ade: Preparing
+15b9aeee8493: Waiting
+2831d216c2dc: Waiting
+5d09c2db1d76: Waiting
+417cb9b79ade: Waiting
+unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+Error Details:
+
+
+args: []
+cwd: >-
+  /Users/mattgunter/Projects/formula1-telemetry-kafka/garden_version/.garden/build/udp-app
+
+
+[2021-04-27T17:04:29.936Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  build.udp-app:
+    type: build
+    description: building udp-app
+    key: build.udp-app
+    name: udp-app
+    startedAt: 2021-04-27T17:04:24.956Z
+    completedAt: 2021-04-27T17:04:29.920Z
+    batchId: bf19bdd2-df25-40ea-a658-a2295518778b
+    version: v-47a406fd21
+
+
+[2021-04-27T17:04:29.940Z] 
+See error.log for detailed error message
+
+[2021-04-27T17:18:56.737Z] Getting status...
+
+[2021-04-27T17:18:59.589Z] Preparing environment...
+
+[2021-04-27T17:18:59.591Z] Configuring...
+
+[2021-04-27T17:18:59.629Z] Getting status...
+
+[2021-04-27T17:19:00.263Z] Getting status... → Cached
+
+[2021-04-27T17:19:00.265Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T17:19:00.273Z] Getting status...
+
+[2021-04-27T17:19:00.284Z] Getting status... → Cached
+
+[2021-04-27T17:19:00.286Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T17:19:00.569Z] Getting build status for v-994233bf48...
+
+[2021-04-27T17:19:00.572Z] Getting build status for v-994233bf48... → Done (took 0 sec)
+
+[2021-04-27T17:19:00.575Z] Getting build status for v-8ea621d34d...
+
+[2021-04-27T17:19:00.577Z] Building version v-8ea621d34d...
+
+[2021-04-27T17:19:00.586Z] Deploying version v-994233bf48...
+
+[2021-04-27T17:19:01.837Z] Building version v-8ea621d34d... → Done (took 1.3 sec)
+
+[2021-04-27T17:19:04.233Z] Waiting for resources to be ready...
+
+[2021-04-27T17:19:06.298Z] Deployment/default-backend: Pulling image "gardendev/default-backend:v0.1"
+
+[2021-04-27T17:19:08.811Z] Resources ready
+
+[2021-04-27T17:19:08.836Z] Deploying version v-994233bf48... → Done (took 8.3 sec)
+
+[2021-04-27T17:19:08.839Z] Deploying version v-8ea621d34d...
+
+[2021-04-27T17:19:22.012Z] Waiting for resources to be ready...
+
+[2021-04-27T17:19:24.076Z] DaemonSet/garden-nginx-ingress-nginx-controller: Pulling image "k8s.gcr.io/ingress-nginx/controller:v0.43.0@sha256:9bba603b99bf25f6d117cf1235b6598c16033ad027b143c90fa5b3cc583c5713"
+
+[2021-04-27T17:19:29.695Z] DaemonSet/garden-nginx-ingress-nginx-controller: RELOAD NGINX reload triggered due to a change in configuration
+
+[2021-04-27T17:19:46.906Z] Resources ready
+
+[2021-04-27T17:19:46.913Z] Deploying version v-8ea621d34d... → Done (took 38.1 sec)
+
+[2021-04-27T17:19:46.925Z] Configuring... → Ready
+
+[2021-04-27T17:19:46.930Z] Preparing environment... → Done
+
+[2021-04-27T17:19:47.061Z] Syncing module sources (2 files)...
+
+[2021-04-27T17:19:47.068Z] Syncing module sources (3 files)...
+
+[2021-04-27T17:19:47.072Z] Syncing module sources (1 file)...
+
+[2021-04-27T17:19:47.085Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-04-27T17:19:47.088Z] Getting build status for v-47a406fd21...
+
+[2021-04-27T17:19:47.092Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-04-27T17:19:47.095Z] Getting build status for v-be01bf8eb5...
+
+[2021-04-27T17:19:47.098Z] Building version v-be01bf8eb5...
+
+[2021-04-27T17:19:47.103Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T17:19:47.107Z] Getting build status for v-1a328988a3...
+
+[2021-04-27T17:19:47.110Z] Building version v-1a328988a3...
+
+[2021-04-27T17:19:47.131Z] Building version v-be01bf8eb5... → Done (took 0 sec)
+
+[2021-04-27T17:19:47.139Z] Building version v-1a328988a3... → Done (took 0 sec)
+
+[2021-04-27T17:19:47.157Z] Deploying version v-be01bf8eb5...
+
+[2021-04-27T17:19:47.163Z] Deploying version v-1a328988a3...
+
+[2021-04-27T17:19:47.713Z] Getting build status for v-47a406fd21... → Done (took 0.6 sec)
+
+[2021-04-27T17:19:49.688Z] Waiting for resources to be ready...
+
+[2021-04-27T17:19:49.694Z] Waiting for resources to be ready...
+
+[2021-04-27T17:19:51.757Z] Deployment/zookeeper-deploy: Pulling image "digitalwonderland/zookeeper"
+
+[2021-04-27T17:19:51.764Z] Deployment/kafka-broker0: Pulling image "wurstmeister/kafka"
+
+[2021-04-27T17:20:09.527Z] Resources ready
+
+[2021-04-27T17:20:09.569Z] Deploying version v-be01bf8eb5... → Done (took 22.4 sec)
+
+[2021-04-27T17:20:09.576Z] Deploying version v-47a406fd21...
+
+[2021-04-27T17:20:11.643Z] Waiting for resources to be ready...
+
+[2021-04-27T17:20:13.662Z] Resources ready
+
+[2021-04-27T17:20:13.697Z] Deploying version v-47a406fd21... → Done (took 4.1 sec)
+
+[2021-04-27T17:20:13.709Z] → Ingress: http://http.local.app.garden
+
+[2021-04-27T17:20:14.611Z] Resources ready
+
+[2021-04-27T17:20:14.639Z] Deploying version v-1a328988a3... → Done (took 27.5 sec)
+
+[2021-04-27T17:20:14.653Z] Done! ✔️ 
+
+[2021-04-27T19:12:59.850Z] Getting status...
+
+[2021-04-27T19:13:02.846Z] Getting status... → Done
+
+[2021-04-27T19:13:02.987Z] Syncing module sources (2 files)...
+
+[2021-04-27T19:13:02.992Z] Syncing module sources (3 files)...
+
+[2021-04-27T19:13:02.999Z] Syncing module sources (1 file)...
+
+[2021-04-27T19:13:03.019Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-04-27T19:13:03.022Z] Getting build status for v-47a406fd21...
+
+[2021-04-27T19:13:03.026Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-04-27T19:13:03.031Z] Getting build status for v-be01bf8eb5...
+
+[2021-04-27T19:13:03.034Z] Building version v-be01bf8eb5...
+
+[2021-04-27T19:13:03.038Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-27T19:13:03.046Z] Getting build status for v-1a328988a3...
+
+[2021-04-27T19:13:03.049Z] Building version v-1a328988a3...
+
+[2021-04-27T19:13:03.075Z] Building version v-be01bf8eb5... → Done (took 0 sec)
+
+[2021-04-27T19:13:03.080Z] Building version v-1a328988a3... → Done (took 0 sec)
+
+[2021-04-27T19:13:03.126Z] Deploying version v-1a328988a3...
+
+[2021-04-27T19:13:03.128Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-27T19:13:03.131Z] Deploying version v-be01bf8eb5...
+
+[2021-04-27T19:13:03.133Z] Deploying version v-be01bf8eb5... → Already deployed
+
+[2021-04-27T19:13:03.855Z] Getting build status for v-47a406fd21... → Done (took 0.8 sec)
+
+[2021-04-27T19:13:03.859Z] Deploying version v-47a406fd21...
+
+[2021-04-27T19:13:03.862Z] Deploying version v-47a406fd21... → Already deployed
+
+[2021-04-27T19:13:03.870Z] → Ingress: http://http.local.app.garden
+
+[2021-04-27T19:13:03.891Z] Done! ✔️ 
+
+[2021-04-27T20:05:52.546Z] Getting status...
+
+[2021-04-27T20:05:53.794Z] Getting status... → Cached
+
+[2021-04-27T20:05:53.796Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T20:05:53.950Z] Syncing module sources (2 files)...
+
+[2021-04-27T20:05:53.955Z] Syncing module sources (3 files)...
+
+[2021-04-27T20:05:53.961Z] Syncing module sources (1 file)...
+
+[2021-04-27T20:05:53.997Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-04-27T20:05:54.000Z] Getting build status for v-47a406fd21...
+
+[2021-04-27T20:05:54.008Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-04-27T20:05:54.011Z] Getting build status for v-1a328988a3...
+
+[2021-04-27T20:05:54.014Z] Building version v-1a328988a3...
+
+[2021-04-27T20:05:54.017Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-04-27T20:05:54.020Z] Getting build status for v-be01bf8eb5...
+
+[2021-04-27T20:05:54.024Z] Building version v-be01bf8eb5...
+
+[2021-04-27T20:05:54.042Z] Building version v-1a328988a3... → Done (took 0 sec)
+
+[2021-04-27T20:05:54.045Z] Building version v-be01bf8eb5... → Done (took 0 sec)
+
+[2021-04-27T20:05:54.150Z] Deploying version v-1a328988a3...
+
+[2021-04-27T20:05:54.153Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-04-27T20:05:54.163Z] Deploying version v-be01bf8eb5...
+
+[2021-04-27T20:05:54.165Z] Deploying version v-be01bf8eb5... → Already deployed
+
+[2021-04-27T20:05:54.781Z] Getting build status for v-47a406fd21... → Done (took 0.8 sec)
+
+[2021-04-27T20:05:54.785Z] Deploying version v-47a406fd21...
+
+[2021-04-27T20:05:54.788Z] Deploying version v-47a406fd21... → Already deployed
+
+[2021-04-27T20:05:54.793Z] → Ingress: http://http.local.app.garden
+
+[2021-04-27T20:05:54.809Z] Done! ✔️ 
+
+[2021-04-27T20:06:29.782Z] Getting status...
+
+[2021-04-27T20:06:30.324Z] Getting status... → Cached
+
+[2021-04-27T20:06:30.326Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-04-27T20:06:30.467Z] Deleting services...
+
+[2021-04-27T20:06:30.475Z] Syncing module sources (2 files)...
+
+[2021-04-27T20:06:30.479Z] Syncing module sources (3 files)...
+
+[2021-04-27T20:06:30.485Z] Syncing module sources (1 file)...
+
+[2021-04-27T20:06:30.491Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-04-27T20:06:30.494Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T20:06:30.497Z] Deleting...
+
+[2021-04-27T20:06:30.502Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-04-27T20:06:30.505Z] Deleting...
+
+[2021-04-27T20:06:35.512Z] Deleting... → Done (took 5 sec)
+
+[2021-04-27T20:06:39.786Z] Deleting... → Done (took 9.3 sec)
+
+[2021-04-27T20:06:39.788Z] Deleting...
+
+[2021-04-27T20:06:40.430Z] Deleting... → Done (took 0.6 sec)
+
+[2021-04-27T20:06:40.434Z] Deleting services...
+
+[2021-04-27T20:06:40.439Z] Cleaning up environments...
+
+[2021-04-27T20:06:40.461Z] Deleting namespace f1-kafka-module-default (this may take a while)
+
+[2021-04-27T20:07:24.796Z] Deleting namespace f1-kafka-module-default (this may take a while)
+
+[2021-04-27T20:07:26.811Z] Cleaning up environments...
+
+[2021-04-27T20:14:21.540Z] Getting status...
+
+[2021-04-27T20:14:24.665Z] Getting status... → Done
+
+[2021-04-27T20:14:24.824Z] Syncing module sources (2 files)...
+
+[2021-04-27T20:14:24.829Z] Syncing module sources (3 files)...
+
+[2021-04-27T20:14:24.835Z] Syncing module sources (1 file)...
+
+[2021-04-27T20:14:24.853Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-04-27T20:14:24.856Z] Getting build status for v-1a328988a3...
+
+[2021-04-27T20:14:24.858Z] Building version v-1a328988a3...
+
+[2021-04-27T20:14:24.865Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-04-27T20:14:24.869Z] Getting build status for v-be01bf8eb5...
+
+[2021-04-27T20:14:24.871Z] Building version v-be01bf8eb5...
+
+[2021-04-27T20:14:24.874Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-04-27T20:14:24.877Z] Getting build status for v-47a406fd21...
+
+[2021-04-27T20:14:24.903Z] Building version v-1a328988a3... → Done (took 0 sec)
+
+[2021-04-27T20:14:24.910Z] Building version v-be01bf8eb5... → Done (took 0 sec)
+
+[2021-04-27T20:14:24.931Z] Deploying version v-1a328988a3...
+
+[2021-04-27T20:14:24.933Z] Deploying version v-be01bf8eb5...
+
+[2021-04-27T20:14:25.713Z] Getting build status for v-47a406fd21... → Done (took 0.8 sec)
+
+[2021-04-27T20:14:27.042Z] Waiting for resources to be ready...
+
+[2021-04-27T20:14:27.209Z] Waiting for resources to be ready...
+
+[2021-04-27T20:14:29.062Z] Resources ready
+
+[2021-04-27T20:14:29.100Z] Deploying version v-1a328988a3... → Done (took 4.2 sec)
+
+[2021-04-27T20:14:29.244Z] Resources ready
+
+[2021-04-27T20:14:29.295Z] Deploying version v-be01bf8eb5... → Done (took 4.4 sec)
+
+[2021-04-27T20:14:29.299Z] Deploying version v-47a406fd21...
+
+[2021-04-27T20:14:31.375Z] Waiting for resources to be ready...
+
+[2021-04-27T20:14:33.408Z] Resources ready
+
+[2021-04-27T20:14:33.459Z] Deploying version v-47a406fd21... → Done (took 4.2 sec)
+
+[2021-04-27T20:14:33.464Z] → Ingress: http://http.local.app.garden
+
+[2021-04-27T20:14:33.479Z] Done! ✔️ 

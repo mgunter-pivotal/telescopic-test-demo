@@ -1,0 +1,78 @@
+kind: Project
+name: kubernetes-module
+environments:
+  - name: local
+providers:
+  - name: local-kubernetes
+# kind: Project
+# name: my-project
+# environments:
+# - name: dev
+# providers:
+#   - name: kubernetes
+#     context: docker-desktop
+#     environments: [dev]
+#     deploymentRegistry:
+#       - hostname: localhost
+#         cluster: docker-desktop
+---
+kind: Module
+type: kubernetes
+name: zookeeper
+description: Redis deployment with kubernetes manifests in a file ((extracted from the stable/redis Helm chart))
+files: [zookeeper.yaml,zooservice.yaml]
+---
+kind: Module
+type: kubernetes
+name: broker
+description: Redis deployment with kubernetes manifests in a file ((extracted from the stable/redis Helm chart))
+files: [docker-kafka.yaml,kafka-service.yaml]
+---
+kind: Module
+description: UDP Telemetry capture app
+type: container
+name: udp-app
+disabled: false
+services:
+  - name: udp-app
+    ports:
+      - name: http
+        containerPort: 8090
+        servicePort: 8090
+    ingresses:
+      - path: /
+        port: udp
+        hostname: udp.local.app.garden
+    dependencies:
+      - telemetry-lib    
+tests:
+  - name: unit
+    command:
+      - /bin/sh
+      - '-c'
+    args: ["curl -v http://weather-app:8090/weather >out.txt"]
+    timeout: 30
+    dependencies: 
+      - telemetry-lib
+---
+kind: Module
+type: exec
+name: telemetry-lib
+ #optional path spec
+build:
+  command: [mvn,package] #will run from shell, module directory!
+tests:
+  - name: local-test
+    command: [mvn,test] #whatever to test
+# - name: vote
+#     ports:
+#       - name: http
+#         containerPort: 8080
+#     ingresses:
+#       - path: /
+#         port: http
+#         hostname: vote.${var.baseHostname}
+#     env:
+#       HOSTNAME: vote.${var.baseHostname}
+#     dependencies:
+#       - api
