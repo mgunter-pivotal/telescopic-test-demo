@@ -31,23 +31,23 @@ providers:
       # Change this if you store the secret in another namespace.
       namespace: default
 ---
-kind: Module
-type: kubernetes
-name: player
-disabled: ${var.play}
-description: Telemetry player, utilizes recording files stored in a volume mount shared w/recorder-pod
-files: [player-deploy.yaml]
-dependencies: [local-pv, broker, player-svc]
-serviceResource:
-  # The type of Kubernetes resource to sync files to.
-  kind: Deployment
+# kind: Module
+# type: kubernetes
+# name: player
+# disabled: ${var.play}
+# description: Telemetry player, utilizes recording files stored in a volume mount shared w/recorder-pod
+# files: [player-deploy.yaml]
+# dependencies: [local-pv, broker, player-svc]
+# serviceResource:
+#   # The type of Kubernetes resource to sync files to.
+#   kind: Deployment
 
-  # The name of the resource to sync to. If the module contains a single resource of the specified Kind, this can be
-  # omitted.
-  name: player-pod
-tasks:
-  - name: play
-    args: ["test2.sqlite3"]
+#   # The name of the resource to sync to. If the module contains a single resource of the specified Kind, this can be
+#   # omitted.
+#   name: player-pod
+# tasks:
+#   - name: play
+#     args: ["test2.sqlite3"]
 ---
 kind: Module
 type: kubernetes

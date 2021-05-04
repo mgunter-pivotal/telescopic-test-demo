@@ -6788,3 +6788,7 @@ results:
     batchId: d1db79dc-6125-44d0-a2ec-8c54c70a7cba
     version: v-ee21b741b7
 
+
+[2021-05-04T20:47:33.572Z] undefined is not a function
+
+[2021-05-04T20:47:33.584Z] Cannot read property 'version' of undefined
