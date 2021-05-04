@@ -1,12 +1,21 @@
 ---
 kind: Project
 name: suitcaselab
+variables:
+  record: false
+  play: false
 environments:
   - name: local
+    variables:
+      play: true
+  - name: local-record
+    variables:
+      record: true
+      play: false
   - name: gke
 providers:
   - name: local-kubernetes
-    environments: [local]
+    environments: [local, local-record]
     context: docker-desktop
   - name: kubernetes
     context: gke_th-structure-flow-demo_us-east1-b_stream-demo
@@ -26,9 +35,26 @@ providers:
 kind: Module
 type: kubernetes
 name: player
-disabled: false
+disabled: true #${var.play}
 description: Telemetry player, utilizes recording files stored in a volume mount shared w/recorder-pod
-files: [player-pod.yaml,player-svc.yaml]
+files: [player-deploy.yaml]
+dependencies: [local-pv, broker, player-svc]
+serviceResource:
+  # The type of Kubernetes resource to sync files to.
+  kind: Deployment
+
+  # The name of the resource to sync to. If the module contains a single resource of the specified Kind, this can be
+  # omitted.
+  name: player-pod
+tasks:
+  - name: play
+---
+kind: Module
+type: kubernetes
+name: player-svc
+disabled: ${var.record}
+description: Telemetry player, utilizes recording files stored in a volume mount shared w/recorder-pod
+files: [player-svc.yaml]
 dependencies: [local-pv, broker]
 ---
 kind: Module
@@ -93,3 +119,5 @@ disabled: false
 description: a session cluster that can run flink jobs
 dependencies: [flink-operator]
 files: [flinkoperator_v1beta1_flinksessioncluster.yaml]
+
+#kubectl port-forward service/flinksessioncluster-sample-jobmanager 8081:8081 -n flink-cluster-default

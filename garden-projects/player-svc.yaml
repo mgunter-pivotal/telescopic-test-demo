@@ -5,7 +5,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: f1-player
+    app: f1-player-deploy
   ports:
       # By default and for convenience, the `targetPort` is set to the same value as the `port` field.
     - port: 20777

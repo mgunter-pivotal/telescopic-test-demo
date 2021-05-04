@@ -4483,3 +4483,1721 @@ results:
     batchId: 0223114c-d843-49f2-83f2-43875ec284f5
     version: v-47a406fd21
 
+
+[2021-05-03T20:45:53.115Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+  The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	Volumes:        []core.Volume{{Name: "data-pv-storage", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: "data-pv-claim"}}}, {Name: "default-token-x25bd", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: "default-token-x25bd", DefaultMode: &420}}}},
+  	InitContainers: nil,
+  	Containers: []core.Container{
+  		{
+  			Name:       "f1-player",
+  			Image:      "mgunter/python-f1-play",
+  			Command:    nil,
+- 			Args:       []string{"test3.sqlite3"},
++ 			Args:       []string{"test2.sqlite3"},
+  			WorkingDir: "",
+  			Ports:      []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}},
+  			... // 16 identical fields
+  		},
+  	},
+  	EphemeralContainers: nil,
+  	RestartPolicy:       "OnFailure",
+  	... // 24 identical fields
+  }
+
+The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	Volumes:        []core.Volume{{Name: "data-pv-storage", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: "data-pv-claim"}}}, {Name: "default-token-x25bd", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: "default-token-x25bd", DefaultMode: &420}}}},
+  	InitContainers: nil,
+  	Containers: []core.Container{
+  		{
+  			Name:       "f1-player",
+  			Image:      "mgunter/python-f1-play",
+  			Command:    nil,
+- 			Args:       []string{"test3.sqlite3"},
++ 			Args:       []string{"test2.sqlite3"},
+  			WorkingDir: "",
+  			Ports:      []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}},
+  			... // 16 identical fields
+  		},
+  	},
+  	EphemeralContainers: nil,
+  	RestartPolicy:       "OnFailure",
+  	... // 24 identical fields
+  }
+
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n\_\_core.PodSpec{\n\_\_\tVolumes:        []core.Volume{{Name: \"data-pv-storage\", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: \"data-pv-claim\"}}}, {Name: \"default-token-x25bd\", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: \"default-token-x25bd\", DefaultMode: &420}}}},\n\_\_\tInitContainers: nil,\n\_\_\tContainers: []core.Container{\n\_\_\t\t{\n\_\_\t\t\tName:       \"f1-player\",\n\_\_\t\t\tImage:      \"mgunter/python-f1-play\",\n\_\_\t\t\tCommand:    nil,\n-\_\t\t\tArgs:       []string{\"test3.sqlite3\"},\n+\_\t\t\tArgs:       []string{\"test2.sqlite3\"},\n\_\_\t\t\tWorkingDir: \"\",\n\_\_\t\t\tPorts:      []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}},\n\_\_\t\t\t... // 16 identical fields\n\_\_\t\t},\n\_\_\t},\n\_\_\tEphemeralContainers: nil,\n\_\_\tRestartPolicy:       \"OnFailure\",\n\_\_\t... // 24 identical fields\n\_\_}\n"
+all: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n\_\_core.PodSpec{\n\_\_\tVolumes:        []core.Volume{{Name: \"data-pv-storage\", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: \"data-pv-claim\"}}}, {Name: \"default-token-x25bd\", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: \"default-token-x25bd\", DefaultMode: &420}}}},\n\_\_\tInitContainers: nil,\n\_\_\tContainers: []core.Container{\n\_\_\t\t{\n\_\_\t\t\tName:       \"f1-player\",\n\_\_\t\t\tImage:      \"mgunter/python-f1-play\",\n\_\_\t\t\tCommand:    nil,\n-\_\t\t\tArgs:       []string{\"test3.sqlite3\"},\n+\_\t\t\tArgs:       []string{\"test2.sqlite3\"},\n\_\_\t\t\tWorkingDir: \"\",\n\_\_\t\t\tPorts:      []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}},\n\_\_\t\t\t... // 16 identical fields\n\_\_\t\t},\n\_\_\t},\n\_\_\tEphemeralContainers: nil,\n\_\_\tRestartPolicy:       \"OnFailure\",\n\_\_\t... // 24 identical fields\n\_\_}\n"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-03T20:45:54.014Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.player:
+    type: deploy
+    description: deploying service 'player' (from module 'player')
+    key: deploy.player
+    name: player
+    startedAt: 2021-05-03T20:45:52.838Z
+    completedAt: 2021-05-03T20:45:53.099Z
+    batchId: 03c73d9d-bf76-437d-86a1-f8fee40cb969
+    version: v-68a7795a0f
+
+
+[2021-05-03T20:46:30.186Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+  The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	Volumes:        []core.Volume{{Name: "data-pv-storage", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: "data-pv-claim"}}}, {Name: "default-token-x25bd", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: "default-token-x25bd", DefaultMode: &420}}}},
+  	InitContainers: nil,
+  	Containers: []core.Container{
+  		{
+  			Name:       "f1-player",
+  			Image:      "mgunter/python-f1-play",
+  			Command:    nil,
+- 			Args:       []string{"test3.sqlite3"},
++ 			Args:       []string{"test2.sqlite3"},
+  			WorkingDir: "",
+  			Ports:      []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}},
+  			... // 16 identical fields
+  		},
+  	},
+  	EphemeralContainers: nil,
+  	RestartPolicy:       "OnFailure",
+  	... // 24 identical fields
+  }
+
+The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	Volumes:        []core.Volume{{Name: "data-pv-storage", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: "data-pv-claim"}}}, {Name: "default-token-x25bd", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: "default-token-x25bd", DefaultMode: &420}}}},
+  	InitContainers: nil,
+  	Containers: []core.Container{
+  		{
+  			Name:       "f1-player",
+  			Image:      "mgunter/python-f1-play",
+  			Command:    nil,
+- 			Args:       []string{"test3.sqlite3"},
++ 			Args:       []string{"test2.sqlite3"},
+  			WorkingDir: "",
+  			Ports:      []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}},
+  			... // 16 identical fields
+  		},
+  	},
+  	EphemeralContainers: nil,
+  	RestartPolicy:       "OnFailure",
+  	... // 24 identical fields
+  }
+
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n\_\_core.PodSpec{\n\_\_\tVolumes:        []core.Volume{{Name: \"data-pv-storage\", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: \"data-pv-claim\"}}}, {Name: \"default-token-x25bd\", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: \"default-token-x25bd\", DefaultMode: &420}}}},\n\_\_\tInitContainers: nil,\n\_\_\tContainers: []core.Container{\n\_\_\t\t{\n\_\_\t\t\tName:       \"f1-player\",\n\_\_\t\t\tImage:      \"mgunter/python-f1-play\",\n\_\_\t\t\tCommand:    nil,\n-\_\t\t\tArgs:       []string{\"test3.sqlite3\"},\n+\_\t\t\tArgs:       []string{\"test2.sqlite3\"},\n\_\_\t\t\tWorkingDir: \"\",\n\_\_\t\t\tPorts:      []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}},\n\_\_\t\t\t... // 16 identical fields\n\_\_\t\t},\n\_\_\t},\n\_\_\tEphemeralContainers: nil,\n\_\_\tRestartPolicy:       \"OnFailure\",\n\_\_\t... // 24 identical fields\n\_\_}\n"
+all: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n\_\_core.PodSpec{\n\_\_\tVolumes:        []core.Volume{{Name: \"data-pv-storage\", VolumeSource: core.VolumeSource{PersistentVolumeClaim: &core.PersistentVolumeClaimVolumeSource{ClaimName: \"data-pv-claim\"}}}, {Name: \"default-token-x25bd\", VolumeSource: core.VolumeSource{Secret: &core.SecretVolumeSource{SecretName: \"default-token-x25bd\", DefaultMode: &420}}}},\n\_\_\tInitContainers: nil,\n\_\_\tContainers: []core.Container{\n\_\_\t\t{\n\_\_\t\t\tName:       \"f1-player\",\n\_\_\t\t\tImage:      \"mgunter/python-f1-play\",\n\_\_\t\t\tCommand:    nil,\n-\_\t\t\tArgs:       []string{\"test3.sqlite3\"},\n+\_\t\t\tArgs:       []string{\"test2.sqlite3\"},\n\_\_\t\t\tWorkingDir: \"\",\n\_\_\t\t\tPorts:      []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}},\n\_\_\t\t\t... // 16 identical fields\n\_\_\t\t},\n\_\_\t},\n\_\_\tEphemeralContainers: nil,\n\_\_\tRestartPolicy:       \"OnFailure\",\n\_\_\t... // 24 identical fields\n\_\_}\n"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-03T20:46:30.673Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.player:
+    type: deploy
+    description: deploying service 'player' (from module 'player')
+    key: deploy.player
+    name: player
+    startedAt: 2021-05-03T20:46:29.935Z
+    completedAt: 2021-05-03T20:46:30.172Z
+    batchId: 0109f97f-e4e6-40eb-bdfe-9135cfd05459
+    version: v-68a7795a0f
+
+
+[2021-05-04T14:34:52.785Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+  The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+core.PodSpec{
+	... // 2 identical fields
+	Containers:                    []core.Container{{Name: "f1-player", Image: "mgunter/python-f1-play", Args: []string{"test3.sqlite3"}, Ports: []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}}, VolumeMounts: []core.VolumeMount{{Name: "data-pv-storage", MountPath: "/sensable"}, {Name: "default-token-x25bd", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}}, TerminationMessagePath: "/dev/termination-log", TerminationMessagePolicy: "File", ImagePullPolicy: "Always"}},
+	EphemeralContainers:           nil,
+- 	RestartPolicy:                 "Always",
++ 	RestartPolicy:                 "OnFailure",
+	TerminationGracePeriodSeconds: &30,
+	ActiveDeadlineSeconds:         nil,
+	... // 22 identical fields
+}
+
+The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	... // 2 identical fields
+  	Containers:                    []core.Container{{Name: "f1-player", Image: "mgunter/python-f1-play", Args: []string{"test3.sqlite3"}, Ports: []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}}, VolumeMounts: []core.VolumeMount{{Name: "data-pv-storage", MountPath: "/sensable"}, {Name: "default-token-x25bd", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}}, TerminationMessagePath: "/dev/termination-log", TerminationMessagePolicy: "File", ImagePullPolicy: "Always"}},
+  	EphemeralContainers:           nil,
+- 	RestartPolicy:                 "Always",
++ 	RestartPolicy:                 "OnFailure",
+  	TerminationGracePeriodSeconds: &30,
+  	ActiveDeadlineSeconds:         nil,
+  	... // 22 identical fields
+  }
+
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \t... // 2 identical fields\n  \tContainers:                    []core.Container{{Name: \"f1-player\", Image: \"mgunter/python-f1-play\", Args: []string{\"test3.sqlite3\"}, Ports: []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}}, VolumeMounts: []core.VolumeMount{{Name: \"data-pv-storage\", MountPath: \"/sensable\"}, {Name: \"default-token-x25bd\", ReadOnly: true, MountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\"}}, TerminationMessagePath: \"/dev/termination-log\", TerminationMessagePolicy: \"File\", ImagePullPolicy: \"Always\"}},\n  \tEphemeralContainers:           nil,\n- \tRestartPolicy:                 \"Always\",\n+ \tRestartPolicy:                 \"OnFailure\",\n  \tTerminationGracePeriodSeconds: &30,\n  \tActiveDeadlineSeconds:         nil,\n  \t... // 22 identical fields\n  }\n"
+all: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \t... // 2 identical fields\n  \tContainers:                    []core.Container{{Name: \"f1-player\", Image: \"mgunter/python-f1-play\", Args: []string{\"test3.sqlite3\"}, Ports: []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}}, VolumeMounts: []core.VolumeMount{{Name: \"data-pv-storage\", MountPath: \"/sensable\"}, {Name: \"default-token-x25bd\", ReadOnly: true, MountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\"}}, TerminationMessagePath: \"/dev/termination-log\", TerminationMessagePolicy: \"File\", ImagePullPolicy: \"Always\"}},\n  \tEphemeralContainers:           nil,\n- \tRestartPolicy:                 \"Always\",\n+ \tRestartPolicy:                 \"OnFailure\",\n  \tTerminationGracePeriodSeconds: &30,\n  \tActiveDeadlineSeconds:         nil,\n  \t... // 22 identical fields\n  }\n"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T14:34:53.780Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.player:
+    type: deploy
+    description: deploying service 'player' (from module 'player')
+    key: deploy.player
+    name: player
+    startedAt: 2021-05-04T14:34:52.172Z
+    completedAt: 2021-05-04T14:34:52.769Z
+    batchId: 9d9fabd2-df6b-4487-b60b-cb7b5e91b513
+    version: v-10222f9235
+
+
+[2021-05-04T14:36:58.656Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+  The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+core.PodSpec{
+	... // 2 identical fields
+	Containers:                    []core.Container{{Name: "f1-player", Image: "mgunter/python-f1-play", Args: []string{"test3.sqlite3"}, Ports: []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}}, VolumeMounts: []core.VolumeMount{{Name: "data-pv-storage", MountPath: "/sensable"}, {Name: "default-token-x25bd", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}}, TerminationMessagePath: "/dev/termination-log", TerminationMessagePolicy: "File", ImagePullPolicy: "Always"}},
+	EphemeralContainers:           nil,
+- 	RestartPolicy:                 "OnFailure",
++ 	RestartPolicy:                 "Always",
+	TerminationGracePeriodSeconds: &30,
+	ActiveDeadlineSeconds:         nil,
+	... // 22 identical fields
+}
+
+The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	... // 2 identical fields
+  	Containers:                    []core.Container{{Name: "f1-player", Image: "mgunter/python-f1-play", Args: []string{"test3.sqlite3"}, Ports: []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}}, VolumeMounts: []core.VolumeMount{{Name: "data-pv-storage", MountPath: "/sensable"}, {Name: "default-token-x25bd", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}}, TerminationMessagePath: "/dev/termination-log", TerminationMessagePolicy: "File", ImagePullPolicy: "Always"}},
+  	EphemeralContainers:           nil,
+- 	RestartPolicy:                 "OnFailure",
++ 	RestartPolicy:                 "Always",
+  	TerminationGracePeriodSeconds: &30,
+  	ActiveDeadlineSeconds:         nil,
+  	... // 22 identical fields
+  }
+
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \t... // 2 identical fields\n  \tContainers:                    []core.Container{{Name: \"f1-player\", Image: \"mgunter/python-f1-play\", Args: []string{\"test3.sqlite3\"}, Ports: []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}}, VolumeMounts: []core.VolumeMount{{Name: \"data-pv-storage\", MountPath: \"/sensable\"}, {Name: \"default-token-x25bd\", ReadOnly: true, MountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\"}}, TerminationMessagePath: \"/dev/termination-log\", TerminationMessagePolicy: \"File\", ImagePullPolicy: \"Always\"}},\n  \tEphemeralContainers:           nil,\n- \tRestartPolicy:                 \"OnFailure\",\n+ \tRestartPolicy:                 \"Always\",\n  \tTerminationGracePeriodSeconds: &30,\n  \tActiveDeadlineSeconds:         nil,\n  \t... // 22 identical fields\n  }\n"
+all: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \t... // 2 identical fields\n  \tContainers:                    []core.Container{{Name: \"f1-player\", Image: \"mgunter/python-f1-play\", Args: []string{\"test3.sqlite3\"}, Ports: []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}}, VolumeMounts: []core.VolumeMount{{Name: \"data-pv-storage\", MountPath: \"/sensable\"}, {Name: \"default-token-x25bd\", ReadOnly: true, MountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\"}}, TerminationMessagePath: \"/dev/termination-log\", TerminationMessagePolicy: \"File\", ImagePullPolicy: \"Always\"}},\n  \tEphemeralContainers:           nil,\n- \tRestartPolicy:                 \"OnFailure\",\n+ \tRestartPolicy:                 \"Always\",\n  \tTerminationGracePeriodSeconds: &30,\n  \tActiveDeadlineSeconds:         nil,\n  \t... // 22 identical fields\n  }\n"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:16:09.298Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+  The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+core.PodSpec{
+	... // 2 identical fields
+	Containers:                    []core.Container{{Name: "f1-player", Image: "mgunter/python-f1-play", Args: []string{"test3.sqlite3"}, Ports: []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}}, VolumeMounts: []core.VolumeMount{{Name: "data-pv-storage", MountPath: "/sensable"}, {Name: "default-token-x25bd", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}}, TerminationMessagePath: "/dev/termination-log", TerminationMessagePolicy: "File", ImagePullPolicy: "Always"}},
+	EphemeralContainers:           nil,
+- 	RestartPolicy:                 "OnFailure",
++ 	RestartPolicy:                 "Always",
+	TerminationGracePeriodSeconds: &30,
+	ActiveDeadlineSeconds:         nil,
+	... // 22 identical fields
+}
+
+The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	... // 2 identical fields
+  	Containers:                    []core.Container{{Name: "f1-player", Image: "mgunter/python-f1-play", Args: []string{"test3.sqlite3"}, Ports: []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}}, VolumeMounts: []core.VolumeMount{{Name: "data-pv-storage", MountPath: "/sensable"}, {Name: "default-token-x25bd", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}}, TerminationMessagePath: "/dev/termination-log", TerminationMessagePolicy: "File", ImagePullPolicy: "Always"}},
+  	EphemeralContainers:           nil,
+- 	RestartPolicy:                 "OnFailure",
++ 	RestartPolicy:                 "Always",
+  	TerminationGracePeriodSeconds: &30,
+  	ActiveDeadlineSeconds:         nil,
+  	... // 22 identical fields
+  }
+
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \t... // 2 identical fields\n  \tContainers:                    []core.Container{{Name: \"f1-player\", Image: \"mgunter/python-f1-play\", Args: []string{\"test3.sqlite3\"}, Ports: []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}}, VolumeMounts: []core.VolumeMount{{Name: \"data-pv-storage\", MountPath: \"/sensable\"}, {Name: \"default-token-x25bd\", ReadOnly: true, MountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\"}}, TerminationMessagePath: \"/dev/termination-log\", TerminationMessagePolicy: \"File\", ImagePullPolicy: \"Always\"}},\n  \tEphemeralContainers:           nil,\n- \tRestartPolicy:                 \"OnFailure\",\n+ \tRestartPolicy:                 \"Always\",\n  \tTerminationGracePeriodSeconds: &30,\n  \tActiveDeadlineSeconds:         nil,\n  \t... // 22 identical fields\n  }\n"
+all: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \t... // 2 identical fields\n  \tContainers:                    []core.Container{{Name: \"f1-player\", Image: \"mgunter/python-f1-play\", Args: []string{\"test3.sqlite3\"}, Ports: []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}}, VolumeMounts: []core.VolumeMount{{Name: \"data-pv-storage\", MountPath: \"/sensable\"}, {Name: \"default-token-x25bd\", ReadOnly: true, MountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\"}}, TerminationMessagePath: \"/dev/termination-log\", TerminationMessagePolicy: \"File\", ImagePullPolicy: \"Always\"}},\n  \tEphemeralContainers:           nil,\n- \tRestartPolicy:                 \"OnFailure\",\n+ \tRestartPolicy:                 \"Always\",\n  \tTerminationGracePeriodSeconds: &30,\n  \tActiveDeadlineSeconds:         nil,\n  \t... // 22 identical fields\n  }\n"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:16:20.390Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+  The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+core.PodSpec{
+	... // 2 identical fields
+	Containers:                    []core.Container{{Name: "f1-player", Image: "mgunter/python-f1-play", Args: []string{"test3.sqlite3"}, Ports: []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}}, VolumeMounts: []core.VolumeMount{{Name: "data-pv-storage", MountPath: "/sensable"}, {Name: "default-token-x25bd", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}}, TerminationMessagePath: "/dev/termination-log", TerminationMessagePolicy: "File", ImagePullPolicy: "Always"}},
+	EphemeralContainers:           nil,
+- 	RestartPolicy:                 "OnFailure",
++ 	RestartPolicy:                 "Always",
+	TerminationGracePeriodSeconds: &30,
+	ActiveDeadlineSeconds:         nil,
+	... // 22 identical fields
+}
+
+The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	... // 2 identical fields
+  	Containers:                    []core.Container{{Name: "f1-player", Image: "mgunter/python-f1-play", Args: []string{"test3.sqlite3"}, Ports: []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}}, VolumeMounts: []core.VolumeMount{{Name: "data-pv-storage", MountPath: "/sensable"}, {Name: "default-token-x25bd", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}}, TerminationMessagePath: "/dev/termination-log", TerminationMessagePolicy: "File", ImagePullPolicy: "Always"}},
+  	EphemeralContainers:           nil,
+- 	RestartPolicy:                 "OnFailure",
++ 	RestartPolicy:                 "Always",
+  	TerminationGracePeriodSeconds: &30,
+  	ActiveDeadlineSeconds:         nil,
+  	... // 22 identical fields
+  }
+
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \t... // 2 identical fields\n  \tContainers:                    []core.Container{{Name: \"f1-player\", Image: \"mgunter/python-f1-play\", Args: []string{\"test3.sqlite3\"}, Ports: []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}}, VolumeMounts: []core.VolumeMount{{Name: \"data-pv-storage\", MountPath: \"/sensable\"}, {Name: \"default-token-x25bd\", ReadOnly: true, MountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\"}}, TerminationMessagePath: \"/dev/termination-log\", TerminationMessagePolicy: \"File\", ImagePullPolicy: \"Always\"}},\n  \tEphemeralContainers:           nil,\n- \tRestartPolicy:                 \"OnFailure\",\n+ \tRestartPolicy:                 \"Always\",\n  \tTerminationGracePeriodSeconds: &30,\n  \tActiveDeadlineSeconds:         nil,\n  \t... // 22 identical fields\n  }\n"
+all: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \t... // 2 identical fields\n  \tContainers:                    []core.Container{{Name: \"f1-player\", Image: \"mgunter/python-f1-play\", Args: []string{\"test3.sqlite3\"}, Ports: []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}}, VolumeMounts: []core.VolumeMount{{Name: \"data-pv-storage\", MountPath: \"/sensable\"}, {Name: \"default-token-x25bd\", ReadOnly: true, MountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\"}}, TerminationMessagePath: \"/dev/termination-log\", TerminationMessagePolicy: \"File\", ImagePullPolicy: \"Always\"}},\n  \tEphemeralContainers:           nil,\n- \tRestartPolicy:                 \"OnFailure\",\n+ \tRestartPolicy:                 \"Always\",\n  \tTerminationGracePeriodSeconds: &30,\n  \tActiveDeadlineSeconds:         nil,\n  \t... // 22 identical fields\n  }\n"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:28:43.794Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+  The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+core.PodSpec{
+	... // 2 identical fields
+	Containers:                    []core.Container{{Name: "f1-player", Image: "mgunter/python-f1-play", Args: []string{"test3.sqlite3"}, Ports: []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}}, VolumeMounts: []core.VolumeMount{{Name: "data-pv-storage", MountPath: "/sensable"}, {Name: "default-token-x25bd", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}}, TerminationMessagePath: "/dev/termination-log", TerminationMessagePolicy: "File", ImagePullPolicy: "Always"}},
+	EphemeralContainers:           nil,
+- 	RestartPolicy:                 "OnFailure",
++ 	RestartPolicy:                 "Always",
+	TerminationGracePeriodSeconds: &30,
+	ActiveDeadlineSeconds:         nil,
+	... // 22 identical fields
+}
+
+The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	... // 2 identical fields
+  	Containers:                    []core.Container{{Name: "f1-player", Image: "mgunter/python-f1-play", Args: []string{"test3.sqlite3"}, Ports: []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}}, VolumeMounts: []core.VolumeMount{{Name: "data-pv-storage", MountPath: "/sensable"}, {Name: "default-token-x25bd", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}}, TerminationMessagePath: "/dev/termination-log", TerminationMessagePolicy: "File", ImagePullPolicy: "Always"}},
+  	EphemeralContainers:           nil,
+- 	RestartPolicy:                 "OnFailure",
++ 	RestartPolicy:                 "Always",
+  	TerminationGracePeriodSeconds: &30,
+  	ActiveDeadlineSeconds:         nil,
+  	... // 22 identical fields
+  }
+
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \t... // 2 identical fields\n  \tContainers:                    []core.Container{{Name: \"f1-player\", Image: \"mgunter/python-f1-play\", Args: []string{\"test3.sqlite3\"}, Ports: []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}}, VolumeMounts: []core.VolumeMount{{Name: \"data-pv-storage\", MountPath: \"/sensable\"}, {Name: \"default-token-x25bd\", ReadOnly: true, MountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\"}}, TerminationMessagePath: \"/dev/termination-log\", TerminationMessagePolicy: \"File\", ImagePullPolicy: \"Always\"}},\n  \tEphemeralContainers:           nil,\n- \tRestartPolicy:                 \"OnFailure\",\n+ \tRestartPolicy:                 \"Always\",\n  \tTerminationGracePeriodSeconds: &30,\n  \tActiveDeadlineSeconds:         nil,\n  \t... // 22 identical fields\n  }\n"
+all: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \t... // 2 identical fields\n  \tContainers:                    []core.Container{{Name: \"f1-player\", Image: \"mgunter/python-f1-play\", Args: []string{\"test3.sqlite3\"}, Ports: []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}}, VolumeMounts: []core.VolumeMount{{Name: \"data-pv-storage\", MountPath: \"/sensable\"}, {Name: \"default-token-x25bd\", ReadOnly: true, MountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\"}}, TerminationMessagePath: \"/dev/termination-log\", TerminationMessagePolicy: \"File\", ImagePullPolicy: \"Always\"}},\n  \tEphemeralContainers:           nil,\n- \tRestartPolicy:                 \"OnFailure\",\n+ \tRestartPolicy:                 \"Always\",\n  \tTerminationGracePeriodSeconds: &30,\n  \tActiveDeadlineSeconds:         nil,\n  \t... // 22 identical fields\n  }\n"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:28:43.839Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.player:
+    type: deploy
+    description: deploying service 'player' (from module 'player')
+    key: deploy.player
+    name: player
+    startedAt: 2021-05-04T15:28:42.043Z
+    completedAt: 2021-05-04T15:28:43.776Z
+    batchId: d77ec84c-009b-4b7f-b2d0-f880b5c468b4
+    version: v-02834fe69b
+
+
+[2021-05-04T15:29:47.253Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+  The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+core.PodSpec{
+	... // 2 identical fields
+	Containers:                    []core.Container{{Name: "f1-player", Image: "mgunter/python-f1-play", Args: []string{"test3.sqlite3"}, Ports: []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}}, VolumeMounts: []core.VolumeMount{{Name: "data-pv-storage", MountPath: "/sensable"}, {Name: "default-token-x25bd", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}}, TerminationMessagePath: "/dev/termination-log", TerminationMessagePolicy: "File", ImagePullPolicy: "Always"}},
+	EphemeralContainers:           nil,
+- 	RestartPolicy:                 "OnFailure",
++ 	RestartPolicy:                 "Always",
+	TerminationGracePeriodSeconds: &30,
+	ActiveDeadlineSeconds:         nil,
+	... // 22 identical fields
+}
+
+The Pod "player-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+  core.PodSpec{
+  	... // 2 identical fields
+  	Containers:                    []core.Container{{Name: "f1-player", Image: "mgunter/python-f1-play", Args: []string{"test3.sqlite3"}, Ports: []core.ContainerPort{{Name: "udp-server", ContainerPort: 20777, Protocol: "UDP"}}, VolumeMounts: []core.VolumeMount{{Name: "data-pv-storage", MountPath: "/sensable"}, {Name: "default-token-x25bd", ReadOnly: true, MountPath: "/var/run/secrets/kubernetes.io/serviceaccount"}}, TerminationMessagePath: "/dev/termination-log", TerminationMessagePolicy: "File", ImagePullPolicy: "Always"}},
+  	EphemeralContainers:           nil,
+- 	RestartPolicy:                 "OnFailure",
++ 	RestartPolicy:                 "Always",
+  	TerminationGracePeriodSeconds: &30,
+  	ActiveDeadlineSeconds:         nil,
+  	... // 22 identical fields
+  }
+
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \t... // 2 identical fields\n  \tContainers:                    []core.Container{{Name: \"f1-player\", Image: \"mgunter/python-f1-play\", Args: []string{\"test3.sqlite3\"}, Ports: []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}}, VolumeMounts: []core.VolumeMount{{Name: \"data-pv-storage\", MountPath: \"/sensable\"}, {Name: \"default-token-x25bd\", ReadOnly: true, MountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\"}}, TerminationMessagePath: \"/dev/termination-log\", TerminationMessagePolicy: \"File\", ImagePullPolicy: \"Always\"}},\n  \tEphemeralContainers:           nil,\n- \tRestartPolicy:                 \"OnFailure\",\n+ \tRestartPolicy:                 \"Always\",\n  \tTerminationGracePeriodSeconds: &30,\n  \tActiveDeadlineSeconds:         nil,\n  \t... // 22 identical fields\n  }\n"
+all: "The Pod \"player-pod\" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)\n  core.PodSpec{\n  \t... // 2 identical fields\n  \tContainers:                    []core.Container{{Name: \"f1-player\", Image: \"mgunter/python-f1-play\", Args: []string{\"test3.sqlite3\"}, Ports: []core.ContainerPort{{Name: \"udp-server\", ContainerPort: 20777, Protocol: \"UDP\"}}, VolumeMounts: []core.VolumeMount{{Name: \"data-pv-storage\", MountPath: \"/sensable\"}, {Name: \"default-token-x25bd\", ReadOnly: true, MountPath: \"/var/run/secrets/kubernetes.io/serviceaccount\"}}, TerminationMessagePath: \"/dev/termination-log\", TerminationMessagePolicy: \"File\", ImagePullPolicy: \"Always\"}},\n  \tEphemeralContainers:           nil,\n- \tRestartPolicy:                 \"OnFailure\",\n+ \tRestartPolicy:                 \"Always\",\n  \tTerminationGracePeriodSeconds: &30,\n  \tActiveDeadlineSeconds:         nil,\n  \t... // 22 identical fields\n  }\n"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:29:47.597Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.player:
+    type: deploy
+    description: deploying service 'player' (from module 'player')
+    key: deploy.player
+    name: player
+    startedAt: 2021-05-04T15:29:46.837Z
+    completedAt: 2021-05-04T15:29:47.240Z
+    batchId: 22bf1660-05e6-4454-ba87-12366fb1f090
+    version: v-02834fe69b
+
+
+[2021-05-04T15:30:14.172Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop --namespace=suitcaselab-default delete --wait=true --ignore-not-found=true Namespace/flink-operator-system ServiceAccount/flink-operator ConfigMap/cert-configmap ConfigMap/webhook-configmap CustomResourceDefinition/flinkclusters.flinkoperator.k8s.io ClusterRole/flink-operator-manager-role ClusterRole/flink-operator-proxy-role ClusterRoleBinding/flink-operator-manager-rolebinding ClusterRoleBinding/flink-operator-proxy-rolebinding Role/flink-operator-leader-election-role RoleBinding/flink-operator-leader-election-rolebinding Service/flink-operator-controller-manager-metrics-service Service/flink-operator-webhook-service Deployment/flink-operator-controller-manager Job/cert-job MutatingWebhookConfiguration/flink-operator-mutating-webhook-configuration ValidatingWebhookConfiguration/flink-operator-validating-webhook-configuration" failed with code 1:
+
+warning: deleting cluster-scoped resources, not scoped to the provided namespace
+Error from server (Conflict): Operation cannot be fulfilled on namespaces "flink-operator-system": The system is ensuring all content is removed from this namespace.  Upon completion, this namespace will automatically be purged by the system.
+
+warning: deleting cluster-scoped resources, not scoped to the provided namespace
+Error from server (Conflict): Operation cannot be fulfilled on namespaces "flink-operator-system": The system is ensuring all content is removed from this namespace.  Upon completion, this namespace will automatically be purged by the system.
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop --namespace=suitcaselab-default delete --wait=true
+  --ignore-not-found=true Namespace/flink-operator-system
+  ServiceAccount/flink-operator ConfigMap/cert-configmap
+  ConfigMap/webhook-configmap
+  CustomResourceDefinition/flinkclusters.flinkoperator.k8s.io
+  ClusterRole/flink-operator-manager-role ClusterRole/flink-operator-proxy-role
+  ClusterRoleBinding/flink-operator-manager-rolebinding
+  ClusterRoleBinding/flink-operator-proxy-rolebinding
+  Role/flink-operator-leader-election-role
+  RoleBinding/flink-operator-leader-election-rolebinding
+  Service/flink-operator-controller-manager-metrics-service
+  Service/flink-operator-webhook-service
+  Deployment/flink-operator-controller-manager Job/cert-job
+  MutatingWebhookConfiguration/flink-operator-mutating-webhook-configuration
+  ValidatingWebhookConfiguration/flink-operator-validating-webhook-configuration
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop --namespace=suitcaselab-default delete --wait=true
+  --ignore-not-found=true Namespace/flink-operator-system
+  ServiceAccount/flink-operator ConfigMap/cert-configmap
+  ConfigMap/webhook-configmap
+  CustomResourceDefinition/flinkclusters.flinkoperator.k8s.io
+  ClusterRole/flink-operator-manager-role ClusterRole/flink-operator-proxy-role
+  ClusterRoleBinding/flink-operator-manager-rolebinding
+  ClusterRoleBinding/flink-operator-proxy-rolebinding
+  Role/flink-operator-leader-election-role
+  RoleBinding/flink-operator-leader-election-rolebinding
+  Service/flink-operator-controller-manager-metrics-service
+  Service/flink-operator-webhook-service
+  Deployment/flink-operator-controller-manager Job/cert-job
+  MutatingWebhookConfiguration/flink-operator-mutating-webhook-configuration
+  ValidatingWebhookConfiguration/flink-operator-validating-webhook-configuration
+exitCode: 1
+stdout: ''
+stderr: >-
+  warning: deleting cluster-scoped resources, not scoped to the provided
+  namespace
+
+  Error from server (Conflict): Operation cannot be fulfilled on namespaces
+  "flink-operator-system": The system is ensuring all content is removed from
+  this namespace.  Upon completion, this namespace will automatically be purged
+  by the system.
+all: >-
+  warning: deleting cluster-scoped resources, not scoped to the provided
+  namespace
+
+  Error from server (Conflict): Operation cannot be fulfilled on namespaces
+  "flink-operator-system": The system is ensuring all content is removed from
+  this namespace.  Upon completion, this namespace will automatically be purged
+  by the system.
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:35:10.490Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=flink-session-cluster --output=json -f -" failed with code 1:
+
+Error from server (InternalError): error when creating "STDIN": Internal error occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s: dial tcp 10.98.84.139:443: connect: connection refused
+
+Error from server (InternalError): error when creating "STDIN": Internal error occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s: dial tcp 10.98.84.139:443: connect: connection refused
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector
+  service=flink-session-cluster --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector
+  service=flink-session-cluster --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error from server (InternalError): error when creating "STDIN": Internal error
+  occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post
+  https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s:
+  dial tcp 10.98.84.139:443: connect: connection refused
+all: >-
+  Error from server (InternalError): error when creating "STDIN": Internal error
+  occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post
+  https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s:
+  dial tcp 10.98.84.139:443: connect: connection refused
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:36:36.021Z] kubernetes module player doesn't specify a serviceResource in its configuration. You must specify a resource in the module config in order to use certain Garden features, such as hot reloading, tasks and tests.
+
+Error Details:
+
+resourceSpec: {}
+
+
+[2021-05-04T15:36:36.033Z] Task failed!
+
+Error Details:
+
+result:
+  type: task
+  description: running task play in module player
+  key: task.play
+  name: play
+  startedAt: 2021-05-04T15:36:35.974Z
+  completedAt: 2021-05-04T15:36:36.016Z
+  batchId: 4256fd9c-dc75-48cc-aa0d-bb821035bcfb
+  version: v-02834fe69b
+
+
+[2021-05-04T15:43:55.917Z] Failed resolving one or more modules:
+
+player: Error validating Module 'player': key .serviceResource.kind must be one of [Deployment, DaemonSet, StatefulSet]
+
+Error Details:
+
+errors: {}
+
+
+[2021-05-04T15:46:12.261Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=flink-session-cluster --output=json -f -" failed with code 1:
+
+Error from server (InternalError): error when creating "STDIN": Internal error occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s: x509: certificate signed by unknown authority
+
+Error from server (InternalError): error when creating "STDIN": Internal error occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s: x509: certificate signed by unknown authority
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=flink-session-cluster --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=flink-session-cluster --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error from server (InternalError): error when creating "STDIN": Internal error
+  occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post
+  https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s:
+  x509: certificate signed by unknown authority
+all: >-
+  Error from server (InternalError): error when creating "STDIN": Internal error
+  occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post
+  https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s:
+  x509: certificate signed by unknown authority
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:54:26.611Z] kubernetes module player does not contain specified Deployment player-pod
+
+Error Details:
+
+resourceSpec:
+  kind: Deployment
+  name: player-pod
+chartResourceNames: []
+
+
+[2021-05-04T15:54:26.620Z] Task failed!
+
+Error Details:
+
+result:
+  type: task
+  description: running task play in module player
+  key: task.play
+  name: play
+  startedAt: 2021-05-04T15:54:26.271Z
+  completedAt: 2021-05-04T15:54:26.608Z
+  batchId: a65da09b-f363-4f36-888e-2f0417027129
+  version: v-3923779065
+
+
+[2021-05-04T15:58:16.865Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Pod.spec): unknown field "replicas" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown field "selector" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown field "template" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): missing required field "containers" in io.k8s.api.core.v1.PodSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Pod.spec): unknown field "replicas" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown field "selector" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown field "template" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): missing required field "containers" in io.k8s.api.core.v1.PodSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Pod.spec): unknown field "replicas" in
+  io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown field
+  "selector" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown
+  field "template" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec):
+  missing required field "containers" in io.k8s.api.core.v1.PodSpec]; if you
+  choose to ignore these errors, turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Pod.spec): unknown field "replicas" in
+  io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown field
+  "selector" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown
+  field "template" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec):
+  missing required field "containers" in io.k8s.api.core.v1.PodSpec]; if you
+  choose to ignore these errors, turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:58:17.218Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Pod.spec): unknown field "replicas" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown field "selector" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown field "template" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): missing required field "containers" in io.k8s.api.core.v1.PodSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Pod.spec): unknown field "replicas" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown field "selector" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown field "template" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): missing required field "containers" in io.k8s.api.core.v1.PodSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Pod.spec): unknown field "replicas" in
+  io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown field
+  "selector" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown
+  field "template" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec):
+  missing required field "containers" in io.k8s.api.core.v1.PodSpec]; if you
+  choose to ignore these errors, turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Pod.spec): unknown field "replicas" in
+  io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown field
+  "selector" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec): unknown
+  field "template" in io.k8s.api.core.v1.PodSpec, ValidationError(Pod.spec):
+  missing required field "containers" in io.k8s.api.core.v1.PodSpec]; if you
+  choose to ignore these errors, turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:58:32.056Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec,
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors,
+  turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec,
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors,
+  turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:58:32.129Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec,
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors,
+  turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec,
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors,
+  turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:59:08.509Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec,
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors,
+  turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec,
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors,
+  turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:59:09.201Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec,
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors,
+  turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec,
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors,
+  turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T15:59:11.588Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=flink-session-cluster --output=json -f -" failed with code 1:
+
+Error from server (InternalError): error when creating "STDIN": Internal error occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s: x509: certificate signed by unknown authority
+
+Error from server (InternalError): error when creating "STDIN": Internal error occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s: x509: certificate signed by unknown authority
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=flink-session-cluster --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=flink-session-cluster --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error from server (InternalError): error when creating "STDIN": Internal error
+  occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post
+  https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s:
+  x509: certificate signed by unknown authority
+all: >-
+  Error from server (InternalError): error when creating "STDIN": Internal error
+  occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post
+  https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s:
+  x509: certificate signed by unknown authority
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:00:15.031Z] Deployment player-pod has no containers configured.
+
+Error Details:
+
+resource:
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: player-pod
+    labels:
+      app: f1-player-deploy
+      test: test2
+      service: player
+    namespace: suitcaselab-default
+    annotations:
+      service: player
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        app: f1-player
+    template:
+      metadata:
+        labels:
+          app: f1-player
+      restartPolicy: OnFailure
+      volumes: []
+      containers: []
+
+
+[2021-05-04T16:00:15.041Z] Task failed!
+
+Error Details:
+
+result:
+  type: task
+  description: running task play in module player
+  key: task.play
+  name: play
+  startedAt: 2021-05-04T16:00:14.910Z
+  completedAt: 2021-05-04T16:00:15.026Z
+  batchId: 1119a701-fc57-4f74-ba77-a108e1180fe4
+  version: v-f9a506471b
+
+
+[2021-05-04T16:07:02.975Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec,
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors,
+  turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec,
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors,
+  turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:07:53.373Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:07:53.422Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:08:15.008Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:08:15.013Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:09:05.497Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:09:05.596Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "containers" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "containers" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:10:20.018Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn
+  validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn
+  validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:10:20.081Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn
+  validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn
+  validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:12:23.780Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:12:23.830Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:12:57.761Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:12:58.322Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  [ValidationError(Deployment.spec.template): unknown field "restartPolicy" in
+  io.k8s.api.core.v1.PodTemplateSpec, ValidationError(Deployment.spec.template):
+  unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec]; if you choose
+  to ignore these errors, turn validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:13:17.848Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn
+  validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn
+  validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:13:17.865Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+error: error validating "STDIN": error validating data: ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn validation off with --validate=false
+
+error: error validating "STDIN": error validating data: ValidationError(Deployment.spec.template): unknown field "volumes" in io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn validation off with --validate=false
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  error: error validating "STDIN": error validating data:
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn
+  validation off with --validate=false
+all: >-
+  error: error validating "STDIN": error validating data:
+  ValidationError(Deployment.spec.template): unknown field "volumes" in
+  io.k8s.api.core.v1.PodTemplateSpec; if you choose to ignore these errors, turn
+  validation off with --validate=false
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:14:01.473Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+The Deployment "player-pod" is invalid: spec.template.spec.restartPolicy: Unsupported value: "OnFailure": supported values: "Always"
+
+The Deployment "player-pod" is invalid: spec.template.spec.restartPolicy: Unsupported value: "OnFailure": supported values: "Always"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector service=player --output=json
+  -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  The Deployment "player-pod" is invalid: spec.template.spec.restartPolicy:
+  Unsupported value: "OnFailure": supported values: "Always"
+all: >-
+  The Deployment "player-pod" is invalid: spec.template.spec.restartPolicy:
+  Unsupported value: "OnFailure": supported values: "Always"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:14:02.209Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=player --output=json -f -" failed with code 1:
+
+The Deployment "player-pod" is invalid: spec.template.spec.restartPolicy: Unsupported value: "OnFailure": supported values: "Always"
+
+The Deployment "player-pod" is invalid: spec.template.spec.restartPolicy: Unsupported value: "OnFailure": supported values: "Always"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=player --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  The Deployment "player-pod" is invalid: spec.template.spec.restartPolicy:
+  Unsupported value: "OnFailure": supported values: "Always"
+all: >-
+  The Deployment "player-pod" is invalid: spec.template.spec.restartPolicy:
+  Unsupported value: "OnFailure": supported values: "Always"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T16:25:03.320Z] Failed resolving one or more modules:
+
+player: Invalid template string (${var.play}): Could not find key play under var. Available keys: record.
+
+Error Details:
+
+errors: {}
+
+
+[2021-05-04T16:27:01.914Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:02.138Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:02.702Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:02.945Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:03.157Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:04.962Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:05.181Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:05.729Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:05.959Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:06.169Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:11.757Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:12.028Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:12.587Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:13.815Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
+
+[2021-05-04T16:27:14.360Z] Error starting port forward to flink-operator/flink-operator-controller-manager-metrics-service:8443: Port forward exited with code 1 before establishing connection:
+
+Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
+
