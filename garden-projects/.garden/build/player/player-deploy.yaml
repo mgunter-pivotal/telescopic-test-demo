@@ -24,7 +24,7 @@ spec:
       containers:
         - name: f1-player
           image: mgunter/python-f1-play
-          args: ["test3.sqlite3"]
+          args: ["test-default.sqlite3"]
           ports:
             - containerPort: 20777
               protocol: UDP

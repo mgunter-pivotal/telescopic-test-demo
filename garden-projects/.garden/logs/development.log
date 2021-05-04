@@ -18249,3 +18249,3118 @@ Error from server (NotFound): services "flink-operator-controller-manager-metric
 [2021-05-04T16:28:43.265Z] Deploying version v-ee21b741b7... → Already deployed
 
 [2021-05-04T16:28:43.305Z] Waiting for code changes...
+
+[2021-05-04T18:21:11.880Z] Getting status...
+
+[2021-05-04T18:21:14.884Z] Getting status... → Done
+
+[2021-05-04T18:21:15.274Z] Services recorder, player and inbound-traffic are disabled
+
+[2021-05-04T18:21:15.291Z] ⏳  Processing...
+
+[2021-05-04T18:21:15.297Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:21:15.301Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:21:15.303Z] Syncing module sources (3 files)...
+
+[2021-05-04T18:21:15.307Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:21:15.310Z] Syncing module sources (10 files)...
+
+[2021-05-04T18:21:15.315Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:21:15.318Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:21:15.333Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T18:21:15.338Z] Getting build status for v-22d311d057...
+
+[2021-05-04T18:21:15.340Z] Building version v-22d311d057...
+
+[2021-05-04T18:21:15.342Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-05-04T18:21:15.344Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T18:21:15.346Z] Building version v-9322c4eebe...
+
+[2021-05-04T18:21:15.349Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-05-04T18:21:15.352Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T18:21:15.354Z] Building version v-50aa511d34...
+
+[2021-05-04T18:21:15.356Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:21:15.360Z] Getting build status for v-1a328988a3...
+
+[2021-05-04T18:21:15.363Z] Building version v-1a328988a3...
+
+[2021-05-04T18:21:15.367Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:21:15.370Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T18:21:15.373Z] Building version v-ee21b741b7...
+
+[2021-05-04T18:21:15.376Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:21:15.380Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T18:21:15.404Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:21:15.409Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T18:21:15.413Z] Building version v-9467fcc674...
+
+[2021-05-04T18:21:15.422Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-05-04T18:21:15.426Z] Building version v-22d311d057... → Done (took 0.1 sec)
+
+[2021-05-04T18:21:15.430Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-05-04T18:21:15.434Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-05-04T18:21:15.443Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-05-04T18:21:15.448Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-05-04T18:21:15.749Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T18:21:15.752Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-05-04T18:21:15.762Z] Deploying version v-1a328988a3...
+
+[2021-05-04T18:21:15.765Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-05-04T18:21:15.783Z] → Forward: 127.0.0.1:2181 → zoo1:2181 (client)
+
+[2021-05-04T18:21:15.791Z] → Forward: 127.0.0.1:2888 → zoo1:2888 (follower)
+
+[2021-05-04T18:21:15.797Z] → Forward: 127.0.0.1:3888 → zoo1:3888 (leader)
+
+[2021-05-04T18:21:16.027Z] Deploying version v-50aa511d34...
+
+[2021-05-04T18:21:16.031Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-05-04T18:21:16.046Z] → Forward: 127.0.0.1:31234 → kafka-service:31234 (kafka-port)
+
+[2021-05-04T18:21:16.050Z] → Forward: 127.0.0.1:20777 → udp-recorder-service:20777
+
+[2021-05-04T18:21:16.437Z] Deploying version v-22d311d057...
+
+[2021-05-04T18:21:16.443Z] Deploying version v-22d311d057... → Already deployed
+
+[2021-05-04T18:21:16.456Z] → Forward: 127.0.0.1:49633 → udp-player-service:20777
+
+[2021-05-04T18:21:18.127Z] Getting build status for v-8fc4c9f41a... → Done (took 2.7 sec)
+
+[2021-05-04T18:21:18.134Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T18:21:18.140Z] Deploying version v-8fc4c9f41a... → Already deployed
+
+[2021-05-04T18:21:18.341Z] Deploying version v-9467fcc674...
+
+[2021-05-04T18:21:18.347Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-05-04T18:21:18.362Z] → Forward: http://127.0.0.1:8443 → flink-operator-controller-manager-metrics-service:8443 (https)
+
+[2021-05-04T18:21:18.368Z] → Forward: https://127.0.0.1:49655 → flink-operator-webhook-service:443
+
+[2021-05-04T18:21:18.831Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T18:21:18.838Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-05-04T18:21:18.882Z] Waiting for code changes...
+
+[2021-05-04T18:22:06.857Z] Getting status...
+
+[2021-05-04T18:22:06.905Z] Getting status... → Cached
+
+[2021-05-04T18:22:06.907Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:22:07.257Z] Deleting services...
+
+[2021-05-04T18:22:07.267Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:22:07.270Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:22:07.275Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:22:07.277Z] Syncing module sources (3 files)...
+
+[2021-05-04T18:22:07.279Z] Syncing module sources (10 files)...
+
+[2021-05-04T18:22:07.282Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:22:07.285Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:22:07.295Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-05-04T18:22:07.300Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-05-04T18:22:07.307Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T18:22:07.310Z] Deleting...
+
+[2021-05-04T18:22:07.314Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-05-04T18:22:07.318Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T18:22:07.320Z] Deleting...
+
+[2021-05-04T18:22:07.325Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T18:22:07.329Z] Deleting...
+
+[2021-05-04T18:22:07.356Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:22:08.975Z] Deleting... → Done (took 1.7 sec)
+
+[2021-05-04T18:22:08.979Z] Deleting...
+
+[2021-05-04T18:22:09.385Z] Deleting... → Done (took 2.1 sec)
+
+[2021-05-04T18:22:09.392Z] Deleting...
+
+[2021-05-04T18:22:20.318Z] Deleting... → Done (took 13 sec)
+
+[2021-05-04T18:22:22.651Z] Service deleted
+
+[2021-05-04T18:22:22.654Z] Service deleted → Done (took 13.7 sec)
+
+[2021-05-04T18:22:22.658Z] Deleting...
+
+[2021-05-04T18:22:24.092Z] Deleting... → Done (took 1.4 sec)
+
+[2021-05-04T18:22:24.097Z] Deleting...
+
+[2021-05-04T18:22:25.403Z] Deleting... → Done (took 1.3 sec)
+
+[2021-05-04T18:35:19.387Z] Getting status...
+
+[2021-05-04T18:35:20.022Z] Getting status... → Cached
+
+[2021-05-04T18:35:20.024Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:35:20.441Z] Services recorder, player and inbound-traffic are disabled
+
+[2021-05-04T18:35:20.459Z] ⏳  Processing...
+
+[2021-05-04T18:35:20.469Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:35:20.471Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:35:20.473Z] Syncing module sources (3 files)...
+
+[2021-05-04T18:35:20.478Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:35:20.482Z] Syncing module sources (10 files)...
+
+[2021-05-04T18:35:20.488Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:35:20.492Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:35:20.537Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:35:20.542Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T18:35:20.545Z] Building version v-9322c4eebe...
+
+[2021-05-04T18:35:20.549Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:35:20.554Z] Getting build status for v-1a328988a3...
+
+[2021-05-04T18:35:20.559Z] Building version v-1a328988a3...
+
+[2021-05-04T18:35:20.564Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:35:20.568Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T18:35:20.573Z] Building version v-50aa511d34...
+
+[2021-05-04T18:35:20.576Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:35:20.581Z] Getting build status for v-22d311d057...
+
+[2021-05-04T18:35:20.585Z] Building version v-22d311d057...
+
+[2021-05-04T18:35:20.590Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:35:20.595Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T18:35:20.600Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:35:20.606Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T18:35:20.617Z] Building version v-ee21b741b7...
+
+[2021-05-04T18:35:20.640Z] Syncing module sources (10 files)... → Done (took 0.2 sec)
+
+[2021-05-04T18:35:20.645Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T18:35:20.649Z] Building version v-9467fcc674...
+
+[2021-05-04T18:35:20.654Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-05-04T18:35:20.659Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-05-04T18:35:20.668Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-05-04T18:35:20.674Z] Building version v-22d311d057... → Done (took 0.1 sec)
+
+[2021-05-04T18:35:20.683Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-05-04T18:35:20.695Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-05-04T18:35:21.584Z] Deploying version v-1a328988a3...
+
+[2021-05-04T18:35:22.211Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T18:35:22.217Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-05-04T18:35:26.212Z] Getting build status for v-8fc4c9f41a... → Done (took 5.6 sec)
+
+[2021-05-04T18:35:26.537Z] Waiting for resources to be ready...
+
+[2021-05-04T18:35:28.680Z] Resources ready
+
+[2021-05-04T18:35:29.469Z] Deploying version v-1a328988a3... → Done (took 7.9 sec)
+
+[2021-05-04T18:35:29.484Z] → Forward: 127.0.0.1:2181 → zoo1:2181 (client)
+
+[2021-05-04T18:35:29.488Z] → Forward: 127.0.0.1:2888 → zoo1:2888 (follower)
+
+[2021-05-04T18:35:29.493Z] → Forward: 127.0.0.1:3888 → zoo1:3888 (leader)
+
+[2021-05-04T18:35:29.499Z] Deploying version v-50aa511d34...
+
+[2021-05-04T18:35:32.198Z] Waiting for resources to be ready...
+
+[2021-05-04T18:35:34.587Z] Resources ready
+
+[2021-05-04T18:35:34.933Z] Deploying version v-50aa511d34... → Done (took 5.4 sec)
+
+[2021-05-04T18:35:34.943Z] → Forward: 127.0.0.1:31234 → kafka-service:31234 (kafka-port)
+
+[2021-05-04T18:35:34.948Z] → Forward: 127.0.0.1:20777 → udp-recorder-service:20777
+
+[2021-05-04T18:35:34.955Z] Deploying version v-22d311d057...
+
+[2021-05-04T18:35:34.961Z] Deploying version v-9467fcc674...
+
+[2021-05-04T18:35:34.969Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T18:35:37.078Z] Waiting for resources to be ready...
+
+[2021-05-04T18:35:37.307Z] Waiting for resources to be ready...
+
+[2021-05-04T18:35:39.182Z] Resources ready
+
+[2021-05-04T18:35:39.508Z] Deploying version v-22d311d057... → Done (took 4.5 sec)
+
+[2021-05-04T18:35:39.519Z] → Forward: 127.0.0.1:51834 → udp-player-service:20777
+
+[2021-05-04T18:35:39.542Z] Resources ready
+
+[2021-05-04T18:35:40.601Z] Deploying version v-8fc4c9f41a... → Done (took 5.6 sec)
+
+[2021-05-04T18:35:59.831Z] Waiting for resources to be ready...
+
+[2021-05-04T18:36:02.262Z] Resources ready
+
+[2021-05-04T18:36:02.271Z] Deploying version v-9467fcc674... → Done (took 27.3 sec)
+
+[2021-05-04T18:36:02.284Z] → Forward: http://127.0.0.1:8443 → flink-operator-controller-manager-metrics-service:8443 (https)
+
+[2021-05-04T18:36:02.293Z] → Forward: https://127.0.0.1:51969 → flink-operator-webhook-service:443
+
+[2021-05-04T18:36:02.302Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T18:36:07.961Z] Waiting for resources to be ready...
+
+[2021-05-04T18:36:10.193Z] Resources ready
+
+[2021-05-04T18:36:10.434Z] Deploying version v-ee21b741b7... → Done (took 8.1 sec)
+
+[2021-05-04T18:36:10.472Z] Waiting for code changes...
+
+[2021-05-04T18:36:53.208Z] Getting status...
+
+[2021-05-04T18:36:53.867Z] Getting status... → Cached
+
+[2021-05-04T18:36:53.870Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:36:54.217Z] Task play is disabled for the gke environment. If you're sure you want to run it anyway, please run the command again with the --force flag.
+
+Error Details:
+
+moduleName: player
+taskName: play
+environmentName: gke
+
+
+[2021-05-04T18:36:54.220Z] 
+See error.log for detailed error message
+
+[2021-05-04T18:38:07.492Z] Getting status...
+
+[2021-05-04T18:38:08.023Z] Getting status... → Cached
+
+[2021-05-04T18:38:08.025Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:38:08.379Z] Services recorder and inbound-traffic are disabled
+
+[2021-05-04T18:38:08.401Z] ⏳  Processing...
+
+[2021-05-04T18:38:08.409Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:38:08.411Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:38:08.413Z] Syncing module sources (3 files)...
+
+[2021-05-04T18:38:08.417Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:38:08.421Z] Syncing module sources (10 files)...
+
+[2021-05-04T18:38:08.427Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:38:08.431Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:38:08.434Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:38:08.464Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:08.468Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T18:38:08.471Z] Building version v-9322c4eebe...
+
+[2021-05-04T18:38:08.477Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:08.483Z] Getting build status for v-1a328988a3...
+
+[2021-05-04T18:38:08.487Z] Building version v-1a328988a3...
+
+[2021-05-04T18:38:08.494Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:08.498Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T18:38:08.503Z] Building version v-50aa511d34...
+
+[2021-05-04T18:38:08.508Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:08.512Z] Getting build status for v-22d311d057...
+
+[2021-05-04T18:38:08.516Z] Building version v-22d311d057...
+
+[2021-05-04T18:38:08.521Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:08.525Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T18:38:08.530Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:08.537Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T18:38:08.541Z] Building version v-ee21b741b7...
+
+[2021-05-04T18:38:08.562Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:08.568Z] Getting build status for v-22acf970c9...
+
+[2021-05-04T18:38:08.574Z] Building version v-22acf970c9...
+
+[2021-05-04T18:38:08.589Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:08.594Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:08.600Z] Building version v-22d311d057... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:08.605Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:08.612Z] Syncing module sources (10 files)... → Done (took 0.2 sec)
+
+[2021-05-04T18:38:08.618Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T18:38:08.625Z] Building version v-9467fcc674...
+
+[2021-05-04T18:38:08.640Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:08.651Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-05-04T18:38:08.662Z] Building version v-22acf970c9... → Done (took 0.1 sec)
+
+[2021-05-04T18:38:11.101Z] Deploying version v-1a328988a3...
+
+[2021-05-04T18:38:11.105Z] Deploying version v-1a328988a3... → Already deployed
+
+[2021-05-04T18:38:11.126Z] → Forward: 127.0.0.1:2181 → zoo1:2181 (client)
+
+[2021-05-04T18:38:11.132Z] → Forward: 127.0.0.1:2888 → zoo1:2888 (follower)
+
+[2021-05-04T18:38:11.137Z] → Forward: 127.0.0.1:3888 → zoo1:3888 (leader)
+
+[2021-05-04T18:38:11.214Z] Getting build status for v-8fc4c9f41a... → Done (took 2.7 sec)
+
+[2021-05-04T18:38:11.519Z] Deploying version v-50aa511d34...
+
+[2021-05-04T18:38:11.523Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-05-04T18:38:11.549Z] → Forward: 127.0.0.1:31234 → kafka-service:31234 (kafka-port)
+
+[2021-05-04T18:38:11.555Z] → Forward: 127.0.0.1:20777 → udp-recorder-service:20777
+
+[2021-05-04T18:38:11.588Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T18:38:11.593Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-05-04T18:38:11.830Z] Deploying version v-22d311d057...
+
+[2021-05-04T18:38:11.836Z] Deploying version v-22d311d057... → Already deployed
+
+[2021-05-04T18:38:11.849Z] → Forward: 127.0.0.1:52365 → udp-player-service:20777
+
+[2021-05-04T18:38:12.096Z] Deploying version v-22acf970c9...
+
+[2021-05-04T18:38:12.102Z] Deploying version v-22acf970c9... → Already deployed
+
+[2021-05-04T18:38:12.961Z] Deploying version v-9467fcc674...
+
+[2021-05-04T18:38:12.966Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-05-04T18:38:12.978Z] → Forward: http://127.0.0.1:8443 → flink-operator-controller-manager-metrics-service:8443 (https)
+
+[2021-05-04T18:38:12.983Z] → Forward: https://127.0.0.1:52384 → flink-operator-webhook-service:443
+
+[2021-05-04T18:38:13.254Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T18:38:13.261Z] Deploying version v-8fc4c9f41a... → Already deployed
+
+[2021-05-04T18:38:13.286Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T18:38:13.294Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-05-04T18:38:13.325Z] Waiting for code changes...
+
+[2021-05-04T18:38:26.869Z] Getting status...
+
+[2021-05-04T18:38:27.397Z] Getting status... → Cached
+
+[2021-05-04T18:38:27.399Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:38:27.784Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:38:27.787Z] Checking result...
+
+[2021-05-04T18:38:27.801Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T18:38:27.807Z] Getting build status for v-22acf970c9...
+
+[2021-05-04T18:38:27.809Z] Building version v-22acf970c9...
+
+[2021-05-04T18:38:27.815Z] Building version v-22acf970c9... → Done (took 0 sec)
+
+[2021-05-04T18:38:28.884Z] Checking result... → Done
+
+[2021-05-04T18:38:28.887Z] Running...
+
+[2021-05-04T18:39:34.597Z] Getting status...
+
+[2021-05-04T18:39:35.151Z] Getting status... → Cached
+
+[2021-05-04T18:39:35.152Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:44:14.723Z] Getting status...
+
+[2021-05-04T18:44:15.470Z] Getting status... → Cached
+
+[2021-05-04T18:44:15.472Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:44:15.897Z] Services recorder and inbound-traffic are disabled
+
+[2021-05-04T18:44:15.921Z] ⏳  Processing...
+
+[2021-05-04T18:44:15.931Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:44:15.935Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:44:15.938Z] Syncing module sources (3 files)...
+
+[2021-05-04T18:44:15.944Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:44:15.947Z] Syncing module sources (10 files)...
+
+[2021-05-04T18:44:15.951Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:44:15.957Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:44:15.960Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:44:15.997Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.002Z] Getting build status for v-1a328988a3...
+
+[2021-05-04T18:44:16.005Z] Building version v-1a328988a3...
+
+[2021-05-04T18:44:16.008Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.013Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T18:44:16.018Z] Building version v-50aa511d34...
+
+[2021-05-04T18:44:16.022Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.026Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T18:44:16.030Z] Building version v-9322c4eebe...
+
+[2021-05-04T18:44:16.034Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.038Z] Getting build status for v-22d311d057...
+
+[2021-05-04T18:44:16.042Z] Building version v-22d311d057...
+
+[2021-05-04T18:44:16.046Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.052Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T18:44:16.055Z] Building version v-ee21b741b7...
+
+[2021-05-04T18:44:16.059Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.063Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T18:44:16.068Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.073Z] Getting build status for v-22acf970c9...
+
+[2021-05-04T18:44:16.077Z] Building version v-22acf970c9...
+
+[2021-05-04T18:44:16.096Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.101Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T18:44:16.105Z] Building version v-9467fcc674...
+
+[2021-05-04T18:44:16.113Z] Building version v-1a328988a3... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.117Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.122Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.134Z] Building version v-22d311d057... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.139Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:16.148Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-05-04T18:44:16.153Z] Building version v-22acf970c9... → Done (took 0.1 sec)
+
+[2021-05-04T18:44:18.516Z] Deploying version v-1a328988a3...
+
+[2021-05-04T18:44:19.674Z] Deploying version v-1a328988a3...
+
+[2021-05-04T18:44:19.683Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=zookeeper --output=json -f -" failed with code 1:
+
+Error from server (NotFound): error when creating "STDIN": namespaces "suitcaselab-default" not found
+Error from server (NotFound): error when creating "STDIN": namespaces "suitcaselab-default" not found
+
+Error from server (NotFound): error when creating "STDIN": namespaces "suitcaselab-default" not found
+Error from server (NotFound): error when creating "STDIN": namespaces "suitcaselab-default" not found
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=zookeeper --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=zookeeper --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error from server (NotFound): error when creating "STDIN": namespaces
+  "suitcaselab-default" not found
+
+  Error from server (NotFound): error when creating "STDIN": namespaces
+  "suitcaselab-default" not found
+all: >-
+  Error from server (NotFound): error when creating "STDIN": namespaces
+  "suitcaselab-default" not found
+
+  Error from server (NotFound): error when creating "STDIN": namespaces
+  "suitcaselab-default" not found
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T18:44:19.817Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T18:44:20.955Z] Getting build status for v-8fc4c9f41a... → Done (took 4.9 sec)
+
+[2021-05-04T18:44:21.944Z] Waiting for resources to be ready...
+
+[2021-05-04T18:44:24.049Z] Resources ready
+
+[2021-05-04T18:44:24.280Z] Deploying version v-9322c4eebe... → Done (took 4.5 sec)
+
+[2021-05-04T18:44:24.291Z] Waiting for code changes...
+
+[2021-05-04T18:45:34.281Z] Getting status...
+
+[2021-05-04T18:45:34.444Z] Getting status... → Cached
+
+[2021-05-04T18:45:34.454Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:45:34.909Z] Module configuration changed, reloading...
+
+[2021-05-04T18:45:35.012Z] Garden dashboard running at http://localhost:9777
+
+[2021-05-04T18:45:35.026Z] Getting status...
+
+[2021-05-04T18:45:35.171Z] Getting status... → Cached
+
+[2021-05-04T18:45:35.177Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:45:35.600Z] Services recorder and inbound-traffic are disabled
+
+[2021-05-04T18:45:35.646Z] ⏳  Processing...
+
+[2021-05-04T18:45:35.664Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:45:35.683Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:45:35.690Z] Syncing module sources (3 files)...
+
+[2021-05-04T18:45:35.699Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:45:35.707Z] Syncing module sources (10 files)...
+
+[2021-05-04T18:45:35.718Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:45:35.727Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:45:35.736Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:45:35.759Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:45:35.767Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T18:45:35.775Z] Building version v-50aa511d34...
+
+[2021-05-04T18:45:35.784Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:45:35.793Z] Getting build status for v-22d311d057...
+
+[2021-05-04T18:45:35.804Z] Building version v-22d311d057...
+
+[2021-05-04T18:45:35.812Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:45:35.821Z] Getting build status for v-b2fddb5e78...
+
+[2021-05-04T18:45:35.829Z] Building version v-b2fddb5e78...
+
+[2021-05-04T18:45:35.837Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:45:35.847Z] Getting build status for v-22acf970c9...
+
+[2021-05-04T18:45:35.855Z] Building version v-22acf970c9...
+
+[2021-05-04T18:45:35.863Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:45:35.871Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T18:45:35.879Z] Building version v-ee21b741b7...
+
+[2021-05-04T18:45:35.888Z] Syncing module sources (1 file)... → Done (took 0.2 sec)
+
+[2021-05-04T18:45:35.898Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T18:45:35.907Z] Syncing module sources (2 files)... → Done (took 0.2 sec)
+
+[2021-05-04T18:45:35.916Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T18:45:35.923Z] Building version v-9322c4eebe...
+
+[2021-05-04T18:45:35.960Z] Syncing module sources (10 files)... → Done (took 0.3 sec)
+
+[2021-05-04T18:45:35.973Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T18:45:35.983Z] Building version v-9467fcc674...
+
+[2021-05-04T18:45:35.994Z] Building version v-50aa511d34... → Done (took 0.2 sec)
+
+[2021-05-04T18:45:36.003Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-05-04T18:45:36.010Z] Building version v-b2fddb5e78... → Done (took 0.2 sec)
+
+[2021-05-04T18:45:36.023Z] Building version v-22acf970c9... → Done (took 0.2 sec)
+
+[2021-05-04T18:45:36.033Z] Building version v-22d311d057... → Done (took 0.2 sec)
+
+[2021-05-04T18:45:36.044Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-05-04T18:45:36.054Z] Building version v-9467fcc674... → Done (took 0.1 sec)
+
+[2021-05-04T18:45:36.683Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T18:45:36.691Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-05-04T18:45:37.959Z] Deploying version v-b2fddb5e78...
+
+[2021-05-04T18:45:38.597Z] Getting build status for v-8fc4c9f41a... → Done (took 2.7 sec)
+
+[2021-05-04T18:45:41.157Z] Waiting for resources to be ready...
+
+[2021-05-04T18:45:43.285Z] Resources ready
+
+[2021-05-04T18:45:43.504Z] Deploying version v-b2fddb5e78... → Done (took 5.5 sec)
+
+[2021-05-04T18:45:43.541Z] → Forward: 127.0.0.1:2181 → zoo1:2181 (client)
+
+[2021-05-04T18:45:43.552Z] → Forward: 127.0.0.1:2888 → zoo1:2888 (follower)
+
+[2021-05-04T18:45:43.561Z] → Forward: 127.0.0.1:3888 → zoo1:3888 (leader)
+
+[2021-05-04T18:45:43.570Z] Deploying version v-50aa511d34...
+
+[2021-05-04T18:45:45.838Z] Waiting for resources to be ready...
+
+[2021-05-04T18:45:47.980Z] Resources ready
+
+[2021-05-04T18:45:48.208Z] Deploying version v-50aa511d34... → Done (took 4.6 sec)
+
+[2021-05-04T18:45:48.225Z] → Forward: 127.0.0.1:31234 → kafka-service:31234 (kafka-port)
+
+[2021-05-04T18:45:48.237Z] → Forward: 127.0.0.1:20777 → udp-recorder-service:20777
+
+[2021-05-04T18:45:48.253Z] Deploying version v-22d311d057...
+
+[2021-05-04T18:45:48.266Z] Deploying version v-9467fcc674...
+
+[2021-05-04T18:45:48.278Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T18:45:50.687Z] Waiting for resources to be ready...
+
+[2021-05-04T18:45:50.870Z] Waiting for resources to be ready...
+
+[2021-05-04T18:45:52.996Z] Resources ready
+
+[2021-05-04T18:45:53.044Z] Resources ready
+
+[2021-05-04T18:45:53.219Z] Deploying version v-22d311d057... → Done (took 5 sec)
+
+[2021-05-04T18:45:53.234Z] → Forward: 127.0.0.1:56433 → udp-player-service:20777
+
+[2021-05-04T18:45:53.248Z] Deploying version v-22acf970c9...
+
+[2021-05-04T18:45:53.755Z] Deploying version v-8fc4c9f41a... → Done (took 5.5 sec)
+
+[2021-05-04T18:45:55.296Z] Waiting for resources to be ready...
+
+[2021-05-04T18:45:59.454Z] Deploying version v-22acf970c9...
+
+[2021-05-04T18:45:59.474Z] Error deploying player: BackOff - Back-off restarting failed container
+
+━━━ Events ━━━
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1
+Pod player-pod-fdb8d4bdc-djt4p: Scheduled - Successfully assigned suitcaselab-default/player-pod-fdb8d4bdc-djt4p to gke-stream-demo-default-pool-c32f3075-yonw
+Pod player-pod-fdb8d4bdc-djt4p: Pulling - Pulling image "mgunter/python-f1-play"
+Pod player-pod-fdb8d4bdc-djt4p: Pulled - Successfully pulled image "mgunter/python-f1-play"
+Pod player-pod-fdb8d4bdc-djt4p: Created - Created container f1-player
+Pod player-pod-fdb8d4bdc-djt4p: Started - Started container f1-player
+Pod player-pod-fdb8d4bdc-djt4p: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod
+
+****** player-pod-fdb8d4bdc-djt4p ******
+------ f1-player ------usage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]
+                                [-p PORT]
+                                filename
+f1-2020-telemetry-player: error: the following arguments are required: filename
+
+
+Error Details:
+
+serviceName: player
+status:
+  state: unhealthy
+  lastMessage: BackOff - Back-off restarting failed container
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1\e[39m\n\e[94mPod player-pod-fdb8d4bdc-djt4p:\e[39m \e[37mScheduled - Successfully assigned suitcaselab-default/player-pod-fdb8d4bdc-djt4p to gke-stream-demo-default-pool-c32f3075-yonw\e[39m\n\e[94mPod player-pod-fdb8d4bdc-djt4p:\e[39m \e[37mPulling - Pulling image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-fdb8d4bdc-djt4p:\e[39m \e[37mPulled - Successfully pulled image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-fdb8d4bdc-djt4p:\e[39m \e[37mCreated - Created container f1-player\e[39m\n\e[94mPod player-pod-fdb8d4bdc-djt4p:\e[39m \e[37mStarted - Started container f1-player\e[39m\n\e[94mPod player-pod-fdb8d4bdc-djt4p:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod\e[39m\n\e[94m\e[39m\n\e[94m****** player-pod-fdb8d4bdc-djt4p ******\e[39m\n\e[94m\e[39m\e[90m------ f1-player ------\e[39musage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]\n                                [-p PORT]\n                                filename\nf1-2020-telemetry-player: error: the following arguments are required: filename\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: player-pod
+      namespace: suitcaselab-default
+      selfLink: /apis/apps/v1/namespaces/suitcaselab-default/deployments/player-pod
+      uid: 3bad6370-1b52-42be-bcce-9acbb58088fb
+      resourceVersion: '10337495'
+      generation: 1
+      creationTimestamp: '2021-05-04T18:45:53Z'
+      labels:
+        app: f1-player-deploy
+        service: player
+        test: test2
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/hot-reload: 'false'
+        garden.io/manifest-hash: 21d5e98e93b6caf14f0d71c296cb2fcaeafd3dbf2457cd7d42a87fd4b4ebba7a
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/hot-reload":"false","garden.io/manifest-hash":"21d5e98e93b6caf14f0d71c296cb2fcaeafd3dbf2457cd7d42a87fd4b4ebba7a","service":"player"},"labels":{"app":"f1-player-deploy","service":"player","test":"test2"},"name":"player-pod","namespace":"suitcaselab-default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"f1-player"}},"template":{"metadata":{"labels":{"app":"f1-player"}},"spec":{"containers":[{"image":"mgunter/python-f1-play","name":"f1-player","ports":[{"containerPort":20777,"name":"udp-server","protocol":"UDP"}],"volumeMounts":[{"mountPath":"/sensable","name":"data-pv-storage"}]}],"restartPolicy":"Always","volumes":[{"name":"data-pv-storage","persistentVolumeClaim":{"claimName":"data-pv-claim"}}]}}}}
+        service: player
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: f1-player
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: f1-player
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 25%
+          maxSurge: 25%
+      revisionHistoryLimit: 10
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-05-04T18:46:09.287Z] Waiting for resources to be ready...
+
+[2021-05-04T18:46:11.664Z] Resources ready
+
+[2021-05-04T18:46:11.678Z] Deploying version v-9467fcc674... → Done (took 23.4 sec)
+
+[2021-05-04T18:46:11.695Z] → Forward: http://127.0.0.1:8443 → flink-operator-controller-manager-metrics-service:8443 (https)
+
+[2021-05-04T18:46:11.707Z] → Forward: https://127.0.0.1:56512 → flink-operator-webhook-service:443
+
+[2021-05-04T18:46:11.721Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T18:46:13.886Z] Waiting for resources to be ready...
+
+[2021-05-04T18:46:16.131Z] Resources ready
+
+[2021-05-04T18:46:16.418Z] Deploying version v-ee21b741b7... → Done (took 4.7 sec)
+
+[2021-05-04T18:46:16.463Z] Waiting for code changes...
+
+[2021-05-04T18:46:56.298Z] ⏳  Processing...
+
+[2021-05-04T18:46:56.313Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:46:56.363Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T18:46:56.385Z] Building version v-a4161fa3cf...
+
+[2021-05-04T18:46:56.413Z] Building version v-a4161fa3cf... → Done (took 0 sec)
+
+[2021-05-04T18:46:57.303Z] Deploying version v-a4161fa3cf...
+
+[2021-05-04T18:46:59.344Z] Waiting for resources to be ready...
+
+[2021-05-04T18:47:01.995Z] Deploying version v-a4161fa3cf...
+
+[2021-05-04T18:47:02.014Z] Error deploying player: BackOff - Back-off restarting failed container
+
+━━━ Events ━━━
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1
+Pod player-pod-6bfc575d89-blgtv: Scheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw
+Pod player-pod-6bfc575d89-blgtv: Pulling - Pulling image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Pulled - Successfully pulled image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Created - Created container f1-player
+Pod player-pod-6bfc575d89-blgtv: Started - Started container f1-player
+Pod player-pod-6bfc575d89-blgtv: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod
+
+****** player-pod-6bfc575d89-blgtv ******
+------ f1-player ------usage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]
+                                [-p PORT]
+                                filename
+
+Replay an F1 2019 session as UDP packets.
+
+positional arguments:
+  filename              SQLite3 file to replay packets from
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR
+                        playback real-time factor (higher is faster,
+                        default=1.0)
+  -d DESTINATION, --destination DESTINATION
+                        destination UDP address; omit to use broadcast
+                        (default)
+  -p PORT, --port PORT  destination UDP port (default: 20777)
+
+
+Error Details:
+
+serviceName: player
+status:
+  state: unhealthy
+  lastMessage: BackOff - Back-off restarting failed container
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mScheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulling - Pulling image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulled - Successfully pulled image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mCreated - Created container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mStarted - Started container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod\e[39m\n\e[94m\e[39m\n\e[94m****** player-pod-6bfc575d89-blgtv ******\e[39m\n\e[94m\e[39m\e[90m------ f1-player ------\e[39musage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]\n                                [-p PORT]\n                                filename\n\nReplay an F1 2019 session as UDP packets.\n\npositional arguments:\n  filename              SQLite3 file to replay packets from\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR\n                        playback real-time factor (higher is faster,\n                        default=1.0)\n  -d DESTINATION, --destination DESTINATION\n                        destination UDP address; omit to use broadcast\n                        (default)\n  -p PORT, --port PORT  destination UDP port (default: 20777)\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: player-pod
+      namespace: suitcaselab-default
+      selfLink: /apis/apps/v1/namespaces/suitcaselab-default/deployments/player-pod
+      uid: 3bad6370-1b52-42be-bcce-9acbb58088fb
+      resourceVersion: '10337958'
+      generation: 2
+      creationTimestamp: '2021-05-04T18:45:53Z'
+      labels:
+        app: f1-player-deploy
+        service: player
+        test: test2
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/hot-reload: 'false'
+        garden.io/manifest-hash: 84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/hot-reload":"false","garden.io/manifest-hash":"84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921","service":"player"},"labels":{"app":"f1-player-deploy","service":"player","test":"test2"},"name":"player-pod","namespace":"suitcaselab-default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"f1-player"}},"template":{"metadata":{"labels":{"app":"f1-player"}},"spec":{"containers":[{"args":["-h"],"image":"mgunter/python-f1-play","name":"f1-player","ports":[{"containerPort":20777,"name":"udp-server","protocol":"UDP"}],"volumeMounts":[{"mountPath":"/sensable","name":"data-pv-storage"}]}],"restartPolicy":"Always","volumes":[{"name":"data-pv-storage","persistentVolumeClaim":{"claimName":"data-pv-claim"}}]}}}}
+        service: player
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: f1-player
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: f1-player
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 25%
+          maxSurge: 25%
+      revisionHistoryLimit: 10
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 2
+      updatedReplicas: 1
+      unavailableReplicas: 2
+      conditions: []
+
+
+[2021-05-04T18:47:02.028Z] Waiting for code changes...
+
+[2021-05-04T18:51:27.137Z] Getting status...
+
+[2021-05-04T18:51:27.763Z] Getting status... → Cached
+
+[2021-05-04T18:51:27.765Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:51:28.171Z] Services recorder and inbound-traffic are disabled
+
+[2021-05-04T18:51:28.200Z] ⏳  Processing...
+
+[2021-05-04T18:51:28.208Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:51:28.211Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:51:28.214Z] Syncing module sources (3 files)...
+
+[2021-05-04T18:51:28.236Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:51:28.243Z] Syncing module sources (10 files)...
+
+[2021-05-04T18:51:28.247Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:51:28.251Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:51:28.255Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:51:28.276Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.282Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T18:51:28.286Z] Building version v-9322c4eebe...
+
+[2021-05-04T18:51:28.289Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.293Z] Getting build status for v-b2fddb5e78...
+
+[2021-05-04T18:51:28.296Z] Building version v-b2fddb5e78...
+
+[2021-05-04T18:51:28.299Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.303Z] Getting build status for v-22d311d057...
+
+[2021-05-04T18:51:28.306Z] Building version v-22d311d057...
+
+[2021-05-04T18:51:28.309Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.313Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T18:51:28.317Z] Building version v-50aa511d34...
+
+[2021-05-04T18:51:28.321Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.325Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T18:51:28.329Z] Building version v-ee21b741b7...
+
+[2021-05-04T18:51:28.335Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.340Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T18:51:28.347Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.351Z] Getting build status for v-a4161fa3cf...
+
+[2021-05-04T18:51:28.355Z] Building version v-a4161fa3cf...
+
+[2021-05-04T18:51:28.372Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.376Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T18:51:28.380Z] Building version v-9467fcc674...
+
+[2021-05-04T18:51:28.386Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.390Z] Building version v-b2fddb5e78... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.394Z] Building version v-22d311d057... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.397Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.410Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.415Z] Building version v-a4161fa3cf... → Done (took 0.1 sec)
+
+[2021-05-04T18:51:28.421Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-05-04T18:51:30.713Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T18:51:30.718Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-05-04T18:51:31.061Z] Deploying version v-b2fddb5e78...
+
+[2021-05-04T18:51:31.067Z] Deploying version v-b2fddb5e78... → Already deployed
+
+[2021-05-04T18:51:31.091Z] → Forward: 127.0.0.1:2181 → zoo1:2181 (client)
+
+[2021-05-04T18:51:31.099Z] → Forward: 127.0.0.1:2888 → zoo1:2888 (follower)
+
+[2021-05-04T18:51:31.107Z] → Forward: 127.0.0.1:3888 → zoo1:3888 (leader)
+
+[2021-05-04T18:51:31.214Z] Getting build status for v-8fc4c9f41a... → Done (took 2.9 sec)
+
+[2021-05-04T18:51:31.336Z] Deploying version v-50aa511d34...
+
+[2021-05-04T18:51:31.341Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-05-04T18:51:31.368Z] → Forward: 127.0.0.1:31234 → kafka-service:31234 (kafka-port)
+
+[2021-05-04T18:51:31.374Z] → Forward: 127.0.0.1:20777 → udp-recorder-service:20777
+
+[2021-05-04T18:51:31.724Z] Deploying version v-22d311d057...
+
+[2021-05-04T18:51:31.730Z] Deploying version v-22d311d057... → Already deployed
+
+[2021-05-04T18:51:31.742Z] → Forward: 127.0.0.1:60242 → udp-player-service:20777
+
+[2021-05-04T18:51:31.978Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T18:51:31.984Z] Deploying version v-8fc4c9f41a... → Already deployed
+
+[2021-05-04T18:51:32.787Z] Deploying version v-9467fcc674...
+
+[2021-05-04T18:51:32.792Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-05-04T18:51:32.803Z] → Forward: http://127.0.0.1:8443 → flink-operator-controller-manager-metrics-service:8443 (https)
+
+[2021-05-04T18:51:32.808Z] → Forward: https://127.0.0.1:60299 → flink-operator-webhook-service:443
+
+[2021-05-04T18:51:32.955Z] Deploying version v-a4161fa3cf...
+
+[2021-05-04T18:51:33.185Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T18:51:33.192Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-05-04T18:51:35.447Z] Waiting for resources to be ready...
+
+[2021-05-04T18:51:38.091Z] Deploying version v-a4161fa3cf...
+
+[2021-05-04T18:51:38.109Z] Error deploying player: CrashLoopBackOff - back-off 2m40s restarting failed container=f1-player pod=player-pod-6bfc575d89-blgtv_suitcaselab-default(f28e9cb1-406e-4766-9749-1db5301a67ab)
+
+━━━ Events ━━━
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1
+Pod player-pod-6bfc575d89-blgtv: Scheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw
+Pod player-pod-6bfc575d89-blgtv: Pulling - Pulling image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Pulled - Successfully pulled image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Created - Created container f1-player
+Pod player-pod-6bfc575d89-blgtv: Started - Started container f1-player
+Pod player-pod-6bfc575d89-blgtv: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod
+
+****** player-pod-6bfc575d89-blgtv ******
+------ f1-player ------usage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]
+                                [-p PORT]
+                                filename
+
+Replay an F1 2019 session as UDP packets.
+
+positional arguments:
+  filename              SQLite3 file to replay packets from
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR
+                        playback real-time factor (higher is faster,
+                        default=1.0)
+  -d DESTINATION, --destination DESTINATION
+                        destination UDP address; omit to use broadcast
+                        (default)
+  -p PORT, --port PORT  destination UDP port (default: 20777)
+
+
+Error Details:
+
+serviceName: player
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 2m40s restarting failed container=f1-player
+    pod=player-pod-6bfc575d89-blgtv_suitcaselab-default(f28e9cb1-406e-4766-9749-1db5301a67ab)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mScheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulling - Pulling image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulled - Successfully pulled image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mCreated - Created container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mStarted - Started container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod\e[39m\n\e[94m\e[39m\n\e[94m****** player-pod-6bfc575d89-blgtv ******\e[39m\n\e[94m\e[39m\e[90m------ f1-player ------\e[39musage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]\n                                [-p PORT]\n                                filename\n\nReplay an F1 2019 session as UDP packets.\n\npositional arguments:\n  filename              SQLite3 file to replay packets from\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR\n                        playback real-time factor (higher is faster,\n                        default=1.0)\n  -d DESTINATION, --destination DESTINATION\n                        destination UDP address; omit to use broadcast\n                        (default)\n  -p PORT, --port PORT  destination UDP port (default: 20777)\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: player-pod
+      namespace: suitcaselab-default
+      selfLink: /apis/apps/v1/namespaces/suitcaselab-default/deployments/player-pod
+      uid: 3bad6370-1b52-42be-bcce-9acbb58088fb
+      resourceVersion: '10337958'
+      generation: 2
+      creationTimestamp: '2021-05-04T18:45:53Z'
+      labels:
+        app: f1-player-deploy
+        service: player
+        test: test2
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/hot-reload: 'false'
+        garden.io/manifest-hash: 84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/hot-reload":"false","garden.io/manifest-hash":"84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921","service":"player"},"labels":{"app":"f1-player-deploy","service":"player","test":"test2"},"name":"player-pod","namespace":"suitcaselab-default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"f1-player"}},"template":{"metadata":{"labels":{"app":"f1-player"}},"spec":{"containers":[{"args":["-h"],"image":"mgunter/python-f1-play","name":"f1-player","ports":[{"containerPort":20777,"name":"udp-server","protocol":"UDP"}],"volumeMounts":[{"mountPath":"/sensable","name":"data-pv-storage"}]}],"restartPolicy":"Always","volumes":[{"name":"data-pv-storage","persistentVolumeClaim":{"claimName":"data-pv-claim"}}]}}}}
+        service: player
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: f1-player
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: f1-player
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 25%
+          maxSurge: 25%
+      revisionHistoryLimit: 10
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 2
+      updatedReplicas: 1
+      unavailableReplicas: 2
+      conditions: []
+
+
+[2021-05-04T18:51:38.166Z] Waiting for code changes...
+
+[2021-05-04T18:52:13.164Z] Getting status...
+
+[2021-05-04T18:52:13.652Z] Getting status... → Cached
+
+[2021-05-04T18:52:13.654Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:52:14.000Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:52:14.002Z] Checking result...
+
+[2021-05-04T18:52:14.016Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T18:52:14.021Z] Getting build status for v-a4161fa3cf...
+
+[2021-05-04T18:52:14.023Z] Building version v-a4161fa3cf...
+
+[2021-05-04T18:52:14.029Z] Building version v-a4161fa3cf... → Done (took 0 sec)
+
+[2021-05-04T18:52:14.730Z] Checking result... → Done
+
+[2021-05-04T18:52:14.733Z] Running...
+
+[2021-05-04T18:52:51.316Z] Getting status...
+
+[2021-05-04T18:52:51.845Z] Getting status... → Cached
+
+[2021-05-04T18:52:51.846Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:52:52.194Z] Services recorder and inbound-traffic are disabled
+
+[2021-05-04T18:52:52.221Z] ⏳  Processing...
+
+[2021-05-04T18:52:52.227Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:52:52.229Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:52:52.232Z] Syncing module sources (3 files)...
+
+[2021-05-04T18:52:52.241Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:52:52.244Z] Syncing module sources (10 files)...
+
+[2021-05-04T18:52:52.250Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:52:52.253Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:52:52.257Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:52:52.280Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.286Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T18:52:52.290Z] Building version v-9322c4eebe...
+
+[2021-05-04T18:52:52.294Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.298Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T18:52:52.302Z] Building version v-50aa511d34...
+
+[2021-05-04T18:52:52.306Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.310Z] Getting build status for v-b2fddb5e78...
+
+[2021-05-04T18:52:52.313Z] Building version v-b2fddb5e78...
+
+[2021-05-04T18:52:52.316Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.322Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T18:52:52.325Z] Building version v-ee21b741b7...
+
+[2021-05-04T18:52:52.328Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.332Z] Getting build status for v-22d311d057...
+
+[2021-05-04T18:52:52.336Z] Building version v-22d311d057...
+
+[2021-05-04T18:52:52.339Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.343Z] Getting build status for v-a4161fa3cf...
+
+[2021-05-04T18:52:52.347Z] Building version v-a4161fa3cf...
+
+[2021-05-04T18:52:52.351Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.356Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T18:52:52.378Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.384Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.388Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T18:52:52.392Z] Building version v-9467fcc674...
+
+[2021-05-04T18:52:52.402Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.406Z] Building version v-b2fddb5e78... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.411Z] Building version v-22d311d057... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.415Z] Building version v-a4161fa3cf... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.420Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-05-04T18:52:52.427Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-05-04T18:52:53.349Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T18:52:53.354Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-05-04T18:52:53.771Z] Deploying version v-b2fddb5e78...
+
+[2021-05-04T18:52:53.776Z] Deploying version v-b2fddb5e78... → Already deployed
+
+[2021-05-04T18:52:53.798Z] → Forward: 127.0.0.1:2181 → zoo1:2181 (client)
+
+[2021-05-04T18:52:53.802Z] → Forward: 127.0.0.1:2888 → zoo1:2888 (follower)
+
+[2021-05-04T18:52:53.807Z] → Forward: 127.0.0.1:3888 → zoo1:3888 (leader)
+
+[2021-05-04T18:52:54.021Z] Deploying version v-50aa511d34...
+
+[2021-05-04T18:52:54.027Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-05-04T18:52:54.061Z] → Forward: 127.0.0.1:31234 → kafka-service:31234 (kafka-port)
+
+[2021-05-04T18:52:54.071Z] → Forward: 127.0.0.1:20777 → udp-recorder-service:20777
+
+[2021-05-04T18:52:54.279Z] Deploying version v-22d311d057...
+
+[2021-05-04T18:52:54.283Z] Deploying version v-22d311d057... → Already deployed
+
+[2021-05-04T18:52:54.296Z] → Forward: 127.0.0.1:61861 → udp-player-service:20777
+
+[2021-05-04T18:52:55.025Z] Getting build status for v-8fc4c9f41a... → Done (took 2.7 sec)
+
+[2021-05-04T18:52:55.032Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T18:52:55.038Z] Deploying version v-8fc4c9f41a... → Already deployed
+
+[2021-05-04T18:52:55.355Z] Deploying version v-9467fcc674...
+
+[2021-05-04T18:52:55.360Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-05-04T18:52:55.375Z] → Forward: http://127.0.0.1:8443 → flink-operator-controller-manager-metrics-service:8443 (https)
+
+[2021-05-04T18:52:55.381Z] → Forward: https://127.0.0.1:61955 → flink-operator-webhook-service:443
+
+[2021-05-04T18:52:55.481Z] Deploying version v-a4161fa3cf...
+
+[2021-05-04T18:52:55.716Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T18:52:55.723Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-05-04T18:52:57.447Z] Waiting for resources to be ready...
+
+[2021-05-04T18:53:00.269Z] Deploying version v-a4161fa3cf...
+
+[2021-05-04T18:53:00.282Z] Error deploying player: CrashLoopBackOff - back-off 5m0s restarting failed container=f1-player pod=player-pod-6bfc575d89-blgtv_suitcaselab-default(f28e9cb1-406e-4766-9749-1db5301a67ab)
+
+━━━ Events ━━━
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1
+Pod player-pod-6bfc575d89-blgtv: Scheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw
+Pod player-pod-6bfc575d89-blgtv: Pulling - Pulling image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Pulled - Successfully pulled image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Created - Created container f1-player
+Pod player-pod-6bfc575d89-blgtv: Started - Started container f1-player
+Pod player-pod-6bfc575d89-blgtv: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod
+
+****** player-pod-6bfc575d89-blgtv ******
+------ f1-player ------usage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]
+                                [-p PORT]
+                                filename
+
+Replay an F1 2019 session as UDP packets.
+
+positional arguments:
+  filename              SQLite3 file to replay packets from
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR
+                        playback real-time factor (higher is faster,
+                        default=1.0)
+  -d DESTINATION, --destination DESTINATION
+                        destination UDP address; omit to use broadcast
+                        (default)
+  -p PORT, --port PORT  destination UDP port (default: 20777)
+
+
+Error Details:
+
+serviceName: player
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 5m0s restarting failed container=f1-player
+    pod=player-pod-6bfc575d89-blgtv_suitcaselab-default(f28e9cb1-406e-4766-9749-1db5301a67ab)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mScheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulling - Pulling image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulled - Successfully pulled image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mCreated - Created container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mStarted - Started container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod\e[39m\n\e[94m\e[39m\n\e[94m****** player-pod-6bfc575d89-blgtv ******\e[39m\n\e[94m\e[39m\e[90m------ f1-player ------\e[39musage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]\n                                [-p PORT]\n                                filename\n\nReplay an F1 2019 session as UDP packets.\n\npositional arguments:\n  filename              SQLite3 file to replay packets from\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR\n                        playback real-time factor (higher is faster,\n                        default=1.0)\n  -d DESTINATION, --destination DESTINATION\n                        destination UDP address; omit to use broadcast\n                        (default)\n  -p PORT, --port PORT  destination UDP port (default: 20777)\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: player-pod
+      namespace: suitcaselab-default
+      selfLink: /apis/apps/v1/namespaces/suitcaselab-default/deployments/player-pod
+      uid: 3bad6370-1b52-42be-bcce-9acbb58088fb
+      resourceVersion: '10337958'
+      generation: 2
+      creationTimestamp: '2021-05-04T18:45:53Z'
+      labels:
+        app: f1-player-deploy
+        service: player
+        test: test2
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/hot-reload: 'false'
+        garden.io/manifest-hash: 84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/hot-reload":"false","garden.io/manifest-hash":"84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921","service":"player"},"labels":{"app":"f1-player-deploy","service":"player","test":"test2"},"name":"player-pod","namespace":"suitcaselab-default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"f1-player"}},"template":{"metadata":{"labels":{"app":"f1-player"}},"spec":{"containers":[{"args":["-h"],"image":"mgunter/python-f1-play","name":"f1-player","ports":[{"containerPort":20777,"name":"udp-server","protocol":"UDP"}],"volumeMounts":[{"mountPath":"/sensable","name":"data-pv-storage"}]}],"restartPolicy":"Always","volumes":[{"name":"data-pv-storage","persistentVolumeClaim":{"claimName":"data-pv-claim"}}]}}}}
+        service: player
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: f1-player
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: f1-player
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 25%
+          maxSurge: 25%
+      revisionHistoryLimit: 10
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 2
+      updatedReplicas: 1
+      unavailableReplicas: 2
+      conditions: []
+
+
+[2021-05-04T18:53:00.321Z] Waiting for code changes...
+
+[2021-05-04T18:53:36.218Z] ⏳  Processing...
+
+[2021-05-04T18:53:38.329Z] Waiting for code changes...
+
+[2021-05-04T18:54:56.611Z] Getting status...
+
+[2021-05-04T18:54:57.160Z] Getting status... → Cached
+
+[2021-05-04T18:54:57.162Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:54:57.493Z] Services recorder and inbound-traffic are disabled
+
+[2021-05-04T18:54:57.519Z] ⏳  Processing...
+
+[2021-05-04T18:54:57.526Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:54:57.529Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:54:57.531Z] Syncing module sources (3 files)...
+
+[2021-05-04T18:54:57.534Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:54:57.542Z] Syncing module sources (10 files)...
+
+[2021-05-04T18:54:57.547Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:54:57.553Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:54:57.557Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:54:57.581Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:57.586Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T18:54:57.589Z] Building version v-9322c4eebe...
+
+[2021-05-04T18:54:57.592Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:57.597Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T18:54:57.601Z] Building version v-50aa511d34...
+
+[2021-05-04T18:54:57.612Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:57.617Z] Getting build status for v-22d311d057...
+
+[2021-05-04T18:54:57.622Z] Building version v-22d311d057...
+
+[2021-05-04T18:54:57.629Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:57.633Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T18:54:57.642Z] Building version v-ee21b741b7...
+
+[2021-05-04T18:54:57.646Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:57.652Z] Getting build status for v-a4161fa3cf...
+
+[2021-05-04T18:54:57.656Z] Building version v-a4161fa3cf...
+
+[2021-05-04T18:54:57.660Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:57.665Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T18:54:57.672Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:57.677Z] Getting build status for v-b2fddb5e78...
+
+[2021-05-04T18:54:57.682Z] Building version v-b2fddb5e78...
+
+[2021-05-04T18:54:57.701Z] Syncing module sources (10 files)... → Done (took 0.2 sec)
+
+[2021-05-04T18:54:57.707Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T18:54:57.712Z] Building version v-9467fcc674...
+
+[2021-05-04T18:54:57.719Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:57.726Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:57.731Z] Building version v-22d311d057... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:57.739Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:57.745Z] Building version v-a4161fa3cf... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:57.752Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-05-04T18:54:57.759Z] Building version v-b2fddb5e78... → Done (took 0.1 sec)
+
+[2021-05-04T18:54:58.737Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T18:54:58.742Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-05-04T18:54:59.061Z] Deploying version v-b2fddb5e78...
+
+[2021-05-04T18:54:59.067Z] Deploying version v-b2fddb5e78... → Already deployed
+
+[2021-05-04T18:54:59.091Z] → Forward: 127.0.0.1:2181 → zoo1:2181 (client)
+
+[2021-05-04T18:54:59.096Z] → Forward: 127.0.0.1:2888 → zoo1:2888 (follower)
+
+[2021-05-04T18:54:59.102Z] → Forward: 127.0.0.1:3888 → zoo1:3888 (leader)
+
+[2021-05-04T18:54:59.300Z] Deploying version v-50aa511d34...
+
+[2021-05-04T18:54:59.310Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-05-04T18:54:59.350Z] → Forward: 127.0.0.1:31234 → kafka-service:31234 (kafka-port)
+
+[2021-05-04T18:54:59.363Z] → Forward: 127.0.0.1:20777 → udp-recorder-service:20777
+
+[2021-05-04T18:54:59.585Z] Deploying version v-22d311d057...
+
+[2021-05-04T18:54:59.592Z] Deploying version v-22d311d057... → Already deployed
+
+[2021-05-04T18:54:59.609Z] → Forward: 127.0.0.1:63376 → udp-player-service:20777
+
+[2021-05-04T18:55:00.250Z] Getting build status for v-8fc4c9f41a... → Done (took 2.6 sec)
+
+[2021-05-04T18:55:00.257Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T18:55:00.263Z] Deploying version v-8fc4c9f41a... → Already deployed
+
+[2021-05-04T18:55:00.418Z] Deploying version v-a4161fa3cf...
+
+[2021-05-04T18:55:00.742Z] Deploying version v-9467fcc674...
+
+[2021-05-04T18:55:00.748Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-05-04T18:55:00.760Z] → Forward: http://127.0.0.1:8443 → flink-operator-controller-manager-metrics-service:8443 (https)
+
+[2021-05-04T18:55:00.766Z] → Forward: https://127.0.0.1:63471 → flink-operator-webhook-service:443
+
+[2021-05-04T18:55:01.628Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T18:55:01.637Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-05-04T18:55:02.437Z] Waiting for resources to be ready...
+
+[2021-05-04T18:55:05.185Z] Deploying version v-a4161fa3cf...
+
+[2021-05-04T18:55:05.203Z] Error deploying player: CrashLoopBackOff - back-off 5m0s restarting failed container=f1-player pod=player-pod-6bfc575d89-blgtv_suitcaselab-default(f28e9cb1-406e-4766-9749-1db5301a67ab)
+
+━━━ Events ━━━
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1
+Pod player-pod-6bfc575d89-blgtv: Scheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw
+Pod player-pod-6bfc575d89-blgtv: Pulling - Pulling image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Pulled - Successfully pulled image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Created - Created container f1-player
+Pod player-pod-6bfc575d89-blgtv: Started - Started container f1-player
+Pod player-pod-6bfc575d89-blgtv: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod
+
+****** player-pod-6bfc575d89-blgtv ******
+------ f1-player ------usage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]
+                                [-p PORT]
+                                filename
+
+Replay an F1 2019 session as UDP packets.
+
+positional arguments:
+  filename              SQLite3 file to replay packets from
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR
+                        playback real-time factor (higher is faster,
+                        default=1.0)
+  -d DESTINATION, --destination DESTINATION
+                        destination UDP address; omit to use broadcast
+                        (default)
+  -p PORT, --port PORT  destination UDP port (default: 20777)
+
+
+Error Details:
+
+serviceName: player
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 5m0s restarting failed container=f1-player
+    pod=player-pod-6bfc575d89-blgtv_suitcaselab-default(f28e9cb1-406e-4766-9749-1db5301a67ab)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mScheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulling - Pulling image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulled - Successfully pulled image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mCreated - Created container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mStarted - Started container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod\e[39m\n\e[94m\e[39m\n\e[94m****** player-pod-6bfc575d89-blgtv ******\e[39m\n\e[94m\e[39m\e[90m------ f1-player ------\e[39musage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]\n                                [-p PORT]\n                                filename\n\nReplay an F1 2019 session as UDP packets.\n\npositional arguments:\n  filename              SQLite3 file to replay packets from\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR\n                        playback real-time factor (higher is faster,\n                        default=1.0)\n  -d DESTINATION, --destination DESTINATION\n                        destination UDP address; omit to use broadcast\n                        (default)\n  -p PORT, --port PORT  destination UDP port (default: 20777)\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: player-pod
+      namespace: suitcaselab-default
+      selfLink: /apis/apps/v1/namespaces/suitcaselab-default/deployments/player-pod
+      uid: 3bad6370-1b52-42be-bcce-9acbb58088fb
+      resourceVersion: '10337958'
+      generation: 2
+      creationTimestamp: '2021-05-04T18:45:53Z'
+      labels:
+        app: f1-player-deploy
+        service: player
+        test: test2
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/hot-reload: 'false'
+        garden.io/manifest-hash: 84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/hot-reload":"false","garden.io/manifest-hash":"84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921","service":"player"},"labels":{"app":"f1-player-deploy","service":"player","test":"test2"},"name":"player-pod","namespace":"suitcaselab-default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"f1-player"}},"template":{"metadata":{"labels":{"app":"f1-player"}},"spec":{"containers":[{"args":["-h"],"image":"mgunter/python-f1-play","name":"f1-player","ports":[{"containerPort":20777,"name":"udp-server","protocol":"UDP"}],"volumeMounts":[{"mountPath":"/sensable","name":"data-pv-storage"}]}],"restartPolicy":"Always","volumes":[{"name":"data-pv-storage","persistentVolumeClaim":{"claimName":"data-pv-claim"}}]}}}}
+        service: player
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: f1-player
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: f1-player
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 25%
+          maxSurge: 25%
+      revisionHistoryLimit: 10
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 2
+      updatedReplicas: 1
+      unavailableReplicas: 2
+      conditions: []
+
+
+[2021-05-04T18:55:05.253Z] Waiting for code changes...
+
+[2021-05-04T18:55:43.547Z] ⏳  Processing...
+
+[2021-05-04T18:55:43.563Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:55:43.637Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:55:43.648Z] Building version v-ce16e09ae4...
+
+[2021-05-04T18:55:43.662Z] Building version v-ce16e09ae4... → Done (took 0 sec)
+
+[2021-05-04T18:55:45.251Z] Deploying version v-ce16e09ae4...
+
+[2021-05-04T18:55:47.441Z] Waiting for resources to be ready...
+
+[2021-05-04T18:55:49.554Z] Resources ready
+
+[2021-05-04T18:55:49.762Z] Deploying version v-ce16e09ae4... → Done (took 4.5 sec)
+
+[2021-05-04T18:55:49.773Z] Waiting for code changes...
+
+[2021-05-04T18:56:05.589Z] Getting status...
+
+[2021-05-04T18:56:06.343Z] Getting status... → Cached
+
+[2021-05-04T18:56:06.345Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:56:06.748Z] Services recorder and inbound-traffic are disabled
+
+[2021-05-04T18:56:06.777Z] ⏳  Processing...
+
+[2021-05-04T18:56:06.785Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:56:06.788Z] Syncing module sources (2 files)...
+
+[2021-05-04T18:56:06.791Z] Syncing module sources (3 files)...
+
+[2021-05-04T18:56:06.796Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:56:06.799Z] Syncing module sources (10 files)...
+
+[2021-05-04T18:56:06.803Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:56:06.809Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:56:06.812Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:56:06.839Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-05-04T18:56:06.850Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T18:56:06.853Z] Building version v-50aa511d34...
+
+[2021-05-04T18:56:06.858Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:06.862Z] Getting build status for v-22d311d057...
+
+[2021-05-04T18:56:06.866Z] Building version v-22d311d057...
+
+[2021-05-04T18:56:06.870Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:06.876Z] Getting build status for v-b2fddb5e78...
+
+[2021-05-04T18:56:06.880Z] Building version v-b2fddb5e78...
+
+[2021-05-04T18:56:06.884Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:06.888Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T18:56:06.893Z] Building version v-ee21b741b7...
+
+[2021-05-04T18:56:06.897Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:06.901Z] Getting build status for v-ce16e09ae4...
+
+[2021-05-04T18:56:06.906Z] Building version v-ce16e09ae4...
+
+[2021-05-04T18:56:06.911Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:06.917Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T18:56:06.924Z] Building version v-9322c4eebe...
+
+[2021-05-04T18:56:06.928Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:06.933Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T18:56:06.958Z] Syncing module sources (10 files)... → Done (took 0.2 sec)
+
+[2021-05-04T18:56:06.963Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T18:56:06.968Z] Building version v-9467fcc674...
+
+[2021-05-04T18:56:06.978Z] Building version v-22d311d057... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:06.984Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:06.989Z] Building version v-ce16e09ae4... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:06.995Z] Building version v-b2fddb5e78... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:06.999Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:07.011Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:07.016Z] Building version v-9467fcc674... → Done (took 0.1 sec)
+
+[2021-05-04T18:56:08.381Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T18:56:08.386Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-05-04T18:56:09.648Z] Deploying version v-b2fddb5e78...
+
+[2021-05-04T18:56:09.653Z] Deploying version v-b2fddb5e78... → Already deployed
+
+[2021-05-04T18:56:09.676Z] → Forward: 127.0.0.1:2181 → zoo1:2181 (client)
+
+[2021-05-04T18:56:09.681Z] → Forward: 127.0.0.1:2888 → zoo1:2888 (follower)
+
+[2021-05-04T18:56:09.686Z] → Forward: 127.0.0.1:3888 → zoo1:3888 (leader)
+
+[2021-05-04T18:56:09.923Z] Deploying version v-50aa511d34...
+
+[2021-05-04T18:56:09.929Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-05-04T18:56:09.952Z] → Forward: 127.0.0.1:31234 → kafka-service:31234 (kafka-port)
+
+[2021-05-04T18:56:09.958Z] → Forward: 127.0.0.1:20777 → udp-recorder-service:20777
+
+[2021-05-04T18:56:09.968Z] Getting build status for v-8fc4c9f41a... → Done (took 3 sec)
+
+[2021-05-04T18:56:10.196Z] Deploying version v-22d311d057...
+
+[2021-05-04T18:56:10.202Z] Deploying version v-22d311d057... → Already deployed
+
+[2021-05-04T18:56:10.213Z] → Forward: 127.0.0.1:64131 → udp-player-service:20777
+
+[2021-05-04T18:56:10.413Z] Deploying version v-ce16e09ae4...
+
+[2021-05-04T18:56:10.418Z] Deploying version v-ce16e09ae4... → Already deployed
+
+[2021-05-04T18:56:11.239Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T18:56:11.246Z] Deploying version v-8fc4c9f41a... → Already deployed
+
+[2021-05-04T18:56:11.914Z] Deploying version v-9467fcc674...
+
+[2021-05-04T18:56:11.919Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-05-04T18:56:11.934Z] → Forward: http://127.0.0.1:8443 → flink-operator-controller-manager-metrics-service:8443 (https)
+
+[2021-05-04T18:56:11.939Z] → Forward: https://127.0.0.1:64216 → flink-operator-webhook-service:443
+
+[2021-05-04T18:56:12.240Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T18:56:12.251Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-05-04T18:56:12.319Z] Waiting for code changes...
+
+[2021-05-04T18:56:12.853Z] ⏳  Processing...
+
+[2021-05-04T18:56:14.738Z] Waiting for code changes...
+
+[2021-05-04T18:57:17.755Z] Getting status...
+
+[2021-05-04T18:57:18.242Z] Getting status... → Cached
+
+[2021-05-04T18:57:18.253Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T18:57:18.745Z] Syncing module sources (1 file)...
+
+[2021-05-04T18:57:18.748Z] Checking result...
+
+[2021-05-04T18:57:18.769Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T18:57:18.777Z] Getting build status for v-ce16e09ae4...
+
+[2021-05-04T18:57:18.780Z] Building version v-ce16e09ae4...
+
+[2021-05-04T18:57:18.788Z] Building version v-ce16e09ae4... → Done (took 0 sec)
+
+[2021-05-04T18:57:19.603Z] Checking result... → Done
+
+[2021-05-04T18:57:19.606Z] Running...
+
+[2021-05-04T19:05:42.687Z] Getting status...
+
+[2021-05-04T19:05:42.927Z] Getting status... → Cached
+
+[2021-05-04T19:05:42.933Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T19:05:43.411Z] Module configuration changed, reloading...
+
+[2021-05-04T19:05:43.521Z] Garden dashboard running at http://localhost:9777
+
+[2021-05-04T19:05:43.533Z] Getting status...
+
+[2021-05-04T19:05:43.688Z] Getting status... → Cached
+
+[2021-05-04T19:05:43.697Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T19:05:44.162Z] Services recorder and inbound-traffic are disabled
+
+[2021-05-04T19:05:44.209Z] ⏳  Processing...
+
+[2021-05-04T19:05:44.230Z] Syncing module sources (2 files)...
+
+[2021-05-04T19:05:44.239Z] Syncing module sources (2 files)...
+
+[2021-05-04T19:05:44.250Z] Syncing module sources (3 files)...
+
+[2021-05-04T19:05:44.259Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:05:44.267Z] Syncing module sources (10 files)...
+
+[2021-05-04T19:05:44.275Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:05:44.286Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:05:44.296Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:05:44.323Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T19:05:44.334Z] Getting build status for v-b2fddb5e78...
+
+[2021-05-04T19:05:44.342Z] Building version v-b2fddb5e78...
+
+[2021-05-04T19:05:44.351Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-05-04T19:05:44.361Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T19:05:44.371Z] Building version v-50aa511d34...
+
+[2021-05-04T19:05:44.380Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T19:05:44.389Z] Getting build status for v-22d311d057...
+
+[2021-05-04T19:05:44.398Z] Building version v-22d311d057...
+
+[2021-05-04T19:05:44.408Z] Syncing module sources (2 files)... → Done (took 0.2 sec)
+
+[2021-05-04T19:05:44.417Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T19:05:44.425Z] Building version v-9322c4eebe...
+
+[2021-05-04T19:05:44.435Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T19:05:44.443Z] Getting build status for v-02fe703387...
+
+[2021-05-04T19:05:44.454Z] Building version v-02fe703387...
+
+[2021-05-04T19:05:44.463Z] Syncing module sources (1 file)... → Done (took 0.2 sec)
+
+[2021-05-04T19:05:44.473Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T19:05:44.482Z] Building version v-ee21b741b7...
+
+[2021-05-04T19:05:44.492Z] Syncing module sources (1 file)... → Done (took 0.2 sec)
+
+[2021-05-04T19:05:44.501Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T19:05:44.535Z] Syncing module sources (10 files)... → Done (took 0.3 sec)
+
+[2021-05-04T19:05:44.547Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T19:05:44.558Z] Building version v-9467fcc674...
+
+[2021-05-04T19:05:44.569Z] Building version v-b2fddb5e78... → Done (took 0.2 sec)
+
+[2021-05-04T19:05:44.584Z] Building version v-50aa511d34... → Done (took 0.2 sec)
+
+[2021-05-04T19:05:44.597Z] Building version v-22d311d057... → Done (took 0.2 sec)
+
+[2021-05-04T19:05:44.608Z] Building version v-9322c4eebe... → Done (took 0.2 sec)
+
+[2021-05-04T19:05:44.618Z] Building version v-02fe703387... → Done (took 0.2 sec)
+
+[2021-05-04T19:05:44.631Z] Building version v-ee21b741b7... → Done (took 0.2 sec)
+
+[2021-05-04T19:05:44.644Z] Building version v-9467fcc674... → Done (took 0.1 sec)
+
+[2021-05-04T19:05:44.951Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T19:05:44.959Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-05-04T19:05:45.211Z] Deploying version v-b2fddb5e78...
+
+[2021-05-04T19:05:45.219Z] Deploying version v-b2fddb5e78... → Already deployed
+
+[2021-05-04T19:05:45.231Z] → Forward: 127.0.0.1:2181 → zoo1:2181 (client)
+
+[2021-05-04T19:05:45.240Z] → Forward: 127.0.0.1:2888 → zoo1:2888 (follower)
+
+[2021-05-04T19:05:45.248Z] → Forward: 127.0.0.1:3888 → zoo1:3888 (leader)
+
+[2021-05-04T19:05:45.531Z] Deploying version v-50aa511d34...
+
+[2021-05-04T19:05:45.540Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-05-04T19:05:45.560Z] → Forward: 127.0.0.1:31234 → kafka-service:31234 (kafka-port)
+
+[2021-05-04T19:05:45.571Z] → Forward: 127.0.0.1:20777 → udp-recorder-service:20777
+
+[2021-05-04T19:05:45.881Z] Deploying version v-22d311d057...
+
+[2021-05-04T19:05:45.891Z] Deploying version v-22d311d057... → Already deployed
+
+[2021-05-04T19:05:45.904Z] → Forward: 127.0.0.1:64131 → udp-player-service:20777
+
+[2021-05-04T19:05:46.254Z] Deploying version v-02fe703387...
+
+[2021-05-04T19:05:46.265Z] Deploying version v-02fe703387... → Already deployed
+
+[2021-05-04T19:05:47.290Z] Deploying version v-9467fcc674...
+
+[2021-05-04T19:05:47.304Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-05-04T19:05:47.320Z] → Forward: http://127.0.0.1:8443 → flink-operator-controller-manager-metrics-service:8443 (https)
+
+[2021-05-04T19:05:47.335Z] → Forward: https://127.0.0.1:64216 → flink-operator-webhook-service:443
+
+[2021-05-04T19:05:47.565Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T19:05:47.576Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-05-04T19:05:47.640Z] Getting build status for v-8fc4c9f41a... → Done (took 3.1 sec)
+
+[2021-05-04T19:05:47.653Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T19:05:47.663Z] Deploying version v-8fc4c9f41a... → Already deployed
+
+[2021-05-04T19:05:47.701Z] Waiting for code changes...
+
+[2021-05-04T19:08:34.431Z] Getting status...
+
+[2021-05-04T19:08:34.967Z] Getting status... → Cached
+
+[2021-05-04T19:08:34.969Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T19:08:35.341Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:08:35.343Z] Checking result...
+
+[2021-05-04T19:08:35.355Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T19:08:35.360Z] Getting build status for v-02fe703387...
+
+[2021-05-04T19:08:35.362Z] Building version v-02fe703387...
+
+[2021-05-04T19:08:35.368Z] Building version v-02fe703387... → Done (took 0 sec)
+
+[2021-05-04T19:08:36.430Z] Checking result... → Done
+
+[2021-05-04T19:08:36.432Z] Running...
+
+[2021-05-04T19:10:56.350Z] Getting status...
+
+[2021-05-04T19:10:56.599Z] Getting status... → Cached
+
+[2021-05-04T19:10:56.624Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T19:10:57.114Z] Module configuration changed, reloading...
+
+[2021-05-04T19:10:57.198Z] Garden dashboard running at http://localhost:9777
+
+[2021-05-04T19:10:57.214Z] Getting status...
+
+[2021-05-04T19:10:57.338Z] Getting status... → Cached
+
+[2021-05-04T19:10:57.349Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T19:10:57.757Z] Services recorder and inbound-traffic are disabled
+
+[2021-05-04T19:10:57.821Z] ⏳  Processing...
+
+[2021-05-04T19:10:57.851Z] Syncing module sources (2 files)...
+
+[2021-05-04T19:10:57.863Z] Syncing module sources (2 files)...
+
+[2021-05-04T19:10:57.876Z] Syncing module sources (3 files)...
+
+[2021-05-04T19:10:57.888Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:10:57.901Z] Syncing module sources (10 files)...
+
+[2021-05-04T19:10:57.913Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:10:57.931Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:10:57.947Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:10:57.969Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T19:10:57.984Z] Getting build status for v-b2fddb5e78...
+
+[2021-05-04T19:10:57.999Z] Building version v-b2fddb5e78...
+
+[2021-05-04T19:10:58.014Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-05-04T19:10:58.029Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T19:10:58.044Z] Building version v-50aa511d34...
+
+[2021-05-04T19:10:58.059Z] Syncing module sources (2 files)... → Done (took 0.2 sec)
+
+[2021-05-04T19:10:58.074Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T19:10:58.088Z] Building version v-9322c4eebe...
+
+[2021-05-04T19:10:58.103Z] Syncing module sources (1 file)... → Done (took 0.2 sec)
+
+[2021-05-04T19:10:58.119Z] Getting build status for v-22d311d057...
+
+[2021-05-04T19:10:58.134Z] Building version v-22d311d057...
+
+[2021-05-04T19:10:58.148Z] Syncing module sources (1 file)... → Done (took 0.2 sec)
+
+[2021-05-04T19:10:58.164Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T19:10:58.179Z] Syncing module sources (1 file)... → Done (took 0.3 sec)
+
+[2021-05-04T19:10:58.195Z] Getting build status for v-02fe703387...
+
+[2021-05-04T19:10:58.210Z] Building version v-02fe703387...
+
+[2021-05-04T19:10:58.224Z] Syncing module sources (1 file)... → Done (took 0.3 sec)
+
+[2021-05-04T19:10:58.238Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T19:10:58.254Z] Building version v-ee21b741b7...
+
+[2021-05-04T19:10:58.287Z] Building version v-9322c4eebe... → Done (took 0.2 sec)
+
+[2021-05-04T19:10:58.304Z] Building version v-b2fddb5e78... → Done (took 0.3 sec)
+
+[2021-05-04T19:10:58.320Z] Building version v-50aa511d34... → Done (took 0.3 sec)
+
+[2021-05-04T19:10:58.337Z] Syncing module sources (10 files)... → Done (took 0.4 sec)
+
+[2021-05-04T19:10:58.352Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T19:10:58.367Z] Building version v-9467fcc674...
+
+[2021-05-04T19:10:58.382Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-05-04T19:10:58.398Z] Building version v-02fe703387... → Done (took 0.2 sec)
+
+[2021-05-04T19:10:58.413Z] Building version v-22d311d057... → Done (took 0.3 sec)
+
+[2021-05-04T19:10:58.429Z] Building version v-9467fcc674... → Done (took 0.1 sec)
+
+[2021-05-04T19:10:59.252Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T19:10:59.268Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-05-04T19:10:59.836Z] Deploying version v-b2fddb5e78...
+
+[2021-05-04T19:10:59.852Z] Deploying version v-b2fddb5e78... → Already deployed
+
+[2021-05-04T19:10:59.869Z] → Forward: 127.0.0.1:2181 → zoo1:2181 (client)
+
+[2021-05-04T19:10:59.887Z] → Forward: 127.0.0.1:2888 → zoo1:2888 (follower)
+
+[2021-05-04T19:10:59.902Z] → Forward: 127.0.0.1:3888 → zoo1:3888 (leader)
+
+[2021-05-04T19:11:00.465Z] Deploying version v-50aa511d34...
+
+[2021-05-04T19:11:00.477Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-05-04T19:11:00.495Z] → Forward: 127.0.0.1:31234 → kafka-service:31234 (kafka-port)
+
+[2021-05-04T19:11:00.508Z] → Forward: 127.0.0.1:20777 → udp-recorder-service:20777
+
+[2021-05-04T19:11:01.056Z] Deploying version v-22d311d057...
+
+[2021-05-04T19:11:01.070Z] Deploying version v-22d311d057... → Already deployed
+
+[2021-05-04T19:11:01.089Z] → Forward: 127.0.0.1:64131 → udp-player-service:20777
+
+[2021-05-04T19:11:01.364Z] Deploying version v-02fe703387...
+
+[2021-05-04T19:11:01.381Z] Deploying version v-02fe703387... → Already deployed
+
+[2021-05-04T19:11:01.883Z] Getting build status for v-8fc4c9f41a... → Done (took 3.7 sec)
+
+[2021-05-04T19:11:01.904Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T19:11:01.920Z] Deploying version v-8fc4c9f41a... → Already deployed
+
+[2021-05-04T19:11:02.307Z] Deploying version v-9467fcc674...
+
+[2021-05-04T19:11:02.324Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-05-04T19:11:02.344Z] → Forward: http://127.0.0.1:8443 → flink-operator-controller-manager-metrics-service:8443 (https)
+
+[2021-05-04T19:11:02.361Z] → Forward: https://127.0.0.1:64216 → flink-operator-webhook-service:443
+
+[2021-05-04T19:11:02.633Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T19:11:02.653Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-05-04T19:11:02.705Z] Waiting for code changes...
+
+[2021-05-04T19:12:14.404Z] Getting status...
+
+[2021-05-04T19:12:14.987Z] Getting status... → Cached
+
+[2021-05-04T19:12:14.989Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T19:12:15.381Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:12:15.383Z] Checking result...
+
+[2021-05-04T19:12:15.397Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T19:12:15.403Z] Getting build status for v-02fe703387...
+
+[2021-05-04T19:12:15.405Z] Building version v-02fe703387...
+
+[2021-05-04T19:12:15.412Z] Building version v-02fe703387... → Done (took 0 sec)
+
+[2021-05-04T19:12:16.397Z] Checking result... → Done
+
+[2021-05-04T19:12:16.400Z] Running...
+
+[2021-05-04T19:20:47.149Z] Getting status...
+
+[2021-05-04T19:20:47.696Z] Getting status... → Cached
+
+[2021-05-04T19:20:47.698Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T19:20:48.094Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:20:48.096Z] Checking result...
+
+[2021-05-04T19:20:48.109Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T19:20:48.114Z] Getting build status for v-02fe703387...
+
+[2021-05-04T19:20:48.116Z] Building version v-02fe703387...
+
+[2021-05-04T19:20:48.124Z] Building version v-02fe703387... → Done (took 0 sec)
+
+[2021-05-04T19:20:49.005Z] Checking result... → Done
+
+[2021-05-04T19:20:49.008Z] Running...
+
+[2021-05-04T19:27:11.993Z] Getting status...
+
+[2021-05-04T19:27:13.386Z] Getting status... → Done
+
+[2021-05-04T19:27:13.789Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:27:13.791Z] Checking result...
+
+[2021-05-04T19:27:13.798Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T19:27:13.803Z] Getting build status for v-02fe703387...
+
+[2021-05-04T19:27:13.805Z] Building version v-02fe703387...
+
+[2021-05-04T19:27:13.810Z] Building version v-02fe703387... → Done (took 0 sec)
+
+[2021-05-04T19:27:14.185Z] Checking result... → Done
+
+[2021-05-04T19:27:14.188Z] Running...
+
+[2021-05-04T19:49:36.689Z] Getting status...
+
+[2021-05-04T19:49:37.319Z] Getting status... → Cached
+
+[2021-05-04T19:49:37.322Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T19:49:37.804Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:49:37.807Z] Checking result...
+
+[2021-05-04T19:49:37.824Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T19:49:37.833Z] Getting build status for v-02fe703387...
+
+[2021-05-04T19:49:37.836Z] Building version v-02fe703387...
+
+[2021-05-04T19:49:37.868Z] Building version v-02fe703387... → Done (took 0 sec)
+
+[2021-05-04T19:49:38.755Z] Checking result... → Done
+
+[2021-05-04T19:49:38.760Z] Running...
+
+[2021-05-04T19:51:00.880Z] Getting status...
+
+[2021-05-04T19:51:01.429Z] Getting status... → Cached
+
+[2021-05-04T19:51:01.458Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T19:51:01.943Z] Module configuration changed, reloading...
+
+[2021-05-04T19:51:02.044Z] Garden dashboard running at http://localhost:9777
+
+[2021-05-04T19:51:02.074Z] Getting status...
+
+[2021-05-04T19:51:02.231Z] Getting status... → Cached
+
+[2021-05-04T19:51:02.254Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T19:51:02.717Z] Services recorder and inbound-traffic are disabled
+
+[2021-05-04T19:51:02.807Z] ⏳  Processing...
+
+[2021-05-04T19:51:02.847Z] Syncing module sources (2 files)...
+
+[2021-05-04T19:51:02.867Z] Syncing module sources (2 files)...
+
+[2021-05-04T19:51:02.885Z] Syncing module sources (3 files)...
+
+[2021-05-04T19:51:02.905Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:51:02.924Z] Syncing module sources (10 files)...
+
+[2021-05-04T19:51:02.943Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:51:02.961Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:51:02.981Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:51:03.006Z] Syncing module sources (2 files)... → Done (took 0.2 sec)
+
+[2021-05-04T19:51:03.026Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T19:51:03.046Z] Building version v-9322c4eebe...
+
+[2021-05-04T19:51:03.066Z] Syncing module sources (2 files)... → Done (took 0.2 sec)
+
+[2021-05-04T19:51:03.085Z] Getting build status for v-b2fddb5e78...
+
+[2021-05-04T19:51:03.107Z] Building version v-b2fddb5e78...
+
+[2021-05-04T19:51:03.127Z] Syncing module sources (1 file)... → Done (took 0.2 sec)
+
+[2021-05-04T19:51:03.147Z] Getting build status for v-22d311d057...
+
+[2021-05-04T19:51:03.168Z] Building version v-22d311d057...
+
+[2021-05-04T19:51:03.188Z] Syncing module sources (1 file)... → Done (took 0.2 sec)
+
+[2021-05-04T19:51:03.207Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T19:51:03.227Z] Building version v-ee21b741b7...
+
+[2021-05-04T19:51:03.248Z] Syncing module sources (3 files)... → Done (took 0.4 sec)
+
+[2021-05-04T19:51:03.267Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T19:51:03.288Z] Building version v-50aa511d34...
+
+[2021-05-04T19:51:03.309Z] Syncing module sources (1 file)... → Done (took 0.3 sec)
+
+[2021-05-04T19:51:03.329Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T19:51:03.350Z] Syncing module sources (1 file)... → Done (took 0.4 sec)
+
+[2021-05-04T19:51:03.371Z] Getting build status for v-e6f0d17c59...
+
+[2021-05-04T19:51:03.391Z] Building version v-e6f0d17c59...
+
+[2021-05-04T19:51:04.267Z] Syncing module sources (10 files)... → Done (took 1.3 sec)
+
+[2021-05-04T19:51:04.285Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T19:51:04.306Z] Building version v-9467fcc674...
+
+[2021-05-04T19:51:04.327Z] Building version v-b2fddb5e78... → Done (took 1.2 sec)
+
+[2021-05-04T19:51:04.345Z] Building version v-9322c4eebe... → Done (took 1.3 sec)
+
+[2021-05-04T19:51:04.361Z] Building version v-22d311d057... → Done (took 1.2 sec)
+
+[2021-05-04T19:51:04.379Z] Building version v-ee21b741b7... → Done (took 1.2 sec)
+
+[2021-05-04T19:51:04.397Z] Building version v-50aa511d34... → Done (took 1.1 sec)
+
+[2021-05-04T19:51:04.415Z] Building version v-e6f0d17c59... → Done (took 1 sec)
+
+[2021-05-04T19:51:04.432Z] Building version v-9467fcc674... → Done (took 0.1 sec)
+
+[2021-05-04T19:51:04.614Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T19:51:04.635Z] Deploying version v-9322c4eebe... → Already deployed
+
+[2021-05-04T19:51:04.930Z] Deploying version v-b2fddb5e78...
+
+[2021-05-04T19:51:04.950Z] Deploying version v-b2fddb5e78... → Already deployed
+
+[2021-05-04T19:51:04.972Z] → Forward: 127.0.0.1:2181 → zoo1:2181 (client)
+
+[2021-05-04T19:51:04.991Z] → Forward: 127.0.0.1:2888 → zoo1:2888 (follower)
+
+[2021-05-04T19:51:05.012Z] → Forward: 127.0.0.1:3888 → zoo1:3888 (leader)
+
+[2021-05-04T19:51:05.507Z] Deploying version v-50aa511d34...
+
+[2021-05-04T19:51:05.528Z] Deploying version v-50aa511d34... → Already deployed
+
+[2021-05-04T19:51:05.556Z] → Forward: 127.0.0.1:31234 → kafka-service:31234 (kafka-port)
+
+[2021-05-04T19:51:05.577Z] → Forward: 127.0.0.1:20777 → udp-recorder-service:20777
+
+[2021-05-04T19:51:05.844Z] Deploying version v-22d311d057...
+
+[2021-05-04T19:51:05.863Z] Deploying version v-22d311d057... → Already deployed
+
+[2021-05-04T19:51:05.886Z] → Forward: 127.0.0.1:64131 → udp-player-service:20777
+
+[2021-05-04T19:51:06.033Z] Getting build status for v-8fc4c9f41a... → Done (took 2.7 sec)
+
+[2021-05-04T19:51:06.126Z] Deploying version v-e6f0d17c59...
+
+[2021-05-04T19:51:06.144Z] Deploying version v-e6f0d17c59... → Already deployed
+
+[2021-05-04T19:51:06.271Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T19:51:06.293Z] Deploying version v-8fc4c9f41a... → Already deployed
+
+[2021-05-04T19:51:07.251Z] Deploying version v-9467fcc674...
+
+[2021-05-04T19:51:07.274Z] Deploying version v-9467fcc674... → Already deployed
+
+[2021-05-04T19:51:07.321Z] → Forward: http://127.0.0.1:8443 → flink-operator-controller-manager-metrics-service:8443 (https)
+
+[2021-05-04T19:51:07.373Z] → Forward: https://127.0.0.1:64216 → flink-operator-webhook-service:443
+
+[2021-05-04T19:51:07.611Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T19:51:07.632Z] Deploying version v-ee21b741b7... → Already deployed
+
+[2021-05-04T19:51:07.668Z] Waiting for code changes...
+
+[2021-05-04T19:51:16.228Z] Getting status...
+
+[2021-05-04T19:51:16.807Z] Getting status... → Cached
+
+[2021-05-04T19:51:16.809Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T19:51:17.179Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:51:17.182Z] Checking result...
+
+[2021-05-04T19:51:17.194Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T19:51:17.199Z] Getting build status for v-e6f0d17c59...
+
+[2021-05-04T19:51:17.202Z] Building version v-e6f0d17c59...
+
+[2021-05-04T19:51:17.208Z] Building version v-e6f0d17c59... → Done (took 0 sec)
+
+[2021-05-04T19:51:17.937Z] Checking result... → Done
+
+[2021-05-04T19:51:17.940Z] Running...
+
+[2021-05-04T19:56:15.694Z] Getting status...
+
+[2021-05-04T19:56:15.797Z] Getting status... → Cached
+
+[2021-05-04T19:56:15.800Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T19:56:16.240Z] Deleting services...
+
+[2021-05-04T19:56:16.256Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:56:16.258Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:56:16.265Z] Syncing module sources (2 files)...
+
+[2021-05-04T19:56:16.267Z] Syncing module sources (3 files)...
+
+[2021-05-04T19:56:16.271Z] Syncing module sources (10 files)...
+
+[2021-05-04T19:56:16.274Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:56:16.278Z] Syncing module sources (1 file)...
+
+[2021-05-04T19:56:16.283Z] Syncing module sources (2 files)...
+
+[2021-05-04T19:56:16.299Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T19:56:16.307Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-05-04T19:56:16.312Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T19:56:16.316Z] Deleting...
+
+[2021-05-04T19:56:16.321Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-05-04T19:56:16.326Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T19:56:16.330Z] Deleting...
+
+[2021-05-04T19:56:16.335Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T19:56:16.339Z] Deleting...
+
+[2021-05-04T19:56:16.343Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T19:56:16.376Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-05-04T19:56:17.896Z] Deleting... → Done (took 1.6 sec)
+
+[2021-05-04T19:56:17.901Z] Deleting...
+
+[2021-05-04T19:56:17.907Z] Deleting... → Done (took 1.6 sec)
+
+[2021-05-04T19:56:17.911Z] Deleting...
+
+[2021-05-04T19:56:18.830Z] Deleting... → Done (took 0.9 sec)
+
+[2021-05-04T19:56:20.788Z] Deleting... → Done (took 4.4 sec)
+
+[2021-05-04T19:56:30.900Z] Service deleted
+
+[2021-05-04T19:56:30.907Z] Service deleted → Done (took 13 sec)
+
+[2021-05-04T19:56:30.912Z] Deleting...
+
+[2021-05-04T19:56:32.124Z] Deleting... → Done (took 1.2 sec)
+
+[2021-05-04T19:56:32.133Z] Deleting...
+
+[2021-05-04T19:56:33.151Z] Deleting... → Done (took 1 sec)
+
+[2021-05-04T19:56:33.159Z] Deleting...
+
+[2021-05-04T20:01:04.458Z] Getting status...
+
+[2021-05-04T20:01:04.511Z] Getting status... → Cached
+
+[2021-05-04T20:01:04.513Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T20:01:04.879Z] Deleting services...
+
+[2021-05-04T20:01:04.893Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:01:04.895Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:01:04.901Z] Syncing module sources (2 files)...
+
+[2021-05-04T20:01:04.903Z] Syncing module sources (2 files)...
+
+[2021-05-04T20:01:04.906Z] Syncing module sources (3 files)...
+
+[2021-05-04T20:01:04.909Z] Syncing module sources (10 files)...
+
+[2021-05-04T20:01:04.912Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:01:04.916Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:01:04.934Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T20:01:04.941Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-05-04T20:01:04.944Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-05-04T20:01:04.948Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T20:01:04.952Z] Deleting...
+
+[2021-05-04T20:01:04.957Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T20:01:04.960Z] Deleting...
+
+[2021-05-04T20:01:04.966Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-05-04T20:01:04.970Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T20:01:04.974Z] Deleting...
+
+[2021-05-04T20:01:05.004Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-05-04T20:01:07.291Z] Not found
+
+[2021-05-04T20:01:07.297Z] Deleting...
+
+[2021-05-04T20:01:07.312Z] Not found
+
+[2021-05-04T20:01:07.316Z] Deleting...
+
+[2021-05-04T20:01:07.552Z] Not found
+
+[2021-05-04T20:01:07.851Z] Not found
+
+[2021-05-04T20:01:07.954Z] Not found
+
+[2021-05-04T20:01:07.959Z] Deleting...
+
+[2021-05-04T20:01:08.100Z] Not found
+
+[2021-05-04T20:01:08.104Z] Deleting...
+
+[2021-05-04T20:01:08.220Z] Not found
+
+[2021-05-04T20:01:08.224Z] Deleting...
+
+[2021-05-04T20:03:04.131Z] Getting status...
+
+[2021-05-04T20:03:06.662Z] Getting status... → Done
+
+[2021-05-04T20:03:07.004Z] Services recorder, player and inbound-traffic are disabled
+
+[2021-05-04T20:03:07.022Z] Syncing module sources (2 files)...
+
+[2021-05-04T20:03:07.025Z] Syncing module sources (2 files)...
+
+[2021-05-04T20:03:07.030Z] Syncing module sources (3 files)...
+
+[2021-05-04T20:03:07.033Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:03:07.036Z] Syncing module sources (10 files)...
+
+[2021-05-04T20:03:07.039Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:03:07.042Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:03:07.054Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-05-04T20:03:07.060Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T20:03:07.066Z] Building version v-9322c4eebe...
+
+[2021-05-04T20:03:07.069Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-05-04T20:03:07.072Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T20:03:07.075Z] Building version v-50aa511d34...
+
+[2021-05-04T20:03:07.078Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T20:03:07.082Z] Getting build status for v-b2fddb5e78...
+
+[2021-05-04T20:03:07.084Z] Building version v-b2fddb5e78...
+
+[2021-05-04T20:03:07.086Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T20:03:07.090Z] Getting build status for v-22d311d057...
+
+[2021-05-04T20:03:07.093Z] Building version v-22d311d057...
+
+[2021-05-04T20:03:07.096Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T20:03:07.100Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T20:03:07.102Z] Building version v-ee21b741b7...
+
+[2021-05-04T20:03:07.105Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T20:03:07.108Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T20:03:07.133Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-05-04T20:03:07.139Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T20:03:07.143Z] Building version v-9467fcc674...
+
+[2021-05-04T20:03:07.147Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-05-04T20:03:07.155Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-05-04T20:03:07.159Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-05-04T20:03:07.163Z] Building version v-b2fddb5e78... → Done (took 0.1 sec)
+
+[2021-05-04T20:03:07.171Z] Building version v-22d311d057... → Done (took 0.1 sec)
+
+[2021-05-04T20:03:07.177Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-05-04T20:03:07.186Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T20:03:07.845Z] Getting build status for v-8fc4c9f41a... → Done (took 0.7 sec)
+
+[2021-05-04T20:03:10.918Z] Waiting for resources to be ready...
+
+[2021-05-04T20:03:12.943Z] Resources ready
+
+[2021-05-04T20:03:12.992Z] Deploying version v-9322c4eebe... → Done (took 5.8 sec)
+
+[2021-05-04T20:03:12.998Z] Deploying version v-b2fddb5e78...
+
+[2021-05-04T20:03:14.899Z] Waiting for resources to be ready...
+
+[2021-05-04T20:03:16.984Z] Deployment/zookeeper-deploy: Successfully pulled image "digitalwonderland/zookeeper"
+
+[2021-05-04T20:03:19.526Z] Resources ready
+
+[2021-05-04T20:03:19.601Z] Deploying version v-b2fddb5e78... → Done (took 6.6 sec)
+
+[2021-05-04T20:03:19.611Z] Deploying version v-50aa511d34...
+
+[2021-05-04T20:03:21.927Z] Waiting for resources to be ready...
+
+[2021-05-04T20:03:24.002Z] Resources ready
+
+[2021-05-04T20:03:24.064Z] Deploying version v-50aa511d34... → Done (took 4.5 sec)
+
+[2021-05-04T20:03:24.072Z] Deploying version v-22d311d057...
+
+[2021-05-04T20:03:24.078Z] Deploying version v-9467fcc674...
+
+[2021-05-04T20:03:24.086Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T20:03:26.195Z] Waiting for resources to be ready...
+
+[2021-05-04T20:03:26.292Z] Waiting for resources to be ready...
+
+[2021-05-04T20:03:28.219Z] Resources ready
+
+[2021-05-04T20:03:28.285Z] Deploying version v-8fc4c9f41a... → Done (took 4.2 sec)
+
+[2021-05-04T20:03:28.314Z] Resources ready
+
+[2021-05-04T20:03:28.355Z] Deploying version v-22d311d057... → Done (took 4.3 sec)
+
+[2021-05-04T20:03:40.389Z] Waiting for resources to be ready...
+
+[2021-05-04T20:03:42.732Z] Resources ready
+
+[2021-05-04T20:03:42.739Z] Deploying version v-9467fcc674... → Done (took 18.7 sec)
+
+[2021-05-04T20:03:42.746Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T20:03:43.454Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T20:03:43.473Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=flink-session-cluster --output=json -f -" failed with code 1:
+
+Error from server (InternalError): error when creating "STDIN": Internal error occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s: dial tcp 10.108.93.76:443: connect: connection refused
+
+Error from server (InternalError): error when creating "STDIN": Internal error occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s: dial tcp 10.108.93.76:443: connect: connection refused
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector
+  service=flink-session-cluster --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector
+  service=flink-session-cluster --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error from server (InternalError): error when creating "STDIN": Internal error
+  occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post
+  https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s:
+  dial tcp 10.108.93.76:443: connect: connection refused
+all: >-
+  Error from server (InternalError): error when creating "STDIN": Internal error
+  occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post
+  https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s:
+  dial tcp 10.108.93.76:443: connect: connection refused
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T20:03:43.520Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-session-cluster:
+    type: deploy
+    description: >-
+      deploying service 'flink-session-cluster' (from module
+      'flink-session-cluster')
+    key: deploy.flink-session-cluster
+    name: flink-session-cluster
+    startedAt: 2021-05-04T20:03:42.740Z
+    completedAt: 2021-05-04T20:03:43.454Z
+    batchId: d1db79dc-6125-44d0-a2ec-8c54c70a7cba
+    version: v-ee21b741b7
+
+
+[2021-05-04T20:03:43.530Z] 
+See error.log for detailed error message
+
+[2021-05-04T20:03:58.310Z] Getting status...
+
+[2021-05-04T20:03:58.818Z] Getting status... → Cached
+
+[2021-05-04T20:03:58.821Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T20:03:59.250Z] Deleting services...
+
+[2021-05-04T20:03:59.261Z] Syncing module sources (2 files)...
+
+[2021-05-04T20:03:59.264Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:03:59.268Z] Syncing module sources (2 files)...
+
+[2021-05-04T20:03:59.270Z] Syncing module sources (3 files)...
+
+[2021-05-04T20:03:59.273Z] Syncing module sources (10 files)...
+
+[2021-05-04T20:03:59.275Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:03:59.278Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:03:59.286Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T20:03:59.292Z] Deleting...
+
+[2021-05-04T20:03:59.297Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-05-04T20:03:59.300Z] Syncing module sources (3 files)... → Done (took 0 sec)
+
+[2021-05-04T20:03:59.307Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T20:03:59.309Z] Deleting...
+
+[2021-05-04T20:03:59.313Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T20:03:59.316Z] Deleting...
+
+[2021-05-04T20:03:59.319Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T20:03:59.344Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-05-04T20:03:59.782Z] Not found
+
+[2021-05-04T20:03:59.785Z] Deleting...
+
+[2021-05-04T20:04:00.065Z] Deleting... → Done (took 0.8 sec)
+
+[2021-05-04T20:04:15.777Z] Getting status...
+
+[2021-05-04T20:04:16.348Z] Getting status... → Cached
+
+[2021-05-04T20:04:16.350Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T20:04:16.712Z] Services recorder and inbound-traffic are disabled
+
+[2021-05-04T20:04:16.733Z] ⏳  Processing...
+
+[2021-05-04T20:04:16.739Z] Syncing module sources (2 files)...
+
+[2021-05-04T20:04:16.741Z] Syncing module sources (2 files)...
+
+[2021-05-04T20:04:16.743Z] Syncing module sources (3 files)...
+
+[2021-05-04T20:04:16.747Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:04:16.755Z] Syncing module sources (10 files)...
+
+[2021-05-04T20:04:16.760Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:04:16.762Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:04:16.765Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:04:16.785Z] Syncing module sources (2 files)... → Done (took 0 sec)
+
+[2021-05-04T20:04:16.790Z] Getting build status for v-9322c4eebe...
+
+[2021-05-04T20:04:16.793Z] Building version v-9322c4eebe...
+
+[2021-05-04T20:04:16.797Z] Syncing module sources (2 files)... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.800Z] Getting build status for v-b2fddb5e78...
+
+[2021-05-04T20:04:16.803Z] Building version v-b2fddb5e78...
+
+[2021-05-04T20:04:16.807Z] Syncing module sources (3 files)... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.810Z] Getting build status for v-50aa511d34...
+
+[2021-05-04T20:04:16.814Z] Building version v-50aa511d34...
+
+[2021-05-04T20:04:16.817Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.820Z] Getting build status for v-22d311d057...
+
+[2021-05-04T20:04:16.823Z] Building version v-22d311d057...
+
+[2021-05-04T20:04:16.828Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.831Z] Getting build status for v-ee21b741b7...
+
+[2021-05-04T20:04:16.834Z] Building version v-ee21b741b7...
+
+[2021-05-04T20:04:16.837Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.841Z] Getting build status for v-8fc4c9f41a...
+
+[2021-05-04T20:04:16.846Z] Syncing module sources (1 file)... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.850Z] Getting build status for v-e6f0d17c59...
+
+[2021-05-04T20:04:16.853Z] Building version v-e6f0d17c59...
+
+[2021-05-04T20:04:16.872Z] Syncing module sources (10 files)... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.877Z] Getting build status for v-9467fcc674...
+
+[2021-05-04T20:04:16.881Z] Building version v-9467fcc674...
+
+[2021-05-04T20:04:16.889Z] Building version v-9322c4eebe... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.894Z] Building version v-ee21b741b7... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.898Z] Building version v-22d311d057... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.901Z] Building version v-50aa511d34... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.905Z] Building version v-b2fddb5e78... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.912Z] Building version v-e6f0d17c59... → Done (took 0.1 sec)
+
+[2021-05-04T20:04:16.919Z] Building version v-9467fcc674... → Done (took 0 sec)
+
+[2021-05-04T20:04:18.670Z] Deploying version v-9322c4eebe...
+
+[2021-05-04T20:04:19.910Z] Getting build status for v-8fc4c9f41a... → Done (took 3.1 sec)
+
+[2021-05-04T20:04:21.962Z] Waiting for resources to be ready...
+
+[2021-05-04T20:04:24.076Z] Resources ready
+
+[2021-05-04T20:04:24.424Z] Deploying version v-9322c4eebe... → Done (took 5.8 sec)
+
+[2021-05-04T20:04:24.430Z] Deploying version v-b2fddb5e78...
+
+[2021-05-04T20:04:26.849Z] Waiting for resources to be ready...
+
+[2021-05-04T20:04:28.955Z] Resources ready
+
+[2021-05-04T20:04:29.270Z] Deploying version v-b2fddb5e78... → Done (took 4.8 sec)
+
+[2021-05-04T20:04:29.290Z] → Forward: 127.0.0.1:2181 → zoo1:2181 (client)
+
+[2021-05-04T20:04:29.299Z] → Forward: 127.0.0.1:2888 → zoo1:2888 (follower)
+
+[2021-05-04T20:04:29.305Z] → Forward: 127.0.0.1:3888 → zoo1:3888 (leader)
+
+[2021-05-04T20:04:29.315Z] Deploying version v-50aa511d34...
+
+[2021-05-04T20:04:31.615Z] Waiting for resources to be ready...
+
+[2021-05-04T20:04:33.724Z] Resources ready
+
+[2021-05-04T20:04:33.937Z] Deploying version v-50aa511d34... → Done (took 4.6 sec)
+
+[2021-05-04T20:04:33.951Z] → Forward: 127.0.0.1:31234 → kafka-service:31234 (kafka-port)
+
+[2021-05-04T20:04:33.958Z] → Forward: 127.0.0.1:20777 → udp-recorder-service:20777
+
+[2021-05-04T20:04:33.968Z] Deploying version v-22d311d057...
+
+[2021-05-04T20:04:33.975Z] Deploying version v-9467fcc674...
+
+[2021-05-04T20:04:33.982Z] Deploying version v-8fc4c9f41a...
+
+[2021-05-04T20:04:36.193Z] Waiting for resources to be ready...
+
+[2021-05-04T20:04:36.593Z] Waiting for resources to be ready...
+
+[2021-05-04T20:04:38.309Z] Resources ready
+
+[2021-05-04T20:04:38.516Z] Deploying version v-22d311d057... → Done (took 4.5 sec)
+
+[2021-05-04T20:04:38.526Z] → Forward: 127.0.0.1:53380 → udp-player-service:20777
+
+[2021-05-04T20:04:38.536Z] Deploying version v-e6f0d17c59...
+
+[2021-05-04T20:04:38.702Z] Resources ready
+
+[2021-05-04T20:04:39.242Z] Deploying version v-8fc4c9f41a... → Done (took 5.3 sec)
+
+[2021-05-04T20:04:40.623Z] Waiting for resources to be ready...
+
+[2021-05-04T20:04:42.739Z] Resources ready
+
+[2021-05-04T20:04:42.944Z] Deploying version v-e6f0d17c59... → Done (took 4.4 sec)
+
+[2021-05-04T20:04:51.882Z] Waiting for resources to be ready...
+
+[2021-05-04T20:04:54.936Z] Resources ready
+
+[2021-05-04T20:04:54.947Z] Deploying version v-9467fcc674... → Done (took 21 sec)
+
+[2021-05-04T20:04:54.960Z] → Forward: http://127.0.0.1:8443 → flink-operator-controller-manager-metrics-service:8443 (https)
+
+[2021-05-04T20:04:54.967Z] → Forward: https://127.0.0.1:53454 → flink-operator-webhook-service:443
+
+[2021-05-04T20:04:54.977Z] Deploying version v-ee21b741b7...
+
+[2021-05-04T20:05:02.024Z] Waiting for resources to be ready...
+
+[2021-05-04T20:05:04.152Z] Resources ready
+
+[2021-05-04T20:05:04.368Z] Deploying version v-ee21b741b7... → Done (took 9.4 sec)
+
+[2021-05-04T20:05:04.385Z] ⏳  Processing...
+
+[2021-05-04T20:05:04.492Z] Waiting for code changes...
+
+[2021-05-04T20:05:06.518Z] Waiting for code changes...
+
+[2021-05-04T20:05:25.667Z] ⏳  Processing...
+
+[2021-05-04T20:05:27.705Z] Waiting for code changes...
+
+[2021-05-04T20:07:19.070Z] Getting status...
+
+[2021-05-04T20:07:19.700Z] Getting status... → Cached
+
+[2021-05-04T20:07:19.702Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-05-04T20:07:20.132Z] Syncing module sources (1 file)...
+
+[2021-05-04T20:07:20.135Z] Checking result...
+
+[2021-05-04T20:07:20.150Z] Syncing module sources (1 file)... → Done (took 0 sec)
+
+[2021-05-04T20:07:20.156Z] Getting build status for v-e6f0d17c59...
+
+[2021-05-04T20:07:20.159Z] Building version v-e6f0d17c59...
+
+[2021-05-04T20:07:20.168Z] Building version v-e6f0d17c59... → Done (took 0 sec)
+
+[2021-05-04T20:07:20.962Z] Checking result... → Done
+
+[2021-05-04T20:07:20.965Z] Running...

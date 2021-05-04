@@ -6201,3 +6201,590 @@ Error from server (NotFound): services "flink-operator-controller-manager-metric
 
 Error from server (NotFound): services "flink-operator-controller-manager-metrics-service" not found
 
+
+[2021-05-04T18:36:54.217Z] Task play is disabled for the gke environment. If you're sure you want to run it anyway, please run the command again with the --force flag.
+
+Error Details:
+
+moduleName: player
+taskName: play
+environmentName: gke
+
+
+[2021-05-04T18:44:19.682Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune --selector service=zookeeper --output=json -f -" failed with code 1:
+
+Error from server (NotFound): error when creating "STDIN": namespaces "suitcaselab-default" not found
+Error from server (NotFound): error when creating "STDIN": namespaces "suitcaselab-default" not found
+
+Error from server (NotFound): error when creating "STDIN": namespaces "suitcaselab-default" not found
+Error from server (NotFound): error when creating "STDIN": namespaces "suitcaselab-default" not found
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=zookeeper --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=gke_th-structure-flow-demo_us-east1-b_stream-demo apply --prune
+  --selector service=zookeeper --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error from server (NotFound): error when creating "STDIN": namespaces
+  "suitcaselab-default" not found
+
+  Error from server (NotFound): error when creating "STDIN": namespaces
+  "suitcaselab-default" not found
+all: >-
+  Error from server (NotFound): error when creating "STDIN": namespaces
+  "suitcaselab-default" not found
+
+  Error from server (NotFound): error when creating "STDIN": namespaces
+  "suitcaselab-default" not found
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T18:45:59.473Z] Error deploying player: BackOff - Back-off restarting failed container
+
+━━━ Events ━━━
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1
+Pod player-pod-fdb8d4bdc-djt4p: Scheduled - Successfully assigned suitcaselab-default/player-pod-fdb8d4bdc-djt4p to gke-stream-demo-default-pool-c32f3075-yonw
+Pod player-pod-fdb8d4bdc-djt4p: Pulling - Pulling image "mgunter/python-f1-play"
+Pod player-pod-fdb8d4bdc-djt4p: Pulled - Successfully pulled image "mgunter/python-f1-play"
+Pod player-pod-fdb8d4bdc-djt4p: Created - Created container f1-player
+Pod player-pod-fdb8d4bdc-djt4p: Started - Started container f1-player
+Pod player-pod-fdb8d4bdc-djt4p: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod
+
+****** player-pod-fdb8d4bdc-djt4p ******
+------ f1-player ------usage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]
+                                [-p PORT]
+                                filename
+f1-2020-telemetry-player: error: the following arguments are required: filename
+
+
+Error Details:
+
+serviceName: player
+status:
+  state: unhealthy
+  lastMessage: BackOff - Back-off restarting failed container
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1\e[39m\n\e[94mPod player-pod-fdb8d4bdc-djt4p:\e[39m \e[37mScheduled - Successfully assigned suitcaselab-default/player-pod-fdb8d4bdc-djt4p to gke-stream-demo-default-pool-c32f3075-yonw\e[39m\n\e[94mPod player-pod-fdb8d4bdc-djt4p:\e[39m \e[37mPulling - Pulling image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-fdb8d4bdc-djt4p:\e[39m \e[37mPulled - Successfully pulled image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-fdb8d4bdc-djt4p:\e[39m \e[37mCreated - Created container f1-player\e[39m\n\e[94mPod player-pod-fdb8d4bdc-djt4p:\e[39m \e[37mStarted - Started container f1-player\e[39m\n\e[94mPod player-pod-fdb8d4bdc-djt4p:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod\e[39m\n\e[94m\e[39m\n\e[94m****** player-pod-fdb8d4bdc-djt4p ******\e[39m\n\e[94m\e[39m\e[90m------ f1-player ------\e[39musage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]\n                                [-p PORT]\n                                filename\nf1-2020-telemetry-player: error: the following arguments are required: filename\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: player-pod
+      namespace: suitcaselab-default
+      selfLink: /apis/apps/v1/namespaces/suitcaselab-default/deployments/player-pod
+      uid: 3bad6370-1b52-42be-bcce-9acbb58088fb
+      resourceVersion: '10337495'
+      generation: 1
+      creationTimestamp: '2021-05-04T18:45:53Z'
+      labels:
+        app: f1-player-deploy
+        service: player
+        test: test2
+      annotations:
+        deployment.kubernetes.io/revision: '1'
+        garden.io/hot-reload: 'false'
+        garden.io/manifest-hash: 21d5e98e93b6caf14f0d71c296cb2fcaeafd3dbf2457cd7d42a87fd4b4ebba7a
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/hot-reload":"false","garden.io/manifest-hash":"21d5e98e93b6caf14f0d71c296cb2fcaeafd3dbf2457cd7d42a87fd4b4ebba7a","service":"player"},"labels":{"app":"f1-player-deploy","service":"player","test":"test2"},"name":"player-pod","namespace":"suitcaselab-default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"f1-player"}},"template":{"metadata":{"labels":{"app":"f1-player"}},"spec":{"containers":[{"image":"mgunter/python-f1-play","name":"f1-player","ports":[{"containerPort":20777,"name":"udp-server","protocol":"UDP"}],"volumeMounts":[{"mountPath":"/sensable","name":"data-pv-storage"}]}],"restartPolicy":"Always","volumes":[{"name":"data-pv-storage","persistentVolumeClaim":{"claimName":"data-pv-claim"}}]}}}}
+        service: player
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: f1-player
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: f1-player
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 25%
+          maxSurge: 25%
+      revisionHistoryLimit: 10
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 1
+      replicas: 1
+      updatedReplicas: 1
+      unavailableReplicas: 1
+      conditions: []
+
+
+[2021-05-04T18:47:02.013Z] Error deploying player: BackOff - Back-off restarting failed container
+
+━━━ Events ━━━
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1
+Pod player-pod-6bfc575d89-blgtv: Scheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw
+Pod player-pod-6bfc575d89-blgtv: Pulling - Pulling image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Pulled - Successfully pulled image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Created - Created container f1-player
+Pod player-pod-6bfc575d89-blgtv: Started - Started container f1-player
+Pod player-pod-6bfc575d89-blgtv: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod
+
+****** player-pod-6bfc575d89-blgtv ******
+------ f1-player ------usage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]
+                                [-p PORT]
+                                filename
+
+Replay an F1 2019 session as UDP packets.
+
+positional arguments:
+  filename              SQLite3 file to replay packets from
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR
+                        playback real-time factor (higher is faster,
+                        default=1.0)
+  -d DESTINATION, --destination DESTINATION
+                        destination UDP address; omit to use broadcast
+                        (default)
+  -p PORT, --port PORT  destination UDP port (default: 20777)
+
+
+Error Details:
+
+serviceName: player
+status:
+  state: unhealthy
+  lastMessage: BackOff - Back-off restarting failed container
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mScheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulling - Pulling image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulled - Successfully pulled image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mCreated - Created container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mStarted - Started container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod\e[39m\n\e[94m\e[39m\n\e[94m****** player-pod-6bfc575d89-blgtv ******\e[39m\n\e[94m\e[39m\e[90m------ f1-player ------\e[39musage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]\n                                [-p PORT]\n                                filename\n\nReplay an F1 2019 session as UDP packets.\n\npositional arguments:\n  filename              SQLite3 file to replay packets from\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR\n                        playback real-time factor (higher is faster,\n                        default=1.0)\n  -d DESTINATION, --destination DESTINATION\n                        destination UDP address; omit to use broadcast\n                        (default)\n  -p PORT, --port PORT  destination UDP port (default: 20777)\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: player-pod
+      namespace: suitcaselab-default
+      selfLink: /apis/apps/v1/namespaces/suitcaselab-default/deployments/player-pod
+      uid: 3bad6370-1b52-42be-bcce-9acbb58088fb
+      resourceVersion: '10337958'
+      generation: 2
+      creationTimestamp: '2021-05-04T18:45:53Z'
+      labels:
+        app: f1-player-deploy
+        service: player
+        test: test2
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/hot-reload: 'false'
+        garden.io/manifest-hash: 84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/hot-reload":"false","garden.io/manifest-hash":"84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921","service":"player"},"labels":{"app":"f1-player-deploy","service":"player","test":"test2"},"name":"player-pod","namespace":"suitcaselab-default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"f1-player"}},"template":{"metadata":{"labels":{"app":"f1-player"}},"spec":{"containers":[{"args":["-h"],"image":"mgunter/python-f1-play","name":"f1-player","ports":[{"containerPort":20777,"name":"udp-server","protocol":"UDP"}],"volumeMounts":[{"mountPath":"/sensable","name":"data-pv-storage"}]}],"restartPolicy":"Always","volumes":[{"name":"data-pv-storage","persistentVolumeClaim":{"claimName":"data-pv-claim"}}]}}}}
+        service: player
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: f1-player
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: f1-player
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 25%
+          maxSurge: 25%
+      revisionHistoryLimit: 10
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 2
+      updatedReplicas: 1
+      unavailableReplicas: 2
+      conditions: []
+
+
+[2021-05-04T18:51:38.107Z] Error deploying player: CrashLoopBackOff - back-off 2m40s restarting failed container=f1-player pod=player-pod-6bfc575d89-blgtv_suitcaselab-default(f28e9cb1-406e-4766-9749-1db5301a67ab)
+
+━━━ Events ━━━
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1
+Pod player-pod-6bfc575d89-blgtv: Scheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw
+Pod player-pod-6bfc575d89-blgtv: Pulling - Pulling image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Pulled - Successfully pulled image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Created - Created container f1-player
+Pod player-pod-6bfc575d89-blgtv: Started - Started container f1-player
+Pod player-pod-6bfc575d89-blgtv: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod
+
+****** player-pod-6bfc575d89-blgtv ******
+------ f1-player ------usage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]
+                                [-p PORT]
+                                filename
+
+Replay an F1 2019 session as UDP packets.
+
+positional arguments:
+  filename              SQLite3 file to replay packets from
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR
+                        playback real-time factor (higher is faster,
+                        default=1.0)
+  -d DESTINATION, --destination DESTINATION
+                        destination UDP address; omit to use broadcast
+                        (default)
+  -p PORT, --port PORT  destination UDP port (default: 20777)
+
+
+Error Details:
+
+serviceName: player
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 2m40s restarting failed container=f1-player
+    pod=player-pod-6bfc575d89-blgtv_suitcaselab-default(f28e9cb1-406e-4766-9749-1db5301a67ab)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mScheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulling - Pulling image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulled - Successfully pulled image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mCreated - Created container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mStarted - Started container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod\e[39m\n\e[94m\e[39m\n\e[94m****** player-pod-6bfc575d89-blgtv ******\e[39m\n\e[94m\e[39m\e[90m------ f1-player ------\e[39musage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]\n                                [-p PORT]\n                                filename\n\nReplay an F1 2019 session as UDP packets.\n\npositional arguments:\n  filename              SQLite3 file to replay packets from\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR\n                        playback real-time factor (higher is faster,\n                        default=1.0)\n  -d DESTINATION, --destination DESTINATION\n                        destination UDP address; omit to use broadcast\n                        (default)\n  -p PORT, --port PORT  destination UDP port (default: 20777)\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: player-pod
+      namespace: suitcaselab-default
+      selfLink: /apis/apps/v1/namespaces/suitcaselab-default/deployments/player-pod
+      uid: 3bad6370-1b52-42be-bcce-9acbb58088fb
+      resourceVersion: '10337958'
+      generation: 2
+      creationTimestamp: '2021-05-04T18:45:53Z'
+      labels:
+        app: f1-player-deploy
+        service: player
+        test: test2
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/hot-reload: 'false'
+        garden.io/manifest-hash: 84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/hot-reload":"false","garden.io/manifest-hash":"84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921","service":"player"},"labels":{"app":"f1-player-deploy","service":"player","test":"test2"},"name":"player-pod","namespace":"suitcaselab-default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"f1-player"}},"template":{"metadata":{"labels":{"app":"f1-player"}},"spec":{"containers":[{"args":["-h"],"image":"mgunter/python-f1-play","name":"f1-player","ports":[{"containerPort":20777,"name":"udp-server","protocol":"UDP"}],"volumeMounts":[{"mountPath":"/sensable","name":"data-pv-storage"}]}],"restartPolicy":"Always","volumes":[{"name":"data-pv-storage","persistentVolumeClaim":{"claimName":"data-pv-claim"}}]}}}}
+        service: player
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: f1-player
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: f1-player
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 25%
+          maxSurge: 25%
+      revisionHistoryLimit: 10
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 2
+      updatedReplicas: 1
+      unavailableReplicas: 2
+      conditions: []
+
+
+[2021-05-04T18:53:00.281Z] Error deploying player: CrashLoopBackOff - back-off 5m0s restarting failed container=f1-player pod=player-pod-6bfc575d89-blgtv_suitcaselab-default(f28e9cb1-406e-4766-9749-1db5301a67ab)
+
+━━━ Events ━━━
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1
+Pod player-pod-6bfc575d89-blgtv: Scheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw
+Pod player-pod-6bfc575d89-blgtv: Pulling - Pulling image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Pulled - Successfully pulled image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Created - Created container f1-player
+Pod player-pod-6bfc575d89-blgtv: Started - Started container f1-player
+Pod player-pod-6bfc575d89-blgtv: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod
+
+****** player-pod-6bfc575d89-blgtv ******
+------ f1-player ------usage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]
+                                [-p PORT]
+                                filename
+
+Replay an F1 2019 session as UDP packets.
+
+positional arguments:
+  filename              SQLite3 file to replay packets from
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR
+                        playback real-time factor (higher is faster,
+                        default=1.0)
+  -d DESTINATION, --destination DESTINATION
+                        destination UDP address; omit to use broadcast
+                        (default)
+  -p PORT, --port PORT  destination UDP port (default: 20777)
+
+
+Error Details:
+
+serviceName: player
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 5m0s restarting failed container=f1-player
+    pod=player-pod-6bfc575d89-blgtv_suitcaselab-default(f28e9cb1-406e-4766-9749-1db5301a67ab)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mScheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulling - Pulling image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulled - Successfully pulled image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mCreated - Created container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mStarted - Started container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod\e[39m\n\e[94m\e[39m\n\e[94m****** player-pod-6bfc575d89-blgtv ******\e[39m\n\e[94m\e[39m\e[90m------ f1-player ------\e[39musage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]\n                                [-p PORT]\n                                filename\n\nReplay an F1 2019 session as UDP packets.\n\npositional arguments:\n  filename              SQLite3 file to replay packets from\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR\n                        playback real-time factor (higher is faster,\n                        default=1.0)\n  -d DESTINATION, --destination DESTINATION\n                        destination UDP address; omit to use broadcast\n                        (default)\n  -p PORT, --port PORT  destination UDP port (default: 20777)\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: player-pod
+      namespace: suitcaselab-default
+      selfLink: /apis/apps/v1/namespaces/suitcaselab-default/deployments/player-pod
+      uid: 3bad6370-1b52-42be-bcce-9acbb58088fb
+      resourceVersion: '10337958'
+      generation: 2
+      creationTimestamp: '2021-05-04T18:45:53Z'
+      labels:
+        app: f1-player-deploy
+        service: player
+        test: test2
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/hot-reload: 'false'
+        garden.io/manifest-hash: 84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/hot-reload":"false","garden.io/manifest-hash":"84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921","service":"player"},"labels":{"app":"f1-player-deploy","service":"player","test":"test2"},"name":"player-pod","namespace":"suitcaselab-default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"f1-player"}},"template":{"metadata":{"labels":{"app":"f1-player"}},"spec":{"containers":[{"args":["-h"],"image":"mgunter/python-f1-play","name":"f1-player","ports":[{"containerPort":20777,"name":"udp-server","protocol":"UDP"}],"volumeMounts":[{"mountPath":"/sensable","name":"data-pv-storage"}]}],"restartPolicy":"Always","volumes":[{"name":"data-pv-storage","persistentVolumeClaim":{"claimName":"data-pv-claim"}}]}}}}
+        service: player
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: f1-player
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: f1-player
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 25%
+          maxSurge: 25%
+      revisionHistoryLimit: 10
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 2
+      updatedReplicas: 1
+      unavailableReplicas: 2
+      conditions: []
+
+
+[2021-05-04T18:55:05.201Z] Error deploying player: CrashLoopBackOff - back-off 5m0s restarting failed container=f1-player pod=player-pod-6bfc575d89-blgtv_suitcaselab-default(f28e9cb1-406e-4766-9749-1db5301a67ab)
+
+━━━ Events ━━━
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1
+Deployment player-pod: ScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1
+Pod player-pod-6bfc575d89-blgtv: Scheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw
+Pod player-pod-6bfc575d89-blgtv: Pulling - Pulling image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Pulled - Successfully pulled image "mgunter/python-f1-play"
+Pod player-pod-6bfc575d89-blgtv: Created - Created container f1-player
+Pod player-pod-6bfc575d89-blgtv: Started - Started container f1-player
+Pod player-pod-6bfc575d89-blgtv: BackOff - Back-off restarting failed container
+
+━━━ Pod logs ━━━
+<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>
+$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod
+
+****** player-pod-6bfc575d89-blgtv ******
+------ f1-player ------usage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]
+                                [-p PORT]
+                                filename
+
+Replay an F1 2019 session as UDP packets.
+
+positional arguments:
+  filename              SQLite3 file to replay packets from
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR
+                        playback real-time factor (higher is faster,
+                        default=1.0)
+  -d DESTINATION, --destination DESTINATION
+                        destination UDP address; omit to use broadcast
+                        (default)
+  -p PORT, --port PORT  destination UDP port (default: 20777)
+
+
+Error Details:
+
+serviceName: player
+status:
+  state: unhealthy
+  lastMessage: >-
+    CrashLoopBackOff - back-off 5m0s restarting failed container=f1-player
+    pod=player-pod-6bfc575d89-blgtv_suitcaselab-default(f28e9cb1-406e-4766-9749-1db5301a67ab)
+  logs: "\e[37m━━━ Events ━━━\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-fdb8d4bdc to 1\e[39m\n\e[94mDeployment player-pod:\e[39m \e[37mScalingReplicaSet - Scaled up replica set player-pod-6bfc575d89 to 1\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mScheduled - Successfully assigned suitcaselab-default/player-pod-6bfc575d89-blgtv to gke-stream-demo-default-pool-c32f3075-yonw\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulling - Pulling image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mPulled - Successfully pulled image \"mgunter/python-f1-play\"\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mCreated - Created container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[37mStarted - Started container f1-player\e[39m\n\e[94mPod player-pod-6bfc575d89-blgtv:\e[39m \e[33mBackOff - Back-off restarting failed container\e[39m\e[37m\e[39m\n\e[37m\e[39m\n\e[37m━━━ Pod logs ━━━\e[39m\n\e[37m\e[39m\e[90m<Showing last 30 lines per pod in this Deployment. Run the following command for complete logs>\e[39m\n\e[90m$ kubectl -n suitcaselab-default --context=gke_th-structure-flow-demo_us-east1-b_stream-demo logs deployment/player-pod\e[39m\n\e[94m\e[39m\n\e[94m****** player-pod-6bfc575d89-blgtv ******\e[39m\n\e[94m\e[39m\e[90m------ f1-player ------\e[39musage: f1-2020-telemetry-player [-h] [-r REALTIME_FACTOR] [-d DESTINATION]\n                                [-p PORT]\n                                filename\n\nReplay an F1 2019 session as UDP packets.\n\npositional arguments:\n  filename              SQLite3 file to replay packets from\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -r REALTIME_FACTOR, --rtf REALTIME_FACTOR\n                        playback real-time factor (higher is faster,\n                        default=1.0)\n  -d DESTINATION, --destination DESTINATION\n                        destination UDP address; omit to use broadcast\n                        (default)\n  -p PORT, --port PORT  destination UDP port (default: 20777)\n"
+  resource:
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: player-pod
+      namespace: suitcaselab-default
+      selfLink: /apis/apps/v1/namespaces/suitcaselab-default/deployments/player-pod
+      uid: 3bad6370-1b52-42be-bcce-9acbb58088fb
+      resourceVersion: '10337958'
+      generation: 2
+      creationTimestamp: '2021-05-04T18:45:53Z'
+      labels:
+        app: f1-player-deploy
+        service: player
+        test: test2
+      annotations:
+        deployment.kubernetes.io/revision: '2'
+        garden.io/hot-reload: 'false'
+        garden.io/manifest-hash: 84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921
+        kubectl.kubernetes.io/last-applied-configuration: >
+          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/hot-reload":"false","garden.io/manifest-hash":"84185df5063487a1be1ed0d0a4de85f5028c234f292f544b927747d30866f921","service":"player"},"labels":{"app":"f1-player-deploy","service":"player","test":"test2"},"name":"player-pod","namespace":"suitcaselab-default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"f1-player"}},"template":{"metadata":{"labels":{"app":"f1-player"}},"spec":{"containers":[{"args":["-h"],"image":"mgunter/python-f1-play","name":"f1-player","ports":[{"containerPort":20777,"name":"udp-server","protocol":"UDP"}],"volumeMounts":[{"mountPath":"/sensable","name":"data-pv-storage"}]}],"restartPolicy":"Always","volumes":[{"name":"data-pv-storage","persistentVolumeClaim":{"claimName":"data-pv-claim"}}]}}}}
+        service: player
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: f1-player
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: f1-player
+        spec:
+          volumes: []
+          containers: []
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+          dnsPolicy: ClusterFirst
+          securityContext: {}
+          schedulerName: default-scheduler
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxUnavailable: 25%
+          maxSurge: 25%
+      revisionHistoryLimit: 10
+      progressDeadlineSeconds: 600
+    status:
+      observedGeneration: 2
+      replicas: 2
+      updatedReplicas: 1
+      unavailableReplicas: 2
+      conditions: []
+
+
+[2021-05-04T20:03:43.472Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop apply --prune --selector service=flink-session-cluster --output=json -f -" failed with code 1:
+
+Error from server (InternalError): error when creating "STDIN": Internal error occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s: dial tcp 10.108.93.76:443: connect: connection refused
+
+Error from server (InternalError): error when creating "STDIN": Internal error occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s: dial tcp 10.108.93.76:443: connect: connection refused
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector
+  service=flink-session-cluster --output=json -f -
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop apply --prune --selector
+  service=flink-session-cluster --output=json -f -
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error from server (InternalError): error when creating "STDIN": Internal error
+  occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post
+  https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s:
+  dial tcp 10.108.93.76:443: connect: connection refused
+all: >-
+  Error from server (InternalError): error when creating "STDIN": Internal error
+  occurred: failed calling webhook "mflinkcluster.flinkoperator.k8s.io": Post
+  https://flink-operator-webhook-service.flink-operator-system.svc:443/mutate-flinkoperator-k8s-io-v1beta1-flinkcluster?timeout=30s:
+  dial tcp 10.108.93.76:443: connect: connection refused
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-04T20:03:43.520Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-session-cluster:
+    type: deploy
+    description: >-
+      deploying service 'flink-session-cluster' (from module
+      'flink-session-cluster')
+    key: deploy.flink-session-cluster
+    name: flink-session-cluster
+    startedAt: 2021-05-04T20:03:42.740Z
+    completedAt: 2021-05-04T20:03:43.454Z
+    batchId: d1db79dc-6125-44d0-a2ec-8c54c70a7cba
+    version: v-ee21b741b7
+
