@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: data-pv-claim
 spec:
-  storageClassName: standard
+  storageClassName: hostpath #standard
   accessModes:
     - ReadWriteOnce
   resources:

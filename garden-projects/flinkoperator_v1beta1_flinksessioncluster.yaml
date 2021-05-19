@@ -15,6 +15,7 @@
 apiVersion: flinkoperator.k8s.io/v1beta1
 kind: FlinkCluster
 metadata:
+  namespace: suitcaselab-default #test
   name: flinksessioncluster-sample
 spec:
   image:

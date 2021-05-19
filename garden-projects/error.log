@@ -1,0 +1,151 @@
+
+[2021-05-18T17:33:57.738Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context docker-desktop --namespace suitcaselab-default upgrade flink-operator /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator --install --namespace suitcaselab-default --timeout 300s --values /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml --atomic" failed with code 1:
+
+Error: UPGRADE FAILED: an error occurred while finding last successful release. original upgrade error: could not get information about the resource: Get "https://kubernetes.docker.internal:6443/apis/rbac.authorization.k8s.io/v1/clusterroles/flink-operator-manager-role": dial tcp 127.0.0.1:6443: connect: connection refused: Kubernetes cluster unreachable: Get "https://kubernetes.docker.internal:6443/version?timeout=32s": dial tcp 127.0.0.1:6443: connect: connection refused
+
+Error: UPGRADE FAILED: an error occurred while finding last successful release. original upgrade error: could not get information about the resource: Get "https://kubernetes.docker.internal:6443/apis/rbac.authorization.k8s.io/v1/clusterroles/flink-operator-manager-role": dial tcp 127.0.0.1:6443: connect: connection refused: Kubernetes cluster unreachable: Get "https://kubernetes.docker.internal:6443/version?timeout=32s": dial tcp 127.0.0.1:6443: connect: connection refused
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context docker-desktop --namespace suitcaselab-default upgrade
+  flink-operator
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator
+  --install --namespace suitcaselab-default --timeout 300s --values
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+  --atomic
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context docker-desktop --namespace suitcaselab-default upgrade
+  flink-operator
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator
+  --install --namespace suitcaselab-default --timeout 300s --values
+  /Users/mattgunter/Projects/Stream-test-demo/garden-projects/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+  --atomic
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: UPGRADE FAILED: an error occurred while finding last successful
+  release. original upgrade error: could not get information about the resource:
+  Get
+  "https://kubernetes.docker.internal:6443/apis/rbac.authorization.k8s.io/v1/clusterroles/flink-operator-manager-role":
+  dial tcp 127.0.0.1:6443: connect: connection refused: Kubernetes cluster
+  unreachable: Get
+  "https://kubernetes.docker.internal:6443/version?timeout=32s": dial tcp
+  127.0.0.1:6443: connect: connection refused
+all: >-
+  Error: UPGRADE FAILED: an error occurred while finding last successful
+  release. original upgrade error: could not get information about the resource:
+  Get
+  "https://kubernetes.docker.internal:6443/apis/rbac.authorization.k8s.io/v1/clusterroles/flink-operator-manager-role":
+  dial tcp 127.0.0.1:6443: connect: connection refused: Kubernetes cluster
+  unreachable: Get
+  "https://kubernetes.docker.internal:6443/version?timeout=32s": dial tcp
+  127.0.0.1:6443: connect: connection refused
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-05-18T17:33:59.034Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:00.816Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:01.032Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:02.990Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:05.429Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:07.566Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:08.255Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:10.764Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:11.380Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:13.096Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:15.663Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:16.026Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:18.679Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:19.085Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:20.758Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:21.585Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:24.206Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:26.370Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:28.975Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+
+
+[2021-05-18T17:34:31.008Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+The connection to the server kubernetes.docker.internal:6443 was refused - did you specify the right host or port?
+

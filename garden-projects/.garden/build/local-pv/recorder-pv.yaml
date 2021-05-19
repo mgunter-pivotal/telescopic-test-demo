@@ -7,11 +7,11 @@ metadata:
   annotations:
     pv.beta.kubernetes.io/gid: "1234"
 spec:
-  storageClassName: standard
+  storageClassName: hostpath #standard
   capacity:
     storage: 10Gi
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/tmp/hostpath_pv/"
+    path: "/tmp/hostpath_pv"
     #path: "/mnt/disks/data"

@@ -17,7 +17,7 @@ providers:
     environments: [local, local-record]
     context: docker-desktop
   - name: kubernetes
-    context: gke_th-structure-flow-demo_us-east1-b_stream-demo
+    context: gke_th-structure-flow-demo_us-east1-b_stream-demo2
     environments: [gke]
     deploymentRegistry:
       # The hostname of the registry, e.g. gcr.io for GCR (Google Container Registry)
@@ -51,32 +51,32 @@ providers:
 ---
 kind: Module
 type: kubernetes
-name: player-svc
+name: udp-svcs
 disabled: ${var.record}
-description: Telemetry player, utilizes recording files stored in a volume mount shared w/recorder-pod
-files: [player-svc.yaml]
+description: exposes python udp traffic to the cluster, allowing consumption by the UDP app
+files: [recorder-svc.yaml]
 dependencies: [local-pv, broker]
 ---
-kind: Module
-type: kubernetes
-name: recorder
-disabled: true
-description: Telemetry recorder, makes recordings of UDP packets coming from node port 30000 (or another pod?)
-files: [recorder-pod.yaml,recorder-svc.yaml]
-dependencies: [local-pv, broker]
+# kind: Module
+# type: kubernetes
+# name: recorder
+# disabled: true
+# description: Telemetry recorder, makes recordings of UDP packets coming from node port 30000 (or another pod?)
+# files: [recorder-pod.yaml, recorder-svc.yaml]
+# dependencies: [local-pv, broker]
 ---
 kind: Module
 type: kubernetes
 name: local-pv
 disabled: false
-description: Telemetry recorder, makes recordings of UDP packets coming from node port 30000 (or another pod?)
-files: [recorder-pv.yaml,recorder-pvc.yaml]
+description: persistent volume using storage class 'hostpath'
+files: [recorder-pv.yaml]
 ---
 kind: Module
 type: kubernetes
 name: zookeeper
 description: this is zookeeper for kafka
-files: [zookeeper.yaml,zooservice.yaml]
+files: [zookeeper.yaml,zooservice.yaml,recorder-pvc.yaml]
 dependencies: [local-pv]
 ---
 kind: Module
@@ -120,5 +120,4 @@ disabled: false
 description: a session cluster that can run flink jobs
 dependencies: [flink-operator]
 files: [flinkoperator_v1beta1_flinksessioncluster.yaml]
-
-#kubectl port-forward service/flinksessioncluster-sample-jobmanager 8081:8081 -n flink-cluster-default
+# kubectl port-forward service/flinksessioncluster-sample-jobmanager 8081:8081 -n suitcaselab-default
