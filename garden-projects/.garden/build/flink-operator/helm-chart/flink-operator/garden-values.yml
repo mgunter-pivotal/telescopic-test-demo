@@ -1,5 +1,0 @@
-'operatorImage.name=gcr.io/flink-operator/flink-operator:latest': null
-.garden:
-  moduleName: flink-operator
-  projectName: suitcaselab
-  version: v-e69ad19a01
