@@ -1,0 +1,209 @@
+
+[2021-06-16T14:25:53.344Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x105ada550>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:25:55.731Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1087b4460>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:25:57.911Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10bc8a130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:26:00.019Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10b2141f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:26:02.132Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10d6d2250>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:40:57.183Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x111b8c970>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:40:59.401Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x108b0e2b0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:41:01.514Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1107fb5e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:41:03.676Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10eabe1c0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:41:06.034Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104f40160>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:56:01.470Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x108c209a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:56:03.664Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1096571f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:56:05.776Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1109c68b0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T14:56:07.897Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10f3240d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T15:11:00.756Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10f265550>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T15:11:03.354Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1053337f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T15:11:05.535Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10fa78160>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T15:11:07.717Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1059972e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+
+
+[2021-06-16T15:11:09.823Z] Error starting port forward to broker/kafka-service:31234: Port forward exited with code 1 before establishing connection:
+
+Unable to connect to the server: error executing access token command "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/gcloud config config-helper --format=json": err=exit status 1 output= stderr=ERROR: gcloud crashed (TransportError): HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x108fe3310>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+

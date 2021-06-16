@@ -1,0 +1,33 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  namespace: suitcaselab-default
+  name: downloader-pod
+  labels:
+    app: f1-downloader
+spec:
+  ttlSecondsAfterFinished: 100
+  template:
+    spec:
+      restartPolicy: Never
+      volumes:
+        - name: data-pv-storage
+          persistentVolumeClaim:
+            claimName: data-pv-claim
+      containers:
+        - name: f1-downloader
+          image: busybox
+          command: ["/bin/sh", "-c"]
+          args:
+            - echo starting;
+              cd sensable;
+              ls -ltr;
+              wget http://mgawsfiles.s3.amazonaws.com/f1-recordings/test1.sqlite3;
+              wget http://mgawsfiles.s3.amazonaws.com/f1-recordings/MEG_Bahrain_3lapsGPX.sqlite;
+              wget http://mgawsfiles.s3.amazonaws.com/f1-recordings/RJG_Melbourne_3lapsGPX.sqlite;
+              ls -ltr;
+              echo done;
+          volumeMounts:
+            - mountPath: "/sensable"
+              name: data-pv-storage

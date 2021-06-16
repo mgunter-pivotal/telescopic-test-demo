@@ -1,0 +1,9 @@
+{
+    "versionString": "v-1741a4619d",
+    "dependencyVersions": {},
+    "files": [
+        "/Users/mattgunter/Projects/Stream-test-demo/garden-projects/player-pod-Bahrain.yaml",
+        "/Users/mattgunter/Projects/Stream-test-demo/garden-projects/player-pod-Melbourne.yaml",
+        "/Users/mattgunter/Projects/Stream-test-demo/garden-projects/touch.sh"
+    ]
+}

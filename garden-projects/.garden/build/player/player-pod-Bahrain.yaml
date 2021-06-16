@@ -1,0 +1,27 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: player-pod
+  namespace: suitcaselab-default
+  labels:
+    app: f1-player-deploy
+    test: test2
+    service: udp-app
+spec:
+  restartPolicy: OnFailure
+  volumes:
+    - name: data-pv-storage
+      persistentVolumeClaim:
+        claimName: data-pv-claim
+  containers:
+    - name: f1-player
+      image: mgunter/python-f1-play
+      args: ["MEG_Bahrain_3lapsGPX.sqlite"]
+      ports:
+        - containerPort: 20777
+          protocol: UDP
+          name: "udp-server"
+      volumeMounts:
+        - mountPath: "/sensable"
+          name: data-pv-storage

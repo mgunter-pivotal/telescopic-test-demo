@@ -4,6 +4,7 @@ name: suitcaselab
 variables:
   record: false
   play: false
+  record-name: player-pod-Bahrain.yaml
 environments:
   - name: local
     variables:
@@ -120,4 +121,29 @@ disabled: false
 description: a session cluster that can run flink jobs
 dependencies: [flink-operator]
 files: [flinkoperator_v1beta1_flinksessioncluster.yaml]
+---
+kind: Module
+type: exec
+name: player
+include:
+  - 'player-pod-*.yaml'
+  - 'touch*'
+tasks:
+  - name: play
+    command: [kubectl, apply, -f,"${var.record-name}"]
+  - name: stop-play
+    command: [kubectl, delete, -f,"${var.record-name}"]
+  - name: touch
+    command: [./touch.sh] 
+---    
+kind: Module
+type: exec
+name: downloader
+include:
+  - 'download-pod.yaml'
+tasks:
+  - name: download
+    command: [kubectl, apply, -f,"download-pod.yaml"]
+   # args: [apply, -f, ]
 # kubectl port-forward service/flinksessioncluster-sample-jobmanager 8081:8081 -n suitcaselab-default
+# garden run task play -e gke
