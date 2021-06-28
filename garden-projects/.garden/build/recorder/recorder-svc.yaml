@@ -11,4 +11,4 @@ spec:
     - port: 20777
       protocol: UDP
       targetPort: 20777
-      nodePort: 30000
+      nodePort: 30001

@@ -1,0 +1,1096 @@
+
+[2021-04-27T16:17:51.026Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context docker-desktop --namespace flink-cluster-default install flink-operator /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace flink-cluster-default --output json --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: Namespace "flink-operator-system" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-name" must equal "flink-operator": current value is "flinkoperator"; annotation validation error: key "meta.helm.sh/release-namespace" must equal "flink-cluster-default": current value is "default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: Namespace "flink-operator-system" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-name" must equal "flink-operator": current value is "flinkoperator"; annotation validation error: key "meta.helm.sh/release-namespace" must equal "flink-cluster-default": current value is "default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context docker-desktop --namespace flink-cluster-default install
+  flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context docker-desktop --namespace flink-cluster-default install
+  flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: Namespace "flink-operator-system" in namespace ""
+  exists and cannot be imported into the current release: invalid ownership
+  metadata; annotation validation error: key "meta.helm.sh/release-name" must
+  equal "flink-operator": current value is "flinkoperator"; annotation
+  validation error: key "meta.helm.sh/release-namespace" must equal
+  "flink-cluster-default": current value is "default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: Namespace "flink-operator-system" in namespace ""
+  exists and cannot be imported into the current release: invalid ownership
+  metadata; annotation validation error: key "meta.helm.sh/release-name" must
+  equal "flink-operator": current value is "flinkoperator"; annotation
+  validation error: key "meta.helm.sh/release-namespace" must equal
+  "flink-cluster-default": current value is "default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T16:17:51.038Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-27T16:17:48.589Z
+    completedAt: 2021-04-27T16:17:51.020Z
+    batchId: 94d09161-bc74-44c3-94c5-2efc29943e6a
+    version: v-c20252047b
+
+
+[2021-04-27T16:20:30.586Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context docker-desktop --namespace flink-cluster-default install flink-operator /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace flink-cluster-default --output json --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: ClusterRole "flink-operator-manager-role" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-name" must equal "flink-operator": current value is "flinkoperator"; annotation validation error: key "meta.helm.sh/release-namespace" must equal "flink-cluster-default": current value is "default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: ClusterRole "flink-operator-manager-role" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-name" must equal "flink-operator": current value is "flinkoperator"; annotation validation error: key "meta.helm.sh/release-namespace" must equal "flink-cluster-default": current value is "default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context docker-desktop --namespace flink-cluster-default install
+  flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context docker-desktop --namespace flink-cluster-default install
+  flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: ClusterRole "flink-operator-manager-role" in namespace
+  "" exists and cannot be imported into the current release: invalid ownership
+  metadata; annotation validation error: key "meta.helm.sh/release-name" must
+  equal "flink-operator": current value is "flinkoperator"; annotation
+  validation error: key "meta.helm.sh/release-namespace" must equal
+  "flink-cluster-default": current value is "default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: ClusterRole "flink-operator-manager-role" in namespace
+  "" exists and cannot be imported into the current release: invalid ownership
+  metadata; annotation validation error: key "meta.helm.sh/release-name" must
+  equal "flink-operator": current value is "flinkoperator"; annotation
+  validation error: key "meta.helm.sh/release-namespace" must equal
+  "flink-cluster-default": current value is "default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T16:20:30.596Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-27T16:20:28.431Z
+    completedAt: 2021-04-27T16:20:30.579Z
+    batchId: 83a8998f-5379-4284-804b-346fb0fc9d35
+    version: v-c20252047b
+
+
+[2021-04-27T17:19:14.580Z] local-kubernetes — an error occurred when configuring environment:
+Error: Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context docker-desktop --namespace garden-system upgrade garden-nginx /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx --dry-run --namespace garden-system --output json --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx/garden-values.yml" failed with code 1:
+
+Error: UPGRADE FAILED: "garden-nginx" has no deployed releases
+
+Error: UPGRADE FAILED: "garden-nginx" has no deployed releases
+
+Error Details:
+
+
+results:
+  stage-build.default-backend:
+    type: stage-build
+    key: stage-build.default-backend
+    name: default-backend
+    description: staging build for default-backend
+    completedAt: 2021-04-27T17:19:13.254Z
+    batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+    output: {}
+    dependencyResults: {}
+    version: v-994233bf48
+    startedAt: 2021-04-27T17:19:13.247Z
+  build.default-backend:
+    type: build
+    key: build.default-backend
+    name: default-backend
+    description: building default-backend
+    completedAt: 2021-04-27T17:19:13.265Z
+    batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+    output:
+      fresh: false
+    dependencyResults:
+      stage-build.default-backend:
+        type: stage-build
+        key: stage-build.default-backend
+        name: default-backend
+        description: staging build for default-backend
+        completedAt: 2021-04-27T17:19:13.254Z
+        batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+        output: {}
+        dependencyResults: {}
+        version: v-994233bf48
+        startedAt: 2021-04-27T17:19:13.247Z
+    version: v-994233bf48
+    startedAt: 2021-04-27T17:19:13.254Z
+  stage-build.ingress-controller:
+    type: stage-build
+    key: stage-build.ingress-controller
+    name: ingress-controller
+    description: staging build for ingress-controller
+    completedAt: 2021-04-27T17:19:13.266Z
+    batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+    output: {}
+    dependencyResults: {}
+    version: v-8ea621d34d
+    startedAt: 2021-04-27T17:19:13.247Z
+  get-service-status.default-backend:
+    type: get-service-status
+    key: get-service-status.default-backend
+    name: default-backend
+    description: >-
+      getting status for service 'default-backend' (from module
+      'default-backend')
+    completedAt: 2021-04-27T17:19:13.293Z
+    batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+    output:
+      forwardablePorts: []
+      ingresses: []
+      state: ready
+      version: v-994233bf48
+      detail:
+        remoteResources: []
+        workload:
+          kind: Deployment
+          apiVersion: apps/v1
+          metadata:
+            name: default-backend
+            annotations:
+              garden.io/configured.replicas: '1'
+              garden.io/generated: 'true'
+              garden.io/version: v-994233bf48
+            namespace: garden-system
+            labels:
+              module: default-backend
+              service: default-backend
+          spec:
+            selector:
+              matchLabels:
+                service: default-backend
+            template:
+              metadata:
+                labels:
+                  module: default-backend
+                  service: default-backend
+              spec:
+                containers: []
+                restartPolicy: Always
+                terminationGracePeriodSeconds: 5
+                dnsPolicy: ClusterFirst
+            replicas: 1
+            strategy:
+              type: RollingUpdate
+              rollingUpdate:
+                maxUnavailable: 1
+                maxSurge: 1
+            revisionHistoryLimit: 3
+      outputs: {}
+    dependencyResults: {}
+    version: v-994233bf48
+    startedAt: 2021-04-27T17:19:13.245Z
+  deploy.default-backend:
+    type: deploy
+    key: deploy.default-backend
+    name: default-backend
+    description: deploying service 'default-backend' (from module 'default-backend')
+    completedAt: 2021-04-27T17:19:13.301Z
+    batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+    output:
+      forwardablePorts: []
+      ingresses: []
+      state: ready
+      version: v-994233bf48
+      detail:
+        remoteResources: []
+        workload:
+          kind: Deployment
+          apiVersion: apps/v1
+          metadata:
+            name: default-backend
+            annotations:
+              garden.io/configured.replicas: '1'
+              garden.io/generated: 'true'
+              garden.io/version: v-994233bf48
+            namespace: garden-system
+            labels:
+              module: default-backend
+              service: default-backend
+          spec:
+            selector:
+              matchLabels:
+                service: default-backend
+            template:
+              metadata:
+                labels:
+                  module: default-backend
+                  service: default-backend
+              spec:
+                containers: []
+                restartPolicy: Always
+                terminationGracePeriodSeconds: 5
+                dnsPolicy: ClusterFirst
+            replicas: 1
+            strategy:
+              type: RollingUpdate
+              rollingUpdate:
+                maxUnavailable: 1
+                maxSurge: 1
+            revisionHistoryLimit: 3
+      outputs: {}
+    dependencyResults:
+      get-service-status.default-backend:
+        type: get-service-status
+        key: get-service-status.default-backend
+        name: default-backend
+        description: >-
+          getting status for service 'default-backend' (from module
+          'default-backend')
+        completedAt: 2021-04-27T17:19:13.293Z
+        batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+        output:
+          forwardablePorts: []
+          ingresses: []
+          state: ready
+          version: v-994233bf48
+          detail:
+            remoteResources: []
+            workload:
+              kind: Deployment
+              apiVersion: apps/v1
+              metadata:
+                name: default-backend
+                annotations:
+                  garden.io/configured.replicas: '1'
+                  garden.io/generated: 'true'
+                  garden.io/version: v-994233bf48
+                namespace: garden-system
+                labels:
+                  module: default-backend
+                  service: default-backend
+              spec:
+                selector:
+                  matchLabels:
+                    service: default-backend
+                template:
+                  metadata:
+                    labels:
+                      module: default-backend
+                      service: default-backend
+                  spec:
+                    containers: []
+                    restartPolicy: Always
+                    terminationGracePeriodSeconds: 5
+                    dnsPolicy: ClusterFirst
+                replicas: 1
+                strategy:
+                  type: RollingUpdate
+                  rollingUpdate:
+                    maxUnavailable: 1
+                    maxSurge: 1
+                revisionHistoryLimit: 3
+          outputs: {}
+        dependencyResults: {}
+        version: v-994233bf48
+        startedAt: 2021-04-27T17:19:13.245Z
+      build.default-backend:
+        type: build
+        key: build.default-backend
+        name: default-backend
+        description: building default-backend
+        completedAt: 2021-04-27T17:19:13.265Z
+        batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+        output:
+          fresh: false
+        dependencyResults:
+          stage-build.default-backend:
+            type: stage-build
+            key: stage-build.default-backend
+            name: default-backend
+            description: staging build for default-backend
+            completedAt: 2021-04-27T17:19:13.254Z
+            batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+            output: {}
+            dependencyResults: {}
+            version: v-994233bf48
+            startedAt: 2021-04-27T17:19:13.247Z
+        version: v-994233bf48
+        startedAt: 2021-04-27T17:19:13.254Z
+    version: v-994233bf48
+    startedAt: 2021-04-27T17:19:13.296Z
+  get-service-status.ingress-controller:
+    type: get-service-status
+    key: get-service-status.ingress-controller
+    name: ingress-controller
+    description: >-
+      getting status for service 'ingress-controller' (from module
+      'ingress-controller')
+    completedAt: 2021-04-27T17:19:13.806Z
+    batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+    output:
+      forwardablePorts: []
+      state: unknown
+      detail: {}
+      outputs: {}
+    dependencyResults:
+      get-service-status.default-backend:
+        type: get-service-status
+        key: get-service-status.default-backend
+        name: default-backend
+        description: >-
+          getting status for service 'default-backend' (from module
+          'default-backend')
+        completedAt: 2021-04-27T17:19:13.293Z
+        batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+        output:
+          forwardablePorts: []
+          ingresses: []
+          state: ready
+          version: v-994233bf48
+          detail:
+            remoteResources: []
+            workload:
+              kind: Deployment
+              apiVersion: apps/v1
+              metadata:
+                name: default-backend
+                annotations:
+                  garden.io/configured.replicas: '1'
+                  garden.io/generated: 'true'
+                  garden.io/version: v-994233bf48
+                namespace: garden-system
+                labels:
+                  module: default-backend
+                  service: default-backend
+              spec:
+                selector:
+                  matchLabels:
+                    service: default-backend
+                template:
+                  metadata:
+                    labels:
+                      module: default-backend
+                      service: default-backend
+                  spec:
+                    containers: []
+                    restartPolicy: Always
+                    terminationGracePeriodSeconds: 5
+                    dnsPolicy: ClusterFirst
+                replicas: 1
+                strategy:
+                  type: RollingUpdate
+                  rollingUpdate:
+                    maxUnavailable: 1
+                    maxSurge: 1
+                revisionHistoryLimit: 3
+          outputs: {}
+        dependencyResults: {}
+        version: v-994233bf48
+        startedAt: 2021-04-27T17:19:13.245Z
+    version: v-8ea621d34d
+    startedAt: 2021-04-27T17:19:13.294Z
+  build.ingress-controller:
+    type: build
+    key: build.ingress-controller
+    name: ingress-controller
+    description: building ingress-controller
+    completedAt: 2021-04-27T17:19:14.403Z
+    batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+    output:
+      fresh: true
+    dependencyResults:
+      stage-build.ingress-controller:
+        type: stage-build
+        key: stage-build.ingress-controller
+        name: ingress-controller
+        description: staging build for ingress-controller
+        completedAt: 2021-04-27T17:19:13.266Z
+        batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+        output: {}
+        dependencyResults: {}
+        version: v-8ea621d34d
+        startedAt: 2021-04-27T17:19:13.247Z
+    version: v-8ea621d34d
+    startedAt: 2021-04-27T17:19:13.267Z
+  deploy.ingress-controller:
+    type: deploy
+    description: deploying service 'ingress-controller' (from module 'ingress-controller')
+    key: deploy.ingress-controller
+    name: ingress-controller
+    startedAt: 2021-04-27T17:19:14.403Z
+    completedAt: 2021-04-27T17:19:14.555Z
+    batchId: 856e2b45-67c4-4a96-b78d-d9a590a20cb2
+    version: v-8ea621d34d
+
+
+[2021-04-27T17:19:14.597Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-04-27T17:19:10.585Z
+    batchId: 7c92512a-a366-472d-b9d0-feba4fd51a04
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.19
+    startedAt: 2021-04-27T17:19:10.560Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-04-27T17:19:10.586Z
+    batchId: a2a6c4f6-9671-444c-aa18-5e2317f85b9c
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.19
+    startedAt: 2021-04-27T17:19:10.561Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-04-27T17:19:10.586Z
+    completedAt: 2021-04-27T17:19:14.562Z
+    batchId: a2a6c4f6-9671-444c-aa18-5e2317f85b9c
+    version: 0.12.19
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-04-27T17:19:10.586Z
+    batchId: 98ed6562-e763-49e6-be1f-7e6bb50af15c
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version
+      status:
+        ready: true
+        outputs: {}
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.19
+    startedAt: 2021-04-27T17:19:10.562Z
+messages: []
+
+
+[2021-04-27T17:25:04.854Z] Command "/Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl --context=docker-desktop --namespace=flink-cluster-default delete --wait=true --ignore-not-found=true Namespace/flink-operator-system ServiceAccount/flink-operator ConfigMap/cert-configmap ConfigMap/webhook-configmap CustomResourceDefinition/flinkclusters.flinkoperator.k8s.io ClusterRole/flink-operator-manager-role ClusterRole/flink-operator-proxy-role ClusterRoleBinding/flink-operator-manager-rolebinding ClusterRoleBinding/flink-operator-proxy-rolebinding Role/flink-operator-leader-election-role RoleBinding/flink-operator-leader-election-rolebinding Service/flink-operator-controller-manager-metrics-service Service/flink-operator-webhook-service Deployment/flink-operator-controller-manager Job/cert-job MutatingWebhookConfiguration/flink-operator-mutating-webhook-configuration ValidatingWebhookConfiguration/flink-operator-validating-webhook-configuration" failed with code 1:
+
+warning: deleting cluster-scoped resources, not scoped to the provided namespace
+Error from server (Conflict): Operation cannot be fulfilled on namespaces "flink-operator-system": The system is ensuring all content is removed from this namespace.  Upon completion, this namespace will automatically be purged by the system.
+
+warning: deleting cluster-scoped resources, not scoped to the provided namespace
+Error from server (Conflict): Operation cannot be fulfilled on namespaces "flink-operator-system": The system is ensuring all content is removed from this namespace.  Upon completion, this namespace will automatically be purged by the system.
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop --namespace=flink-cluster-default delete --wait=true
+  --ignore-not-found=true Namespace/flink-operator-system
+  ServiceAccount/flink-operator ConfigMap/cert-configmap
+  ConfigMap/webhook-configmap
+  CustomResourceDefinition/flinkclusters.flinkoperator.k8s.io
+  ClusterRole/flink-operator-manager-role ClusterRole/flink-operator-proxy-role
+  ClusterRoleBinding/flink-operator-manager-rolebinding
+  ClusterRoleBinding/flink-operator-proxy-rolebinding
+  Role/flink-operator-leader-election-role
+  RoleBinding/flink-operator-leader-election-rolebinding
+  Service/flink-operator-controller-manager-metrics-service
+  Service/flink-operator-webhook-service
+  Deployment/flink-operator-controller-manager Job/cert-job
+  MutatingWebhookConfiguration/flink-operator-mutating-webhook-configuration
+  ValidatingWebhookConfiguration/flink-operator-validating-webhook-configuration
+command: >-
+  /Users/mattgunter/.garden/tools/kubectl/fd63e19492c91ef3/kubectl
+  --context=docker-desktop --namespace=flink-cluster-default delete --wait=true
+  --ignore-not-found=true Namespace/flink-operator-system
+  ServiceAccount/flink-operator ConfigMap/cert-configmap
+  ConfigMap/webhook-configmap
+  CustomResourceDefinition/flinkclusters.flinkoperator.k8s.io
+  ClusterRole/flink-operator-manager-role ClusterRole/flink-operator-proxy-role
+  ClusterRoleBinding/flink-operator-manager-rolebinding
+  ClusterRoleBinding/flink-operator-proxy-rolebinding
+  Role/flink-operator-leader-election-role
+  RoleBinding/flink-operator-leader-election-rolebinding
+  Service/flink-operator-controller-manager-metrics-service
+  Service/flink-operator-webhook-service
+  Deployment/flink-operator-controller-manager Job/cert-job
+  MutatingWebhookConfiguration/flink-operator-mutating-webhook-configuration
+  ValidatingWebhookConfiguration/flink-operator-validating-webhook-configuration
+exitCode: 1
+stdout: ''
+stderr: >-
+  warning: deleting cluster-scoped resources, not scoped to the provided
+  namespace
+
+  Error from server (Conflict): Operation cannot be fulfilled on namespaces
+  "flink-operator-system": The system is ensuring all content is removed from
+  this namespace.  Upon completion, this namespace will automatically be purged
+  by the system.
+all: >-
+  warning: deleting cluster-scoped resources, not scoped to the provided
+  namespace
+
+  Error from server (Conflict): Operation cannot be fulfilled on namespaces
+  "flink-operator-system": The system is ensuring all content is removed from
+  this namespace.  Upon completion, this namespace will automatically be purged
+  by the system.
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T17:25:04.861Z] 1 delete task(s) failed!
+
+Error Details:
+
+results:
+  stage-build.flink-session-cluster:
+    type: stage-build
+    key: stage-build.flink-session-cluster
+    name: flink-session-cluster
+    description: staging build for flink-session-cluster
+    completedAt: 2021-04-27T17:25:00.665Z
+    batchId: 0e68566d-756d-4189-b5fd-7cb86c00b82a
+    output: {}
+    dependencyResults: {}
+    version: v-ee21b741b7
+    startedAt: 2021-04-27T17:25:00.651Z
+  stage-build.flink-operator:
+    type: stage-build
+    key: stage-build.flink-operator
+    name: flink-operator
+    description: staging build for flink-operator
+    completedAt: 2021-04-27T17:25:00.673Z
+    batchId: 0e68566d-756d-4189-b5fd-7cb86c00b82a
+    output: {}
+    dependencyResults: {}
+    version: v-c20252047b
+    startedAt: 2021-04-27T17:25:00.656Z
+  delete-service.flink-session-cluster:
+    type: delete-service
+    key: delete-service.flink-session-cluster
+    name: flink-session-cluster
+    description: >-
+      deleting service 'flink-session-cluster' (from module
+      'flink-session-cluster')
+    completedAt: 2021-04-27T17:25:01.108Z
+    batchId: 0e68566d-756d-4189-b5fd-7cb86c00b82a
+    output:
+      state: missing
+      detail:
+        remoteResources: []
+      forwardablePorts: []
+      outputs: {}
+    dependencyResults:
+      stage-build.flink-session-cluster:
+        type: stage-build
+        key: stage-build.flink-session-cluster
+        name: flink-session-cluster
+        description: staging build for flink-session-cluster
+        completedAt: 2021-04-27T17:25:00.665Z
+        batchId: 0e68566d-756d-4189-b5fd-7cb86c00b82a
+        output: {}
+        dependencyResults: {}
+        version: v-ee21b741b7
+        startedAt: 2021-04-27T17:25:00.651Z
+    version: v-ee21b741b7
+    startedAt: 2021-04-27T17:25:00.665Z
+  delete-service.flink-operator:
+    type: delete-service
+    description: deleting service 'flink-operator' (from module 'flink-operator')
+    key: delete-service.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-27T17:25:01.108Z
+    completedAt: 2021-04-27T17:25:04.848Z
+    batchId: 0e68566d-756d-4189-b5fd-7cb86c00b82a
+    version: v-c20252047b
+
+
+[2021-04-27T17:37:25.282Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace flink-cluster-default install flink-operator /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace flink-cluster-default --output json --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: CustomResourceDefinition "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "flink-operator"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: CustomResourceDefinition "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "flink-operator"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  flink-cluster-default install flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  flink-cluster-default install flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: CustomResourceDefinition
+  "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be
+  imported into the current release: invalid ownership metadata; label
+  validation error: missing key "app.kubernetes.io/managed-by": must be set to
+  "Helm"; annotation validation error: missing key "meta.helm.sh/release-name":
+  must be set to "flink-operator"; annotation validation error: missing key
+  "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: CustomResourceDefinition
+  "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be
+  imported into the current release: invalid ownership metadata; label
+  validation error: missing key "app.kubernetes.io/managed-by": must be set to
+  "Helm"; annotation validation error: missing key "meta.helm.sh/release-name":
+  must be set to "flink-operator"; annotation validation error: missing key
+  "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T17:37:25.293Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-27T17:37:21.981Z
+    completedAt: 2021-04-27T17:37:25.275Z
+    batchId: 77535eda-ad49-480d-8b85-525be675c502
+    version: v-c20252047b
+
+
+[2021-04-27T17:41:36.601Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace flink-cluster-default install flink-operator /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace flink-cluster-default --output json --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: CustomResourceDefinition "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "flink-operator"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: CustomResourceDefinition "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "flink-operator"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  flink-cluster-default install flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  flink-cluster-default install flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: CustomResourceDefinition
+  "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be
+  imported into the current release: invalid ownership metadata; label
+  validation error: missing key "app.kubernetes.io/managed-by": must be set to
+  "Helm"; annotation validation error: missing key "meta.helm.sh/release-name":
+  must be set to "flink-operator"; annotation validation error: missing key
+  "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: CustomResourceDefinition
+  "flinkclusters.flinkoperator.k8s.io" in namespace "" exists and cannot be
+  imported into the current release: invalid ownership metadata; label
+  validation error: missing key "app.kubernetes.io/managed-by": must be set to
+  "Helm"; annotation validation error: missing key "meta.helm.sh/release-name":
+  must be set to "flink-operator"; annotation validation error: missing key
+  "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T17:41:36.613Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-27T17:41:33.365Z
+    completedAt: 2021-04-27T17:41:36.594Z
+    batchId: eecb45e5-455c-4392-a2a4-38f7339c9da4
+    version: v-c20252047b
+
+
+[2021-04-27T17:42:59.538Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace flink-cluster-default install flink-operator /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace flink-cluster-default --output json --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: ClusterRole "flink-operator-manager-role" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "flink-operator"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: ClusterRole "flink-operator-manager-role" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "flink-operator"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  flink-cluster-default install flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  flink-cluster-default install flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: ClusterRole "flink-operator-manager-role" in namespace
+  "" exists and cannot be imported into the current release: invalid ownership
+  metadata; label validation error: missing key "app.kubernetes.io/managed-by":
+  must be set to "Helm"; annotation validation error: missing key
+  "meta.helm.sh/release-name": must be set to "flink-operator"; annotation
+  validation error: missing key "meta.helm.sh/release-namespace": must be set to
+  "flink-cluster-default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: ClusterRole "flink-operator-manager-role" in namespace
+  "" exists and cannot be imported into the current release: invalid ownership
+  metadata; label validation error: missing key "app.kubernetes.io/managed-by":
+  must be set to "Helm"; annotation validation error: missing key
+  "meta.helm.sh/release-name": must be set to "flink-operator"; annotation
+  validation error: missing key "meta.helm.sh/release-namespace": must be set to
+  "flink-cluster-default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T17:42:59.548Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-27T17:42:56.348Z
+    completedAt: 2021-04-27T17:42:59.531Z
+    batchId: 73529cb3-8d9e-4132-b0e0-673e0c50b3d1
+    version: v-c20252047b
+
+
+[2021-04-27T17:44:08.592Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace flink-cluster-default install flink-operator /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace flink-cluster-default --output json --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: ClusterRoleBinding "flink-operator-manager-rolebinding" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "flink-operator"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: ClusterRoleBinding "flink-operator-manager-rolebinding" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "flink-operator"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  flink-cluster-default install flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  flink-cluster-default install flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: ClusterRoleBinding "flink-operator-manager-rolebinding"
+  in namespace "" exists and cannot be imported into the current release:
+  invalid ownership metadata; label validation error: missing key
+  "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation
+  error: missing key "meta.helm.sh/release-name": must be set to
+  "flink-operator"; annotation validation error: missing key
+  "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: ClusterRoleBinding "flink-operator-manager-rolebinding"
+  in namespace "" exists and cannot be imported into the current release:
+  invalid ownership metadata; label validation error: missing key
+  "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation
+  error: missing key "meta.helm.sh/release-name": must be set to
+  "flink-operator"; annotation validation error: missing key
+  "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T17:44:08.603Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-27T17:44:05.279Z
+    completedAt: 2021-04-27T17:44:08.585Z
+    batchId: 9bde9a8a-9a01-4c6e-8a6c-e821fd9b4e60
+    version: v-c20252047b
+
+
+[2021-04-27T17:45:27.768Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace flink-cluster-default install flink-operator /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace flink-cluster-default --output json --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: MutatingWebhookConfiguration "flink-operator-mutating-webhook-configuration" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "flink-operator"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: MutatingWebhookConfiguration "flink-operator-mutating-webhook-configuration" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "flink-operator"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  flink-cluster-default install flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  flink-cluster-default install flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: MutatingWebhookConfiguration
+  "flink-operator-mutating-webhook-configuration" in namespace "" exists and
+  cannot be imported into the current release: invalid ownership metadata; label
+  validation error: missing key "app.kubernetes.io/managed-by": must be set to
+  "Helm"; annotation validation error: missing key "meta.helm.sh/release-name":
+  must be set to "flink-operator"; annotation validation error: missing key
+  "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: MutatingWebhookConfiguration
+  "flink-operator-mutating-webhook-configuration" in namespace "" exists and
+  cannot be imported into the current release: invalid ownership metadata; label
+  validation error: missing key "app.kubernetes.io/managed-by": must be set to
+  "Helm"; annotation validation error: missing key "meta.helm.sh/release-name":
+  must be set to "flink-operator"; annotation validation error: missing key
+  "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T17:45:27.779Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-27T17:45:24.317Z
+    completedAt: 2021-04-27T17:45:27.762Z
+    batchId: 3629db30-eb6e-4186-87f8-ed2d998a5486
+    version: v-c20252047b
+
+
+[2021-04-27T17:46:08.165Z] Command "/Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace flink-cluster-default install flink-operator /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator --dry-run --namespace flink-cluster-default --output json --timeout 300s --values /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml" failed with code 1:
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: ValidatingWebhookConfiguration "flink-operator-validating-webhook-configuration" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "flink-operator"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+
+Error: rendered manifests contain a resource that already exists. Unable to continue with install: ValidatingWebhookConfiguration "flink-operator-validating-webhook-configuration" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "flink-operator"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+
+Error Details:
+
+shortMessage: >-
+  Command failed with exit code 1:
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  flink-cluster-default install flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+command: >-
+  /Users/mattgunter/.garden/tools/helm/4d13a6c3bb98b810/darwin-amd64/helm
+  --kube-context gke_th-structure-flow-demo_us-east1-b_stream-demo --namespace
+  flink-cluster-default install flink-operator
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator
+  --dry-run --namespace flink-cluster-default --output json --timeout 300s
+  --values
+  /Users/mattgunter/Projects/flink-on-k8s-operator/garden-version/.garden/build/flink-operator/helm-chart/flink-operator/garden-values.yml
+exitCode: 1
+stdout: ''
+stderr: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: ValidatingWebhookConfiguration
+  "flink-operator-validating-webhook-configuration" in namespace "" exists and
+  cannot be imported into the current release: invalid ownership metadata; label
+  validation error: missing key "app.kubernetes.io/managed-by": must be set to
+  "Helm"; annotation validation error: missing key "meta.helm.sh/release-name":
+  must be set to "flink-operator"; annotation validation error: missing key
+  "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+all: >-
+  Error: rendered manifests contain a resource that already exists. Unable to
+  continue with install: ValidatingWebhookConfiguration
+  "flink-operator-validating-webhook-configuration" in namespace "" exists and
+  cannot be imported into the current release: invalid ownership metadata; label
+  validation error: missing key "app.kubernetes.io/managed-by": must be set to
+  "Helm"; annotation validation error: missing key "meta.helm.sh/release-name":
+  must be set to "flink-operator"; annotation validation error: missing key
+  "meta.helm.sh/release-namespace": must be set to "flink-cluster-default"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-04-27T17:46:08.175Z] 1 deploy task(s) failed!
+
+Error Details:
+
+results:
+  deploy.flink-operator:
+    type: deploy
+    description: deploying service 'flink-operator' (from module 'flink-operator')
+    key: deploy.flink-operator
+    name: flink-operator
+    startedAt: 2021-04-27T17:46:04.454Z
+    completedAt: 2021-04-27T17:46:08.158Z
+    batchId: 5c226d5b-db18-40cd-925a-1a528de83a5c
+    version: v-c20252047b
+

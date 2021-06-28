@@ -18,7 +18,7 @@ providers:
     environments: [local, local-record]
     context: docker-desktop
   - name: kubernetes
-    context: gke_th-structure-flow-demo_us-east1-b_stream-demo2
+    context: gke_th-structure-flow-demo_us-central1-c_cluster-2
     environments: [gke]
     deploymentRegistry:
       # The hostname of the registry, e.g. gcr.io for GCR (Google Container Registry)
@@ -58,13 +58,13 @@ description: exposes python udp traffic to the cluster, allowing consumption by 
 files: [recorder-svc.yaml]
 dependencies: [local-pv, broker]
 ---
-# kind: Module
-# type: kubernetes
-# name: recorder
-# disabled: true
-# description: Telemetry recorder, makes recordings of UDP packets coming from node port 30000 (or another pod?)
-# files: [recorder-pod.yaml, recorder-svc.yaml]
-# dependencies: [local-pv, broker]
+kind: Module
+type: kubernetes
+name: recorder
+disabled: false
+description: Telemetry recorder, makes recordings of UDP packets coming from node port 30000 (or another pod?)
+files: [recorder-pod.yaml, recorder-svc.yaml]
+dependencies: [local-pv, broker]
 ---
 kind: Module
 type: kubernetes
@@ -110,14 +110,14 @@ name: flink-operator
 chart: flink-operator
 chartPath: helm-chart/flink-operator
 values: {operatorImage.name=gcr.io/flink-operator/flink-operator:latest}
-disabled: false
+disabled: true
 description: Operator for Flink Session Cluster via CRD
 dependencies: [broker]
 ---
 kind: Module
 type: kubernetes
 name: flink-session-cluster
-disabled: false
+disabled: true
 description: a session cluster that can run flink jobs
 dependencies: [flink-operator]
 files: [flinkoperator_v1beta1_flinksessioncluster.yaml]

@@ -1,0 +1,44 @@
+---
+kind: Project
+name: flink-cluster
+environments:
+  - name: local
+  - name: gke
+providers:
+  - name: local-kubernetes
+    environments: [local]
+    context: docker-desktop
+  - name: kubernetes
+    context: gke_th-structure-flow-demo_us-east1-b_stream-demo
+    environments: [gke]
+    deploymentRegistry:
+      # The hostname of the registry, e.g. gcr.io for GCR (Google Container Registry)
+      hostname: gcr.io
+      # Namespace (aka project ID) to use in the registry for this project.
+      # For GKE/GCR, use the project ID where your cluster is.
+      namespace: th-structure-flow-demo
+    imagePullSecrets:
+      # The name of the secret you stored using `kubectl create secret docker-registry`
+    - name: gcr-json-key
+      # Change this if you store the secret in another namespace.
+      namespace: default
+---
+kind: Module
+type: helm
+name: flink-operator
+chart: flink-operator
+chartPath: helm-chart/flink-operator
+values: {operatorImage.name=gcr.io/flink-operator/flink-operator:latest}
+disabled: false
+description: Operator for Flink Session Cluster via CRD
+---
+kind: Module
+type: kubernetes
+name: flink-session-cluster
+disabled: false
+description: a session cluster that can run flink jobs
+dependencies: [flink-operator]
+files: [flinkoperator_v1beta1_flinksessioncluster.yaml]
+
+#kubectl port-forward service/flinksessioncluster-sample-jobmanager 8081:8081 -n flink-cluster-default
+

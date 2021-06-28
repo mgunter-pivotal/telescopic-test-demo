@@ -1,0 +1,4 @@
+All Pod-to-Pod traffic is subject to firewalls
+All traffic among Pods, including Pods deployed to the same node, is visible to the VPC when intranode visibility is enabled. Enabling intranode visibility might cause previously unrestricted traffic to be subject to firewall rules. Evaluate your node-level firewalls using Connectivity Tests to ensure that legitimate traffic is not obstructed.
+
+
